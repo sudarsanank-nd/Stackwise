@@ -1,0 +1,16 @@
+# Decision log
+
+| # | Decision | Reason |
+|---|---|---|
+| 1 | Workspace was empty → new project in `scrollwise/` | No existing work to preserve. |
+| 2 | Stack: Vite 8 + React 19 + TypeScript 7 + Tailwind CSS 4 + Vitest 5 | Matches spec; latest stable versions from `create-vite`. |
+| 3 | Lint with **oxlint** (create-vite default) instead of ESLint | Already scaffolded, zero-config, fast; avoids extra dependencies. |
+| 4 | State: **zustand** with `persist` → localStorage | Tiny, typed, testable outside React; localStorage is enough for the data volume (interactions capped). |
+| 5 | Routing: `react-router-dom` **HashRouter** | Works from `file://`, static hosting and single-file builds without server rewrites. |
+| 6 | Content as JSON files per domain + a validator test | Lets cheaper models / editors extend content without touching code; schema enforced by `content.test.ts`. |
+| 7 | Reading time is computed from word count at load time | Keeps the stored field honest when card text is edited. |
+| 8 | Streak day = ≥3 cards completed **or** a session completed | Gentle definition for short sessions; no loss warnings. |
+| 9 | Card "completed" = visible ≥ 40% of its reading time, or liked/saved/explored | Avoids counting fast flicks as learning. |
+| 10 | Feed uses `scroll-snap-type: y proximity` with natural-height cards | Cards can be longer than the screen on small phones; mandatory snap would trap text. |
+| 11 | Explain It Back uses keyword/concept matching behind an `Evaluator` interface | Spec asks for local matching now, LLM-ready later. |
+| 12 | Extra `artifact` build mode (single-file HTML) | Lets the prototype be opened on a phone without running a dev server. |
