@@ -13,7 +13,8 @@
     "validate:content": "rm -rf node_modules/.vitest-cache && vitest run src/tests/content.test.ts",
     "build:artifact": "vite build --mode artifact",
     "smoke": "node scripts/smoke.mjs",
-    "a11y": "node scripts/a11y.mjs"
+    "a11y": "node scripts/a11y.mjs",
+    "build:page": "vite build --mode artifact && node scripts/to-artifact-page.mjs dist-artifact/page.html"
   },
   "dependencies": {
     "react": "^19.3.1",

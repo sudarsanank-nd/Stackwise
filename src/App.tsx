@@ -1,5 +1,5 @@
 import type { ReactNode } from 'react';
-import { HashRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom';
+import { HashRouter, MemoryRouter, Navigate, Route, Routes, useLocation } from 'react-router-dom';
 import { useAppStore } from './store/useAppStore';
 import { useApplyTheme } from './hooks/useAppData';
 import { AppShell } from './components/navigation/AppShell';
@@ -82,13 +82,16 @@ export function AppRoutes() {
   );
 }
 
+// The single-file build runs inside hosts that may not allow hash paths, so it keeps routes in memory.
+const Router = import.meta.env.MODE === 'artifact' ? MemoryRouter : HashRouter;
+
 export default function App() {
   useApplyTheme();
   return (
     <ErrorBoundary>
-      <HashRouter>
+      <Router>
         <AppRoutes />
-      </HashRouter>
+      </Router>
     </ErrorBoundary>
   );
 }

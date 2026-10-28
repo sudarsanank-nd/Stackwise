@@ -49,7 +49,9 @@ export function useApplyTheme() {
   useEffect(() => {
     const mq = window.matchMedia?.('(prefers-color-scheme: dark)');
     const apply = () => {
-      const dark = theme === 'dark' || (theme === 'system' && !!mq?.matches);
+      // "system" follows a host-provided data-theme (when embedded) or else the OS setting.
+      const hostTheme = document.documentElement.getAttribute('data-theme');
+      const dark = theme === 'dark' || (theme === 'system' && (hostTheme ? hostTheme === 'dark' : !!mq?.matches));
       document.documentElement.classList.toggle('dark', dark);
       document.documentElement.style.colorScheme = dark ? 'dark' : 'light';
     };

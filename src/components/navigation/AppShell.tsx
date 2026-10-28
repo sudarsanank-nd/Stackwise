@@ -104,7 +104,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       </nav>
 
       <div className="md:pl-56">
-        <header className="sticky top-0 z-20 border-b border-line bg-[color-mix(in_srgb,var(--bg)_88%,transparent)] backdrop-blur">
+        <header className="sticky top-[env(safe-area-inset-top,0px)] z-20 border-b border-line bg-[color-mix(in_srgb,var(--bg)_88%,transparent)] backdrop-blur">
           <div className="mx-auto flex h-16 max-w-2xl items-center justify-between gap-2 px-4">
             <Link to="/feed" className="flex items-center gap-2 font-serif text-lg font-semibold md:invisible">
               <Logo /> ScrollWise
