@@ -9,7 +9,8 @@ import { viteSingleFile } from 'vite-plugin-singlefile'
 export default defineConfig(({ mode }) => ({
   base: './',
   plugins: [react(), tailwindcss(), ...(mode === 'artifact' ? [viteSingleFile()] : [])],
-  build: mode === 'artifact' ? { outDir: 'dist-artifact' } : undefined,
+  // Content JSON is bundled, so the main chunk is ~650 kB (≈200 kB gzipped).
+  build: mode === 'artifact' ? { outDir: 'dist-artifact', chunkSizeWarningLimit: 900 } : { chunkSizeWarningLimit: 900 },
   test: {
     environment: 'jsdom',
     setupFiles: ['./src/tests/setup.ts'],
