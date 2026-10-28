@@ -1,0 +1,1454 @@
+[
+  {
+    "exampleType": "historical",
+    "secondaryTopics": [
+      "mental-models"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "id": "inv-diversification-markowitz",
+    "title": "The 1952 paper that made risk a portfolio property",
+    "hook": "Harry Markowitz showed that judging a stock alone misses the point.",
+    "coreIdea": "Before 1952, investors mostly asked whether each stock was good. In Portfolio Selection, Harry Markowitz argued that what matters is how holdings behave together. Two risky assets that do not move in lockstep can combine into a portfolio less volatile than either alone. His framing treated expected return and variance as the two things to trade off. Diversification stopped being folk wisdom about eggs and baskets and became something you could reason about with numbers.",
+    "whyItMatters": "A holding's risk should be judged by what it adds to the whole portfolio, not in isolation.",
+    "example": "Markowitz, H. (1952), Portfolio Selection, Journal of Finance. The paper formalised the idea that correlation between assets, not just each asset's own volatility, drives portfolio risk.",
+    "reflectionQuestion": "If your two largest holdings tend to fall on the same bad days, how diversified are you really?",
+    "suggestedAction": "List your top five holdings and note which ones depend on the same underlying driver, such as the same sector or the same currency.",
+    "primaryTopic": "investing",
+    "difficulty": "intermediate",
+    "format": "historical-lesson",
+    "source": {
+      "type": "paper",
+      "title": "Portfolio Selection",
+      "author": "Harry Markowitz",
+      "year": 1952
+    },
+    "relatedCardIds": [
+      "inv-asset-allocation",
+      "connect-portfolio-team",
+      "inv-risk-adjusted-returns"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "Diversification only helps when assets are not perfectly correlated, and correlations can rise exactly when markets are stressed, so the benefit is weaker in a crisis than in calm periods. The model also relies on estimates of returns and correlations that are uncertain. Treat it as a way of thinking about risk, not a precise machine. Owning ten funds that hold the same stocks is not diversification, just more paperwork.",
+    "simpleExplanation": "Mixing things that do not all go wrong at the same time makes the whole mix steadier than any single piece.",
+    "keyConcepts": [
+      {
+        "label": "Risk is judged at portfolio level",
+        "terms": [
+          "portfolio",
+          "whole",
+          "together",
+          "combine",
+          "overall"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Correlation matters",
+        "terms": [
+          "correlat",
+          "move together",
+          "same time",
+          "lockstep",
+          "independent"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Return versus risk trade-off",
+        "terms": [
+          "trade",
+          "return",
+          "variance",
+          "volatil",
+          "risk"
+        ],
+        "minMatches": 2
+      }
+    ]
+  },
+  {
+    "exampleType": "illustrative",
+    "secondaryTopics": [
+      "personal-finance"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "id": "inv-asset-allocation",
+    "title": "The mix matters before the pick",
+    "hook": "Which stock you choose is a smaller decision than how much of your money sits in stocks at all.",
+    "coreIdea": "Asset allocation is the split of your money between broad categories such as equity, debt, gold and cash. Each category behaves differently: equity tends to swing more and grow more over long periods, debt tends to be steadier, and cash is stable but loses ground to inflation. Your split largely decides how bumpy the ride is and how much you can expect to grow. Choosing individual funds or stocks happens inside that split, so it usually has a smaller effect on your experience.",
+    "whyItMatters": "Most people spend hours on which fund to buy and minutes on how much risk to hold overall.",
+    "example": "Illustration only: Priya has ₹10 lakh. Putting 70% in equity and 30% in debt will move far more in a bad year than 30% equity and 70% debt, whichever specific funds she picks.",
+    "reflectionQuestion": "Can you state your current equity-to-debt split in one sentence, and did you choose it on purpose?",
+    "suggestedAction": "Add up all your investments, including EPF and PPF, and write down the rough percentage in equity, debt, gold and cash.",
+    "primaryTopic": "investing",
+    "difficulty": "beginner",
+    "format": "big-idea",
+    "source": {
+      "type": "original",
+      "title": "Original synthesis"
+    },
+    "relatedCardIds": [
+      "pf-rebalancing",
+      "inv-diversification-markowitz",
+      "pf-risk-tolerance-vs-capacity"
+    ],
+    "reviewStatus": "original-synthesis",
+    "deeper": "Allocation should follow your goals, time horizon, and ability to absorb losses, not a rule like 100 minus your age, which is only a rough starting heuristic. Allocation also drifts as markets move, so it needs periodic attention. This card is educational and describes a way of thinking; it does not prescribe a split for any individual. Revisit the split when your goals or income change, not every time the news does.",
+    "simpleExplanation": "How you divide your money between safe and risky things matters more than which exact things you buy.",
+    "keyConcepts": [
+      {
+        "label": "Split across asset classes",
+        "terms": [
+          "split",
+          "mix",
+          "divide",
+          "equity",
+          "debt",
+          "categor",
+          "class"
+        ],
+        "minMatches": 2
+      },
+      {
+        "label": "Different assets behave differently",
+        "terms": [
+          "swing",
+          "steady",
+          "volatil",
+          "stable",
+          "grow",
+          "different"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Allocation drives the ride",
+        "terms": [
+          "ride",
+          "bumpy",
+          "risk",
+          "outcome",
+          "drives",
+          "matters more"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "exampleType": "illustrative",
+    "secondaryTopics": [
+      "decision-making",
+      "mental-models"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "id": "inv-margin-of-safety",
+    "title": "Buy with room for being wrong",
+    "hook": "Graham's central idea is a humility rule, not a bargain-hunting trick.",
+    "coreIdea": "Benjamin Graham's margin of safety means paying a price comfortably below your estimate of what something is worth. The gap is a buffer for the fact that your estimate may be wrong, the future may disappoint, or luck may turn. A bridge engineer builds for loads well above what is expected for the same reason. The principle does not say the cheap thing is good; it says to price in your own fallibility before you commit money.",
+    "whyItMatters": "Every valuation is an estimate, so a plan that only works if you are exactly right is fragile.",
+    "example": "Illustration only: if you estimate a business is worth ₹100 a share and insist on paying no more than ₹70, a 20% error in your estimate still leaves you ahead of what you paid.",
+    "reflectionQuestion": "In your last big financial decision, what would have had to go right for it to work, and how much room did you leave if it did not?",
+    "suggestedAction": "For your next purchase of any size, write down what you think it is worth, what you will pay, and the gap between them.",
+    "primaryTopic": "investing",
+    "difficulty": "intermediate",
+    "format": "quote-interpretation",
+    "quote": {
+      "text": "Margin of Safety as the Central Concept of Investment",
+      "by": "Benjamin Graham, The Intelligent Investor (chapter title in later editions)",
+      "note": "This is the chapter heading, not a spoken quote; the idea appears in Graham's earlier work too. Check your edition for chapter numbering."
+    },
+    "source": {
+      "type": "book",
+      "title": "The Intelligent Investor",
+      "author": "Benjamin Graham",
+      "year": 1949
+    },
+    "relatedCardIds": [
+      "inv-circle-of-competence",
+      "dm-premortem",
+      "inv-mr-market-cycles"
+    ],
+    "reviewStatus": "needs-source-check",
+    "deeper": "The hard part is that your estimate of value carries the same bias as your enthusiasm. A wide margin on a poor estimate is still a poor bet. Margin of safety also has a cost: demanding a big discount means you will often miss things that did well. It works best combined with honest limits on what you can value at all.",
+    "simpleExplanation": "Leave yourself a cushion in case your guess about the value turns out wrong.",
+    "keyConcepts": [
+      {
+        "label": "Pay below estimated value",
+        "terms": [
+          "below",
+          "discount",
+          "cheaper",
+          "less than",
+          "gap",
+          "under"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Buffer for error",
+        "terms": [
+          "buffer",
+          "cushion",
+          "wrong",
+          "error",
+          "mistake",
+          "room"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Estimates are fallible",
+        "terms": [
+          "estimate",
+          "uncertain",
+          "fallib",
+          "humil",
+          "guess"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "exampleType": "illustrative",
+    "secondaryTopics": [
+      "personal-finance",
+      "decision-making"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "id": "inv-opportunity-cost",
+    "title": "The cost you never see on a statement",
+    "hook": "Every rupee you spend or park is a rupee that could have done something else.",
+    "coreIdea": "Opportunity cost is the value of the best alternative you gave up. It never appears on a bank statement, which is why it is easy to ignore. Money sitting idle, a long-held investment you feel loyal to, or a rupee spent on something forgettable all have an invisible price. The useful question is not 'is this good?' but 'is this better than what else I could do with the same money and attention?'",
+    "whyItMatters": "Decisions judged only against zero look better than decisions judged against their real alternatives.",
+    "example": "Illustration only: you hold ₹5 lakh in a savings account earning 3% because switching feels like effort. If a similar-risk option paying 6% was available, the gap is about ₹15,000 a year in forgone interest, and nothing flags it.",
+    "reflectionQuestion": "What are you holding mainly because selling or switching feels like effort?",
+    "suggestedAction": "Pick one idle or underperforming balance and write down the best realistic alternative use for it, then decide to switch or keep with a reason.",
+    "primaryTopic": "investing",
+    "difficulty": "beginner",
+    "format": "what-would-you-do",
+    "source": {
+      "type": "original",
+      "title": "Original synthesis"
+    },
+    "relatedCardIds": [
+      "pf-liquidity-emergency-fund",
+      "inv-compounding-patience",
+      "bf-mental-accounting"
+    ],
+    "reviewStatus": "original-synthesis",
+    "deeper": "Opportunity cost cuts both ways. Chasing every better-looking alternative creates trading costs, taxes and regret, so the comparison must be net of those and of risk. A higher advertised return usually carries more risk or less access to your money; compare like with like before concluding you are losing out. For the principle, it is the comparison that matters, not the specific numbers in this illustration.",
+    "simpleExplanation": "The real price of choosing one thing is the best other thing you could have chosen instead.",
+    "keyConcepts": [
+      {
+        "label": "Cost is the best foregone alternative",
+        "terms": [
+          "alternative",
+          "instead",
+          "give up",
+          "forgo",
+          "forgone",
+          "other option"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "It is invisible on statements",
+        "terms": [
+          "invisible",
+          "hidden",
+          "statement",
+          "never see",
+          "not shown"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Compare like with like",
+        "terms": [
+          "risk",
+          "net",
+          "compare",
+          "same",
+          "tax",
+          "cost"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "exampleType": "illustrative",
+    "secondaryTopics": [
+      "behavioral-finance",
+      "mental-models"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "id": "inv-mr-market-cycles",
+    "title": "Mr. Market is a moody business partner",
+    "hook": "Graham's allegory turns daily price swings into an offer you are free to ignore.",
+    "coreIdea": "Benjamin Graham asked readers to imagine a business partner, Mr. Market, who turns up daily and names a price at which he will buy your share or sell you his. His mood swings between euphoria and gloom, and his prices follow his mood. You are never obliged to trade. A price quote is information about his mood and an opportunity if it is far from your own estimate of value, not a verdict on what your holding is worth.",
+    "whyItMatters": "Treating every price move as news about the business is how people end up buying excitement and selling fear.",
+    "example": "Illustration only: a company you understand earns steady profit, yet its share price falls 25% in a month during a general sell-off. Nothing about its customers changed; only Mr. Market's mood did.",
+    "reflectionQuestion": "When you last checked a price that had moved sharply, what did you learn about the business and what did you learn only about the mood?",
+    "suggestedAction": "Before your next trade, write whether the price changed because of new facts about the asset or only because sentiment moved.",
+    "primaryTopic": "investing",
+    "difficulty": "beginner",
+    "format": "mental-model",
+    "source": {
+      "type": "book",
+      "title": "The Intelligent Investor (Mr. Market allegory, paraphrased)",
+      "author": "Benjamin Graham",
+      "year": 1949
+    },
+    "relatedCardIds": [
+      "bf-loss-aversion-panic",
+      "bf-herding-fomo",
+      "inv-margin-of-safety"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "The model works only if you have an independent view of value, which is hard work, and if you do not need the money soon. If you are forced to sell, Mr. Market's offer is not optional. It also does not claim markets are always wrong; prices often reflect real information. The skill is telling which kind of move you are looking at.",
+    "simpleExplanation": "Prices are offers from a moody stranger, and you do not have to accept them.",
+    "keyConcepts": [
+      {
+        "label": "Prices reflect mood",
+        "terms": [
+          "mood",
+          "emotion",
+          "sentiment",
+          "euphor",
+          "fear",
+          "gloom"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "You can ignore the offer",
+        "terms": [
+          "ignore",
+          "not obliged",
+          "free",
+          "no obligation",
+          "choice",
+          "decline"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Compare price to own estimate of value",
+        "terms": [
+          "value",
+          "estimate",
+          "worth",
+          "intrinsic",
+          "own view"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "exampleType": "illustrative",
+    "secondaryTopics": [
+      "support-leadership",
+      "operational-excellence",
+      "decision-making"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "id": "inv-position-sizing",
+    "title": "What incident response teaches about position size",
+    "hook": "Ops teams limit blast radius. Investors call the same thing position sizing.",
+    "coreIdea": "On-call engineers know you cannot prevent every failure, so you limit how much any single failure can break: staged rollouts, canary releases, isolated services. Position sizing is the same discipline for money. You will be wrong about some investments, so the size of each bet decides whether a mistake is a lesson or a disaster. The question is less 'how likely am I to be right?' and more 'if I am wrong, can I live with this loss?'",
+    "whyItMatters": "Your survival through mistakes depends more on how large each bet is than on how clever each one was.",
+    "example": "Illustration only: Ravi puts 5% of his portfolio into a high-conviction idea; if it goes to zero he loses 5%. Meera puts 40% into hers; the same outcome costs her 40%, and recovering needs far more than the same percentage gain back.",
+    "reflectionQuestion": "Which single holding or decision, if it failed completely, would change your life plans?",
+    "suggestedAction": "Set a maximum percentage of your portfolio for any one stock or theme and check whether you are currently above it.",
+    "primaryTopic": "investing",
+    "difficulty": "advanced",
+    "format": "connect-domains",
+    "bridge": {
+      "from": "operational-excellence",
+      "to": "investing",
+      "insight": "Staged rollouts limit the blast radius of a bad deploy; position limits limit the blast radius of a bad investment. Both accept that errors are inevitable and design for survivable ones."
+    },
+    "source": {
+      "type": "original",
+      "title": "Original synthesis"
+    },
+    "relatedCardIds": [
+      "connect-portfolio-team",
+      "inv-expected-value",
+      "dm-premortem"
+    ],
+    "reviewStatus": "original-synthesis",
+    "deeper": "Losses are asymmetric: a 50% fall needs a 100% gain to recover, so large losses are disproportionately costly. Some formal approaches, such as the Kelly criterion, try to compute optimal bet size, but they depend on probability estimates people rarely have, and full application is aggressive. A practical rule is a hard cap per position, set when you are calm, not after you fall in love.",
+    "simpleExplanation": "Keep each bet small enough that being wrong will not wreck you, just like engineers keep one bad change from taking down everything.",
+    "keyConcepts": [
+      {
+        "label": "Size limits damage from mistakes",
+        "terms": [
+          "size",
+          "small",
+          "limit",
+          "cap",
+          "damage",
+          "blast radius"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Mistakes are inevitable",
+        "terms": [
+          "wrong",
+          "mistake",
+          "fail",
+          "inevitable",
+          "error"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Survival over cleverness",
+        "terms": [
+          "survive",
+          "survival",
+          "recover",
+          "loss",
+          "afford",
+          "live with"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "exampleType": "illustrative",
+    "secondaryTopics": [
+      "personal-finance"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "id": "inv-sequence-of-returns",
+    "title": "Same average return, very different outcome",
+    "hook": "When the bad years come matters more once you start withdrawing money.",
+    "coreIdea": "Two portfolios can earn the same average annual return and end in very different places if money is being taken out. Poor returns early, while you withdraw, force you to sell more units at low prices, leaving less to recover later. The same returns in reverse order leave you better off. This is sequence-of-returns risk. While you only contribute, order matters little; once you withdraw, the timing of losses becomes a central risk.",
+    "whyItMatters": "A retirement plan built on an average return can fail even if the average turns out right.",
+    "example": "Illustration only, not a forecast: a ₹1 crore portfolio with ₹6 lakh withdrawn yearly faces two return paths with identical averages. If the weak years come first, the balance shrinks faster than if they come last.",
+    "reflectionQuestion": "If markets fell sharply in the first two years of your withdrawals, which expense would you cut first?",
+    "suggestedAction": "Write down what spending you could reduce, and by how much, in a bad market year.",
+    "primaryTopic": "investing",
+    "difficulty": "advanced",
+    "format": "counterintuitive",
+    "source": {
+      "type": "original",
+      "title": "Original synthesis"
+    },
+    "relatedCardIds": [
+      "pf-time-horizon-buckets",
+      "inv-compounding-patience",
+      "bf-loss-aversion-panic"
+    ],
+    "reviewStatus": "original-synthesis",
+    "deeper": "Arithmetic average and actual compounded growth differ when returns vary, so plans using a single average rate can mislead. Ways people manage this risk include holding some safer assets for near-term spending, flexible withdrawal rates, and delaying large purchases after a downturn. Each has trade-offs, and none removes the risk. This card explains a mechanism; it is not a recommendation for any specific plan.",
+    "simpleExplanation": "If you are spending from your savings, losing money early hurts far more than losing it later.",
+    "keyConcepts": [
+      {
+        "label": "Order of returns matters when withdrawing",
+        "terms": [
+          "order",
+          "sequence",
+          "timing",
+          "early",
+          "first",
+          "withdraw"
+        ],
+        "minMatches": 2
+      },
+      {
+        "label": "Selling low locks in damage",
+        "terms": [
+          "sell",
+          "low",
+          "units",
+          "recover",
+          "shrink",
+          "less left"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Average return can mislead",
+        "terms": [
+          "average",
+          "mislead",
+          "same",
+          "identical"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "exampleType": "illustrative",
+    "secondaryTopics": [
+      "decision-making",
+      "behavioral-finance"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "id": "inv-circle-of-competence",
+    "title": "Where does your knowledge actually end?",
+    "hook": "Buffett's advice is less about being smart than about knowing your edges.",
+    "coreIdea": "Warren Buffett described a circle of competence in his 1996 Berkshire Hathaway shareholder letter: the area where you can evaluate things well. He stressed that its size matters less than knowing where its boundary lies. Inside it, you can judge what a business or product is worth. Outside it, you are guessing but may feel confident. The discipline is to say 'I do not understand this well enough' and pass without regret.",
+    "whyItMatters": "The costliest financial mistakes often come from acting confidently just outside what you know.",
+    "example": "Use the five questions below as a quick self-check on one investment you own or are considering.",
+    "reflectionQuestion": "What is one financial product you own that you could not explain to a friend in two minutes?",
+    "suggestedAction": "Write a one-paragraph plain-English description of your largest holding; if you cannot, treat that as the gap to close.",
+    "primaryTopic": "investing",
+    "difficulty": "beginner",
+    "format": "self-assessment",
+    "checklist": [
+      "Can I explain how this investment makes money in two sentences?",
+      "Do I know the main ways it could lose money?",
+      "Could I say what would make me sell it?",
+      "Do I understand the costs and taxes involved?",
+      "Am I buying it for reasons beyond a tip or recent price rise?"
+    ],
+    "source": {
+      "type": "primary",
+      "title": "Berkshire Hathaway shareholder letter (circle of competence discussed)",
+      "author": "Warren Buffett",
+      "year": 1996
+    },
+    "relatedCardIds": [
+      "inv-margin-of-safety",
+      "bf-herding-fomo",
+      "bf-confirmation-bias-thesis"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "Your circle can grow through study and experience, but it grows slowly and honestly only when you test your understanding. Overconfidence makes the boundary feel larger than it is. Equally, staying only in what you know has costs, such as missing diversification. A reasonable use of the idea is to size positions smaller the closer you are to the edge.",
+    "simpleExplanation": "Only put serious money into things you really understand, and be honest about what you do not.",
+    "keyConcepts": [
+      {
+        "label": "Know the boundary of your knowledge",
+        "terms": [
+          "boundary",
+          "edge",
+          "limit",
+          "understand",
+          "know",
+          "outside"
+        ],
+        "minMatches": 2
+      },
+      {
+        "label": "Pass without regret outside it",
+        "terms": [
+          "pass",
+          "skip",
+          "avoid",
+          "say no",
+          "decline"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Overconfidence blurs the boundary",
+        "terms": [
+          "overconfid",
+          "confiden",
+          "guess",
+          "feel"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "exampleType": "illustrative",
+    "secondaryTopics": [
+      "decision-making",
+      "mental-models"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "id": "inv-expected-value",
+    "title": "Judge the bet, not the outcome",
+    "hook": "A good decision can lose, and a bad one can win.",
+    "coreIdea": "Expected value is the probability-weighted average of the possible outcomes. To use it, list the realistic outcomes, estimate how likely each is, multiply, and add. It forces you to look at both the size of what you can win and lose and how likely each is. The catch is that the probabilities are your estimates, usually rough. A single result tells you little about whether the decision was sound, so judge the reasoning, not just the result.",
+    "whyItMatters": "Judging decisions only by outcomes teaches you the wrong lessons from luck.",
+    "example": "Illustration only: an investment has a 60% chance of gaining ₹20,000 and a 40% chance of losing ₹25,000. The expected value is 0.6 x 20,000 minus 0.4 x 25,000, which is ₹2,000. A loss here would not prove the bet was bad.",
+    "reflectionQuestion": "Think of a recent money decision that turned out badly: was the reasoning poor, or was the outcome unlucky?",
+    "suggestedAction": "For your next decision with uncertain payoff, write two or three outcomes with rough probabilities before deciding.",
+    "primaryTopic": "investing",
+    "difficulty": "intermediate",
+    "format": "framework",
+    "source": {
+      "type": "original",
+      "title": "Original synthesis"
+    },
+    "relatedCardIds": [
+      "inv-position-sizing",
+      "dm-premortem",
+      "inv-margin-of-safety"
+    ],
+    "reviewStatus": "original-synthesis",
+    "deeper": "Expected value alone ignores survival: a bet with positive expected value but a chance of ruin can still be unwise, which is why bet size matters. It also treats a gain and loss of equal size as symmetric, while people feel them differently. And the probabilities are often guesses dressed as numbers, so use ranges and test how sensitive the answer is to them.",
+    "simpleExplanation": "Weigh each possible result by how likely it is, and add them up to see if the bet is worth taking.",
+    "keyConcepts": [
+      {
+        "label": "Probability-weighted outcomes",
+        "terms": [
+          "probabilit",
+          "likel",
+          "weight",
+          "chance",
+          "multiply",
+          "odds"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Probabilities are estimates",
+        "terms": [
+          "estimate",
+          "guess",
+          "rough",
+          "uncertain",
+          "assum"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Judge the decision, not the result",
+        "terms": [
+          "luck",
+          "process",
+          "reasoning",
+          "outcome",
+          "decision"
+        ],
+        "minMatches": 2
+      }
+    ]
+  },
+  {
+    "exampleType": "illustrative",
+    "secondaryTopics": [
+      "personal-finance"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "id": "inv-risk-adjusted-returns",
+    "title": "A higher return is not automatically better",
+    "hook": "Two funds can earn the same and still deserve different scores.",
+    "coreIdea": "Risk-adjusted return asks how much return you earned for each unit of risk you took. A common measure is the Sharpe ratio, introduced by William Sharpe, which divides return above a risk-free rate by the volatility of returns. A fund that earns slightly less but swings far less may be the better deal. The measure has limits: volatility is only one definition of risk, and it assumes returns are spread in a way that real markets sometimes are not.",
+    "whyItMatters": "Raw returns hide whether you were paid fairly for the bumps you endured.",
+    "example": "Illustration only: Fund A returns 12% with big swings; Fund B returns 10% with much smaller swings. Per unit of volatility, B may rank higher, and B may also be easier to hold through a bad year.",
+    "reflectionQuestion": "When you compare funds, do you look at the return only, or also at how bumpy the route was?",
+    "suggestedAction": "For two funds you hold, check how far each fell in its worst year, not only its average return.",
+    "primaryTopic": "investing",
+    "difficulty": "advanced",
+    "format": "big-idea",
+    "source": {
+      "type": "paper",
+      "title": "Mutual Fund Performance",
+      "author": "William F. Sharpe",
+      "year": 1966
+    },
+    "relatedCardIds": [
+      "inv-diversification-markowitz",
+      "inv-active-vs-passive",
+      "pf-risk-tolerance-vs-capacity"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "Volatility treats upside surprises as risk, which most investors do not. Other measures, such as maximum drawdown or downside deviation, capture different worries. Past ratios also depend on the period measured and say little about the future. Use risk-adjusted figures to ask better questions about a fund, not to rank them mechanically. Compare funds over the same period and the same category, otherwise the ratio compares unlike things and can mislead you badly.",
+    "simpleExplanation": "Do not just ask how much a fund made; ask how scary the ride was to make it.",
+    "keyConcepts": [
+      {
+        "label": "Return per unit of risk",
+        "terms": [
+          "per unit",
+          "relative",
+          "for each",
+          "adjust",
+          "ratio",
+          "sharpe"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Same return, different risk",
+        "terms": [
+          "swing",
+          "volatil",
+          "bumpy",
+          "smoother",
+          "risk"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Measures have limits",
+        "terms": [
+          "limit",
+          "one definition",
+          "past",
+          "drawdown",
+          "not mechanical"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "exampleType": "illustrative",
+    "secondaryTopics": [
+      "investing"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "id": "pf-inflation-real-returns",
+    "title": "Your 7% might really be 1%",
+    "hook": "Money that grows on paper can still shrink in what it buys.",
+    "coreIdea": "Myth: if my deposit earns 7%, my wealth is growing 7%. Reality: what matters is the real return, roughly the rate you earn minus inflation. India's inflation-targeting framework, set with the RBI, aims for 4% CPI inflation with a tolerance band of 2 to 6%. If prices rise 5% and your money earns 7% before tax, your real gain is closer to 2%, and less after tax. In some years it can be negative.",
+    "whyItMatters": "Cash that feels safe can quietly lose purchasing power over the years.",
+    "example": "Illustration only: ₹1,00,000 at 6% for a year becomes ₹1,06,000. If prices rose 6%, the same basket of goods now costs about ₹1,06,000 too, so you are not better off, despite the higher number.",
+    "reflectionQuestion": "After inflation and tax, what is the real return on the money you are calling safe?",
+    "suggestedAction": "Subtract the latest published CPI inflation figure and your tax from the rate on one deposit or fund, and note the result.",
+    "primaryTopic": "personal-finance",
+    "difficulty": "beginner",
+    "format": "myth-vs-reality",
+    "source": {
+      "type": "institution",
+      "title": "Flexible Inflation Targeting Framework (4% CPI target, 2-6% band)",
+      "author": "Reserve Bank of India"
+    },
+    "relatedCardIds": [
+      "inv-compounding-patience",
+      "pf-liquidity-emergency-fund",
+      "inv-opportunity-cost"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "The simple subtraction is an approximation; the exact real return is (1 + nominal) divided by (1 + inflation), minus one. Your personal inflation can differ from the headline CPI, since education, healthcare and rent may rise faster than the average basket. The point is not that safe assets are bad, but that safety has a price you should be able to name.",
+    "simpleExplanation": "If prices go up as fast as your savings, you are not really getting richer.",
+    "keyConcepts": [
+      {
+        "label": "Real return is net of inflation",
+        "terms": [
+          "inflation",
+          "real",
+          "minus",
+          "net",
+          "purchasing power",
+          "buy"
+        ],
+        "minMatches": 2
+      },
+      {
+        "label": "Tax and inflation both reduce gains",
+        "terms": [
+          "tax",
+          "after",
+          "less",
+          "reduce",
+          "erode"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Safe is not free",
+        "terms": [
+          "safe",
+          "cash",
+          "deposit",
+          "shrink",
+          "lose",
+          "negative"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "exampleType": "illustrative",
+    "secondaryTopics": [
+      "investing"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "id": "pf-liquidity-emergency-fund",
+    "title": "Is your emergency money actually reachable?",
+    "hook": "Being able to find the money is not the same as being able to get it fast.",
+    "coreIdea": "Liquidity is how quickly and cheaply you can turn an asset into cash without losing value. An emergency fund exists for surprises like a job loss or a medical bill, so it must be quick to reach and stable in value. A fund full of equity may be down 20% exactly when you need it. Property takes months to sell. The purpose of this money is not growth; it is to stop one bad event from forcing you to sell long-term investments at a bad time.",
+    "whyItMatters": "Without liquid reserves, a normal emergency becomes a forced sale of something you wanted to keep.",
+    "example": "Check your own emergency money against these questions.",
+    "reflectionQuestion": "If a ₹2 lakh bill arrived tomorrow, which account would you use, and what would it cost you to do so?",
+    "suggestedAction": "Label one account as your emergency fund and note the number of months of essential expenses it covers today.",
+    "primaryTopic": "personal-finance",
+    "difficulty": "beginner",
+    "format": "checklist",
+    "checklist": [
+      "Can I access it within a day or two without penalty?",
+      "Is its value stable, not dependent on markets?",
+      "Is it kept separate from money I spend monthly?",
+      "Do I know how many months of essential expenses it covers?",
+      "Have I decided what counts as a real emergency?"
+    ],
+    "source": {
+      "type": "original",
+      "title": "Original synthesis"
+    },
+    "relatedCardIds": [
+      "pf-inflation-real-returns",
+      "pf-time-horizon-buckets",
+      "inv-opportunity-cost"
+    ],
+    "reviewStatus": "original-synthesis",
+    "deeper": "How many months of expenses to hold depends on income stability, dependants, and other safety nets, so there is no single right number. Folk rules exist, but they are starting points, not advice for your circumstances. A reserve that earns little is not a failure; its job is to remove pressure from your other decisions, which is a kind of return too.",
+    "simpleExplanation": "Keep some money where you can get it quickly and it will not lose value when you need it.",
+    "keyConcepts": [
+      {
+        "label": "Liquidity means quick, cheap access",
+        "terms": [
+          "quick",
+          "fast",
+          "access",
+          "cash",
+          "liquid",
+          "penalty"
+        ],
+        "minMatches": 2
+      },
+      {
+        "label": "Stable value matters",
+        "terms": [
+          "stable",
+          "value",
+          "fall",
+          "market",
+          "down"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Prevents forced sales",
+        "terms": [
+          "forced",
+          "sell",
+          "emergency",
+          "surprise",
+          "pressure"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "exampleType": "illustrative",
+    "secondaryTopics": [
+      "investing",
+      "behavioral-finance"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "id": "pf-rebalancing",
+    "title": "Winning can quietly make you riskier",
+    "hook": "Your portfolio changes its own risk level while you are not looking.",
+    "coreIdea": "If equities rise faster than your debt holdings, your portfolio drifts to more equity than you chose, which means more risk than you intended. Rebalancing is bringing the mix back to your target by selling some of what grew and buying what lagged, or by directing new money to the lagging part. The common mistake is to never do it, because leaving winners alone feels pleasant. The result is a risk level set by the market, not by you.",
+    "whyItMatters": "Without rebalancing, a long bull run can leave you far more exposed to a fall than you planned.",
+    "example": "Illustration only: you start at 60% equity and 40% debt. After a strong year for equities you are at 70/30. A fall now hurts more than you signed up for.",
+    "reflectionQuestion": "When did you last compare your actual split with the split you meant to hold?",
+    "suggestedAction": "Choose a rule, such as checking once a year or when the split drifts by more than five percentage points, and put the date in your calendar.",
+    "primaryTopic": "personal-finance",
+    "difficulty": "intermediate",
+    "format": "common-mistake",
+    "source": {
+      "type": "original",
+      "title": "Original synthesis"
+    },
+    "relatedCardIds": [
+      "inv-asset-allocation",
+      "bf-loss-aversion-panic",
+      "bf-anchoring-purchase-price"
+    ],
+    "reviewStatus": "original-synthesis",
+    "deeper": "Rebalancing has costs: transaction charges and, outside tax-advantaged accounts, taxes on gains, so frequent adjustment can do more harm than good. Using new contributions to correct the mix is often cheaper. Whether rebalancing adds return is debated; its clearer job is controlling risk. It also asks you to buy what has recently done badly, which is psychologically hard. Whatever rule you choose, write it down beforehand so the decision is made by the plan rather than by your mood that day.",
+    "simpleExplanation": "When one part of your money grows faster, put the mix back to what you planned so you do not take hidden extra risk.",
+    "keyConcepts": [
+      {
+        "label": "Portfolios drift from target",
+        "terms": [
+          "drift",
+          "target",
+          "change",
+          "grew",
+          "shift",
+          "mix"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Rebalancing restores intended risk",
+        "terms": [
+          "restore",
+          "back",
+          "intended",
+          "planned",
+          "risk",
+          "sell"
+        ],
+        "minMatches": 2
+      },
+      {
+        "label": "Costs and taxes apply",
+        "terms": [
+          "cost",
+          "tax",
+          "charge",
+          "fee",
+          "contribut"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "exampleType": "illustrative",
+    "secondaryTopics": [
+      "investing",
+      "behavioral-finance"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "id": "pf-time-horizon-buckets",
+    "title": "Should you split money into time buckets?",
+    "hook": "A popular planning tool that financial economists do not fully agree on.",
+    "coreIdea": "The bucket approach sorts money by when you will need it: near-term spending in safe assets, mid-term in balanced holdings, long-term in growth assets. Supporters say it keeps you calm because you know the next few years of spending are not exposed to a crash. Critics say the buckets are mental labels and that one total portfolio with a sensible mix is equivalent or more efficient. Both agree that money needed soon should not sit in volatile assets.",
+    "whyItMatters": "A structure that helps you stay invested is useful, but you should know whether it is doing financial work or psychological work.",
+    "example": "Illustration only: a family keeps two years of expenses in a deposit, five years in debt funds, and the rest in equity funds, so a market fall does not force a sale for spending.",
+    "reflectionQuestion": "Would a visible near-term bucket help you stay invested in a fall, or would it just be one more thing to manage?",
+    "suggestedAction": "Write down which expenses fall within the next three years and where that money is held today.",
+    "primaryTopic": "personal-finance",
+    "difficulty": "advanced",
+    "format": "two-viewpoints",
+    "source": {
+      "type": "original",
+      "title": "Original synthesis"
+    },
+    "relatedCardIds": [
+      "inv-sequence-of-returns",
+      "pf-liquidity-emergency-fund",
+      "bf-mental-accounting"
+    ],
+    "reviewStatus": "original-synthesis",
+    "contrarian": {
+      "question": "Are time-horizon buckets better than managing one total portfolio?",
+      "established": [
+        "Money needed in the near term is poorly suited to volatile assets.",
+        "Selling assets after a fall to fund spending can harm long-run outcomes."
+      ],
+      "positions": [
+        {
+          "label": "Buckets help",
+          "claim": "Separating money by time horizon improves decisions and staying power.",
+          "evidence": [
+            "Holding near-term spending in stable assets reduces the chance of forced selling in a downturn.",
+            "Behavioural research suggests people stay invested more readily when risks are made concrete."
+          ],
+          "interpretation": "Even if economically similar, a structure you can stick with can beat a theoretically better one you abandon."
+        },
+        {
+          "label": "One total portfolio",
+          "claim": "Buckets are mental accounting; a single, well-chosen mix with a clear withdrawal rule achieves the same.",
+          "evidence": [
+            "Money is fungible: the total mix of assets determines risk and expected return regardless of labels.",
+            "Buckets can leave the growth bucket depleted or force awkward refilling decisions."
+          ],
+          "interpretation": "The labels add complexity without changing the underlying risk, and can give false comfort."
+        }
+      ],
+      "opinion": "Editorial view: the evidence for superior returns is thin either way, so choose the structure you will actually follow. This is education, not advice.",
+      "unresolved": [
+        "Whether the behavioural benefit of buckets outweighs any efficiency loss for typical investors.",
+        "How buckets perform across very different market paths."
+      ],
+      "evidenceBalance": "balanced",
+      "balanceNote": "Financial theory leans toward the total-portfolio view; behavioural considerations lean toward buckets. Neither has decisive evidence."
+    },
+    "deeper": "Both sides rely on the same arithmetic: how much you spend, and how much risk you can bear. The disagreement is mostly whether labelling money helps or misleads. A useful test is whether you would change anything about your actual holdings after adopting buckets; if not, the benefit is behavioural only. Whichever view you prefer, revisit the plan after big life changes, since horizons shift when goals or income do.",
+    "simpleExplanation": "Some people sort savings by when they will need them, and some say that is just a mental trick.",
+    "keyConcepts": [
+      {
+        "label": "Buckets sort money by need date",
+        "terms": [
+          "bucket",
+          "horizon",
+          "when",
+          "need",
+          "near-term",
+          "sort"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Critics call it mental labelling",
+        "terms": [
+          "mental",
+          "label",
+          "fungible",
+          "same",
+          "total",
+          "accounting"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Both avoid volatile assets for near spending",
+        "terms": [
+          "near",
+          "soon",
+          "spending",
+          "safe",
+          "volatile",
+          "forced"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "exampleType": "illustrative",
+    "secondaryTopics": [
+      "behavioral-finance",
+      "investing"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "id": "pf-risk-tolerance-vs-capacity",
+    "title": "Willing to take risk is not the same as able to",
+    "hook": "One is a feeling and the other is arithmetic. They often disagree.",
+    "coreIdea": "Risk tolerance is how much volatility you can stomach emotionally. Risk capacity is how much loss your finances can absorb without derailing your goals, which depends on income stability, dependants, savings and time horizon. A young, confident investor with an unstable income and a loan to repay may have high tolerance but low capacity. A cautious retiree with a large surplus may have the reverse. A sound plan respects the lower of the two.",
+    "whyItMatters": "Boldness during a bull market is a poor guide to what you can afford to lose.",
+    "example": "Illustration only: Arjun says he is comfortable with big swings, but his family depends on his single salary and he has no reserve. His tolerance is high; his capacity is low.",
+    "reflectionQuestion": "If your income stopped for six months during a market fall, would your answer about risk change?",
+    "suggestedAction": "Write down, separately, how much of a fall you could tolerate emotionally and how much you could absorb financially.",
+    "primaryTopic": "personal-finance",
+    "difficulty": "intermediate",
+    "format": "comparison",
+    "source": {
+      "type": "original",
+      "title": "Original synthesis"
+    },
+    "relatedCardIds": [
+      "inv-asset-allocation",
+      "bf-loss-aversion-panic",
+      "pf-liquidity-emergency-fund"
+    ],
+    "reviewStatus": "original-synthesis",
+    "deeper": "Tolerance is usually measured by questionnaires, which are imperfect and tend to change with recent market moves: people report higher tolerance after rises. Capacity is more objective but also shifts when jobs, health or family change. Review both when your circumstances change, not just on a schedule. Nothing here is a personal recommendation. Discussing the two separately with family members who share the finances can reveal gaps that a single combined answer hides.",
+    "simpleExplanation": "How much risk you feel okay with and how much risk you can afford are two different questions.",
+    "keyConcepts": [
+      {
+        "label": "Tolerance is emotional",
+        "terms": [
+          "emotion",
+          "feel",
+          "stomach",
+          "comfort",
+          "willing",
+          "tolerance"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Capacity is financial",
+        "terms": [
+          "afford",
+          "finance",
+          "income",
+          "absorb",
+          "capacity",
+          "ability"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Use the lower of the two",
+        "terms": [
+          "lower",
+          "smaller",
+          "respect",
+          "limit",
+          "conservative",
+          "both"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "exampleType": "illustrative",
+    "secondaryTopics": [
+      "psychology",
+      "decision-making"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "id": "bf-confirmation-bias-thesis",
+    "title": "The research that only agrees with you",
+    "hook": "After you buy, the news starts to look suspiciously friendly.",
+    "coreIdea": "Confirmation bias is the tendency to seek, notice and remember information that supports what you already believe. In investing, once you own something you tend to read bullish articles, dismiss warnings as noise and follow people who agree. The result feels like research but is mostly reassurance. The fix is not more information but a different question: what evidence would change my mind, and have I looked for it?",
+    "whyItMatters": "A conviction built from one-sided reading feels strong precisely when it is least tested.",
+    "example": "Illustration only: an investor holds a stock down 30%. She keeps reading posts explaining the dip is temporary and skips the quarterly report showing falling margins.",
+    "reflectionQuestion": "What is the strongest case against your biggest holding, and where would you find it?",
+    "suggestedAction": "For one holding, write the three best arguments against owning it, using sources that disagree with you.",
+    "primaryTopic": "behavioral-finance",
+    "difficulty": "intermediate",
+    "format": "investment-mistake",
+    "source": {
+      "type": "paper",
+      "title": "Confirmation Bias: A Ubiquitous Phenomenon in Many Guises",
+      "author": "Raymond S. Nickerson",
+      "year": 1998
+    },
+    "relatedCardIds": [
+      "dm-premortem",
+      "bf-anchoring-purchase-price",
+      "inv-circle-of-competence"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "Writing down your thesis and its disconfirming conditions in advance is more effective than trying to be open-minded in the moment. Assigning someone, or yourself on another day, to argue the other side helps. Be careful too of the reverse: searching only for flaws is also biased. The aim is a fair hearing for both sides, not constant doubt. Reviewing a holding on a fixed schedule, rather than whenever the price moves, also reduces the urge to seek comfort.",
+    "simpleExplanation": "We look for proof that we are right and ignore proof that we are wrong.",
+    "keyConcepts": [
+      {
+        "label": "Seek supporting information",
+        "terms": [
+          "support",
+          "agree",
+          "confirm",
+          "one-sided",
+          "already believe",
+          "reassur"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Ignore contrary evidence",
+        "terms": [
+          "ignore",
+          "dismiss",
+          "skip",
+          "noise",
+          "contrary",
+          "against"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Ask what would change your mind",
+        "terms": [
+          "change my mind",
+          "disconfirm",
+          "counter",
+          "against",
+          "opposite",
+          "test"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "exampleType": "historical",
+    "secondaryTopics": [
+      "investing",
+      "decision-making"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "id": "bf-survivorship-bias-wald",
+    "title": "Wald and the planes that never came back",
+    "hook": "The most important data was on the aircraft you could not examine.",
+    "coreIdea": "During World War II, the Statistical Research Group, in which mathematician Abraham Wald worked, was asked where to add armour to bombers. Engineers had records of bullet damage on returning planes. Wald's insight was that these were the survivors: damage in other areas was probably fatal and was missing from the data. Armour belonged where returning planes showed little damage. This is survivorship bias: drawing conclusions from what remains while ignoring what dropped out.",
+    "whyItMatters": "Fund track records, startup stories and success advice all come from survivors, which flatters the odds.",
+    "example": "Wald's analysis is described in Mangel and Samaniego (1984). In finance, a fund list that omits closed or merged funds makes the average look better than what investors actually experienced.",
+    "reflectionQuestion": "What failed examples are missing from the stories of success you most admire?",
+    "suggestedAction": "Next time you see a fund's long-run performance, ask how many funds in its category were closed or merged along the way.",
+    "primaryTopic": "behavioral-finance",
+    "difficulty": "intermediate",
+    "format": "historical-lesson",
+    "source": {
+      "type": "paper",
+      "title": "Abraham Wald's Work on Aircraft Survivability",
+      "author": "Marc Mangel & Francisco J. Samaniego",
+      "year": 1984
+    },
+    "relatedCardIds": [
+      "inv-active-vs-passive",
+      "bf-confirmation-bias-thesis",
+      "dm-premortem"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "Popular retellings often simplify Wald's technical work, which involved statistical methods for estimating survival probabilities. The core lesson, that missing data is not random, is sound. In practice, ask: who is not in this sample, and why? Indices and fund databases can suffer the same problem if the failures are removed. The same habit helps when reading business books or career advice, which usually profile winners and rarely the many who tried the same things.",
+    "simpleExplanation": "If you only study what survived, you will miss what actually caused the failures.",
+    "keyConcepts": [
+      {
+        "label": "Data comes only from survivors",
+        "terms": [
+          "survivor",
+          "survive",
+          "returned",
+          "remain",
+          "only see"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Missing data hides the real signal",
+        "terms": [
+          "missing",
+          "hidden",
+          "failed",
+          "dropped",
+          "absent",
+          "not in"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Armour goes where no damage shows",
+        "terms": [
+          "armour",
+          "armor",
+          "no damage",
+          "undamaged",
+          "opposite",
+          "fatal"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "exampleType": "illustrative",
+    "secondaryTopics": [
+      "investing",
+      "psychology"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "id": "bf-anchoring-purchase-price",
+    "title": "I will sell when it gets back to what I paid",
+    "hook": "The market does not know or care what you paid.",
+    "coreIdea": "Anchoring is the tendency to rely too heavily on an initial number when judging value. Tversky and Kahneman described it in their 1974 Science paper on heuristics and biases. For investors, the purchase price becomes the anchor: a holding below it feels like a loss to be undone, and above it, a gain to be protected. But whether to hold now depends on the asset's future prospects and your alternatives today, and your entry price has no effect on those.",
+    "whyItMatters": "Waiting to break even keeps your money tied to an old decision instead of your best current one.",
+    "example": "Illustration only: you bought at ₹500 and it trades at ₹350. You refuse to sell until it returns to ₹500, while a better opportunity passes. The right question is whether you would buy it at ₹350 today.",
+    "reflectionQuestion": "If you did not already own this, would you buy it at today's price?",
+    "suggestedAction": "For one holding below your purchase price, answer the question 'would I buy this today?' in writing, ignoring what you paid.",
+    "primaryTopic": "behavioral-finance",
+    "difficulty": "beginner",
+    "format": "common-mistake",
+    "source": {
+      "type": "paper",
+      "title": "Judgment under Uncertainty: Heuristics and Biases",
+      "author": "Amos Tversky & Daniel Kahneman",
+      "year": 1974
+    },
+    "relatedCardIds": [
+      "bf-loss-aversion-panic",
+      "inv-opportunity-cost",
+      "bf-confirmation-bias-thesis"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "Tversky and Kahneman's anchoring experiments showed that even arbitrary numbers can pull estimates toward them. The purchase-price version is related to loss aversion and the reluctance to realise a loss. Note that tax rules, such as being able to set off capital losses, can legitimately make your entry price relevant to the after-tax result, though not to the asset's future.",
+    "simpleExplanation": "What you paid is in the past; the only question that matters is what is best to do with your money now.",
+    "keyConcepts": [
+      {
+        "label": "Anchor on the purchase price",
+        "terms": [
+          "anchor",
+          "purchase price",
+          "bought",
+          "paid",
+          "entry",
+          "cost price"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Price paid does not affect the future",
+        "terms": [
+          "future",
+          "irrelevant",
+          "past",
+          "sunk",
+          "today",
+          "prospect"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Ask would I buy today",
+        "terms": [
+          "buy today",
+          "would i buy",
+          "fresh",
+          "from scratch",
+          "now"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "exampleType": "illustrative",
+    "secondaryTopics": [
+      "personal-finance",
+      "psychology"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "id": "bf-mental-accounting",
+    "title": "Why a bonus feels like free money",
+    "hook": "The same rupee is treated differently depending on the label you put on it.",
+    "coreIdea": "Richard Thaler used the term mental accounting for how people sort money into separate mental accounts, such as salary, bonus, savings, and the household budget, and treat each by different rules. A tax refund or bonus often gets spent more freely than the same amount earned as salary. Money is fungible, meaning a rupee is a rupee, yet we act as if labels matter. Sometimes that helps, as with earmarked savings, but it can also cause odd decisions.",
+    "whyItMatters": "You may keep a low-interest savings pot while carrying costly debt, only because the two feel like separate accounts.",
+    "example": "Illustration only: Neha holds ₹1 lakh in a fixed deposit 'for emergencies' while paying a credit card at a much higher rate, because touching the deposit feels like breaking a rule.",
+    "reflectionQuestion": "Which of your money labels is costing you more than it protects?",
+    "suggestedAction": "List your savings pots and debts side by side with their rates, and ask whether any label is blocking an obvious trade.",
+    "primaryTopic": "behavioral-finance",
+    "difficulty": "beginner",
+    "format": "explain-beginner",
+    "source": {
+      "type": "paper",
+      "title": "Mental Accounting and Consumer Choice",
+      "author": "Richard H. Thaler",
+      "year": 1985
+    },
+    "relatedCardIds": [
+      "pf-time-horizon-buckets",
+      "inv-opportunity-cost",
+      "bf-anchoring-purchase-price"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "Mental accounting is not always an error. Labelled pots can enforce discipline, like a separate account for a child's education. The mistake is letting the labels override the arithmetic when the cost is large. A good test is whether the label helps you do something you would otherwise fail to do, or merely stops you doing something clearly better. Awareness is the first step; simply naming which pot a decision came from often changes how you treat it.",
+    "simpleExplanation": "We treat money differently depending on where it came from or what we call it, even though a rupee is a rupee.",
+    "keyConcepts": [
+      {
+        "label": "Separate mental accounts",
+        "terms": [
+          "account",
+          "label",
+          "pot",
+          "bucket",
+          "separate",
+          "categor"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Money is fungible",
+        "terms": [
+          "fungible",
+          "same",
+          "rupee is a rupee",
+          "equal",
+          "interchangeable"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Labels can help or hurt",
+        "terms": [
+          "discipline",
+          "help",
+          "hurt",
+          "cost",
+          "debt",
+          "mistake"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "exampleType": "illustrative",
+    "secondaryTopics": [
+      "investing",
+      "psychology"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "id": "bf-herding-fomo",
+    "title": "Everyone is buying: your cue or a warning?",
+    "hook": "When a friend's gain is the only research you did, you are following a crowd.",
+    "coreIdea": "Herding is copying what others do, partly because their actions seem to carry information and partly because being wrong alone feels worse than being wrong together. Models of herd behaviour, like Banerjee's 1992 paper, show how people can rationally ignore their own information and follow earlier actors, so a crowd may rest on very little independent judgement. Fear of missing out adds emotional pressure to act now, usually after prices have already risen.",
+    "whyItMatters": "By the time a theme is everywhere, the easy part of the move may be behind it, and the crowd's reasons may be thinner than they look.",
+    "example": "A colleague posts gains from a trending theme and three others join in the same week. Nobody has checked the price, the risk or what would make them sell. What would you do?",
+    "reflectionQuestion": "What independent reason, apart from other people buying, would you give for this purchase?",
+    "suggestedAction": "Before acting on a tip or trend, wait 48 hours and write down your own reason in one sentence.",
+    "primaryTopic": "behavioral-finance",
+    "difficulty": "intermediate",
+    "format": "what-would-you-do",
+    "source": {
+      "type": "paper",
+      "title": "A Simple Model of Herd Behavior",
+      "author": "Abhijit V. Banerjee",
+      "year": 1992
+    },
+    "relatedCardIds": [
+      "inv-mr-market-cycles",
+      "inv-circle-of-competence",
+      "bf-loss-aversion-panic"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "Following others is not always foolish: when you lack information, other people's choices can be a reasonable signal. The danger is when everyone is following the same few early movers, so the apparent consensus contains little independent information. A useful discipline is to ask how many people reached the view on their own, and whether their incentives match yours. Writing your own reason down before acting makes it easier to notice later whether you decided or just followed.",
+    "simpleExplanation": "Copying the crowd feels safe, but the crowd may be copying someone else too.",
+    "keyConcepts": [
+      {
+        "label": "Copying others' actions",
+        "terms": [
+          "copy",
+          "follow",
+          "crowd",
+          "herd",
+          "others",
+          "everyone"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Fear of missing out",
+        "terms": [
+          "fomo",
+          "miss out",
+          "missing out",
+          "fear",
+          "pressure",
+          "urgency"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Need an independent reason",
+        "terms": [
+          "independent",
+          "own reason",
+          "own research",
+          "check",
+          "wait",
+          "write"
+        ],
+        "minMatches": 1
+      }
+    ]
+  }
+]

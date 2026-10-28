@@ -1,0 +1,1279 @@
+[
+  {
+    "id": "ai-llm-next-token",
+    "title": "An AI writes one small piece at a time",
+    "hook": "Behind every fluent paragraph is a very simple loop.",
+    "coreIdea": "A large language model reads your text, splits it into small pieces called tokens (whole words or word fragments), and calculates which token is most plausible to come next. It picks one, adds it to the text, and repeats. Training on huge amounts of text taught it which continuations are likely in which situations. There is no lookup of a fact table at that moment; answers emerge from learned patterns, shaped by the words you supply.",
+    "whyItMatters": "Once you see it as continuation of patterns, you know why wording, examples and supplied documents change the answer so much.",
+    "example": "Illustrative: type 'The router's power light is' and the model ranks continuations such as 'off', 'blinking' or 'green' by how plausible they are in context. Add 'The customer says' or paste a device manual, and the ranking shifts.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Which question your team asks an AI would get a better answer if you pasted the relevant source text in first?",
+    "suggestedAction": "Ask an AI tool the same support question twice: once bare, once with the relevant policy paragraph pasted in. Compare the answers.",
+    "primaryTopic": "ai",
+    "secondaryTopics": [
+      "technology"
+    ],
+    "difficulty": "beginner",
+    "format": "explain-beginner",
+    "source": {
+      "type": "paper",
+      "title": "Attention Is All You Need",
+      "author": "Ashish Vaswani et al.",
+      "year": 2017,
+      "url": "https://arxiv.org/abs/1706.03762"
+    },
+    "relatedCardIds": [
+      "ai-hallucination-fluency",
+      "ai-context-window-lost-middle",
+      "ai-prompt-as-spec"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "reviewStatus": "verified",
+    "deeper": "The 2017 paper introduced the Transformer architecture that most modern language models build on. Real systems add more stages after pre-training, such as instruction tuning and feedback from people, so the model follows requests rather than just continuing text. The simple loop is still a useful picture: the model does not 'look up' truth, it produces likely text given what is in front of it. That is why grounding with trusted documents helps so much.",
+    "simpleExplanation": "An AI guesses the next small chunk of text, over and over, until it has written a whole answer.",
+    "keyConcepts": [
+      {
+        "label": "Text is split into tokens",
+        "terms": [
+          "token",
+          "piece",
+          "chunk",
+          "fragment",
+          "word"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "It predicts the next token repeatedly",
+        "terms": [
+          "predict",
+          "next",
+          "likely",
+          "plausible",
+          "repeat",
+          "loop"
+        ],
+        "minMatches": 2
+      },
+      {
+        "label": "Learned patterns, not a fact lookup",
+        "terms": [
+          "pattern",
+          "train",
+          "learn",
+          "not a database",
+          "lookup",
+          "look up"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "ai-context-window-lost-middle",
+    "title": "AI can have the answer in front of it and still miss it",
+    "hook": "A bigger prompt is not the same as a better-read prompt.",
+    "coreIdea": "A model can only consider the text inside its context window: your instructions, pasted documents and the conversation so far. Researchers studying long inputs found that models often used information near the beginning or end of the input better than information buried in the middle. This is called the lost-in-the-middle effect. Newer models may behave differently, but the practical lesson holds: where you place things, and how much else you include, affects what gets used.",
+    "whyItMatters": "Pasting an entire manual and trusting the AI to find the one relevant line can quietly fail.",
+    "example": "Illustrative: an agent is given a 60-page device troubleshooting guide plus ticket history. The one critical firmware caveat sits on page 31. The answer ignores it, while a prompt containing only the relevant section gets it right.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "What do your AI workflows paste in 'just in case' that may be burying the important part?",
+    "suggestedAction": "Take one long prompt your team uses, move the key instruction and the key evidence to the start or end, and trim the rest.",
+    "primaryTopic": "ai",
+    "secondaryTopics": [
+      "agentic-ai",
+      "technology"
+    ],
+    "difficulty": "intermediate",
+    "format": "ai-explained",
+    "source": {
+      "type": "paper",
+      "title": "Lost in the Middle: How Language Models Use Long Contexts",
+      "author": "Nelson F. Liu et al.",
+      "year": 2023,
+      "url": "https://arxiv.org/abs/2307.03172"
+    },
+    "relatedCardIds": [
+      "ai-rag-vs-finetune",
+      "agent-token-efficiency",
+      "ai-llm-next-token"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "reviewStatus": "verified",
+    "deeper": "The 2023 study tested question answering and retrieval-style tasks and reported weaker use of information placed mid-context. Model families change quickly, so test your own task rather than assuming. Practical habits: retrieve only the relevant passages instead of whole documents, put the question and key constraints where they cannot be missed, and measure whether answers change when you reorder the same material.",
+    "simpleExplanation": "If you give an AI a huge pile of text, it may pay less attention to the stuff in the middle.",
+    "keyConcepts": [
+      {
+        "label": "Context window is what the model can see",
+        "terms": [
+          "context",
+          "window",
+          "prompt",
+          "input",
+          "see"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Middle of long inputs can be under-used",
+        "terms": [
+          "middle",
+          "buried",
+          "start",
+          "end",
+          "beginning",
+          "position"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Trim and place key text deliberately",
+        "terms": [
+          "trim",
+          "relevant",
+          "shorter",
+          "place",
+          "retriev",
+          "only"
+        ],
+        "minMatches": 1
+      }
+    ],
+    "disputed": "Position effects vary by model and task; later models may show them less. Test on your own data."
+  },
+  {
+    "id": "ai-eval-before-ship",
+    "title": "Test the AI before your customers do",
+    "hook": "'It looked good in the demo' is not an evaluation.",
+    "coreIdea": "An evaluation, or eval, is a fixed set of realistic test cases with agreed definitions of a good answer, run every time you change the prompt, model or documents. Without one, you only remember the impressive examples. With one, you can say whether a change made things better or worse, and where it fails. Build it from real past cases, including ugly ones, and keep a held-back set you do not tune against.",
+    "whyItMatters": "AI behaviour changes quietly when prompts, models or source documents change, and you will not notice without a baseline.",
+    "example": "Illustrative: a team drafts a reply assistant and tries ten friendly tickets. It looks great. A 50-case eval from past tickets, including angry customers and missing information, shows it invents warranty terms in 8 of them.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "If a vendor swapped the AI model under your tool tomorrow, how would you know whether it got better or worse?",
+    "suggestedAction": "Pull 20 real past cases for one AI use, write what a good answer must include for each, and score the tool against them.",
+    "primaryTopic": "ai",
+    "secondaryTopics": [
+      "operational-excellence",
+      "support-leadership"
+    ],
+    "difficulty": "intermediate",
+    "format": "checklist",
+    "checklist": [
+      "Cases come from real past work, not invented easy ones.",
+      "Include hard, rare and sensitive cases on purpose.",
+      "Define in writing what a good and a failing answer look like.",
+      "Keep a held-out set you never tune the prompt against.",
+      "Re-run after every change to prompt, model or documents.",
+      "Have a person score a sample, not only another AI."
+    ],
+    "source": {
+      "type": "original",
+      "title": "Original synthesis of common AI evaluation practice"
+    },
+    "relatedCardIds": [
+      "ai-hallucination-fluency",
+      "dm-premortem",
+      "agent-compounding-errors"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "reviewStatus": "original-synthesis",
+    "deeper": "Using one AI to grade another can scale scoring, but it carries its own biases, so calibrate it against human judgement on a sample. Beware tuning the prompt until it passes your set: you have then trained on the test, and the score stops predicting real performance. Treat the eval like a living regression suite, adding every new failure from production as a new case.",
+    "simpleExplanation": "Before you trust an AI with real customers, make it take a fair exam and keep re-testing it.",
+    "keyConcepts": [
+      {
+        "label": "A fixed set of realistic test cases",
+        "terms": [
+          "test",
+          "case",
+          "set",
+          "exam",
+          "real",
+          "past"
+        ],
+        "minMatches": 2
+      },
+      {
+        "label": "Re-run after every change",
+        "terms": [
+          "rerun",
+          "re-run",
+          "change",
+          "baseline",
+          "regression",
+          "again"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Include hard cases and a held-out set",
+        "terms": [
+          "hard",
+          "edge",
+          "held",
+          "unseen",
+          "tricky"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "ai-prompt-as-spec",
+    "title": "A prompt is a spec, not a wish",
+    "hook": "If a new hire couldn't follow your instruction, a model probably can't either.",
+    "coreIdea": "Treat a prompt like a short specification you would hand a capable new colleague who knows nothing about your business. State the role and the goal, the inputs they will get, the rules and boundaries, what to do when unsure, and the exact output format. Add one or two examples of good output. Vague prompts get plausible, generic results; clear ones make the result checkable.",
+    "whyItMatters": "Most disappointing AI output traces back to unstated assumptions in the request, which are cheap to fix.",
+    "example": "Illustrative: 'Summarise this ticket' gives a generic paragraph. A spec version: 'You help L2 support. Input: ticket thread. Output: issue in one line, device model, steps already tried, what is missing. If a field is not in the thread, write NOT STATED.'",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Which instruction you give AI tools is something you would never accept as a brief for a human?",
+    "suggestedAction": "Rewrite one prompt you use often with these five parts: goal, inputs, rules, what to do when unsure, output format.",
+    "primaryTopic": "ai",
+    "secondaryTopics": [
+      "communication",
+      "productivity"
+    ],
+    "difficulty": "beginner",
+    "format": "framework",
+    "source": {
+      "type": "original",
+      "title": "Original synthesis of common prompt-writing practice"
+    },
+    "relatedCardIds": [
+      "pm-delegation-levels",
+      "ai-eval-before-ship",
+      "ai-llm-next-token"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "reviewStatus": "original-synthesis",
+    "deeper": "The 'what to do when unsure' line is the most skipped and the most valuable: without it the model fills gaps with plausible guesses. Specs are also testable, since you can check output against the stated format and rules. Longer is not automatically better; remove instructions that no longer earn their place, and keep the prompt under version control like any other work instruction.",
+    "simpleExplanation": "Tell the AI exactly what you want, what it gets, and what to do when it doesn't know.",
+    "keyConcepts": [
+      {
+        "label": "Write it like a brief for a new colleague",
+        "terms": [
+          "brief",
+          "new hire",
+          "colleague",
+          "context",
+          "spec",
+          "instruction"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "State rules, inputs and output format",
+        "terms": [
+          "format",
+          "rules",
+          "input",
+          "output",
+          "goal",
+          "constraint"
+        ],
+        "minMatches": 2
+      },
+      {
+        "label": "Say what to do when unsure",
+        "terms": [
+          "unsure",
+          "don't know",
+          "not sure",
+          "uncertain",
+          "missing",
+          "fallback"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "ai-automation-bias",
+    "title": "The mistake of trusting the tool because it's a tool",
+    "hook": "People catch fewer errors when a machine has already done the checking.",
+    "coreIdea": "Automation bias is the tendency to over-rely on automated suggestions, accepting them even when other evidence points the other way. It shows up in two ways: acting on a wrong recommendation, and failing to notice a problem because the system did not flag it. The common mistake is adding a 'human reviewer' and assuming the risk is handled. A reviewer who sees only the AI's answer, under time pressure, mostly confirms it.",
+    "whyItMatters": "A human-in-the-loop that just agrees with the AI adds cost without adding safety.",
+    "example": "Illustrative: an agent sees an AI-suggested 'resolved' tag and a drafted reply, and sends it. The draft quotes the wrong device model, visible in the ticket thread, but the agent never reread the thread.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "When did you last overrule an automated suggestion, and what made you do it?",
+    "suggestedAction": "For one AI-assisted workflow, have reviewers form their own answer before seeing the AI's, and track how often they disagree.",
+    "primaryTopic": "ai",
+    "secondaryTopics": [
+      "psychology",
+      "support-leadership"
+    ],
+    "difficulty": "intermediate",
+    "format": "common-mistake",
+    "source": {
+      "type": "paper",
+      "title": "Humans and Automation: Use, Misuse, Disuse, Abuse",
+      "author": "Raja Parasuraman & Victor Riley",
+      "year": 1997,
+      "url": "https://doi.org/10.1518/001872097778543886"
+    },
+    "relatedCardIds": [
+      "agent-hitl-checkpoints",
+      "ai-hallucination-fluency",
+      "ai-hallucination-human-confidence"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "reviewStatus": "verified",
+    "deeper": "Parasuraman and Riley discuss misuse as over-reliance and disuse as under-reliance; both are calibration failures. Ways to reduce over-reliance: show the evidence behind a suggestion, make the reviewer commit first, occasionally slip in known-wrong test items, and track override rates. An override rate of near zero for months is a warning, not a success. Training matters too: reviewers who have seen the system fail trust it more appropriately.",
+    "simpleExplanation": "We tend to believe the computer's answer without really checking it.",
+    "keyConcepts": [
+      {
+        "label": "Over-reliance on automated suggestions",
+        "terms": [
+          "over-rely",
+          "overrely",
+          "trust",
+          "accept",
+          "rely",
+          "defer"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "A reviewer can just rubber-stamp",
+        "terms": [
+          "rubber",
+          "confirm",
+          "agree",
+          "review",
+          "approve",
+          "stamp"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Make reviewers decide before seeing the AI",
+        "terms": [
+          "first",
+          "independent",
+          "before",
+          "evidence",
+          "override"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "ai-data-privacy",
+    "title": "'We only pasted it into a chatbot' is not a privacy plan",
+    "hook": "Most AI data leaks are not hacks. They are helpful people pasting things in.",
+    "coreIdea": "Myth: if the AI tool is popular and the question is quick, pasting customer details is harmless. Reality: where the text goes depends on the product, its settings and your contract. It may be stored, logged, reviewed or, on some plans, used for training. India's Digital Personal Data Protection Act, 2023 sets duties for handling personal data of individuals. The safe habit is minimise first: remove names, phone numbers, addresses and IDs, and use only approved tools.",
+    "whyItMatters": "A single pasted customer record can become a compliance and trust problem that is hard to undo.",
+    "example": "Illustrative: an engineer pastes a full ticket thread, with the customer's name, phone number and vehicle registration, into a free public chatbot to get a summary. The summary needed none of those details.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Does everyone on your team know which AI tools are approved for customer data, and which are not?",
+    "suggestedAction": "Write a three-line 'never paste' list (personal identifiers, credentials, unreleased product details) and share it with your team.",
+    "primaryTopic": "ai",
+    "secondaryTopics": [
+      "technology",
+      "support-leadership"
+    ],
+    "difficulty": "intermediate",
+    "format": "myth-vs-reality",
+    "source": {
+      "type": "primary",
+      "title": "The Digital Personal Data Protection Act, 2023",
+      "author": "Government of India",
+      "year": 2023
+    },
+    "relatedCardIds": [
+      "tech-build-vs-buy",
+      "ai-responsible-ai-tradeoffs",
+      "ai-rag-vs-finetune"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "reviewStatus": "needs-source-check",
+    "deeper": "This card is education, not legal advice. Which obligations apply depends on your role, your data and customer contracts, so involve your legal or security team for policy. Technically, the strongest controls are the boring ones: enterprise agreements that state data handling, redacting identifiers before text reaches a model, and access rules on what an AI can retrieve. Privacy is easier to design in than to retrofit.",
+    "simpleExplanation": "Don't paste private customer details into AI tools unless you know where that data goes.",
+    "keyConcepts": [
+      {
+        "label": "Pasted data may be stored or reused",
+        "terms": [
+          "stored",
+          "store",
+          "log",
+          "training",
+          "retain",
+          "leak",
+          "goes"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Minimise or remove personal details",
+        "terms": [
+          "remove",
+          "redact",
+          "minimi",
+          "anonymi",
+          "strip",
+          "mask"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Use approved tools and policy",
+        "terms": [
+          "approved",
+          "policy",
+          "contract",
+          "enterprise",
+          "rule",
+          "law",
+          "act"
+        ],
+        "minMatches": 1
+      }
+    ],
+    "misconceptions": [
+      {
+        "triggers": [
+          "always trains",
+          "always used for training",
+          "never stored"
+        ],
+        "note": "Handling differs by product, plan and settings. Check the specific terms rather than assuming either way."
+      }
+    ]
+  },
+  {
+    "id": "ai-responsible-ai-tradeoffs",
+    "title": "Every AI guardrail has a price",
+    "hook": "Make an assistant safer and you usually make it a little less useful.",
+    "coreIdea": "Responsible AI is mostly trade-offs, not slogans. An assistant tuned to never say anything wrong will refuse or hedge more often. One tuned to always help will sometimes answer when it should not. The same goes for speed versus review, privacy versus personalisation, and transparency versus simplicity. Good practice is to decide which error is costlier in this specific use, set the threshold on purpose, and write the choice down.",
+    "whyItMatters": "If you do not choose the trade-off deliberately, a vendor default or a loud complaint will choose it for you.",
+    "example": "Situation: a warranty assistant can either answer every question or say 'I'm not sure, passing to an agent' when evidence is thin. Wrong warranty promises cost refunds and trust; unnecessary hand-offs cost agent time. Which error do you accept more of, per case type?",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "For your AI use case, is a wrong answer or a non-answer more expensive, and have you ever said so out loud?",
+    "suggestedAction": "For one AI tool, write 'we accept more of ___ errors to avoid ___ errors because ___', then check whether current settings match it.",
+    "primaryTopic": "ai",
+    "secondaryTopics": [
+      "decision-making",
+      "leadership"
+    ],
+    "difficulty": "advanced",
+    "format": "what-would-you-do",
+    "source": {
+      "type": "original",
+      "title": "Original synthesis"
+    },
+    "relatedCardIds": [
+      "ai-eval-before-ship",
+      "agent-hitl-checkpoints",
+      "ai-data-privacy"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "reviewStatus": "original-synthesis",
+    "deeper": "The trade-off is the same one found in any classifier: reducing one kind of mistake usually raises the other, and the right balance depends on costs, which differ by case type. A refund over a small amount and a safety-relevant fault should not share one threshold. Revisit the choice when volumes, customers or models change, and let different case categories carry different settings.",
+    "simpleExplanation": "Making an AI safer often makes it more cautious, so you have to pick the balance on purpose.",
+    "keyConcepts": [
+      {
+        "label": "Safety and usefulness pull against each other",
+        "terms": [
+          "trade",
+          "balance",
+          "safer",
+          "useful",
+          "cautious",
+          "refuse",
+          "hedge"
+        ],
+        "minMatches": 2
+      },
+      {
+        "label": "Decide which error costs more",
+        "terms": [
+          "costlier",
+          "cost",
+          "wrong answer",
+          "error",
+          "worse",
+          "expensive"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Choose deliberately and document",
+        "terms": [
+          "deliberate",
+          "on purpose",
+          "write",
+          "document",
+          "decide",
+          "choose"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "ai-hallucination-human-confidence",
+    "title": "Humans hallucinate too — we just call it confidence",
+    "hook": "The way AI bluffs is uncomfortably familiar.",
+    "coreIdea": "A language model produces fluent text whether or not it has solid grounds, and nothing in its tone reveals which is which. People do something similar. Psychologists describe confabulation, where people give sincere, detailed explanations for choices or memories that turn out to be wrong, and they treat confidence as a poor guide to accuracy. Both cases teach the same rule: judge an answer by its evidence and track record, not its delivery.",
+    "whyItMatters": "The skills that help you doubt AI output are the same ones that protect you from a confident colleague or your own certainty.",
+    "example": "Illustrative: in an escalation call, one engineer states a root cause with total certainty and the team moves on. Later logs show a different cause. The AI-generated summary had been just as certain, and just as unchecked.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Whose confidence do you accept without evidence, a person or a tool, and why?",
+    "suggestedAction": "In your next incident discussion, ask 'what is that based on?' of every confident statement, including your own and the AI's.",
+    "primaryTopic": "ai",
+    "secondaryTopics": [
+      "psychology",
+      "decision-making"
+    ],
+    "difficulty": "intermediate",
+    "format": "connect-domains",
+    "bridge": {
+      "from": "ai",
+      "to": "psychology",
+      "insight": "Neither a model nor a person has a reliable built-in signal that separates 'I know' from 'it sounds right', so fluency and confidence should never replace evidence."
+    },
+    "source": {
+      "type": "original",
+      "title": "Original synthesis"
+    },
+    "relatedCardIds": [
+      "ai-hallucination-fluency",
+      "ai-automation-bias",
+      "dm-premortem"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "reviewStatus": "original-synthesis",
+    "deeper": "The analogy has limits. A model has no beliefs or intent, and its errors come from how it generates text, whereas human confabulation involves memory and self-explanation. Still, the managerial lesson transfers: calibrate on track record, ask for the basis of a claim, and be wary when certainty is high but the evidence is not shown. Good teams make 'I'm not sure' safe to say.",
+    "simpleExplanation": "Both AI and people can sound completely sure while being wrong, so check the evidence, not the tone.",
+    "keyConcepts": [
+      {
+        "label": "Fluency is not accuracy",
+        "terms": [
+          "fluent",
+          "sound",
+          "tone",
+          "confident",
+          "sure",
+          "polish"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "People also confabulate",
+        "terms": [
+          "people",
+          "human",
+          "confabulat",
+          "memory",
+          "explain",
+          "overconfiden"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Judge by evidence and track record",
+        "terms": [
+          "evidence",
+          "track record",
+          "basis",
+          "check",
+          "verify",
+          "proof"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "agent-workflow-vs-agent",
+    "title": "A workflow or an agent? Most tasks need the workflow",
+    "hook": "The word 'agent' is being stuck on things that are really fixed scripts. That's often fine.",
+    "coreIdea": "Anthropic's 'Building effective agents' (December 2024) separates two designs. In a workflow, code decides the steps in advance and the model fills in parts of them. In an agent, the model decides its own steps and which tools to use, looping until it finishes. Workflows are more predictable, cheaper and easier to test. Agents suit open-ended problems where the steps cannot be known beforehand, at the cost of control.",
+    "whyItMatters": "Choosing the more autonomous design when a fixed sequence would do adds cost, risk and unpredictability for no benefit.",
+    "example": "Illustrative: classifying a ticket, fetching the customer's device record, then drafting a reply is a workflow: the same steps every time. Diagnosing an unfamiliar intermittent fault across logs, manuals and past cases may need an agent choosing what to look at next.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Which of your 'AI agent' ideas is really a fixed sequence of steps you could already write down?",
+    "suggestedAction": "Pick one automation idea, list its steps, and mark each as 'always the same' or 'depends on what we find'.",
+    "primaryTopic": "agentic-ai",
+    "secondaryTopics": [
+      "ai",
+      "technology"
+    ],
+    "difficulty": "intermediate",
+    "format": "comparison",
+    "source": {
+      "type": "article",
+      "title": "Building effective agents",
+      "author": "Anthropic",
+      "year": 2024
+    },
+    "relatedCardIds": [
+      "agent-hitl-checkpoints",
+      "agent-compounding-errors",
+      "pm-delegation-levels"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "reviewStatus": "verified",
+    "deeper": "Anthropic's guidance recommends starting with the simplest solution and adding autonomy only when it measurably improves results. The two are also not strict opposites: a workflow can contain a step where a model has some freedom. As autonomy grows, so should testing, logging and limits on what actions the system may take without approval. Whichever you choose, log each step so a wrong outcome can be traced afterwards.",
+    "simpleExplanation": "A workflow follows a recipe you wrote; an agent decides its own steps as it goes.",
+    "keyConcepts": [
+      {
+        "label": "Workflow: code sets the steps",
+        "terms": [
+          "workflow",
+          "fixed",
+          "predefined",
+          "recipe",
+          "script",
+          "predictable",
+          "code"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Agent: the model chooses steps and tools",
+        "terms": [
+          "agent",
+          "decides",
+          "chooses",
+          "tools",
+          "loop",
+          "autonom"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Prefer the simplest that works",
+        "terms": [
+          "simple",
+          "cheaper",
+          "control",
+          "start",
+          "only when",
+          "risk"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "agent-model-routing",
+    "title": "Don't send every question to your most expensive AI",
+    "hook": "A cheaper model for easy work is a design choice, not a compromise.",
+    "coreIdea": "Model routing means sending each task to the model that fits it. Larger models tend to be slower and costlier per request; smaller ones are quicker and cheaper but may struggle with hard reasoning. A simple router uses a small model or rules to sort requests: easy, repetitive ones go to the small model, ambiguous or high-stakes ones to the larger model or a human. You test the split instead of assuming it.",
+    "whyItMatters": "Running everything through your strongest model can make a workable tool too slow and too expensive to scale.",
+    "example": "Illustrative: a support assistant gets thousands of messages a day. Tagging language, product line and urgency goes to a small model; drafting replies for tricky multi-device faults goes to a larger one; refund decisions go to a person.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Which steps in your AI workflow are simple enough that a cheaper, faster model would do equally well?",
+    "suggestedAction": "List the steps of one AI workflow and label each 'simple', 'needs reasoning' or 'needs a human'. Test the simple ones on a smaller model.",
+    "primaryTopic": "agentic-ai",
+    "secondaryTopics": [
+      "ai",
+      "operational-excellence"
+    ],
+    "difficulty": "intermediate",
+    "format": "big-idea",
+    "source": {
+      "type": "original",
+      "title": "Original synthesis of common model-routing practice"
+    },
+    "relatedCardIds": [
+      "agent-token-efficiency",
+      "agent-workflow-vs-agent",
+      "ai-eval-before-ship"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "reviewStatus": "original-synthesis",
+    "deeper": "Routing only pays off if you can measure quality per route, which brings you back to evaluation sets. The router itself can misroute: a hard question sent to a small model fails quietly. Common safeguards are letting the small model say 'escalate' when unsure, sampling its outputs for review, and re-checking the split when models or prices change. Keep routing rules simple at first.",
+    "simpleExplanation": "Use a cheap, fast AI for easy jobs and save the expensive one for hard jobs.",
+    "keyConcepts": [
+      {
+        "label": "Match the model to the task",
+        "terms": [
+          "match",
+          "right model",
+          "fit",
+          "easy",
+          "hard",
+          "small",
+          "larger"
+        ],
+        "minMatches": 2
+      },
+      {
+        "label": "Cost and speed trade off with ability",
+        "terms": [
+          "cost",
+          "cheap",
+          "expensive",
+          "fast",
+          "slow",
+          "speed"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Test routes and escalate when unsure",
+        "terms": [
+          "test",
+          "measure",
+          "escalate",
+          "evaluate",
+          "sample",
+          "unsure"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "agent-token-efficiency",
+    "title": "Giving an AI less can improve what you get",
+    "hook": "More context feels safer. It's often slower, dearer and worse.",
+    "coreIdea": "Models read and write in tokens, and most AI services charge by tokens and take longer the more there are. An agent that loops over many steps re-sends its growing history each time, so wasteful context multiplies. Counterintuitively, trimming the input to what is relevant, summarising old steps and asking for concise output can cut cost and delay without hurting results, and sometimes improves answers because there is less noise to wade through.",
+    "whyItMatters": "A prototype that is affordable on ten tickets can become unaffordable or sluggish on ten thousand.",
+    "example": "Illustrative: an agent attaches a customer's entire two-year ticket history to every step of a diagnosis. Passing only the last three related cases and a short summary of the rest makes each step faster and keeps the model focused on what matters.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "What does your AI tool receive on every call that it rarely needs?",
+    "suggestedAction": "Ask your tool owner or vendor for the average tokens per request on one workflow, then try halving the input and compare the answers.",
+    "primaryTopic": "agentic-ai",
+    "secondaryTopics": [
+      "ai",
+      "technology"
+    ],
+    "difficulty": "intermediate",
+    "format": "counterintuitive",
+    "source": {
+      "type": "original",
+      "title": "Original synthesis; see also Liu et al. (2023) on long-context use"
+    },
+    "relatedCardIds": [
+      "ai-context-window-lost-middle",
+      "agent-model-routing",
+      "ai-rag-vs-finetune"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "reviewStatus": "original-synthesis",
+    "deeper": "Cost per token and context limits differ across providers and change often, so use your own numbers. Common savers: retrieve only relevant passages, summarise earlier steps, cap output length, and cache static instructions where the provider supports it. Trimming is a hypothesis to test against your eval set, not a rule: cutting something the model needed will lower quality. Measure before and after.",
+    "simpleExplanation": "AI reads text in small pieces and charges for each, so sending only what matters is faster and cheaper.",
+    "keyConcepts": [
+      {
+        "label": "Tokens drive cost and delay",
+        "terms": [
+          "token",
+          "cost",
+          "charge",
+          "slow",
+          "latency",
+          "price"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Agent loops multiply the waste",
+        "terms": [
+          "loop",
+          "repeat",
+          "each step",
+          "multipl",
+          "history",
+          "grow"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Trim to relevant context",
+        "terms": [
+          "trim",
+          "relevant",
+          "less",
+          "summar",
+          "concise",
+          "shorter",
+          "noise"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "agent-compounding-errors",
+    "title": "Ten good steps can still add up to a failing agent",
+    "hook": "Reliability multiplies, and multiplication is harsh.",
+    "coreIdea": "If each step in a chain works with probability p, the chain works end-to-end with probability p multiplied by itself once per step, assuming errors are independent. A step that is right 95% of the time sounds excellent. Ten such steps in a row succeed about 60% of the time (0.95 to the power 10). At 99% per step it is about 90%; at 90% it is about 35%. Long agent chains need fewer steps, checks between them, or both.",
+    "whyItMatters": "A demo of one impressive step tells you little about a ten-step process running unattended.",
+    "example": "Illustrative arithmetic, not a measured benchmark: an agent triages, looks up the device, checks warranty, drafts, tags, and routes a ticket across 10 steps at 95% per step. About 4 in 10 cases would contain at least one error somewhere.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "How many steps does your longest automated process have, and where does a wrong early step go unnoticed?",
+    "suggestedAction": "Count the steps in one agent workflow and add a cheap automatic check after the riskiest early step.",
+    "primaryTopic": "agentic-ai",
+    "secondaryTopics": [
+      "operational-excellence",
+      "mental-models"
+    ],
+    "difficulty": "intermediate",
+    "format": "mental-model",
+    "source": {
+      "type": "original",
+      "title": "Standard probability arithmetic, illustrative"
+    },
+    "relatedCardIds": [
+      "agent-workflow-vs-agent",
+      "agent-hitl-checkpoints",
+      "ai-eval-before-ship"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "reviewStatus": "original-synthesis",
+    "deeper": "Real errors are not always independent: one bad early step can poison everything after it, making things worse than the simple product, while checks that catch and retry can make things better. That is why the design levers are shorter chains, validation between steps, easy recovery from mistakes and human review placed at the costly steps, rather than chasing a perfect single step.",
+    "simpleExplanation": "If every step has a small chance of going wrong, a long chain of steps often goes wrong somewhere.",
+    "keyConcepts": [
+      {
+        "label": "Per-step reliability multiplies",
+        "terms": [
+          "multipl",
+          "compound",
+          "product",
+          "chain",
+          "each step",
+          "per step",
+          "power"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Long chains degrade quickly",
+        "terms": [
+          "long",
+          "many steps",
+          "ten",
+          "drop",
+          "lower",
+          "fail",
+          "60"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Add checks or shorten the chain",
+        "terms": [
+          "check",
+          "validat",
+          "shorter",
+          "fewer",
+          "review",
+          "retry"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "tech-technical-debt",
+    "title": "Technical debt was a metaphor about speed, not sloppiness",
+    "hook": "Its inventor meant something more precise than 'messy code'.",
+    "coreIdea": "Ward Cunningham used the debt metaphor in a 1992 experience report on a financial software project. Shipping code that reflects your current, incomplete understanding is like borrowing: you get speed now. The interest is the extra effort every later change costs while that gap remains. Paying it down means refactoring once you learn more. The idea was never an excuse for knowingly poor work; it was about being honest that understanding grows.",
+    "whyItMatters": "Teams that never repay or even track the debt find every new feature slower than the last.",
+    "example": "Illustrative: a support-tools team hard-codes escalation rules for one product to launch in a week. Two quarters and four products later, each new rule needs edits in six places, and nobody dares touch it.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Which shortcut in your tools or processes are you still paying interest on?",
+    "suggestedAction": "List three shortcuts your team took on purpose and note which one costs the most time each month.",
+    "primaryTopic": "technology",
+    "secondaryTopics": [
+      "operational-excellence",
+      "decision-making"
+    ],
+    "difficulty": "intermediate",
+    "format": "historical-lesson",
+    "source": {
+      "type": "paper",
+      "title": "The WyCash Portfolio Management System (OOPSLA '92 experience report)",
+      "author": "Ward Cunningham",
+      "year": 1992
+    },
+    "relatedCardIds": [
+      "tech-platform-thinking",
+      "dm-premortem",
+      "tech-observability"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "reviewStatus": "verified",
+    "deeper": "The term is now stretched to cover almost any unloved system, which blurs the idea. A useful split: deliberate debt taken knowingly for speed, and accidental debt from not knowing better yet. Both need a visible list and regular time to repay. Process debt counts too: undocumented workarounds, manual steps and stale runbooks slow teams the same way. Naming the debt openly makes the trade-off a decision rather than a surprise.",
+    "simpleExplanation": "Taking a shortcut now is like borrowing, and you pay interest in slower work later until you fix it.",
+    "keyConcepts": [
+      {
+        "label": "A shortcut is borrowing for speed now",
+        "terms": [
+          "borrow",
+          "shortcut",
+          "speed",
+          "quick",
+          "loan",
+          "debt"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Interest is the extra effort on later changes",
+        "terms": [
+          "interest",
+          "slower",
+          "cost",
+          "later",
+          "extra effort",
+          "every change"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Repay by refactoring as you learn",
+        "terms": [
+          "repay",
+          "refactor",
+          "fix",
+          "clean",
+          "pay down",
+          "learn"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "tech-build-vs-buy",
+    "title": "Build or buy your AI support tooling?",
+    "hook": "Both sides are right about something. The question is what you're good at.",
+    "coreIdea": "Building gives control, tight fit with your own data and workflows, and no dependence on a vendor's roadmap, but you carry the engineering, security and maintenance cost permanently. Buying gets you working features sooner and shares the maintenance, but you adapt to the vendor's design, pricing and data terms. Many teams do both: buy commodity parts and build the thin layer that encodes how your business actually works.",
+    "whyItMatters": "The wrong choice is expensive to reverse once your processes and data are wired into it.",
+    "example": "Illustrative: an Indian hardware-support team needs ticket summarisation, device-log analysis and a reply assistant. Summarisation is a common feature in most helpdesk products. Log analysis tied to their own device telemetry is unlike anything on offer.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Which part of your support workflow is truly specific to your business, and which part would a competitor's tool also need?",
+    "suggestedAction": "For one AI idea, write what a vendor would need to change to fit you, and what you would have to maintain if you built it.",
+    "primaryTopic": "technology",
+    "secondaryTopics": [
+      "ai",
+      "decision-making",
+      "support-leadership"
+    ],
+    "difficulty": "advanced",
+    "format": "two-viewpoints",
+    "source": {
+      "type": "original",
+      "title": "Original synthesis; reasoning, not an empirical finding"
+    },
+    "relatedCardIds": [
+      "tech-technical-debt",
+      "ai-data-privacy",
+      "tech-platform-thinking"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "reviewStatus": "original-synthesis",
+    "contrarian": {
+      "question": "Should a mid-sized support organisation build its own AI tooling rather than buy it?",
+      "established": [
+        "Building means owning ongoing maintenance, security and model changes, not just the first release.",
+        "Vendor tools ship common features faster but constrain customisation, pricing and data handling to the vendor's terms."
+      ],
+      "positions": [
+        {
+          "label": "Buy by default",
+          "claim": "For non-differentiating capabilities, buy and spend your engineers' time elsewhere.",
+          "evidence": [
+            "Common capabilities such as summarisation and drafting are widely available in existing products.",
+            "Maintenance and model upgrades are shared across the vendor's customers."
+          ],
+          "interpretation": "Unless a capability gives you an edge, owning it adds cost and distraction without advantage."
+        },
+        {
+          "label": "Build what is distinctive",
+          "claim": "Where your data and workflows are unusual, a tailored build can fit better and avoid lock-in.",
+          "evidence": [
+            "Generic tools do not know your product telemetry, device logs or escalation rules.",
+            "Vendor terms on pricing, data use and roadmap can change after you depend on them."
+          ],
+          "interpretation": "The more a capability depends on proprietary context, the more building (or deeply customising) pays off."
+        }
+      ],
+      "opinion": "Editorial view: buy the commodity, build the thin differentiating layer, and keep your data and prompts portable so either choice is reversible.",
+      "unresolved": [
+        "How quickly today's custom builds become commodity features.",
+        "How vendor pricing and terms will evolve as customers depend on them."
+      ],
+      "evidenceBalance": "balanced",
+      "balanceNote": "This is a judgement that depends on your situation. There is no study settling it, so the honest answer is 'it depends on what is distinctive about you'."
+    },
+    "deeper": "A good test is whether the capability differentiates you to customers. Also price in the hidden costs on each side: build requires people who can maintain and evaluate it, and buy requires someone to manage the vendor, contract terms and exit plan. Pilot a bought tool on a small slice first, and keep an evaluation set so you can compare options fairly.",
+    "simpleExplanation": "Buy what everyone needs; build only the parts that make your business special.",
+    "keyConcepts": [
+      {
+        "label": "Build gives control but you maintain it",
+        "terms": [
+          "control",
+          "maintain",
+          "own",
+          "custom",
+          "fit",
+          "engineer"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Buy is faster but you adapt to the vendor",
+        "terms": [
+          "vendor",
+          "faster",
+          "quick",
+          "lock-in",
+          "terms",
+          "adapt",
+          "buy"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Build only what is distinctive",
+        "terms": [
+          "distinct",
+          "differentiat",
+          "commodity",
+          "core",
+          "unique",
+          "special"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "tech-observability",
+    "title": "You can't fix what you can't see",
+    "hook": "A dashboard that stays green while customers suffer is worse than none.",
+    "coreIdea": "Observability is the ability to understand what a system is doing from the outside, using the signals it produces: logs, metrics and traces. Google's Site Reliability Engineering book suggests watching four golden signals for a service: latency, traffic, errors and saturation. The point is to ask new questions about a failure you did not predict, not just to alert on known ones. Good signals describe what the user experiences, not only whether servers are up.",
+    "whyItMatters": "Without usable signals, outages are discovered by customers, and diagnosing them becomes guesswork.",
+    "example": "Illustrative: a device-provisioning service shows 100% of servers healthy, but customers report activations hanging. Only a metric for 'time from request to device active' reveals that a downstream step is queueing for twenty minutes.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "If your most important customer journey broke at 2 a.m., which signal would tell you before the customer did?",
+    "suggestedAction": "Pick one critical customer journey and write down the one number that best shows whether it is working for the customer.",
+    "primaryTopic": "technology",
+    "secondaryTopics": [
+      "operational-excellence",
+      "support-leadership"
+    ],
+    "difficulty": "intermediate",
+    "format": "big-idea",
+    "source": {
+      "type": "book",
+      "title": "Site Reliability Engineering: How Google Runs Production Systems",
+      "author": "Betsy Beyer et al. (eds.)",
+      "year": 2016
+    },
+    "relatedCardIds": [
+      "sup-goodhart-sla",
+      "tech-technical-debt",
+      "agent-compounding-errors"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "reviewStatus": "verified",
+    "deeper": "Monitoring tells you when known things break; observability helps you investigate unknown ones. Avoid alert floods: if every alert is urgent, none are. The SRE book argues for alerts that need human action and that relate to symptoms users feel. The same thinking applies to AI agents: log what an agent saw, decided and did, so a bad outcome can be reconstructed afterwards.",
+    "simpleExplanation": "Make your systems tell you what is going on, so you can find problems before customers do.",
+    "keyConcepts": [
+      {
+        "label": "Logs, metrics and traces are the signals",
+        "terms": [
+          "log",
+          "metric",
+          "trace",
+          "signal",
+          "telemetry",
+          "data"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Watch what the user experiences",
+        "terms": [
+          "user",
+          "customer",
+          "experience",
+          "symptom",
+          "latency",
+          "errors"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Helps diagnose unexpected failures",
+        "terms": [
+          "diagnos",
+          "unknown",
+          "unexpected",
+          "investigate",
+          "root cause",
+          "debug"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "tech-platform-thinking",
+    "title": "Stop solving the same problem for every team",
+    "hook": "A platform is what you build when the tenth request looks like the first nine.",
+    "coreIdea": "Platform thinking means noticing that several teams keep needing the same capability, and building it once as a shared service others can use without asking you for help each time. A good platform has clear interfaces, documentation and an owner, and treats other teams as its customers. The risk is building one too early, for needs you only imagine, or too rigidly, so teams work around it. Start from repeated real demand.",
+    "whyItMatters": "Without shared building blocks, every team rebuilds the same thing slightly differently, and improvements never spread.",
+    "example": "Illustrative: three support squads each build their own script to pull device health data. Different formats, different bugs. One shared 'device health' service, with a simple interface, lets each squad build only the parts that are unique to them.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "What capability have two or more teams around you built separately in the last year?",
+    "suggestedAction": "Ask three teams which internal request they make again and again, and see if one shared answer would serve all of them.",
+    "primaryTopic": "technology",
+    "secondaryTopics": [
+      "leadership",
+      "operational-excellence"
+    ],
+    "difficulty": "advanced",
+    "format": "big-idea",
+    "source": {
+      "type": "original",
+      "title": "Original synthesis"
+    },
+    "relatedCardIds": [
+      "tech-conways-law",
+      "tech-build-vs-buy",
+      "tech-technical-debt"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "reviewStatus": "original-synthesis",
+    "deeper": "A platform succeeds only if the teams actually adopt it, so measure use and listen to complaints. A common rule of thumb is to wait until you have seen the need in about three places before generalising, because the first two cases rarely reveal what should be shared. Keep the platform's scope small and let teams extend it, or it becomes a bottleneck that slows everyone.",
+    "simpleExplanation": "If lots of teams need the same thing, build it once as a service they can all use.",
+    "keyConcepts": [
+      {
+        "label": "Build shared capability once",
+        "terms": [
+          "shared",
+          "once",
+          "reuse",
+          "common",
+          "same",
+          "service"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Treat other teams as customers",
+        "terms": [
+          "customer",
+          "interface",
+          "document",
+          "adopt",
+          "self-serve",
+          "owner"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Start from repeated real demand",
+        "terms": [
+          "repeated",
+          "real demand",
+          "early",
+          "premature",
+          "evidence",
+          "several teams"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "tech-conways-law",
+    "title": "Your software will look like your org chart",
+    "hook": "A 1968 observation still explains why systems are shaped the way they are.",
+    "coreIdea": "Melvin Conway argued that organisations designing a system tend to produce a design that mirrors their own communication structure. If two teams rarely talk, the interface between their parts will be awkward. If support, engineering and product sit in separate silos, the customer journey will show those seams. Leaders can use this deliberately: shape teams around the outcome you want, because the architecture tends to follow.",
+    "whyItMatters": "If your customers experience a fragmented product, look at how your teams are divided before blaming the technology.",
+    "example": "Illustrative: a company has separate hardware, firmware and app teams that talk mainly through tickets. Customers get three different 'device offline' messages from three systems, none aware of the others.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Where does your customer experience change shape in the same place your org chart does?",
+    "suggestedAction": "Map one customer journey against the teams it passes through and mark every hand-off where context is lost.",
+    "primaryTopic": "technology",
+    "secondaryTopics": [
+      "leadership",
+      "operational-excellence"
+    ],
+    "difficulty": "advanced",
+    "format": "quote-interpretation",
+    "quote": {
+      "text": "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations.",
+      "by": "Melvin E. Conway, 'How Do Committees Invent?' (1968)",
+      "note": "Often paraphrased as 'Conway's law'. The popular phrase 'you ship your org chart' is a paraphrase, not Conway's words, and the ellipsis here shortens his original sentence."
+    },
+    "source": {
+      "type": "paper",
+      "title": "How Do Committees Invent?",
+      "author": "Melvin E. Conway",
+      "year": 1968
+    },
+    "relatedCardIds": [
+      "tech-platform-thinking",
+      "connect-portfolio-team",
+      "tech-technical-debt"
+    ],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-28",
+    "reviewStatus": "verified",
+    "deeper": "Conway's law is an observation, not a physical law, and it describes a tendency. Teams sometimes apply it in reverse, called the inverse Conway manoeuvre: restructure teams to encourage the architecture you want. Keep in mind that changing org structure is costly and disruptive, so use the law first as a diagnostic: where the product feels disjointed, ask where people do not talk.",
+    "simpleExplanation": "The way your teams are split up shows up in how your product is built.",
+    "keyConcepts": [
+      {
+        "label": "Designs copy communication structure",
+        "terms": [
+          "copy",
+          "mirror",
+          "reflect",
+          "communication",
+          "org chart",
+          "structure"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Silos create seams in the product",
+        "terms": [
+          "silo",
+          "seam",
+          "hand-off",
+          "handoff",
+          "fragment",
+          "disjoint"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Use it as a diagnostic or design lever",
+        "terms": [
+          "diagnos",
+          "reorgani",
+          "restructure",
+          "team",
+          "deliberate",
+          "design"
+        ],
+        "minMatches": 1
+      }
+    ]
+  }
+]

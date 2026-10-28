@@ -1,1 +1,157 @@
-[]
+[
+  {
+    "id": "gym-repeat-escalation-miss",
+    "title": "The third incomplete escalation",
+    "scenario": "Illustrative. Priya, one of your strongest agents on customer empathy, has sent engineering three escalations this month that were missing device logs. Engineering bounced each one back, adding a day to resolution. The engineering manager has messaged you: 'Can you sort out your team's escalation quality?' Priya is also handling the largest share of your hardest accounts.",
+    "choices": [
+      { "id": "a", "label": "Talk to Priya privately today, show her the three cases, and agree a fix", "gains": ["Fast, direct, uses specific evidence", "Shows engineering you acted"], "costs": ["Treats it as a person problem before checking the process", "Priya may feel singled out if others make the same miss"], "likelyOutcome": "Priya's next escalations improve; if the cause was the process, the same gap appears with someone else in a few weeks." },
+      { "id": "b", "label": "Pull the last 30 escalations from the whole team and check how many miss logs", "gains": ["Tests whether it's a person or a system issue", "Gives you a baseline to show engineering"], "costs": ["Takes an hour or two you may not have", "Engineering waits longer for a visible response"], "likelyOutcome": "You learn whether the template, tooling or training is the real gap — often it's a mix." },
+      { "id": "c", "label": "Add a mandatory 'logs attached' field to the escalation form", "gains": ["Prevents the specific failure for everyone", "No awkward conversation"], "costs": ["Checkbox may be ticked without logs actually attached", "Doesn't address why logs were missed"], "likelyOutcome": "Compliance rises; quality improves only if someone samples whether the logs are the right ones." },
+      { "id": "d", "label": "Reply to the engineering manager first, then decide", "gains": ["Keeps the peer relationship healthy", "Buys time to look at evidence"], "costs": ["No change for customers yet", "Can read as deflection if not followed by action"], "likelyOutcome": "Tension drops; outcome depends on what you do next." }
+    ],
+    "relevantConcepts": [
+      { "name": "Skill, will or system?", "explanation": "Repeated mistakes usually come from missing skill, low motivation, or a process that makes the mistake easy. The fix differs for each.", "cardId": "pm-repeated-mistakes" },
+      { "name": "Fix the process before blaming the person", "explanation": "If several capable people could make the same miss, the process is part of the cause.", "cardId": "lead-fix-process-not-person" },
+      { "name": "Escalation quality", "explanation": "A good escalation lets engineering act within minutes: reproduction steps, logs, impact, and what has been tried.", "cardId": "sup-escalation-quality" }
+    ],
+    "debrief": "There's no single right move. Strong managers often combine B and A: check whether it's a pattern, then coach with specific cases — and tell the engineering manager what they're doing in the meantime (D). Option C helps only if the form change is paired with sampling.",
+    "reflectionQuestion": "When you see a repeated mistake, what is your default first assumption — person or process?",
+    "difficulty": "intermediate",
+    "topic": "people-management"
+  },
+  {
+    "id": "gym-market-drop",
+    "title": "Your portfolio is down 18%",
+    "scenario": "Illustrative, educational only. You invest monthly in a diversified equity index fund for a goal about twelve years away. After a broad market fall, your statement shows the investment is 18% below its recent peak. Colleagues are discussing moving to fixed deposits 'until things settle'. Nothing about your goal or income has changed.",
+    "choices": [
+      { "id": "a", "label": "Pause the monthly investment until the market recovers", "gains": ["Feels safer immediately", "Reduces short-term anxiety"], "costs": ["You stop buying when prices are lower", "Requires a second decision about when to restart, which is hard to time"], "likelyOutcome": "Many people restart only after prices have already risen." },
+      { "id": "b", "label": "Sell and move to fixed deposits", "gains": ["Removes further equity volatility", "Certainty of the FD rate"], "costs": ["Locks in the paper loss", "May leave the long-term goal underfunded after inflation"], "likelyOutcome": "Emotionally calmer, but the plan changes because of discomfort rather than new information." },
+      { "id": "c", "label": "Continue as planned and check whether your allocation still matches your plan", "gains": ["Keeps the original logic intact", "Rebalancing is a rule, not a prediction"], "costs": ["Requires tolerating further possible falls", "Feels uncomfortable"], "likelyOutcome": "The decision is consistent with the plan; outcome still depends on markets, which nobody can predict." },
+      { "id": "d", "label": "Reassess whether your risk capacity has changed (job, goal date, emergency fund)", "gains": ["Separates facts about you from feelings about prices", "May reveal a real reason to adjust"], "costs": ["Takes time and honesty", "Can become a rationalisation for selling"], "likelyOutcome": "If capacity hasn't changed, you return to C with more confidence; if it has, a measured change is reasonable." }
+    ],
+    "relevantConcepts": [
+      { "name": "Loss aversion", "explanation": "Falls hurt more than equal gains please, which pushes towards selling.", "cardId": "bf-loss-aversion-panic" },
+      { "name": "Risk tolerance vs risk capacity", "explanation": "Feeling unable to bear risk is different from being financially unable to.", "cardId": "pf-risk-tolerance-vs-capacity" },
+      { "name": "Anchoring on a price", "explanation": "The 'recent peak' is a reference point, not a fact about future value.", "cardId": "bf-anchoring-purchase-price" }
+    ],
+    "debrief": "This is not financial advice. The useful distinction is between changes in your situation (capacity, goal date, cash needs) and changes in how the number feels. D followed by C is the most evidence-led path for many long-horizon investors; B or A can be reasonable if your capacity genuinely changed.",
+    "reflectionQuestion": "What did you decide your sell conditions were before this fall — and did you write them down?",
+    "difficulty": "beginner",
+    "topic": "behavioral-finance"
+  },
+  {
+    "id": "gym-ai-agent-refunds",
+    "title": "Let the AI agent issue refunds?",
+    "scenario": "Illustrative. Your team piloted an AI agent that drafts responses to billing tickets. Most drafts were accepted unchanged during the pilot, and handle time fell. Leadership asks whether the agent can now issue small refunds directly, without human approval, to cut response times further.",
+    "choices": [
+      { "id": "a", "label": "Allow it for refunds under a low threshold, with daily sampling", "gains": ["Faster resolution for simple cases", "Limits blast radius"], "costs": ["Errors reach customers before review", "Sampling must actually happen"], "likelyOutcome": "Works if the cases are well-understood and someone owns the sample review." },
+      { "id": "b", "label": "Keep human approval on all refunds", "gains": ["No unreviewed financial actions", "Simple to explain"], "costs": ["Approvals may become rubber stamps", "Slower for customers"], "likelyOutcome": "Safe on paper; real safety depends on whether approvers read the evidence." },
+      { "id": "c", "label": "Run it in shadow mode first: the agent decides, a human still acts, and you compare", "gains": ["Measures agreement before risk", "Builds evidence for leadership"], "costs": ["Delays the benefit by weeks", "Needs tracking effort"], "likelyOutcome": "You get real data on where it disagrees with humans — usually the edge cases." },
+      { "id": "d", "label": "Decline: refunds stay manual indefinitely", "gains": ["Zero automation risk on money"], "costs": ["Leaves value on the table", "Leadership may route around support"], "likelyOutcome": "Risk is avoided, but the question returns with less of your input." }
+    ],
+    "relevantConcepts": [
+      { "name": "Human-in-the-loop placement", "explanation": "Put review where actions are irreversible or costly, and show reviewers the evidence.", "cardId": "agent-hitl-checkpoints" },
+      { "name": "One-way vs two-way doors", "explanation": "Refunds are partly reversible; promises to customers often aren't.", "cardId": "dm-one-way-two-way-doors" },
+      { "name": "Automation bias", "explanation": "People tend to over-trust automated outputs, especially when tired or rushed.", "cardId": "ai-automation-bias" }
+    ],
+    "debrief": "C then A is a common, evidence-building path. B feels safe but can create rubber-stamping. D is defensible for high-value or regulated cases. The key question isn't 'AI or not' but 'what is the cost of an error and how quickly would we notice?'",
+    "reflectionQuestion": "What evidence would you need to see before giving any system — human or AI — more autonomy?",
+    "difficulty": "intermediate",
+    "topic": "agentic-ai"
+  },
+  {
+    "id": "gym-sla-green-csat-red",
+    "title": "SLA is green, customers are unhappy",
+    "scenario": "Illustrative. Your first-response SLA has been above target for two months. Customer satisfaction on the same queue has dropped. Your team leads say they're doing exactly what was asked. Your director wants a plan by Friday.",
+    "choices": [
+      { "id": "a", "label": "Add a resolution-time target alongside first response", "gains": ["Measures what customers feel more directly", "Quick to announce"], "costs": ["A new target can be gamed too (e.g. premature closures)", "Doesn't explain the drop"], "likelyOutcome": "Some improvement; watch reopen rates for the side effect." },
+      { "id": "b", "label": "Read 20 'compliant' cases end-to-end before changing anything", "gains": ["Finds the actual behaviour behind the numbers", "Gives concrete coaching examples"], "costs": ["Slower to show action", "Small sample"], "likelyOutcome": "Often reveals templated first replies or hand-off gaps." },
+      { "id": "c", "label": "Remove the first-response SLA from team-lead scorecards", "gains": ["Removes the gaming incentive"], "costs": ["Contractual SLAs still exist", "Can feel like a reversal"], "likelyOutcome": "Behaviour shifts; risk of real response delays if nothing replaces it." }
+    ],
+    "relevantConcepts": [
+      { "name": "Goodhart's law", "explanation": "A metric that becomes a target can stop measuring what you care about.", "cardId": "sup-goodhart-sla" },
+      { "name": "Map vs territory", "explanation": "Dashboards are simplified maps of what customers experience.", "cardId": "mm-map-territory" },
+      { "name": "Signal vs noise", "explanation": "Check whether a CSAT change is a real shift before reacting.", "cardId": "sup-signal-vs-noise" }
+    ],
+    "debrief": "B first is usually the strongest move — you can't fix behaviour you haven't looked at. A and C are both reasonable follow-ups, ideally as paired metrics (speed + quality) rather than swapping one target for another.",
+    "reflectionQuestion": "Which of your metrics have you not checked against raw cases in the last month?",
+    "difficulty": "intermediate",
+    "topic": "support-leadership"
+  },
+  {
+    "id": "gym-high-performer-promotion",
+    "title": "Your best engineer wants to manage",
+    "scenario": "Illustrative. Arjun is your most technically capable support engineer. He's asked to become a team lead. He's excellent with complex cases but sometimes impatient with colleagues who ask basic questions. A lead role is open now.",
+    "choices": [
+      { "id": "a", "label": "Promote him now and support him with coaching", "gains": ["Rewards and retains him", "Fills the role quickly"], "costs": ["You may lose your best technical resolver", "Impatience can hurt a team"], "likelyOutcome": "Can work well if he wants the people work, not just the title." },
+      { "id": "b", "label": "Offer a trial: lead a small pod for a quarter with clear expectations", "gains": ["Tests the fit with lower stakes", "Gives him real feedback"], "costs": ["Ambiguity about his status", "Role stays partly unfilled"], "likelyOutcome": "Both of you learn whether the role suits him." },
+      { "id": "c", "label": "Propose a senior technical path instead", "gains": ["Keeps his expertise where it's strongest", "Recognises growth without people management"], "costs": ["He may see it as a 'no'", "Requires a real technical career path to exist"], "likelyOutcome": "Works only if the path has genuine scope and status." }
+    ],
+    "relevantConcepts": [
+      { "name": "Stretching high performers", "explanation": "Top performers often get the least management attention.", "cardId": "pm-high-performer-stretch" },
+      { "name": "Coaching questions", "explanation": "Ask what draws him to the role before deciding for him.", "cardId": "pm-coaching-questions" },
+      { "name": "Concentration risk", "explanation": "Moving your best resolver creates a single-point-of-failure gap.", "cardId": "connect-portfolio-team" }
+    ],
+    "debrief": "Each option is defensible. The best signal is his answer to 'What would make you want to do this role in a year?' If the answer is about people, B or A; if it's about recognition or pay, C may serve him better.",
+    "reflectionQuestion": "Have you asked your strongest person what they want next, or assumed it?",
+    "difficulty": "advanced",
+    "topic": "people-management"
+  },
+  {
+    "id": "gym-build-vs-buy-kb",
+    "title": "Build or buy an AI knowledge assistant?",
+    "scenario": "Illustrative. Your support team wants an AI assistant that answers agent questions from internal knowledge articles. A vendor tool can be live in a month. Your internal engineering team says they can build one in a quarter using retrieval over your documents. Your articles are partly outdated.",
+    "choices": [
+      { "id": "a", "label": "Buy the vendor tool", "gains": ["Faster to value", "Vendor maintains the model layer"], "costs": ["Data handling and lock-in questions", "Less control over retrieval quality"], "likelyOutcome": "Fast start; quality limited by your content either way." },
+      { "id": "b", "label": "Build internally", "gains": ["Full control and data residency", "Can integrate deeply"], "costs": ["Slower, needs ongoing ownership", "Engineering capacity is borrowed from elsewhere"], "likelyOutcome": "Good fit if AI tooling becomes a core capability." },
+      { "id": "c", "label": "Fix the knowledge base first, then decide", "gains": ["Every option improves with better content", "Low risk"], "costs": ["Delays visible AI progress", "Content work is unglamorous"], "likelyOutcome": "Raises the ceiling for whichever tool you choose." }
+    ],
+    "relevantConcepts": [
+      { "name": "RAG quality depends on documents", "explanation": "Retrieval over outdated articles gives confident outdated answers.", "cardId": "ai-rag-vs-finetune" },
+      { "name": "Build vs buy", "explanation": "Build what differentiates you; buy what doesn't.", "cardId": "tech-build-vs-buy" },
+      { "name": "Evaluate before shipping", "explanation": "Agree a test set of real questions before choosing.", "cardId": "ai-eval-before-ship" }
+    ],
+    "debrief": "C combined with a small evaluation set of real agent questions lets you compare A and B on evidence. Many teams start with A for speed and revisit B if the capability becomes strategic.",
+    "reflectionQuestion": "What would you put in a 20-question test set to judge any AI assistant for your team?",
+    "difficulty": "advanced",
+    "topic": "technology"
+  },
+  {
+    "id": "gym-pushback-deadline",
+    "title": "A deadline you think is unrealistic",
+    "scenario": "Illustrative. Your director commits to a major customer that a new escalation process will be live across all shifts in two weeks. You believe it needs five weeks to train night shift properly. The commitment has already been made.",
+    "choices": [
+      { "id": "a", "label": "Disagree privately with data, then commit fully to whatever is decided", "gains": ["Your view is heard", "Team sees a united front"], "costs": ["You may still have to deliver an unrealistic plan"], "likelyOutcome": "Often leads to a scoped compromise." },
+      { "id": "b", "label": "Propose a phased launch: day shift in two weeks, night shift in five", "gains": ["Meets part of the commitment honestly", "Reduces risk"], "costs": ["Director must reset expectations with the customer"], "likelyOutcome": "Usually accepted if framed around customer risk." },
+      { "id": "c", "label": "Deliver in two weeks with whatever training is possible", "gains": ["Commitment kept", "No conflict"], "costs": ["Night-shift errors likely", "Team learns that warnings don't matter"], "likelyOutcome": "On-time launch with a quality dip that lands on customers." }
+    ],
+    "relevantConcepts": [
+      { "name": "Disagree and commit", "explanation": "Raise disagreement clearly once, then commit — commitment without real disagreement is just silence.", "cardId": "lead-disagree-and-commit" },
+      { "name": "Pre-mortem", "explanation": "Imagining failure surfaces the night-shift risk in concrete terms.", "cardId": "dm-premortem" },
+      { "name": "Answer first", "explanation": "Lead with the recommendation, then the evidence.", "cardId": "comm-bluf-pyramid" }
+    ],
+    "debrief": "A and B work well together: disagree with specifics, propose a phased alternative, then commit to the final call. C avoids conflict now and transfers the cost to customers and your team later.",
+    "reflectionQuestion": "What's the cost of raising a concern now versus after it has gone wrong?",
+    "difficulty": "intermediate",
+    "topic": "leadership"
+  },
+  {
+    "id": "gym-noise-alerts",
+    "title": "Forty alerts before lunch",
+    "scenario": "Illustrative. Your team's monitoring channel produces about forty device-offline alerts each morning. Most clear on their own within an hour. Last week a real outage was buried in the noise for three hours. The team wants to mute the channel until noon.",
+    "choices": [
+      { "id": "a", "label": "Mute until noon as the team suggests", "gains": ["Immediate relief", "Team feels heard"], "costs": ["Real incidents in the morning go unseen"], "likelyOutcome": "Quieter mornings; the next real outage is found by a customer." },
+      { "id": "b", "label": "Only alert when offline lasts over an hour or hits many devices at once", "gains": ["Cuts self-clearing noise", "Keeps real patterns visible"], "costs": ["Slower detection of genuine single-device issues", "Needs threshold tuning"], "likelyOutcome": "Much less noise; thresholds need review after a few weeks." },
+      { "id": "c", "label": "Assign a rotating 'alert owner' each morning", "gains": ["Clear ownership", "No change to tooling"], "costs": ["Same noise, one tired person", "Fatigue moves rather than shrinks"], "likelyOutcome": "Better than nobody watching, but fatigue persists." }
+    ],
+    "relevantConcepts": [
+      { "name": "Signal vs noise", "explanation": "Separating actionable work from monitoring noise is a design job, not a willpower job.", "cardId": "sup-signal-vs-noise" },
+      { "name": "Observability", "explanation": "Good signals tell you what's wrong, not just that something changed.", "cardId": "tech-observability" },
+      { "name": "Swiss cheese model", "explanation": "Muting removes one layer of defence; know what replaces it.", "cardId": "ops-swiss-cheese-model" }
+    ],
+    "debrief": "B combined with C is a common pattern: reduce noise at the source, and keep a named owner for what remains. A treats the symptom and quietly removes a safety layer.",
+    "reflectionQuestion": "Which alert or report does your team now ignore by habit?",
+    "difficulty": "beginner",
+    "topic": "operational-excellence"
+  }
+]

@@ -1,0 +1,1776 @@
+[
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "communication",
+      "leadership"
+    ],
+    "id": "pm-sbi-feedback",
+    "title": "Feedback that describes instead of judges",
+    "hook": "\"You were unprofessional\" is an opinion. \"You interrupted twice\" is something a person can fix.",
+    "coreIdea": "The Situation-Behavior-Impact model, used in Center for Creative Leadership training, keeps feedback factual. Name the Situation (when and where), the Behavior (what anyone could have seen or heard, not what you assume about attitude), and the Impact (what it did to the customer, the team or you). Because you describe rather than label, the other person has less to defend and more to work with. Then stop talking and listen to their side.",
+    "whyItMatters": "Vague or personal feedback triggers defensiveness; specific feedback gets acted on.",
+    "example": "Illustrative: instead of \"You are careless with escalations\", say: \"In yesterday's 4 pm handover (situation), the Sev-2 ticket reached the night shift without the customer's callback time (behavior). The night lead had to call cold and the customer was upset (impact).\"",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "In the last piece of feedback you gave, which part was a label rather than something you saw or heard?",
+    "suggestedAction": "Write one pending piece of feedback in situation-behavior-impact form before you say it aloud.",
+    "primaryTopic": "people-management",
+    "difficulty": "beginner",
+    "format": "framework",
+    "source": {
+      "type": "institution",
+      "title": "Situation-Behavior-Impact (SBI) feedback model",
+      "author": "Center for Creative Leadership"
+    },
+    "relatedCardIds": [
+      "pm-coaching-questions",
+      "psy-fundamental-attribution-error"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "SBI works best soon after the event and in private. The impact step is where many managers slip into judgement; keep it to a real consequence you observed or felt, such as \"I had to re-send the update\", not \"it showed a bad attitude\". It also fits positive feedback: naming the specific behaviour and its effect tells someone exactly what to repeat. If you cannot describe a behaviour, you may not have enough evidence yet.",
+    "simpleExplanation": "Say when it happened, what you saw them do, and what happened because of it.",
+    "keyConcepts": [
+      {
+        "label": "Describe the situation",
+        "terms": [
+          "situation",
+          "when",
+          "where",
+          "context",
+          "moment"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Describe observable behaviour, not attitude",
+        "terms": [
+          "behavio",
+          "observ",
+          "saw",
+          "heard",
+          "fact",
+          "not judg",
+          "label"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "State the impact",
+        "terms": [
+          "impact",
+          "effect",
+          "result",
+          "consequence",
+          "affect"
+        ],
+        "minMatches": 1
+      }
+    ],
+    "misconceptions": [
+      {
+        "triggers": [
+          "sandwich",
+          "praise first"
+        ],
+        "note": "SBI does not need a compliment sandwich. Specific, factual feedback is easier to hear than padded feedback."
+      }
+    ]
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "leadership",
+      "communication"
+    ],
+    "id": "pm-one-on-ones",
+    "title": "A one-on-one is their meeting, not yours",
+    "hook": "If you did most of the talking, it was a briefing, not a one-on-one.",
+    "coreIdea": "A weekly one-on-one is the one slot that belongs to the report, not to the manager's agenda. Status updates can live in tickets and stand-ups. Use this time for what cannot happen elsewhere: blockers, career direction, feedback in both directions, and what is draining them. Keep it regular and rarely cancel it, because each cancellation tells them where they rank. A simple test of quality is who spoke for most of the time.",
+    "whyItMatters": "Problems and resignations are usually visible in conversation long before they show up in metrics.",
+    "example": "Illustrative: a manager replaces the status-driven one-on-one with three questions: what is getting in your way, what are you learning, and what should I stop or start doing? Within a month a team member raises a handover issue that had been irritating the whole shift.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "In your last one-on-one with each person, who spoke more?",
+    "suggestedAction": "Start a shared notes page with each report and let them add agenda items before you add yours.",
+    "primaryTopic": "people-management",
+    "difficulty": "beginner",
+    "format": "checklist",
+    "checklist": [
+      "They set at least half the agenda.",
+      "Status updates are handled elsewhere (tickets, stand-up).",
+      "One question about growth or workload, every time.",
+      "You ask for feedback on your own management.",
+      "You end with who will do what by when, and you keep your part."
+    ],
+    "source": {
+      "type": "original",
+      "title": "Synthesis of common one-on-one practice"
+    },
+    "relatedCardIds": [
+      "pm-coaching-questions",
+      "pm-psych-safety-edmondson"
+    ],
+    "reviewStatus": "original-synthesis",
+    "deeper": "Frequency beats length: twenty-five minutes every week is generally more useful than an hour every quarter. Take short notes and open the next meeting with them; remembering what someone told you is a quiet trust-builder. If a report always says \"all fine\", change the question rather than the person: ask what has been the most frustrating thing this week, or what would you change about how the team works.",
+    "simpleExplanation": "A one-on-one is time for your team member to talk about what they need, not for you to collect updates.",
+    "keyConcepts": [
+      {
+        "label": "Belongs to the report",
+        "terms": [
+          "their",
+          "report",
+          "agenda",
+          "own",
+          "theirs",
+          "team member"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Not for status updates",
+        "terms": [
+          "status",
+          "update",
+          "ticket",
+          "stand-up",
+          "elsewhere"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Regular and protected",
+        "terms": [
+          "regular",
+          "weekly",
+          "cancel",
+          "consisten",
+          "protect",
+          "priority"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "leadership"
+    ],
+    "id": "pm-high-performer-stretch",
+    "title": "Your best people are the ones you neglect",
+    "hook": "The usual reward for great work is more of the same work.",
+    "coreIdea": "High performers often get less of a manager's development attention because they seem fine. The default rewards are praise and extra volume, and neither helps them grow. A stretch is different: a harder problem with real ownership, slightly beyond what they have done before, with you available but not hovering. Ask where they want to be in a year, then find work that gets them closer. Without it, capable people tend to quietly look elsewhere.",
+    "whyItMatters": "Your strongest people are the cheapest to lose and the most expensive to replace.",
+    "example": "Illustrative: a top agent clears more tickets than anyone, so she is given the hardest cases daily. Nothing in her role changes. Offering her ownership of the new-joiner escalation guide, with a review in six weeks, is a stretch; another thirty tickets is only load.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "When did you last give your best performer a problem they were not sure they could solve?",
+    "suggestedAction": "Ask your top performer this week: \"What would you like to be better at in twelve months?\" Then pick one task that moves toward it.",
+    "primaryTopic": "people-management",
+    "difficulty": "intermediate",
+    "format": "counterintuitive",
+    "source": {
+      "type": "original",
+      "title": "Original synthesis"
+    },
+    "relatedCardIds": [
+      "pm-delegation-levels",
+      "pm-workload-visibility"
+    ],
+    "reviewStatus": "original-synthesis",
+    "deeper": "Stretch has limits. Too far beyond someone's current ability, without support, turns into stress; too close is boredom. A useful guide is that they can see a path but not yet the whole route. Also watch for the \"hero trap\": if only your best person can handle hard cases, you have created a dependency (see the team concentration-risk card) and a burnout risk, not a reward.",
+    "simpleExplanation": "Good workers need harder, more interesting problems, not just a bigger pile of the same work.",
+    "keyConcepts": [
+      {
+        "label": "Strong performers get neglected",
+        "terms": [
+          "neglect",
+          "fine",
+          "ignore",
+          "less attention",
+          "overlook"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "More volume is not development",
+        "terms": [
+          "more work",
+          "volume",
+          "same work",
+          "load",
+          "extra"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Stretch means ownership and challenge",
+        "terms": [
+          "stretch",
+          "ownership",
+          "harder",
+          "challenge",
+          "grow",
+          "own"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "leadership",
+      "support-leadership"
+    ],
+    "id": "pm-repeated-mistakes",
+    "title": "Same mistake, third time: skill, will or system?",
+    "hook": "Before you call it a performance problem, check what the system is rewarding.",
+    "coreIdea": "When someone repeats a mistake, ask three questions in order. Do they know the standard? Can they do it, given skill, tools and time? Is anything in the environment rewarding the mistake or punishing the right action? Only if all three are fine is it a willingness problem, and that needs a direct, documented conversation. Skipping straight to will is the manager's version of blaming the person instead of looking at the process.",
+    "whyItMatters": "Treating a system or knowledge gap as a motivation problem damages trust and does not fix the mistake.",
+    "example": "Illustrative: a strong agent has closed cases without customer confirmation three times this month. You mentioned it once, casually. The queue is heavy and closures count towards the daily target. What do you do first?",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "For the last mistake you saw repeated, which of the three questions did you actually check?",
+    "suggestedAction": "Pick one recurring error on your team and answer the know, can and rewarded questions for it, in writing.",
+    "primaryTopic": "people-management",
+    "difficulty": "intermediate",
+    "format": "what-would-you-do",
+    "source": {
+      "type": "original",
+      "title": "Synthesis of common performance-analysis questions"
+    },
+    "relatedCardIds": [
+      "lead-fix-process-not-person",
+      "sup-goodhart-sla",
+      "pm-sbi-feedback"
+    ],
+    "reviewStatus": "original-synthesis",
+    "deeper": "In the example, the likely first step is a clear conversation to confirm they know the rule and the reason for it, followed by checking whether the closure target is pushing them towards it. If the target is the cause, the fix sits with you. If everything checks out and it continues, the conversation changes: you are now discussing choices, and consequences are fair. The order of the questions matters more than the answers.",
+    "simpleExplanation": "Check whether they don't know, can't do it, or are being nudged to do it wrong before assuming they don't care.",
+    "keyConcepts": [
+      {
+        "label": "Know the standard",
+        "terms": [
+          "know",
+          "standard",
+          "clear",
+          "aware",
+          "expectation"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Ability and tools",
+        "terms": [
+          "can",
+          "skill",
+          "tool",
+          "time",
+          "ability",
+          "capacity"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "System rewards mistake",
+        "terms": [
+          "reward",
+          "incentive",
+          "target",
+          "system",
+          "process",
+          "pressure"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "support-leadership",
+      "operational-excellence"
+    ],
+    "id": "pm-workload-visibility",
+    "title": "A one-week experiment: see where capacity goes",
+    "hook": "Ticket counts show output, not who is quietly absorbing everyone else's work.",
+    "coreIdea": "Managers usually see closed tickets, but not the mentoring, ad-hoc questions, rework and meetings that eat capacity. In this experiment, ask each person to jot down for one week, in rough half-day blocks, how time split between planned work, interruptions, helping colleagues and admin. Do not use it to police anyone. Compare it to what you assumed. The gap shows where load is real and who may be overcommitted.",
+    "whyItMatters": "You cannot balance a workload you cannot see, and invisible work is often carried by the same few people.",
+    "example": "Illustrative: an engineer closes fewer tickets than the team average and is flagged as slow. The log shows about a third of her week spent answering colleagues' escalation questions. She is the team's unofficial helpdesk.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Whose contribution on your team would not appear in any report you currently use?",
+    "suggestedAction": "Run the one-week log with two or three volunteers first, and tell them how you will use it before they begin.",
+    "primaryTopic": "people-management",
+    "difficulty": "intermediate",
+    "format": "experiment",
+    "source": {
+      "type": "original",
+      "title": "Original synthesis"
+    },
+    "relatedCardIds": [
+      "sup-goodhart-sla",
+      "pm-burnout-signals",
+      "pm-high-performer-stretch"
+    ],
+    "reviewStatus": "original-synthesis",
+    "deeper": "Self-logging is imperfect: people forget and may flatter themselves, so treat it as a conversation starter rather than data to audit. Be explicit that results will not feed individual ratings, or people will log what looks good. If helping others turns out to be a major share, decide whether to recognise it, spread it, or write it down as part of the role.",
+    "simpleExplanation": "Have people note where their week really goes so you can see the hidden work.",
+    "keyConcepts": [
+      {
+        "label": "Invisible work",
+        "terms": [
+          "invisible",
+          "hidden",
+          "mentor",
+          "help",
+          "interrupt",
+          "unseen"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Compare to assumptions",
+        "terms": [
+          "assum",
+          "compare",
+          "gap",
+          "expect"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Use it to rebalance, not police",
+        "terms": [
+          "not police",
+          "rebalance",
+          "balance",
+          "load",
+          "fair",
+          "spread",
+          "trust"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "psychology",
+      "support-leadership"
+    ],
+    "id": "pm-burnout-signals",
+    "title": "Five questions to ask before someone resigns",
+    "hook": "Burn-out is easier to spot as a pattern in a person than as a number in a report.",
+    "coreIdea": "The WHO's ICD-11 (2019) describes burn-out as an occupational phenomenon from chronic workplace stress that has not been successfully managed. It names three dimensions: exhaustion, growing mental distance or cynicism about the job, and reduced effectiveness. It is not a medical diagnosis, and managers are not clinicians. Your role is to notice changes against a person's own baseline, ask openly, and adjust the work.",
+    "whyItMatters": "Early signs are behaviour changes that look like attitude problems if you only watch output.",
+    "example": "Self-check for one team member you manage. Answer yes or no to each question in the checklist. Two or more yeses is a reason for a kind, private conversation, not a conclusion.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Which of these changes might you have put down to attitude instead of workload?",
+    "suggestedAction": "If you answered yes twice or more for someone, ask them this week: \"How sustainable does your current workload feel, honestly?\"",
+    "primaryTopic": "people-management",
+    "difficulty": "intermediate",
+    "format": "self-assessment",
+    "checklist": [
+      "Has their energy or patience visibly dropped over the last month?",
+      "Are they more cynical or detached about customers or the team than before?",
+      "Are they working noticeably longer hours, or are they unable to switch off?",
+      "Has quality or care in their usual work slipped without an obvious reason?",
+      "Have they stopped raising ideas, questions or concerns?"
+    ],
+    "source": {
+      "type": "institution",
+      "title": "Burn-out an \"occupational phenomenon\": International Classification of Diseases",
+      "author": "World Health Organization",
+      "year": 2019
+    },
+    "relatedCardIds": [
+      "pm-workload-visibility",
+      "pm-psych-safety-edmondson"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "The five questions here are an original prompt list inspired by the three ICD-11 dimensions, not a validated screening tool. Do not diagnose or share your guesses with others. Also, burn-out is about the work context: the stronger response is usually changing workload, control or support, not advising the person to be more resilient. Where someone seems unwell beyond work, point them to your organisation's support options.",
+    "simpleExplanation": "Burn-out is long-term work stress that leaves people drained, detached and less effective; managers can notice it and adjust the work.",
+    "keyConcepts": [
+      {
+        "label": "Chronic workplace stress",
+        "terms": [
+          "chronic",
+          "long-term",
+          "stress",
+          "workplace",
+          "work"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Exhaustion, cynicism, reduced effectiveness",
+        "terms": [
+          "exhaust",
+          "cynic",
+          "detach",
+          "effective",
+          "distance",
+          "tired"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Notice changes and adjust work, not diagnose",
+        "terms": [
+          "notice",
+          "change",
+          "baseline",
+          "not diagnos",
+          "adjust",
+          "workload",
+          "ask"
+        ],
+        "minMatches": 1
+      }
+    ],
+    "misconceptions": [
+      {
+        "triggers": [
+          "weak",
+          "lazy",
+          "not resilient"
+        ],
+        "note": "Burn-out is described as a response to workplace conditions, not a personal weakness."
+      }
+    ]
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "psychology",
+      "leadership"
+    ],
+    "id": "pm-conflict-task-vs-relationship",
+    "title": "Arguing about the work versus arguing about each other",
+    "hook": "Task disagreement was once thought to be healthy; the later evidence is less comfortable.",
+    "coreIdea": "Researchers separate task conflict (disagreement about ideas, methods, priorities) from relationship conflict (friction, dislike, tension between people). Karen Jehn's early work suggested moderate task conflict could help non-routine work. But a later meta-analysis by De Dreu and Weingart (2003) found both types were negatively related to team performance and satisfaction, and the two were strongly linked: arguments about work easily turn personal.",
+    "whyItMatters": "Encouraging debate is useful only if you can stop it turning into a fight about people.",
+    "example": "Illustrative: two leads disagree on whether to retire a legacy escalation tool. In one team they list criteria and test them, and stay on good terms. In the other, each side starts questioning the other's motives and the decision gets worse.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Where on your team does a disagreement about work already sound like a comment about a person?",
+    "suggestedAction": "Before a contested decision, agree the criteria first, then argue about options against them.",
+    "primaryTopic": "people-management",
+    "difficulty": "advanced",
+    "format": "comparison",
+    "source": {
+      "type": "paper",
+      "title": "Task versus relationship conflict, team performance, and team member satisfaction: a meta-analysis",
+      "author": "Carsten K. W. De Dreu & Laurie R. Weingart",
+      "year": 2003
+    },
+    "relatedCardIds": [
+      "pm-psych-safety-edmondson",
+      "neg-interests-vs-positions"
+    ],
+    "reviewStatus": "needs-source-check",
+    "deeper": "Later work suggests the effects depend on context: how the disagreement is handled, whether the team trusts each other, and whether the task is routine. Treat \"healthy conflict\" as a condition you build, not a default. Practical levers: agree decision criteria first, separate generating options from judging them, and name it when the topic shifts from \"the plan\" to \"you\".",
+    "simpleExplanation": "Disagreeing about the work can help, but it often slides into disliking each other, which hurts the team.",
+    "keyConcepts": [
+      {
+        "label": "Task vs relationship conflict",
+        "terms": [
+          "task",
+          "relationship",
+          "work",
+          "personal",
+          "people"
+        ],
+        "minMatches": 2
+      },
+      {
+        "label": "Task conflict can turn personal",
+        "terms": [
+          "personal",
+          "spill",
+          "turn into",
+          "blur",
+          "link",
+          "slide"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Agree criteria first",
+        "terms": [
+          "criteria",
+          "trust",
+          "agree",
+          "rules",
+          "how we decide",
+          "separate"
+        ],
+        "minMatches": 1
+      }
+    ],
+    "disputed": "Early studies suggested moderate task conflict may help; the later meta-analysis found negative links for both types. Effects appear to depend on context. Details of the studies should be checked before quoting figures."
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "leadership",
+      "communication"
+    ],
+    "id": "pm-coaching-questions",
+    "title": "Ask before you tell",
+    "hook": "Every time you answer a question instantly, you teach them to keep asking.",
+    "coreIdea": "When someone brings you a problem, the fast response is the answer. It also trains people to bring you every problem. Coaching swaps the answer for a question: What have you tried? What are your options? What would you do if I were away? What do you need from me? GROW (Goal, Reality, Options, Will) is a common structure. Coaching is not interrogation: if they lack knowledge or it is urgent, just tell them.",
+    "whyItMatters": "Teams that always escalate for answers cannot scale beyond the manager's own capacity.",
+    "example": "Illustrative: an agent asks whether to offer a goodwill credit. Instead of answering, you ask, \"What would you do, and why?\" She proposes a sensible limit with a reason. You agree and say that for this size of credit she can decide herself from now on.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Which question do you answer for your team repeatedly that they could answer themselves?",
+    "suggestedAction": "For the next three questions your team brings, reply first with \"What would you do?\" and note what happens.",
+    "primaryTopic": "people-management",
+    "difficulty": "beginner",
+    "format": "explain-beginner",
+    "source": {
+      "type": "original",
+      "title": "Synthesis of common coaching practice (including the GROW structure)"
+    },
+    "relatedCardIds": [
+      "pm-delegation-levels",
+      "pm-sbi-feedback",
+      "pm-one-on-ones"
+    ],
+    "reviewStatus": "original-synthesis",
+    "deeper": "Common misuse: asking leading questions where you already know the answer (\"Don't you think you should...?\"). That is telling in disguise and people notice. Also avoid a \"why\" cascade that feels like blame; \"what\" and \"how\" questions tend to land more softly. Tell people you are changing the habit and why, otherwise silence after a question can feel like withholding help.",
+    "simpleExplanation": "Instead of solving it for them, ask questions that help them work out the answer.",
+    "keyConcepts": [
+      {
+        "label": "Question instead of answering",
+        "terms": [
+          "question",
+          "ask",
+          "instead",
+          "rather than",
+          "answer"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Builds independence",
+        "terms": [
+          "independen",
+          "own",
+          "capab",
+          "learn",
+          "solve themselves",
+          "escalat"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Not always appropriate",
+        "terms": [
+          "urgent",
+          "emergency",
+          "tell",
+          "knowledge",
+          "sometimes"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "behavioral-finance",
+      "people-management"
+    ],
+    "id": "lead-loss-aversion-change",
+    "title": "Why your team resists a better process",
+    "hook": "What investors feel in a falling market is what your team feels in a reorganisation.",
+    "coreIdea": "In investing, loss aversion means a loss weighs more heavily than an equal gain. Change triggers the same asymmetry. People weigh what they stand to lose, such as being the expert on the old tool, familiar routines and certainty, more than the benefits you describe. Resistance may be rational accounting, not stubbornness. A good adviser names the losses, shrinks them and makes the gains concrete and near-term.",
+    "whyItMatters": "Selling the benefits harder rarely works if the real objection is what people think they are giving up.",
+    "example": "Illustrative: a manager announces a new ticketing tool that will save each agent an hour a week. Veterans resist. Their concern is that the macros and shortcuts they spent years building will be lost. Once the manager promises a migration for them and a pilot first, the resistance drops.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "For your next change, what will each group on your team lose, in their own words?",
+    "suggestedAction": "Before announcing a change, write a list of what each affected group gives up and address the top item for each.",
+    "primaryTopic": "leadership",
+    "difficulty": "intermediate",
+    "format": "connect-domains",
+    "bridge": {
+      "from": "behavioral-finance",
+      "to": "leadership",
+      "insight": "Investors sell to stop the pain of a loss; employees resist change to avoid theirs. In both cases you solve it by addressing the perceived loss, not by repeating the expected gain."
+    },
+    "source": {
+      "type": "paper",
+      "title": "Prospect Theory: An Analysis of Decision under Risk",
+      "author": "Daniel Kahneman & Amos Tversky",
+      "year": 1979
+    },
+    "relatedCardIds": [
+      "bf-loss-aversion-panic",
+      "connect-portfolio-team",
+      "pm-psych-safety-edmondson"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "The analogy is a framing, not proof that every change objection is loss aversion; some resistance is simply a correct view that the change is flawed. Listen for that first. Also, the size of the loss/gain asymmetry is debated. Practical tools that follow from it: pilots, opt-in periods, keeping what is not changing visible, and giving people a say in how the change happens.",
+    "simpleExplanation": "People fear what they will lose from a change more than they value what they will gain.",
+    "keyConcepts": [
+      {
+        "label": "Losses weigh more than gains",
+        "terms": [
+          "loss",
+          "lose",
+          "give up",
+          "gain",
+          "weigh",
+          "more"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Resistance is rational accounting",
+        "terms": [
+          "rational",
+          "resist",
+          "stubborn",
+          "reason",
+          "fear",
+          "concern"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Name and shrink the loss",
+        "terms": [
+          "name",
+          "address",
+          "shrink",
+          "pilot",
+          "reduce",
+          "acknowledge",
+          "migrat"
+        ],
+        "minMatches": 1
+      }
+    ],
+    "disputed": "The size of loss aversion is debated in the research literature; applying it to organisational change is an interpretation, not a tested result."
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "decision-making",
+      "communication"
+    ],
+    "id": "lead-disagree-and-commit",
+    "title": "\"Disagree and commit\" is a two-part promise",
+    "hook": "It is not permission to stop arguing; it is an obligation to argue first.",
+    "coreIdea": "Amazon lists the principle as \"Have Backbone; Disagree and Commit\": leaders are expected to challenge a decision they disagree with, even when it is uncomfortable, and then fully commit once it is made. The first half is as important as the second. Used well, it prevents endless consensus-seeking. Used badly, it becomes a way to end debate before it has started.",
+    "whyItMatters": "Teams stall without a way to move forward on decisions that not everyone agrees with.",
+    "example": "Illustrative: you want to keep the weekend rota as is, but your manager decides to rotate it. You argue your case with data in the planning meeting. When the decision stands, you present it to your team as your own, and track the problems you predicted.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Think of a decision you disagreed with: did you argue it fully, and did you then commit fully?",
+    "suggestedAction": "Before your next significant decision, ask each person for a disagreement in one sentence, then state clearly that after the decision everyone commits.",
+    "primaryTopic": "leadership",
+    "difficulty": "intermediate",
+    "format": "quote-interpretation",
+    "quote": {
+      "text": "Have Backbone; Disagree and Commit",
+      "by": "Amazon leadership principle",
+      "note": "Often associated with Intel's Andy Grove as well; the exact origin of the phrase is unclear."
+    },
+    "source": {
+      "type": "institution",
+      "title": "Amazon Leadership Principles",
+      "author": "Amazon"
+    },
+    "relatedCardIds": [
+      "lead-communicating-difficult-decisions",
+      "dm-premortem"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "Three failure modes: leaders skip the disagree step and agree for comfort; they say \"commit\" but quietly undermine the decision; or the decision-maker treats the phrase as a way to ignore dissent. A fair way to make it work is to record the reason for the disagreement and a signal that would prove it right, so the decision can be revisited with evidence rather than ego.",
+    "simpleExplanation": "Speak up if you disagree, and once the decision is made, back it fully.",
+    "keyConcepts": [
+      {
+        "label": "Voice disagreement first",
+        "terms": [
+          "disagree",
+          "challenge",
+          "speak up",
+          "argue",
+          "backbone",
+          "dissent"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Then commit fully",
+        "terms": [
+          "commit",
+          "back",
+          "support",
+          "follow",
+          "undermine"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Prevents endless consensus",
+        "terms": [
+          "consensus",
+          "stall",
+          "move forward",
+          "decision",
+          "speed"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "decision-making",
+      "support-leadership"
+    ],
+    "id": "lead-commanders-intent-ambiguity",
+    "title": "Tell them why, and they can improvise",
+    "hook": "The most useful part of an order is the part that survives when the plan fails.",
+    "coreIdea": "Military doctrine uses \"commander's intent\": a short statement of the purpose of an operation and the end state wanted. Orders say what to do; intent says why. When circumstances change and the original plan stops making sense, people who know the intent can adapt without waiting for new instructions. For leaders facing ambiguity, give purpose, desired end state and constraints, and leave the method open.",
+    "whyItMatters": "You cannot be reachable for every surprise, and a team that knows only the steps stalls when steps stop working.",
+    "example": "Illustrative: during an outage, a support lead states her intent: \"No customer should find out about the problem from us late; every priority account gets an update every 30 minutes, on whatever channel works.\" Agents then handle a customer who is unreachable by phone without needing to ask.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "For your team's current top priority, could each person state the purpose in a sentence, without the steps?",
+    "suggestedAction": "Add \"The intent is...\" to your next briefing in one sentence, then ask someone to repeat it back in their own words.",
+    "primaryTopic": "leadership",
+    "difficulty": "advanced",
+    "format": "mental-model",
+    "source": {
+      "type": "institution",
+      "title": "Commander's intent in military command doctrine"
+    },
+    "relatedCardIds": [
+      "pm-delegation-levels",
+      "agent-hitl-checkpoints",
+      "lead-fix-process-not-person"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "Good intent is short and specific enough to rule things out. \"Delight the customer\" does not guide a trade-off; \"no customer hears of this from a third party first\" does. The idea also works with AI agents: instructions that state purpose and boundaries cope better with unexpected cases than step lists. The cost is that you accept the team may choose methods you would not have picked.",
+    "simpleExplanation": "Explain the goal behind the instructions so people can still do the right thing when the plan breaks.",
+    "keyConcepts": [
+      {
+        "label": "Purpose and end state",
+        "terms": [
+          "purpose",
+          "why",
+          "goal",
+          "end state",
+          "outcome",
+          "intent"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Lets people adapt",
+        "terms": [
+          "adapt",
+          "improvise",
+          "autonomy",
+          "initiative",
+          "change",
+          "surprise",
+          "plan"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Leave the method open",
+        "terms": [
+          "method",
+          "how",
+          "open",
+          "constraint",
+          "freedom",
+          "leave"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "communication",
+      "people-management"
+    ],
+    "id": "lead-communicating-difficult-decisions",
+    "title": "Announcing a decision you did not choose",
+    "hook": "\"Management decided\" is the sentence that costs a leader the most trust.",
+    "coreIdea": "When you must announce a decision you only partly agree with, there are five jobs: state the decision plainly, explain the reasons, say what was considered and rejected, separate what is fixed from what the team can still shape, and describe what happens next. Say it as your own, not as a message from above. Then allow time for reaction before moving to the plan.",
+    "whyItMatters": "How a hard decision is delivered often matters as much as the decision, because people judge whether they were treated fairly.",
+    "example": "Illustrative: leadership orders a hiring freeze for two quarters while you were promised two new agents. You tell the team on the day: the freeze, the cost target behind it, that you argued for the hires and lost, what workload measures you will watch, and the date you will review it. You do not hide your disappointment but you do not undermine the decision.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "When you last passed on a decision you disliked, did your wording signal distance from it?",
+    "suggestedAction": "Before your next difficult announcement, write the five jobs as five lines and check each is covered.",
+    "primaryTopic": "leadership",
+    "difficulty": "advanced",
+    "format": "leadership-situation",
+    "source": {
+      "type": "original",
+      "title": "Original synthesis"
+    },
+    "relatedCardIds": [
+      "lead-disagree-and-commit",
+      "lead-loss-aversion-change",
+      "comm-bluf-pyramid"
+    ],
+    "reviewStatus": "original-synthesis",
+    "deeper": "There is a tension between honesty and loyalty. A workable line: be honest about your own view only when you can do so without eroding the decision, and never present a reason you do not believe. Admitting a trade-off (\"this will hurt us in X\") often builds more credibility than pretending there is none. Expect the first reaction to be emotional, and let it be heard before explaining again.",
+    "simpleExplanation": "When you share a tough decision, say what, why, what was ruled out, what is still open and what comes next.",
+    "keyConcepts": [
+      {
+        "label": "Own the message",
+        "terms": [
+          "own",
+          "your own",
+          "ownership",
+          "distance",
+          "management decided",
+          "accountab"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Explain reasons and alternatives",
+        "terms": [
+          "reason",
+          "why",
+          "considered",
+          "alternative",
+          "rejected",
+          "trade-off"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Fixed vs open and next steps",
+        "terms": [
+          "fixed",
+          "open",
+          "shape",
+          "next",
+          "review",
+          "plan"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "communication",
+      "negotiation"
+    ],
+    "id": "lead-setting-boundaries",
+    "title": "Yes now, resentment later",
+    "hook": "Agreeing to everything feels helpful until the commitments start to collide.",
+    "coreIdea": "A common leadership mistake is saying yes to every request to look helpful, then missing deadlines or quietly resenting the person who asked. A boundary is not a refusal of the person; it is a clear statement of what you can do and when. A useful shape: \"I can do X by Friday, or Y next week, but not both. Which matters more?\" This hands the priority call back to the person who owns it.",
+    "whyItMatters": "Unspoken limits do not disappear; they come out as missed commitments, short tempers or burnout.",
+    "example": "Illustrative: a senior stakeholder asks you for an ad-hoc report by tomorrow while your team is closing month-end escalations. Instead of agreeing, you say you can deliver a basic version tomorrow or a complete one on Monday, and that month-end work would slip otherwise. They choose Monday.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "What did you say yes to this month that you privately knew you could not do well?",
+    "suggestedAction": "The next time you are asked for something, answer with two options and a trade-off instead of an automatic yes.",
+    "primaryTopic": "leadership",
+    "difficulty": "beginner",
+    "format": "common-mistake",
+    "source": {
+      "type": "original",
+      "title": "Original synthesis"
+    },
+    "relatedCardIds": [
+      "pm-workload-visibility",
+      "neg-interests-vs-positions",
+      "pm-burnout-signals"
+    ],
+    "reviewStatus": "original-synthesis",
+    "deeper": "Boundaries work best when your reliability is already established: people accept \"not both\" from someone who usually delivers. Make the trade-off about the work, not your preferences. Be careful with senior requests: offer options and a recommendation rather than a flat no. And apply the same to your team: they need to see you modelling limits for them to feel they can set theirs.",
+    "simpleExplanation": "Say clearly what you can and cannot do, and let the other person choose between realistic options.",
+    "keyConcepts": [
+      {
+        "label": "Over-agreeing is a mistake",
+        "terms": [
+          "yes",
+          "agree",
+          "everything",
+          "overcommit",
+          "helpful",
+          "resent"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Offer options and trade-offs",
+        "terms": [
+          "option",
+          "trade-off",
+          "either",
+          "choose",
+          "which",
+          "priority"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Boundary is clarity, not refusal",
+        "terms": [
+          "clear",
+          "limit",
+          "not refus",
+          "can do",
+          "realistic",
+          "boundar"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "operational-excellence",
+      "people-management"
+    ],
+    "id": "lead-fix-process-not-person",
+    "title": "Before you blame a person, test the process",
+    "hook": "If a well-meaning new person would make the same error, the person is not the cause.",
+    "coreIdea": "When something goes wrong, the fastest explanation is a person. W. Edwards Deming argued that most failures come from the system managers control, not from individual workers. Ask first: could a competent, well-intentioned person have made the same error in this process? If yes, blaming one person fixes nothing; the next person repeats it. Remove the trap, add a check or make the right action easier. Personal accountability remains for deliberate or repeated disregard.",
+    "whyItMatters": "Punishing individuals for system faults teaches people to hide errors, not prevent them.",
+    "example": "Illustrative: three different agents in a quarter send a refund to the wrong account because the form shows similar names side by side. A warning for each agent changes nothing; adding a confirmation field showing the account number does.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Which error on your team has happened with at least three different people?",
+    "suggestedAction": "In the next post-incident review, add a question: \"What in our process made this mistake easy to make?\"",
+    "primaryTopic": "leadership",
+    "difficulty": "intermediate",
+    "format": "big-idea",
+    "source": {
+      "type": "book",
+      "title": "Out of the Crisis",
+      "author": "W. Edwards Deming",
+      "year": 1982
+    },
+    "relatedCardIds": [
+      "pm-repeated-mistakes",
+      "psy-fundamental-attribution-error",
+      "pm-psych-safety-edmondson"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "This is not \"nobody is ever at fault\". Intentional rule-breaking, concealment or repeated carelessness after clear feedback are individual matters. A useful test is whether the error is a slip (fix the process), a mistake of knowledge (train), or a choice (hold accountable). Blameless reviews work because people describe what happened honestly, which is the only way the process gets fixed.",
+    "simpleExplanation": "If lots of different people make the same mistake, fix the way the work is set up, not the people.",
+    "keyConcepts": [
+      {
+        "label": "System causes most failures",
+        "terms": [
+          "system",
+          "process",
+          "design",
+          "cause",
+          "most"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Same error repeats with new people",
+        "terms": [
+          "repeat",
+          "again",
+          "next person",
+          "same mistake",
+          "different people"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Fix the trap, keep accountability for deliberate acts",
+        "terms": [
+          "fix",
+          "remove",
+          "check",
+          "accountab",
+          "deliberate",
+          "easier"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "decision-making",
+      "negotiation"
+    ],
+    "id": "psy-anchoring-wheel",
+    "title": "A rigged wheel moved their UN guesses",
+    "hook": "People adjusted their estimates towards a number they knew was random.",
+    "coreIdea": "In a 1974 Science paper, Tversky and Kahneman spun a wheel of fortune that was rigged to stop at 10 or 65. Participants were asked whether the percentage of African countries in the United Nations was higher or lower than that number, and then to estimate it. The median estimates were about 25% for the group that saw 10 and about 45% for the group that saw 65. The number was obviously irrelevant, yet it pulled the answer.",
+    "whyItMatters": "The first number in a negotiation, budget or estimate shapes the answers that follow, even when everyone knows it is arbitrary.",
+    "example": "Documented: Tversky and Kahneman reported this experiment as an example of anchoring and adjustment, where people start from an initial value and adjust insufficiently.",
+    "exampleType": "documented",
+    "reflectionQuestion": "In your last estimate or negotiation, who named the first number and how far did the final figure move from it?",
+    "suggestedAction": "Before your next estimate, write your own figure privately before hearing anyone else's.",
+    "primaryTopic": "psychology",
+    "difficulty": "intermediate",
+    "format": "case-study",
+    "source": {
+      "type": "paper",
+      "title": "Judgment under Uncertainty: Heuristics and Biases",
+      "author": "Amos Tversky & Daniel Kahneman",
+      "year": 1974,
+      "url": "https://doi.org/10.1126/science.185.4157.1124"
+    },
+    "relatedCardIds": [
+      "neg-batna",
+      "dm-premortem"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "Anchoring has been replicated in many settings, but effect sizes vary and some specific follow-up findings are debated. Useful defences: generate your own estimate first, consider why the anchor might be wrong, and ask for ranges from several people independently before discussion. In negotiation, the common advice is to anchor first when you know the range well, and to reset the discussion when the other side opens with an extreme number.",
+    "simpleExplanation": "Even a random number you just saw can drag your guess toward it.",
+    "keyConcepts": [
+      {
+        "label": "Random number influenced estimates",
+        "terms": [
+          "random",
+          "wheel",
+          "number",
+          "influence",
+          "pull",
+          "estimate"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Anchoring and insufficient adjustment",
+        "terms": [
+          "anchor",
+          "adjust",
+          "start",
+          "first number"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Defend by estimating independently",
+        "terms": [
+          "independent",
+          "own",
+          "first",
+          "before",
+          "range",
+          "privately"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "leadership",
+      "decision-making"
+    ],
+    "id": "psy-asch-conformity",
+    "title": "One honest voice changed the room",
+    "hook": "People gave an obviously wrong answer because everyone else did.",
+    "coreIdea": "In Solomon Asch's studies in the 1950s, people judged which of three lines matched a standard line, an easy task. But the rest of the group, actually confederates, unanimously gave a wrong answer on certain trials. A substantial share of participants went along with the group at least once, though most answers were still correct. When even one other person disagreed with the majority, conformity dropped sharply.",
+    "whyItMatters": "Silence in a meeting may be conformity, and one early dissenter can free others to speak.",
+    "example": "Documented: in Asch's line-judgement experiments, a participant often faced a unanimous wrong majority; with a single ally giving the right answer, the pressure to conform was much reduced.",
+    "exampleType": "documented",
+    "reflectionQuestion": "In your last meeting, who might have disagreed if one other person had gone first?",
+    "suggestedAction": "In your next decision meeting, have people write their view privately before anyone speaks, or invite one person to argue the opposing case.",
+    "primaryTopic": "psychology",
+    "difficulty": "intermediate",
+    "format": "historical-lesson",
+    "source": {
+      "type": "paper",
+      "title": "Studies of independence and conformity: I. A minority of one against a unanimous majority",
+      "author": "Solomon E. Asch",
+      "year": 1956
+    },
+    "relatedCardIds": [
+      "dm-premortem",
+      "pm-psych-safety-edmondson"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "The strength of the effect depends on group size, unanimity and the era and culture of the participants; later studies have found different levels of conformity. Asch himself also emphasised that most responses were independent. For managers, the practical points are modest: collect views before discussion, let the most junior person speak first and have someone play devil's advocate. Do not read silence as agreement.",
+    "simpleExplanation": "People often go along with a group even when they think it is wrong, unless one other person speaks up.",
+    "keyConcepts": [
+      {
+        "label": "Group pressure can override judgement",
+        "terms": [
+          "group",
+          "pressure",
+          "conform",
+          "majority",
+          "go along"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "A single ally reduces conformity",
+        "terms": [
+          "ally",
+          "one person",
+          "dissent",
+          "speak up",
+          "one other",
+          "minority"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Collect views independently",
+        "terms": [
+          "private",
+          "write",
+          "independent",
+          "before",
+          "junior first",
+          "anonym"
+        ],
+        "minMatches": 1
+      }
+    ],
+    "disputed": "Conformity rates in later replications vary by culture and era; Asch's figures should not be treated as fixed constants."
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "decision-making",
+      "leadership"
+    ],
+    "id": "psy-ikea-effect",
+    "title": "We overvalue what we have built",
+    "hook": "Effort makes people love their own work, even when it is mediocre.",
+    "coreIdea": "Norton, Mochon and Ariely (2012) found that people valued things they had assembled themselves, such as IKEA boxes or origami, more than identical things assembled by others. They called it the IKEA effect. The effort and a sense of ownership raise the value we assign, and the effect weakens if the project is not completed. It affects how we judge our own processes, designs and plans.",
+    "whyItMatters": "Teams can defend a flawed process because they built it, not because it works.",
+    "example": "Illustrative: a team spent months building an in-house escalation tracker. A cheaper off-the-shelf tool does the same job, but the team rates it lower on first look. Scoring both against the same criteria, written down in advance, gives a fairer comparison.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Which of your own tools or processes would you reject if someone else had built it?",
+    "suggestedAction": "Pick one process you built and ask a colleague outside the team to review it against the same checklist you would use on someone else's.",
+    "primaryTopic": "psychology",
+    "difficulty": "intermediate",
+    "format": "mental-model",
+    "source": {
+      "type": "paper",
+      "title": "The \"IKEA effect\": When labor leads to love",
+      "author": "Michael I. Norton, Daniel Mochon & Dan Ariely",
+      "year": 2012
+    },
+    "relatedCardIds": [
+      "lead-loss-aversion-change",
+      "dm-premortem"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "The same effect can work in your favour: people support changes they helped shape. Letting a team build part of a solution tends to increase buy-in. The risk is the other side, where ownership blocks honest evaluation. Mitigations: judge against criteria set before you start, get outside review, and separate the question \"is this good?\" from \"did we make it?\".",
+    "simpleExplanation": "We like things more when we made them ourselves, even if they are not better.",
+    "keyConcepts": [
+      {
+        "label": "Effort raises perceived value",
+        "terms": [
+          "effort",
+          "labor",
+          "built",
+          "made",
+          "own",
+          "value"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Creates bias toward own work",
+        "terms": [
+          "bias",
+          "overvalue",
+          "defend",
+          "attach",
+          "own",
+          "love"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Use outside review or criteria",
+        "terms": [
+          "outside",
+          "review",
+          "criteria",
+          "independent",
+          "written",
+          "fair"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "support-leadership",
+      "communication"
+    ],
+    "id": "psy-peak-end-rule",
+    "title": "Why a worse experience can be remembered as better",
+    "hook": "People chose to repeat the longer pain because it ended gently.",
+    "coreIdea": "In Kahneman and colleagues' 1993 study, participants held a hand in cold water twice: once for 60 seconds, once for 60 seconds followed by an extra 30 seconds in slightly warmer water. Most chose to repeat the longer trial, despite more total discomfort. The finding supports the peak-end rule: we remember experiences largely by their most intense moment and how they ended, not by their total length.",
+    "whyItMatters": "Customers and team members judge an interaction by its high point and its ending, not by an average of every minute.",
+    "example": "Illustrative: a support call is slow and frustrating for twenty minutes but ends with the agent summarising exactly what will happen next and when. The customer later rates it better than a faster call that ended with \"anything else? bye\".",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "How do your calls, meetings and one-on-ones usually end?",
+    "suggestedAction": "End your next three customer or team conversations with a deliberate summary of what happens next.",
+    "primaryTopic": "psychology",
+    "difficulty": "intermediate",
+    "format": "case-study",
+    "source": {
+      "type": "paper",
+      "title": "When More Pain Is Preferred to Less: Adding a Better End",
+      "author": "Daniel Kahneman, Barbara L. Fredrickson, Charles A. Schreiber & Donald A. Redelmeier",
+      "year": 1993
+    },
+    "relatedCardIds": [
+      "comm-bluf-pyramid",
+      "psy-anchoring-wheel"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "Peak-end is a tendency, not a law: duration still matters in many situations, and later research found the effect varies with context. In practice, aim to avoid a bad peak and to finish well, for example by recapping, thanking and confirming next steps, rather than designing every minute. For managers, a rough end to an otherwise strong year-end review can colour how the whole year is remembered.",
+    "simpleExplanation": "People remember the most intense moment and the ending, not how long the whole thing lasted.",
+    "keyConcepts": [
+      {
+        "label": "Peak and end dominate memory",
+        "terms": [
+          "peak",
+          "end",
+          "remember",
+          "memory",
+          "intense",
+          "finish"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Duration matters less",
+        "terms": [
+          "duration",
+          "length",
+          "longer",
+          "total",
+          "average"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Design a good ending",
+        "terms": [
+          "ending",
+          "close",
+          "summar",
+          "recap",
+          "next step",
+          "finish well"
+        ],
+        "minMatches": 1
+      }
+    ],
+    "disputed": "Peak-end effects vary across situations and studies; duration can still matter. It is a tendency, not a universal rule."
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "productivity",
+      "decision-making"
+    ],
+    "id": "psy-ego-depletion-debate",
+    "title": "Is willpower a battery? The evidence collapsed",
+    "hook": "A famous idea about self-control did not survive a 23-lab test.",
+    "coreIdea": "Ego depletion is the idea that self-control draws on a limited resource, so using it once leaves less for the next task. Baumeister and colleagues (1998) reported that people who resisted chocolate gave up sooner on a later puzzle. For years it was widely taught. Then a 2016 multi-lab replication by Hagger and colleagues, across 23 labs, found an effect close to zero. The idea is now contested.",
+    "whyItMatters": "Popular advice such as \"make decisions early because willpower runs out\" may rest on a weak foundation.",
+    "example": "Documented: Baumeister et al. (1998) used radishes versus chocolate before an unsolvable puzzle; Hagger et al. (2016) ran a preregistered protocol on a related task in many labs and did not find the original effect.",
+    "exampleType": "documented",
+    "reflectionQuestion": "Which of your habits or advice rests on a study you have never checked was replicated?",
+    "suggestedAction": "Next time someone cites a famous psychology result, ask: \"Has a large replication confirmed it?\"",
+    "primaryTopic": "psychology",
+    "difficulty": "advanced",
+    "format": "two-viewpoints",
+    "source": {
+      "type": "paper",
+      "title": "A Multilab Preregistered Replication of the Ego-Depletion Effect",
+      "author": "Martin S. Hagger et al.",
+      "year": 2016
+    },
+    "relatedCardIds": [
+      "psy-marshmallow-myth",
+      "psy-ikea-effect"
+    ],
+    "reviewStatus": "verified",
+    "contrarian": {
+      "question": "Does self-control run on a limited resource that gets used up?",
+      "established": [
+        "Baumeister et al. (1998) reported lower persistence after an earlier self-control task.",
+        "Hagger et al. (2016), a preregistered multi-lab replication, found an effect near zero."
+      ],
+      "positions": [
+        {
+          "label": "Depletion is real",
+          "claim": "Self-control is limited and use of it has a short-term cost.",
+          "evidence": [
+            "Many original studies reported the effect and a large literature built on it.",
+            "People do feel tired and less motivated after prolonged effort."
+          ],
+          "interpretation": "The effect may exist but depend on the task and the participants, and the multi-lab design may not have captured it."
+        },
+        {
+          "label": "The effect is weak or absent",
+          "claim": "The classic lab effect is small or does not exist, and other explanations such as motivation and beliefs fit better.",
+          "evidence": [
+            "The 23-lab preregistered replication found an effect close to zero.",
+            "Publication bias and small samples probably inflated the early literature."
+          ],
+          "interpretation": "Feeling drained is real, but evidence for a fixed willpower battery is weak."
+        }
+      ],
+      "opinion": "Editorial view: do not build management advice on the battery metaphor; breaks, motivation and workload still matter, for other reasons.",
+      "unresolved": [
+        "Whether a smaller real effect exists under some conditions.",
+        "What causes the felt sense of mental fatigue if not a depleted resource."
+      ],
+      "evidenceBalance": "leans-second",
+      "balanceNote": "The largest, best-designed replication contradicts the original finding, so the evidence leans against the classic claim, though debate continues."
+    },
+    "deeper": "This is a case study in how psychology corrected itself. Large preregistered, multi-lab studies reduce publication bias and small-sample flukes. The lesson for readers is not \"psychology is false\" but \"treat single studies, even famous ones, as provisional\". Some researchers still argue for modified versions, and the debate continues in the literature. Replication efforts like this now also cover other classic findings, which is why it pays to check how well supported a claim is before building a policy on it.",
+    "simpleExplanation": "The idea that willpower runs out like a battery did not hold up when many labs tried to repeat the study.",
+    "keyConcepts": [
+      {
+        "label": "Ego depletion claim",
+        "terms": [
+          "willpower",
+          "self-control",
+          "limited",
+          "resource",
+          "depletion",
+          "battery"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Large replication found little effect",
+        "terms": [
+          "replicat",
+          "23",
+          "multi",
+          "near zero",
+          "failed",
+          "no effect",
+          "weak"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Treat famous findings as provisional",
+        "terms": [
+          "provisional",
+          "check",
+          "cautious",
+          "skeptic",
+          "replic",
+          "question"
+        ],
+        "minMatches": 1
+      }
+    ],
+    "disputed": "Contested. A 2016 multi-lab preregistered replication found an effect close to zero; some researchers defend modified versions of the theory."
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "people-management",
+      "leadership"
+    ],
+    "id": "psy-fundamental-attribution-error",
+    "title": "\"They are careless\" may be \"they are overloaded\"",
+    "hook": "We explain our mistakes by the situation and other people's by their character.",
+    "coreIdea": "Myth: when someone makes an error, it shows what kind of person they are. Reality: observers tend to overweight personality and underweight the situation, a tendency Lee Ross named the fundamental attribution error in 1977. We usually notice what a person did, but not the pressures behind it. We tend to extend ourselves the situational excuse we do not extend to others.",
+    "whyItMatters": "Managers who read behaviour as character fix the wrong thing and damage trust.",
+    "example": "Illustrative: an agent has low CSAT and is called \"uncaring\". Review shows he was assigned the escalated cases other agents avoided. Same behaviour, different explanation: the queue, not his character.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Who on your team do you describe with a trait, and what situation might you be ignoring?",
+    "suggestedAction": "Before judging someone's behaviour, name two situational explanations and check one of them.",
+    "primaryTopic": "psychology",
+    "difficulty": "intermediate",
+    "format": "myth-vs-reality",
+    "source": {
+      "type": "book",
+      "title": "The intuitive psychologist and his shortcomings: Distortions in the attribution process (in Advances in Experimental Social Psychology, vol. 10)",
+      "author": "Lee Ross",
+      "year": 1977
+    },
+    "relatedCardIds": [
+      "lead-fix-process-not-person",
+      "pm-repeated-mistakes",
+      "pm-sbi-feedback"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "The size of the bias varies, and research suggests it is weaker in some cultures than others. It does not mean character never matters; sometimes the person is the cause. The skill is to check the situation before concluding. A useful habit is to ask \"what would I have done in that position, with that information and pressure?\" before judging.",
+    "simpleExplanation": "We blame other people's personalities for mistakes but blame our own situations.",
+    "keyConcepts": [
+      {
+        "label": "Overweight character",
+        "terms": [
+          "character",
+          "personality",
+          "trait",
+          "disposition",
+          "person",
+          "type of person"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Underweight situation",
+        "terms": [
+          "situation",
+          "context",
+          "pressure",
+          "circumstance",
+          "environment"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Check situation before judging",
+        "terms": [
+          "check",
+          "before",
+          "ask",
+          "consider",
+          "explanation",
+          "curious"
+        ],
+        "minMatches": 1
+      }
+    ],
+    "disputed": "The strength of the bias varies across cultures and contexts; the general tendency is well documented but should not be treated as universal.",
+    "misconceptions": [
+      {
+        "triggers": [
+          "excuse",
+          "never their fault",
+          "no accountability"
+        ],
+        "note": "This does not remove accountability. It says to check the situation before concluding about character."
+      }
+    ]
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "psychology",
+      "people-management"
+    ],
+    "id": "comm-curse-of-knowledge",
+    "title": "Why experts explain badly",
+    "hook": "Once you know something, you cannot easily imagine not knowing it.",
+    "coreIdea": "In 1990, Stanford graduate student Elizabeth Newton asked people to tap out the rhythm of well-known songs for listeners to guess. As reported by Chip and Dan Heath in Made to Stick, tappers predicted listeners would guess about half the songs; listeners guessed very few. The tapper hears the melody in their head and cannot un-hear it. That gap is called the curse of knowledge.",
+    "whyItMatters": "The more expert you are, the more likely you skip steps that feel obvious to you and baffle the listener.",
+    "example": "Illustrative: a senior engineer tells a new agent, \"Just check the VDR logs for the usual pattern.\" The agent nods and then guesses, because \"usual pattern\" is a tune only the expert can hear.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "What instruction do you give your team that depends on something you learned years ago?",
+    "suggestedAction": "Ask a newcomer to explain back your next instruction in their own words, and note where it breaks down.",
+    "primaryTopic": "communication",
+    "difficulty": "beginner",
+    "format": "case-study",
+    "source": {
+      "type": "book",
+      "title": "Made to Stick",
+      "author": "Chip Heath & Dan Heath",
+      "year": 2007
+    },
+    "relatedCardIds": [
+      "comm-bluf-pyramid",
+      "pm-coaching-questions"
+    ],
+    "reviewStatus": "needs-source-check",
+    "deeper": "The exact numbers in the tappers-and-listeners study come from the Heaths' popular account of Newton's dissertation, so check the original before quoting them. Remedies: use concrete examples, test explanations on someone new to the topic, avoid in-house shorthand, and say the steps you consider obvious. Writing for someone who has never seen the system is a quick way to find what you have forgotten you know.",
+    "simpleExplanation": "When you know something well, it is hard to remember what it is like not to know it.",
+    "keyConcepts": [
+      {
+        "label": "Experts cannot imagine not knowing",
+        "terms": [
+          "expert",
+          "know",
+          "imagine",
+          "forget",
+          "obvious",
+          "assume"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Tappers vs listeners gap",
+        "terms": [
+          "tap",
+          "listen",
+          "song",
+          "melody",
+          "rhythm",
+          "gap",
+          "predict"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Test explanations on novices",
+        "terms": [
+          "novice",
+          "newcomer",
+          "test",
+          "explain back",
+          "concrete",
+          "example",
+          "jargon"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "leadership",
+      "productivity"
+    ],
+    "id": "comm-bluf-pyramid",
+    "title": "Answer first, evidence second",
+    "hook": "Busy readers decide in the first two lines whether to keep reading.",
+    "coreIdea": "BLUF, \"bottom line up front\", is a military writing habit: put the conclusion or the request first, then the reasons. Barbara Minto's Pyramid Principle does the same in more depth: lead with the answer, support it with a few grouped arguments, and put detail beneath. The reader gets the point at once and can stop or dig in. Most messages bury the ask in the last paragraph.",
+    "whyItMatters": "If your senior has to find the decision you need from them, your email is likely to wait.",
+    "example": "Illustrative: \"Approval needed by Thursday: add two temporary agents for the month-end spike (₹3.2 lakh). Reasons: backlog doubled over three weeks; no overtime budget left; risk to two SLA-bound accounts. Detail below.\"",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "In your last important email, could a reader get the ask from the first two lines?",
+    "suggestedAction": "Rewrite your next update so the first line states the decision or conclusion, before any background.",
+    "primaryTopic": "communication",
+    "difficulty": "beginner",
+    "format": "framework",
+    "source": {
+      "type": "book",
+      "title": "The Pyramid Principle",
+      "author": "Barbara Minto",
+      "year": 1987
+    },
+    "relatedCardIds": [
+      "comm-curse-of-knowledge",
+      "lead-communicating-difficult-decisions"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "BLUF is not always right. For emotionally difficult news or when the reader needs context to accept the conclusion, a short lead-in may land better. Minto's additional rule is that the points under a conclusion should be grouped and logically ordered, usually by time, structure or importance. Try writing the answer first for yourself: if you cannot state it in a sentence, the thinking is unfinished.",
+    "simpleExplanation": "Start with the answer or request, then explain why.",
+    "keyConcepts": [
+      {
+        "label": "Conclusion first",
+        "terms": [
+          "conclusion",
+          "answer first",
+          "bottom line",
+          "up front",
+          "start with",
+          "lead with"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Support with grouped reasons",
+        "terms": [
+          "reason",
+          "support",
+          "group",
+          "evidence",
+          "argument",
+          "detail"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Respect the reader's time",
+        "terms": [
+          "time",
+          "busy",
+          "skim",
+          "reader",
+          "attention",
+          "ask"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "decision-making",
+      "leadership"
+    ],
+    "id": "neg-batna",
+    "title": "Your power is your walk-away option",
+    "hook": "The strongest move in a negotiation often happens before you sit down.",
+    "coreIdea": "BATNA, the Best Alternative To a Negotiated Agreement, is a term from Fisher and Ury's Getting to Yes (1981). It is what you will do if this negotiation fails. Any offer should be compared with it, not with your hopes. A stronger alternative gives you real bargaining power; a weak one makes you accept poor terms. Work on improving your BATNA before negotiating, and estimate theirs.",
+    "whyItMatters": "Knowing your alternative protects you from accepting a bad deal and from rejecting a fair one.",
+    "example": "Illustrative: a vendor wants ₹18 lakh to renew a support tool. You have a written quote from another vendor for ₹16 lakh plus ₹1.5 lakh in switching costs. Your BATNA is ₹17.5 lakh all-in, so any renewal offer below that is better than walking away.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "In your current or next negotiation, what exactly will you do if the other side says no?",
+    "suggestedAction": "Before your next negotiation, write your BATNA in one line and one thing you could do this week to improve it.",
+    "primaryTopic": "negotiation",
+    "difficulty": "intermediate",
+    "format": "framework",
+    "source": {
+      "type": "book",
+      "title": "Getting to Yes: Negotiating Agreement Without Giving In",
+      "author": "Roger Fisher & William Ury",
+      "year": 1981
+    },
+    "relatedCardIds": [
+      "neg-interests-vs-positions",
+      "psy-anchoring-wheel"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "BATNA is not the same as your bottom line or reservation price, which is a number; a BATNA is an actual course of action you could take. Do not bluff about it: a false alternative damages trust once it is tested. Also consider the other side's BATNA. If it is weak, you may have more leverage than you think, and if it is strong, aim for terms that are better for them than walking away.",
+    "simpleExplanation": "Know what you will do if the talks fail, so you can judge whether an offer is actually good.",
+    "keyConcepts": [
+      {
+        "label": "Best alternative if no deal",
+        "terms": [
+          "alternative",
+          "walk away",
+          "no deal",
+          "fall back",
+          "plan b",
+          "fail"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Compare offers to it",
+        "terms": [
+          "compare",
+          "offer",
+          "benchmark",
+          "measure",
+          "judge"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Improve it and estimate theirs",
+        "terms": [
+          "improve",
+          "strengthen",
+          "their",
+          "other side",
+          "leverage",
+          "power"
+        ],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "createdAt": "2026-10-28",
+    "contrastingCardIds": [],
+    "secondaryTopics": [
+      "people-management",
+      "communication"
+    ],
+    "id": "neg-interests-vs-positions",
+    "title": "What they demand is rarely what they need",
+    "hook": "Two people can want the same thing on paper and need entirely different things.",
+    "coreIdea": "Fisher and Ury's Getting to Yes separates positions, what people say they want, from interests, why they want it. Bargaining over positions tends to produce deadlock or a split down the middle. Asking \"why is that important to you?\" often reveals interests that several different solutions could satisfy. Many apparent conflicts are two incompatible positions that sit on top of compatible interests.",
+    "whyItMatters": "You can often give someone what they need without giving them what they asked for.",
+    "example": "Illustrative: a team member insists on the day shift permanently (position). Asking why shows she has school pickups at 4 pm (interest). A shift starting at 7 am solves it, and so does a flexible start, without changing the roster for others.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "In your last standoff, did you ask why the other side wanted what they demanded?",
+    "suggestedAction": "In your next disagreement, ask \"What would that give you?\" before proposing anything.",
+    "primaryTopic": "negotiation",
+    "difficulty": "intermediate",
+    "format": "counterintuitive",
+    "source": {
+      "type": "book",
+      "title": "Getting to Yes: Negotiating Agreement Without Giving In",
+      "author": "Roger Fisher & William Ury",
+      "year": 1981
+    },
+    "relatedCardIds": [
+      "neg-batna",
+      "pm-conflict-task-vs-relationship",
+      "lead-setting-boundaries"
+    ],
+    "reviewStatus": "verified",
+    "deeper": "Asking \"why\" can sound like a challenge; softer forms are \"help me understand what this solves for you\". Some conflicts do have fixed-pie elements, such as price, where interests really do oppose, but even then other issues like timing or terms can be traded. Share your own interests too: people reveal theirs more readily when you have gone first. Listening for the interest behind the demand also keeps the conversation about the problem rather than about who wins.",
+    "simpleExplanation": "Find out why someone wants something, because there may be other ways to give them that.",
+    "keyConcepts": [
+      {
+        "label": "Positions vs interests",
+        "terms": [
+          "position",
+          "interest",
+          "want",
+          "need",
+          "why"
+        ],
+        "minMatches": 2
+      },
+      {
+        "label": "Ask why to find interests",
+        "terms": [
+          "ask",
+          "why",
+          "understand",
+          "reveal",
+          "underlying"
+        ],
+        "minMatches": 1
+      },
+      {
+        "label": "Multiple solutions satisfy an interest",
+        "terms": [
+          "option",
+          "solution",
+          "alternative",
+          "creative",
+          "several",
+          "flexible",
+          "different way"
+        ],
+        "minMatches": 1
+      }
+    ]
+  }
+]
