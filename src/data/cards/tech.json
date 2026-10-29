@@ -15,6 +15,7 @@
     ],
     "difficulty": "beginner",
     "format": "explain-beginner",
+    "coverSymbol": "chip",
     "source": {
       "type": "paper",
       "title": "Attention Is All You Need",
@@ -87,6 +88,7 @@
     ],
     "difficulty": "intermediate",
     "format": "ai-explained",
+    "coverSymbol": "eye",
     "source": {
       "type": "paper",
       "title": "Lost in the Middle: How Language Models Use Long Contexts",
@@ -160,6 +162,7 @@
     ],
     "difficulty": "intermediate",
     "format": "checklist",
+    "coverSymbol": "checklist",
     "checklist": [
       "Cases come from real past work, not invented easy ones.",
       "Include hard, rare and sensitive cases on purpose.",
@@ -237,6 +240,7 @@
     ],
     "difficulty": "beginner",
     "format": "framework",
+    "coverSymbol": "bulb",
     "source": {
       "type": "original",
       "title": "Original synthesis of common prompt-writing practice"
@@ -307,6 +311,7 @@
     ],
     "difficulty": "intermediate",
     "format": "common-mistake",
+    "coverSymbol": "robot",
     "source": {
       "type": "paper",
       "title": "Humans and Automation: Use, Misuse, Disuse, Abuse",
@@ -379,6 +384,7 @@
     ],
     "difficulty": "intermediate",
     "format": "myth-vs-reality",
+    "coverSymbol": "shield",
     "source": {
       "type": "primary",
       "title": "The Digital Personal Data Protection Act, 2023 (No. 22 of 2023)",
@@ -464,6 +470,7 @@
     ],
     "difficulty": "advanced",
     "format": "what-would-you-do",
+    "coverSymbol": "scale",
     "source": {
       "type": "original",
       "title": "Original synthesis"
@@ -535,6 +542,7 @@
     ],
     "difficulty": "intermediate",
     "format": "connect-domains",
+    "coverSymbol": "brain",
     "bridge": {
       "from": "ai",
       "to": "psychology",
@@ -610,6 +618,7 @@
     ],
     "difficulty": "intermediate",
     "format": "comparison",
+    "coverSymbol": "fork",
     "source": {
       "type": "article",
       "title": "Building effective agents",
@@ -684,6 +693,7 @@
     ],
     "difficulty": "intermediate",
     "format": "big-idea",
+    "coverSymbol": "funnel",
     "source": {
       "type": "original",
       "title": "Original synthesis of common model-routing practice"
@@ -755,6 +765,7 @@
     ],
     "difficulty": "intermediate",
     "format": "counterintuitive",
+    "coverSymbol": "coins",
     "source": {
       "type": "original",
       "title": "Original synthesis; see also Liu et al. (2023) on long-context use"
@@ -826,6 +837,7 @@
     ],
     "difficulty": "intermediate",
     "format": "mental-model",
+    "coverSymbol": "link",
     "source": {
       "type": "original",
       "title": "Standard probability arithmetic, illustrative"
@@ -898,6 +910,7 @@
     ],
     "difficulty": "intermediate",
     "format": "historical-lesson",
+    "coverSymbol": "hourglass",
     "source": {
       "type": "paper",
       "title": "The WyCash Portfolio Management System (OOPSLA '92 experience report)",
@@ -971,6 +984,7 @@
     ],
     "difficulty": "advanced",
     "format": "two-viewpoints",
+    "coverSymbol": "puzzle",
     "source": {
       "type": "original",
       "title": "Original synthesis; reasoning, not an empirical finding"
@@ -1076,6 +1090,7 @@
     ],
     "difficulty": "intermediate",
     "format": "big-idea",
+    "coverSymbol": "magnifier",
     "source": {
       "type": "book",
       "title": "Site Reliability Engineering: How Google Runs Production Systems (ch. 6, Monitoring Distributed Systems)",
@@ -1149,6 +1164,7 @@
     ],
     "difficulty": "advanced",
     "format": "big-idea",
+    "coverSymbol": "layers",
     "source": {
       "type": "original",
       "title": "Original synthesis"
@@ -1219,6 +1235,7 @@
     ],
     "difficulty": "advanced",
     "format": "quote-interpretation",
+    "coverSymbol": "people",
     "quote": {
       "text": "organizations which design systems ... are constrained to produce designs which are copies of the communication structures of these organizations.",
       "by": "Melvin E. Conway, 'How Do Committees Invent?' (1968)",

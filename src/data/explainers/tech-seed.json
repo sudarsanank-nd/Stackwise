@@ -1,0 +1,1034 @@
+[
+  {
+    "cardId": "ai-eval-before-ship",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Demo vs eval",
+        "caption": "Without an eval you only remember the impressive examples. With one, you can say whether a change helped or hurt.",
+        "labels": [
+          "Demo memories",
+          "Eval set"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "bars",
+        "chapter": "Ten easy tickets",
+        "caption": "Illustrative: ten friendly tickets look great. A 50-case eval from past tickets shows invented warranty terms in 8.",
+        "labels": [
+          "Passed",
+          "Invented terms"
+        ],
+        "values": [
+          0.84,
+          0.16
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Build it honestly",
+        "caption": "Use real past cases, include hard and sensitive ones, define a good answer in writing, and keep a held-back set.",
+        "labels": [
+          "Real past cases",
+          "Hard & rare cases",
+          "Define 'good'",
+          "Held-out set"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "cycle",
+        "chapter": "Re-run on every change",
+        "caption": "Re-run it every time you change the prompt, the model or the documents.",
+        "labels": [
+          "Change",
+          "Re-run",
+          "Compare"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "statement",
+        "chapter": "People score too",
+        "caption": "Have a person score a sample, not only another AI.",
+        "labels": [
+          "Human sample"
+        ],
+        "seconds": 7
+      }
+    ]
+  },
+  {
+    "cardId": "ai-prompt-as-spec",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Wish vs spec",
+        "caption": "Vague prompts get plausible, generic results. Clear ones make the result checkable.",
+        "labels": [
+          "Wish",
+          "Spec"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "Five parts",
+        "caption": "Write it like a brief for a capable new colleague: goal, inputs, rules, what to do when unsure, output format.",
+        "labels": [
+          "Goal",
+          "Inputs",
+          "Rules",
+          "When unsure",
+          "Output format"
+        ],
+        "seconds": 11
+      },
+      {
+        "visual": "statement",
+        "chapter": "Show good output",
+        "caption": "Add one or two examples of good output.",
+        "labels": [
+          "+ 1–2 examples"
+        ],
+        "seconds": 7
+      },
+      {
+        "visual": "statement",
+        "chapter": "The skipped line",
+        "caption": "Illustrative: 'If a field is not in the thread, write NOT STATED.' Without it, the model fills gaps with plausible guesses.",
+        "labels": [
+          "NOT STATED"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "ai-automation-bias",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "Trusting the tool",
+        "caption": "Automation bias: over-relying on automated suggestions, even when other evidence points the other way.",
+        "labels": [
+          "Trust the tool"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "versus",
+        "chapter": "Two ways it shows",
+        "caption": "It shows up two ways: acting on a wrong recommendation, and missing a problem the system didn't flag.",
+        "labels": [
+          "Wrong advice",
+          "Missed problem"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "scale",
+        "chapter": "The rubber stamp",
+        "caption": "A reviewer who sees only the AI's answer, under time pressure, mostly confirms it.",
+        "labels": [
+          "AI's answer",
+          "Own check"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Decide first",
+        "caption": "Have reviewers form their own answer before seeing the AI's, and track how often they disagree.",
+        "labels": [
+          "Form own answer",
+          "Then see AI's",
+          "Track disagreement"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "ai-data-privacy",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Myth vs reality",
+        "caption": "Myth: a quick paste into a popular AI tool is harmless. Reality: where the text goes depends on product, settings and contract.",
+        "labels": [
+          "Myth: harmless",
+          "Reality: depends"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Where it can go",
+        "caption": "Pasted text may be stored, logged, reviewed or, on some plans, used for training.",
+        "labels": [
+          "Stored",
+          "Logged",
+          "Reviewed",
+          "Used for training"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "scale",
+        "chapter": "More than needed",
+        "caption": "Illustrative: a full ticket with name, phone and vehicle registration is pasted for a summary that needed none of them.",
+        "labels": [
+          "Pasted details",
+          "Needed details"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "Minimise first",
+        "caption": "The safe habit: remove names, phone numbers, addresses and IDs first, and use only approved tools.",
+        "labels": [
+          "Minimise first"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "ai-responsible-ai-tradeoffs",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "Every guardrail has a price",
+        "caption": "Responsible AI is mostly trade-offs, not slogans.",
+        "labels": [
+          "Trade-offs"
+        ],
+        "seconds": 7
+      },
+      {
+        "visual": "versus",
+        "chapter": "Cautious vs helpful",
+        "caption": "Tuned to never say anything wrong, it refuses or hedges more. Tuned to always help, it sometimes answers when it shouldn't.",
+        "labels": [
+          "Never wrong",
+          "Always helps"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "The same tension",
+        "caption": "The same goes for speed versus review, privacy versus personalisation, and transparency versus simplicity.",
+        "labels": [
+          "Safe/useful",
+          "Speed/review",
+          "Privacy/personal",
+          "Transparent/simple"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "cycle",
+        "chapter": "Choose on purpose",
+        "caption": "Decide which error is costlier in this use, set the threshold on purpose, write the choice down, and revisit it.",
+        "labels": [
+          "Weigh",
+          "Set",
+          "Write",
+          "Revisit"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "ai-hallucination-human-confidence",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Two kinds of bluff",
+        "caption": "A model sounds fluent whether or not it has solid grounds. People do something similar; we call it confidence.",
+        "labels": [
+          "AI fluency",
+          "Human certainty"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "Tone tells you nothing",
+        "caption": "Nothing in the tone reveals which is which. Confidence is a poor guide to accuracy.",
+        "labels": [
+          "Tone ≠ evidence"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "The escalation call",
+        "caption": "Illustrative: an engineer states a root cause with total certainty, the team moves on, and later logs show a different cause.",
+        "labels": [
+          "Certain root cause",
+          "Team moves on",
+          "Logs: other cause"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "cycle",
+        "chapter": "Ask for the basis",
+        "caption": "One rule for both: ask 'what is that based on?' and judge by evidence and track record, not delivery.",
+        "labels": [
+          "Claim",
+          "Basis?",
+          "Check"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "agent-workflow-vs-agent",
+    "scenes": [
+      {
+        "visual": "stack",
+        "chapter": "Workflow: fixed steps",
+        "caption": "In a workflow, code decides the steps in advance. Illustrative: classify the ticket, fetch the device record, draft a reply.",
+        "labels": [
+          "Classify ticket",
+          "Fetch device",
+          "Draft reply"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "cycle",
+        "chapter": "Agent: it decides",
+        "caption": "In an agent, the model decides its own steps and which tools to use, looping until it finishes.",
+        "labels": [
+          "Choose",
+          "Use tool",
+          "Done?"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "versus",
+        "chapter": "Control vs openness",
+        "caption": "Workflows are more predictable, cheaper and easier to test. Agents suit open-ended problems, at the cost of control.",
+        "labels": [
+          "Predictable",
+          "Open-ended"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "Start simple",
+        "caption": "Start with the simplest design, and add autonomy only when it measurably improves results.",
+        "labels": [
+          "Simplest first"
+        ],
+        "seconds": 7
+      }
+    ]
+  },
+  {
+    "cardId": "agent-token-efficiency",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "Tokens cost",
+        "caption": "Most AI services charge by tokens and take longer the more there are.",
+        "labels": [
+          "Tokens = cost"
+        ],
+        "seconds": 7
+      },
+      {
+        "visual": "curve",
+        "chapter": "Loops multiply it",
+        "caption": "An agent re-sends its growing history at each step, so wasteful context multiplies. The shape is schematic.",
+        "labels": [
+          "Agent steps →",
+          "Re-sent history"
+        ],
+        "values": [
+          0.1,
+          0.25,
+          0.45,
+          0.7,
+          1.0
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "bars",
+        "chapter": "Send less",
+        "caption": "Illustrative: pass the last three related cases and a short summary, not two years of tickets. Sizes are schematic.",
+        "labels": [
+          "Full history",
+          "Trimmed"
+        ],
+        "values": [
+          0.9,
+          0.35
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Trim, then test",
+        "caption": "Trim to what is relevant, summarise old steps, ask for concise output, then check answers against your eval set.",
+        "labels": [
+          "Relevant only",
+          "Summarise old",
+          "Concise output"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "tech-technical-debt",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "Borrowing speed",
+        "caption": "Ward Cunningham's 1992 metaphor: shipping code that reflects incomplete understanding is like borrowing. You get speed now.",
+        "labels": [
+          "Borrow speed"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "curve",
+        "chapter": "The interest",
+        "caption": "The interest is the extra effort every later change costs while the gap remains. The curve is schematic.",
+        "labels": [
+          "Later changes →",
+          "Effort per change"
+        ],
+        "values": [
+          0.15,
+          0.3,
+          0.5,
+          0.75,
+          0.95
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "cycle",
+        "chapter": "Paying it down",
+        "caption": "Paying it down means refactoring once you learn more.",
+        "labels": [
+          "Ship",
+          "Learn",
+          "Refactor"
+        ],
+        "seconds": 7
+      },
+      {
+        "visual": "versus",
+        "chapter": "Not an excuse",
+        "caption": "It was never an excuse for knowingly poor work. It was about being honest that understanding grows.",
+        "labels": [
+          "Honest speed",
+          "Sloppy work"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "tech-build-vs-buy",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Two real arguments",
+        "caption": "Build: control and fit, but you carry maintenance for good. Buy: working features sooner, on the vendor's design and terms.",
+        "labels": [
+          "Build",
+          "Buy"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "No settled answer",
+        "caption": "No study settles this. The honest answer is that it depends on what is distinctive about you.",
+        "labels": [
+          "It depends"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Often both",
+        "caption": "Many teams buy the commodity parts and build the thin layer that encodes how their business actually works.",
+        "labels": [
+          "Your thin layer",
+          "Commodity parts"
+        ],
+        "seconds": 11
+      }
+    ]
+  },
+  {
+    "cardId": "tech-observability",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "Green but broken",
+        "caption": "A dashboard that stays green while customers suffer is worse than none.",
+        "labels": [
+          "Green ≠ working"
+        ],
+        "seconds": 7
+      },
+      {
+        "visual": "stack",
+        "chapter": "Four golden signals",
+        "caption": "Google's SRE book suggests four golden signals. Good signals describe what the user experiences, not only server health.",
+        "labels": [
+          "Latency",
+          "Traffic",
+          "Errors",
+          "Saturation"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "versus",
+        "chapter": "Healthy servers, stuck users",
+        "caption": "Illustrative: every server shows healthy, yet activations hang. Only request-to-active time reveals a step queueing.",
+        "labels": [
+          "Servers: all OK",
+          "Activations hang"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "cycle",
+        "chapter": "Ask new questions",
+        "caption": "Observability lets you ask new questions about failures you did not predict, not just alert on known ones.",
+        "labels": [
+          "Signal",
+          "Question",
+          "Diagnose"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "tech-platform-thinking",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Built three times",
+        "caption": "Illustrative: three squads each build a device-health script, with different formats and bugs. One shared service serves all.",
+        "labels": [
+          "3 scripts",
+          "1 shared service"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "stack",
+        "chapter": "What makes a platform",
+        "caption": "A good platform has clear interfaces, documentation and an owner, and treats other teams as its customers.",
+        "labels": [
+          "Clear interface",
+          "Documentation",
+          "An owner",
+          "Teams = customers"
+        ],
+        "seconds": 11
+      },
+      {
+        "visual": "statement",
+        "chapter": "Wait for real demand",
+        "caption": "The risks: building too early for imagined needs, or too rigidly so teams work around it. Start from repeated real demand.",
+        "labels": [
+          "Real demand first"
+        ],
+        "seconds": 10
+      }
+    ]
+  },
+  {
+    "cardId": "tech-conways-law",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "Conway's observation",
+        "caption": "Conway (1968): organisations that design systems tend to produce designs that copy their communication structure.",
+        "labels": [
+          "Org chart → system"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "Teams that rarely talk",
+        "caption": "Illustrative: separate hardware, firmware and app teams talk mainly through tickets.",
+        "labels": [
+          "Hardware team",
+          "Firmware team",
+          "App team"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "versus",
+        "chapter": "Seams customers see",
+        "caption": "Customers get three different 'device offline' messages from three systems, none aware of the others.",
+        "labels": [
+          "Three messages",
+          "One journey"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "cycle",
+        "chapter": "Use it on purpose",
+        "caption": "Use it as a diagnostic, or deliberately: shape teams around the outcome you want, and the architecture tends to follow.",
+        "labels": [
+          "Teams",
+          "Talk",
+          "Design"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "pm-psych-safety-edmondson",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "A puzzling result",
+        "caption": "Edmondson was surprised that some better-led hospital teams appeared to record more medication errors.",
+        "labels": [
+          "More errors?"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "versus",
+        "chapter": "Mistakes vs reporting",
+        "caption": "Her interpretation: they weren't making more mistakes. They were more willing to report them.",
+        "labels": [
+          "More mistakes",
+          "More reporting"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "Psychological safety",
+        "caption": "A shared belief the team is safe for interpersonal risk-taking, without fear of embarrassment or punishment.",
+        "labels": [
+          "Ask questions",
+          "Admit errors",
+          "Raise concerns"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "bars",
+        "chapter": "Zero can mean silence",
+        "caption": "Illustrative: Pod A logs eight process slips a month, Pod B logs zero. Rewarding Pod B may be rewarding concealment.",
+        "labels": [
+          "Pod A: 8",
+          "Pod B: 0"
+        ],
+        "values": [
+          0.8,
+          0.0
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "ai-hallucination-fluency",
+    "scenes": [
+      {
+        "visual": "cycle",
+        "chapter": "Predicting text",
+        "caption": "A language model generates text by predicting likely next pieces, based on patterns learned in training.",
+        "labels": [
+          "Predict",
+          "Add",
+          "Repeat"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "versus",
+        "chapter": "No built-in signal",
+        "caption": "It has no built-in signal that separates 'I know this' from 'this sounds right'.",
+        "labels": [
+          "I know this",
+          "Sounds right"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "statement",
+        "chapter": "Fluent and wrong",
+        "caption": "Illustrative: asked for a refund policy, it gives a plausible clause number. The clause doesn't exist; the tone gave no hint.",
+        "labels": [
+          "Fluent ≠ true"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "stack",
+        "chapter": "Check the source",
+        "caption": "For one AI task, require the answer to quote the exact source passage it relied on, then check that passage.",
+        "labels": [
+          "Quote the source",
+          "Check the passage"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "ai-rag-vs-finetune",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Teach or hand notes",
+        "caption": "Two ways to make an AI know your business: train it further, or hand it the documents when the question arrives.",
+        "labels": [
+          "Fine-tune",
+          "RAG"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "Fine-tuning",
+        "caption": "Fine-tuning trains the model further on your examples, changing its weights. Good for a style, format or narrow skill.",
+        "labels": [
+          "Your examples",
+          "More training",
+          "Changed weights"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "cycle",
+        "chapter": "Retrieval",
+        "caption": "RAG leaves the model unchanged. At question time it fetches relevant documents and puts them in the prompt.",
+        "labels": [
+          "Question",
+          "Fetch",
+          "Answer"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "Changing facts",
+        "caption": "For facts that change, RAG is usually better: update the documents instead of retraining, and show which source was used.",
+        "labels": [
+          "Update the docs"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "dm-premortem",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "Assume it failed",
+        "caption": "Imagine the plan has already failed badly. Each person writes down the most likely reasons why.",
+        "labels": [
+          "It failed. Why?"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "versus",
+        "chapter": "A new social task",
+        "caption": "You are no longer the person doubting the plan. You are answering a question everyone was asked.",
+        "labels": [
+          "Doubter",
+          "Answerer"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Silently, then together",
+        "caption": "Collect reasons silently first, then discuss, so nobody anchors on the most senior person's view.",
+        "labels": [
+          "Write silently",
+          "Then discuss",
+          "Sort the reasons"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "The hidden gap",
+        "caption": "Illustrative: two leads independently write 'night shift was never trained', a gap no one had mentioned.",
+        "labels": [
+          "Night shift?"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "sup-goodhart-sla",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "Goodhart's law",
+        "caption": "\"When a measure becomes a target, it ceases to be a good measure.\" Strathern's phrasing of Goodhart's idea.",
+        "labels": [
+          "Measure → target"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "The fastest path",
+        "caption": "Judge agents on time-to-first-reply, and the fastest path is a quick acknowledgement that says nothing.",
+        "labels": [
+          "Target: 1st reply",
+          "Quick 'on it' note",
+          "Metric turns green"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "versus",
+        "chapter": "Green, still waiting",
+        "caption": "The metric turns green while the customer waits exactly as long for an actual answer.",
+        "labels": [
+          "Metric green",
+          "Customer waits"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "cycle",
+        "chapter": "Pair it with quality",
+        "caption": "Pair each SLA with a quality check: sample five compliant cases a week. Did the first reply move the case forward?",
+        "labels": [
+          "SLA",
+          "Sample 5",
+          "Review"
+        ],
+        "seconds": 10
+      }
+    ]
+  },
+  {
+    "cardId": "inv-active-vs-passive",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Match or beat",
+        "caption": "Index funds try to match a market at low cost. Active funds try to beat it through selection and timing, usually at higher cost.",
+        "labels": [
+          "Index",
+          "Active"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "chain",
+        "chapter": "The arithmetic",
+        "caption": "Before costs, active investors as a group earn roughly the market return. After costs, the average must trail. Schematic.",
+        "labels": [
+          "Market return",
+          "Active, pre-cost",
+          "Active, post-cost"
+        ],
+        "values": [
+          0.9,
+          0.9,
+          0.75
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "The open question",
+        "caption": "The open question: can you identify, in advance, the minority who will outperform?",
+        "labels": [
+          "Who, in advance?"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "Know your costs",
+        "caption": "Education, not advice: look up each fund's expense ratio and write its annual cost in rupees next to it.",
+        "labels": [
+          "Each fund",
+          "Expense ratio",
+          "₹ cost per year"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "connect-portfolio-team",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Same exposure",
+        "caption": "Investors diversify so one holding failing doesn't sink the portfolio. Teams have the same exposure in people.",
+        "labels": [
+          "Portfolio",
+          "Team"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "Concentrated",
+        "caption": "When one engineer is the only person who understands the billing integration, the team is 'concentrated'.",
+        "labels": [
+          "Only one knows"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "scale",
+        "chapter": "The trade",
+        "caption": "Spreading knowledge costs a little efficiency now to reduce a large, sudden loss later — the same trade an investor makes.",
+        "labels": [
+          "Sudden loss",
+          "Little efficiency"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "stack",
+        "chapter": "Find the 1s",
+        "caption": "List your top five critical skills and how many people can do each without help. Anything with '1' gets a pairing plan.",
+        "labels": [
+          "Top 5 skills",
+          "Count who can",
+          "'1' → pair up"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "psy-marshmallow-myth",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Myth vs reality",
+        "caption": "Myth: waiting for a second marshmallow strongly predicts later success. Reality: the link looks much weaker.",
+        "labels": [
+          "Myth: destiny",
+          "Reality: weaker"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "bars",
+        "chapter": "Re-run bigger",
+        "caption": "A larger 2018 replication found a much weaker link, which shrank further once background was accounted for. Sizes schematic.",
+        "labels": [
+          "Original",
+          "Replication",
+          "+ background"
+        ],
+        "values": [
+          0.8,
+          0.4,
+          0.2
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "Rational trust?",
+        "caption": "Kidd, Palmeri and Aslin (2013): children waited less after an experimenter had been unreliable.",
+        "labels": [
+          "Rational trust?"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "Still debated",
+        "caption": "Still debated, so read famous findings carefully: who was sampled, has it replicated, and what happens when background is controlled?",
+        "labels": [
+          "Who was sampled?",
+          "Replicated?",
+          "Background?"
+        ],
+        "seconds": 10
+      }
+    ]
+  },
+  {
+    "cardId": "agent-hitl-checkpoints",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "All or nothing",
+        "caption": "Approving every step slows an agent and trains people to click 'approve' without reading. That is as useless as reviewing nothing.",
+        "labels": [
+          "Review all",
+          "Review none"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Where to check",
+        "caption": "Put checkpoints where mistakes are costly or hard to undo. Any 'yes' earns a human review.",
+        "labels": [
+          "Irreversible?",
+          "Money/customers?",
+          "Outside tested?",
+          "Weak evidence?"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "scale",
+        "chapter": "Free vs approved",
+        "caption": "Illustrative: the agent drafts replies and tags cases freely, but a human approves refunds, deletions and promised dates.",
+        "labels": [
+          "Refunds",
+          "Drafts"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "Watch approval rates",
+        "caption": "A checkpoint approved 100% of the time for months is either unnecessary or not being read.",
+        "labels": [
+          "100% approved?"
+        ],
+        "seconds": 8
+      }
+    ]
+  }
+]

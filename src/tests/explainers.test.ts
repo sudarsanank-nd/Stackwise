@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { CARD_INDEX, EXPLAINERS, RAW_EXPLAINERS, explainerSeconds } from '../services/content';
+import { ALL_CARDS, CARD_INDEX, EXPLAINERS, RAW_EXPLAINERS, explainerSeconds } from '../services/content';
 
 const VISUALS = ['scale', 'curve', 'cycle', 'bars', 'stack', 'versus', 'chain', 'statement'];
 const RAW = RAW_EXPLAINERS;
@@ -10,6 +10,12 @@ describe('motion explainers', () => {
     ids.forEach((id) => expect(CARD_INDEX.has(id), id).toBe(true));
     expect(new Set(ids).size).toBe(ids.length);
     expect(EXPLAINERS.length).toBe(RAW.length);
+  });
+
+  it('every card has an explainer and a cover symbol', () => {
+    const covered = new Set(RAW.map((e) => e.cardId));
+    expect(ALL_CARDS.filter((c) => !covered.has(c.id)).map((c) => c.id)).toEqual([]);
+    expect(ALL_CARDS.filter((c) => !c.coverSymbol).map((c) => c.id)).toEqual([]);
   });
 
   it.each(RAW.map((e) => [e.cardId, e] as const))('explainer %s is valid', (_id, e) => {

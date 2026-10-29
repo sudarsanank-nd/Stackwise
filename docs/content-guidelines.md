@@ -55,7 +55,7 @@ Kebab-case with a domain prefix: `inv-`, `pf-`, `bf-`, `psy-`, `pm-`, `lead-`, `
 4. Set `reviewStatus` honestly; flag anything you could not verify as `needs-source-check`.
 
 ## Motion explainers
-`src/data/explainers/*.json` holds short animated explainers (30–60 s) for about one card in five. They play only when the reader taps Play, muted, with captions always on. Validate with `npx vitest run src/tests/explainers.test.ts`.
+`src/data/explainers/*.json` holds short animated explainers (30–60 s) — every card has one, plus a `coverSymbol` from `src/data/symbols.ts` for its cover art. New cards need both. They play only when the reader taps Play, muted, with captions always on. Validate with `npx vitest run src/tests/explainers.test.ts`.
 
 - One explainer per card; 3–6 scenes; total 25–60 s (`seconds` per scene, default 8).
 - Every scene needs `visual`, `caption` (≤ 140 characters) and `chapter` (≤ 32). Labels ≤ 18 characters.
