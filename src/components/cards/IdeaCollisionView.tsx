@@ -24,7 +24,7 @@ export function IdeaCollisionView({ collision, compact }: { collision: IdeaColli
       <p className="flex items-center gap-2 text-[13px] font-semibold tracking-wider text-ink-2 uppercase">
         <Icon name="spark" size={16} /> Idea collision
       </p>
-      <h2 className="mt-2 font-serif text-[24px] leading-snug font-semibold">{collision.prompt}</h2>
+      <h2 className="mt-2 font-display text-[24px] leading-snug font-extrabold tracking-[-0.02em]">{collision.prompt}</h2>
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
         {[a, b].map((c) => (
           <Link key={c.id} to={`/card/${c.id}`} className="rounded-xl border border-line bg-bg p-3 hover:bg-surface-2">
@@ -61,7 +61,7 @@ export function IdeaCollisionView({ collision, compact }: { collision: IdeaColli
             </p>
           )}
           <p className="text-[12px] font-semibold tracking-wider text-ink-2 uppercase">One interpretation</p>
-          <p className="mt-1 font-serif text-[17px] leading-relaxed">{collision.suggestedConnection}</p>
+          <p className="mt-1 text-[17px] leading-relaxed">{collision.suggestedConnection}</p>
           <p className="mt-3 text-[12px] font-semibold tracking-wider text-ink-2 uppercase">Other angles</p>
           <ul className="mt-1 list-disc space-y-1 pl-5 text-[15px]">
             {collision.otherAngles.map((o) => (

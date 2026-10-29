@@ -11,7 +11,7 @@ export function GuardrailPanel({ minutes, cards }: { minutes: number; cards: num
   return (
     <section aria-labelledby="guardrail-title" className="fade-in rounded-3xl border border-line bg-surface p-6 text-center">
       <Icon name="check" size={32} className="mx-auto text-ok" />
-      <h2 id="guardrail-title" className="mt-2 font-serif text-[26px] font-semibold">
+      <h2 id="guardrail-title" className="mt-2 font-display text-[26px] font-extrabold tracking-[-0.02em]">
         You've reached today's target
       </h2>
       <p className="mx-auto mt-2 max-w-sm text-ink-2">

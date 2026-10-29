@@ -41,10 +41,10 @@ export function ScenarioRunner({ scenario, onComplete }: { scenario: DecisionSce
         <span>{DIFFICULTY_LABELS[scenario.difficulty]}</span>
       </div>
       <ProgressBar className="mt-3" value={STAGES.indexOf(stage) / (STAGES.length - 1)} label="Scenario progress" />
-      <h2 id={`sc-${scenario.id}`} className="mt-4 font-serif text-[24px] leading-snug font-semibold">
+      <h2 id={`sc-${scenario.id}`} className="mt-4 font-display text-[24px] leading-snug font-extrabold tracking-[-0.02em]">
         {scenario.title}
       </h2>
-      <p className="mt-2 font-serif text-[17px] leading-relaxed">{scenario.scenario}</p>
+      <p className="mt-2 text-[17px] leading-relaxed">{scenario.scenario}</p>
 
       {stage === 'read' && (
         <fieldset className="mt-5">
@@ -127,7 +127,7 @@ export function ScenarioRunner({ scenario, onComplete }: { scenario: DecisionSce
               </li>
             ))}
           </ul>
-          <p className="mt-4 font-serif text-[17px] leading-relaxed">{scenario.debrief}</p>
+          <p className="mt-4 text-[17px] leading-relaxed">{scenario.debrief}</p>
           {stage === 'principle' && (
             <Button variant="primary" className="mt-4" onClick={() => setStage('reflect')}>
               Reflect

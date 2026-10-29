@@ -47,7 +47,7 @@ export default function CardDetailPage() {
       {card.deeper && (
         <Section title="Explore deeper">
           <Panel>
-            <p className="font-serif text-[17px] leading-relaxed">{card.deeper}</p>
+            <p className="text-[17px] leading-relaxed">{card.deeper}</p>
           </Panel>
         </Section>
       )}

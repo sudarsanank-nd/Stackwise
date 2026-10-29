@@ -35,7 +35,7 @@ export default function MapPage() {
         ].map(([k, v]) => (
           <Panel key={k} className="p-4!">
             <p className="text-[12px] text-ink-2">{k}</p>
-            <p className="mt-1 font-serif text-[26px] font-semibold tabular-nums">{v}</p>
+            <p className="mt-1 font-display text-[26px] font-extrabold tracking-[-0.02em] tabular-nums">{v}</p>
           </Panel>
         ))}
       </div>
@@ -131,7 +131,7 @@ export default function MapPage() {
 
       <Section title="Weekly reflection">
         <Panel>
-          <label htmlFor={reflectId} className="font-serif text-[18px]">{map.reflectionQuestion}</label>
+          <label htmlFor={reflectId} className="font-serif italic text-[21px]">{map.reflectionQuestion}</label>
           <textarea id={reflectId} rows={3} value={reflection} onChange={(e) => setReflection(e.target.value)} className="mt-3 w-full rounded-xl border border-line bg-bg p-3 text-[16px]" />
           <Button
             className="mt-2"

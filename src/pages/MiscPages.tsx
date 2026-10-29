@@ -3,44 +3,50 @@ import { Link } from 'react-router-dom';
 import { COLLISIONS, ALL_CARDS, SCENARIOS } from '../services/content';
 import { IdeaCollisionView } from '../components/cards/IdeaCollisionView';
 import { Button, LinkButton, PageHeader, Panel, Section, EmptyState } from '../components/common/ui';
-import { Logo } from '../components/navigation/AppShell';
+import { LogoMark, Wordmark } from '../components/brand/Logo';
+import { CoverArt } from '../components/cards/CoverArt';
 import { OnboardingWizard } from '../components/onboarding/OnboardingWizard';
 import { TOPICS } from '../data/topics';
 
+const WELCOME_CARDS = ['pm-one-on-ones', 'agent-compounding-errors', 'bf-loss-aversion-panic'];
+
 export function WelcomePage() {
+  const cards = WELCOME_CARDS.map((id) => ALL_CARDS.find((c) => c.id === id)).filter((c) => !!c);
+  const fan = ['left-0 top-8 -rotate-[8deg]', 'right-0 top-6 rotate-[7deg]', 'left-1/2 top-12 -translate-x-1/2'];
   return (
-    <div className="mx-auto flex min-h-dvh max-w-xl flex-col justify-center px-6 py-12">
-      <div className="flex items-center gap-3">
-        <Logo />
-        <span className="font-serif text-xl font-semibold">Stackwise</span>
+    <div className="mx-auto flex min-h-dvh max-w-xl flex-col px-6 pt-6 pb-8">
+      <div className="flex items-center gap-1.5 text-[22px]">
+        <LogoMark size={32} /> <Wordmark />
       </div>
-      <h1 className="mt-10 font-serif text-[40px] leading-[1.08] font-semibold tracking-tight sm:text-[48px]">
-        Scroll like social media.
-        <br />
-        Finish like a good book chapter.
+      <div aria-hidden className="relative mx-auto mt-6 h-[300px] w-full max-w-[360px]">
+        {cards.map((c, i) => (
+          <div key={c.id} className={`absolute w-[180px] overflow-hidden rounded-3xl bg-surface shadow-[0_20px_44px_rgb(20_33_61/0.2)] ${fan[i]}`}>
+            <CoverArt card={c} height={150} />
+            <p className="px-3.5 pt-2.5 pb-4 font-display text-[17px] leading-[1.1] font-extrabold tracking-[-0.02em]">{c.title}</p>
+          </div>
+        ))}
+      </div>
+      <h1 className="mt-6 font-display text-[38px] leading-[1.02] font-extrabold tracking-[-0.035em] sm:text-[46px]">
+        Scroll like social. Finish like a good book.
       </h1>
-      <p className="mt-5 text-[18px] leading-relaxed text-ink-2">
-        One useful idea at a time — each with an example, a question worth sitting with, and something small to try. Personalised to what you care about, with a clear stopping point every day.
+      <p className="mt-4 text-[17px] leading-relaxed text-ink-2">
+        One useful idea at a time, told as a one-minute story with an example, a question worth sitting with and one small thing to try. A clear stopping point every day.
       </p>
-      <ul className="mt-8 space-y-3 text-[16px]">
-        {[
-          `${ALL_CARDS.length} ideas across ${TOPICS.length} topics, from investing to agentic AI`,
-          `${SCENARIOS.length} Decision Gym scenarios — decide first, learn second`,
-          'Every card explains why you are seeing it',
-          'Your data stays on this device',
-        ].map((t) => (
-          <li key={t} className="flex gap-3">
-            <span aria-hidden className="mt-2 h-1.5 w-1.5 shrink-0 rounded-full bg-brand" />
+      <ul className="mt-6 flex flex-wrap gap-2 text-[13px] font-semibold">
+        {[`${ALL_CARDS.length} ideas · ${TOPICS.length} topics`, `${SCENARIOS.length} decision drills`, 'Works offline', 'Data stays on this device'].map((t) => (
+          <li key={t} className="rounded-full border border-line bg-surface px-3 py-2">
             {t}
           </li>
         ))}
       </ul>
-      <LinkButton to="/onboarding" variant="primary" className="mt-10 min-h-13 text-[17px]">
-        Set up my feed — about 2 minutes
-      </LinkButton>
-      <p className="mt-4 text-center text-[13px] text-ink-2">
-        Educational content only. <Link to="/about" className="underline">About & disclaimer</Link>
-      </p>
+      <div className="mt-auto pt-8">
+        <LinkButton to="/onboarding" variant="primary" className="min-h-14 w-full !rounded-[18px] !bg-navy text-[17px] !text-white dark:!bg-brand dark:!text-brand-ink">
+          Set up my feed — about 2 minutes
+        </LinkButton>
+        <p className="mt-4 text-center text-[13px] text-ink-2">
+          Educational content only. <Link to="/about" className="underline">About & disclaimer</Link>
+        </p>
+      </div>
     </div>
   );
 }

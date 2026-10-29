@@ -18,6 +18,7 @@ for (const theme of ['light', 'dark']) {
     await page.evaluate((s) => localStorage.setItem('stackwise:v1', JSON.stringify(s)), state);
     await page.goto(base + p);
     await page.reload();
+    await page.waitForSelector('#splash', { state: 'detached' });
     await page.waitForTimeout(400);
     await page.addScriptTag({ content: axeSrc });
     const res = await page.evaluate(() => window.axe.run(document, { runOnly: ['wcag2a', 'wcag2aa', 'best-practice'] }));

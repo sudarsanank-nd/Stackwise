@@ -44,7 +44,7 @@ export function ProfilePage() {
         ].map(([k, v]) => (
           <Panel key={k} className="p-4!">
             <p className="text-[12px] text-ink-2">{k}</p>
-            <p className="mt-1 font-serif text-[22px] font-semibold tabular-nums">{v}</p>
+            <p className="mt-1 font-display text-[22px] font-extrabold tracking-[-0.02em] tabular-nums">{v}</p>
           </Panel>
         ))}
       </div>
@@ -384,7 +384,7 @@ export function HistoryPage() {
                 <li key={r.id} className="rounded-2xl border border-line bg-surface p-4">
                   <p className="text-[13px] text-ink-2">{new Date(r.date).toLocaleDateString()} · {r.context}</p>
                   <p className="mt-1 font-medium">{r.prompt}</p>
-                  <p className="mt-1 font-serif">{r.text}</p>
+                  <p className="mt-1">{r.text}</p>
                 </li>
               ))}
             </ul>

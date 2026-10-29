@@ -17,7 +17,7 @@ export function FeedModeTabs({ mode, onChange }: { mode: FeedMode; onChange: (m:
             aria-selected={mode === m.id}
             onClick={() => onChange(m.id)}
             className={`min-h-10 shrink-0 rounded-full px-4 text-sm font-medium transition-colors ${
-              mode === m.id ? 'bg-ink text-bg' : 'border border-line bg-surface text-ink-2 hover:text-ink'
+              mode === m.id ? 'bg-ink font-bold text-bg' : 'border border-line bg-surface font-semibold text-ink hover:bg-surface-2'
             }`}
           >
             {m.label}
@@ -35,7 +35,7 @@ export function FilterPanel({ filters, onChange, defaultOpen = false }: { filter
   const [open, setOpen] = useState(defaultOpen);
   const n = countFilters(filters);
   return (
-    <div className="rounded-2xl border border-line bg-surface">
+    <div className="rounded-3xl border border-line bg-surface">
       <div className="flex items-center justify-between px-4">
         <button type="button" aria-expanded={open} onClick={() => setOpen((o) => !o)} className="flex min-h-12 flex-1 items-center gap-2 text-[15px] font-medium">
           <Icon name="settings" size={18} /> Filters {n > 0 && <span className="rounded-full bg-brand px-2 text-xs text-brand-ink">{n}</span>}

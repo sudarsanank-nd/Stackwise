@@ -84,7 +84,7 @@ export function OnboardingWizard({ initial, editMode = false }: { initial?: Part
         </div>
         <ProgressBar className="mt-2" value={(step + 1) / STEPS.length} label="Onboarding progress" />
       </div>
-      <h1 ref={headingRef} tabIndex={-1} className="font-serif text-[28px] leading-tight font-semibold">
+      <h1 ref={headingRef} tabIndex={-1} className="font-display text-[28px] leading-tight font-extrabold tracking-[-0.02em]">
         {titles[step]}
       </h1>
 
@@ -184,7 +184,7 @@ export function OnboardingWizard({ initial, editMode = false }: { initial?: Part
                 onClick={() => set({ dailyTargetMinutes: m })}
                 className={`rounded-2xl border p-4 text-left ${d.dailyTargetMinutes === m ? 'border-brand bg-surface-2' : 'border-line bg-surface'}`}
               >
-                <span className="block font-serif text-[28px] font-semibold">{m} min</span>
+                <span className="block font-display text-[28px] font-extrabold tracking-[-0.02em]">{m} min</span>
                 <span className="text-[14px] text-ink-2">about {m === 5 ? '6–8' : m === 10 ? '12–15' : '18–22'} ideas</span>
               </button>
             ))}

@@ -9,7 +9,7 @@ const BALANCE: Record<ContrarianBlock['evidenceBalance'], string> = {
 export function ContrarianView({ block }: { block: ContrarianBlock }) {
   return (
     <section aria-label="Two viewpoints" className="rounded-2xl border border-line bg-bg p-4">
-      <h3 className="font-serif text-[18px] font-semibold">{block.question}</h3>
+      <h3 className="font-display text-[18px] font-extrabold tracking-[-0.02em]">{block.question}</h3>
 
       <div className="mt-3">
         <h4 className="text-[12px] font-semibold tracking-wider text-ink-2 uppercase">Established facts</h4>

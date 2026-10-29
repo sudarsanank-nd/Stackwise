@@ -17,6 +17,9 @@
     "build:page": "vite build --mode artifact && node scripts/to-artifact-page.mjs dist-artifact/page.html"
   },
   "dependencies": {
+    "@fontsource-variable/bricolage-grotesque": "^5.3.0",
+    "@fontsource-variable/figtree": "^5.3.0",
+    "@fontsource/instrument-serif": "^5.3.0",
     "react": "^19.3.1",
     "react-dom": "^19.3.1",
     "react-router-dom": "^7.18.5",

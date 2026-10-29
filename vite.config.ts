@@ -6,7 +6,7 @@ import { VitePWA } from 'vite-plugin-pwa'
 import { viteSingleFile } from 'vite-plugin-singlefile'
 
 // Installable PWA for the hosted build: precaches the app shell + content so cards
-// read offline, and caches Google Fonts at runtime. Skipped for the single-file build.
+// read offline (fonts are self-hosted, so they are precached too). Skipped for the single-file build.
 const pwa = VitePWA({
   registerType: 'autoUpdate',
   injectRegister: false,
@@ -19,8 +19,8 @@ const pwa = VitePWA({
     scope: './',
     display: 'standalone',
     orientation: 'portrait',
-    background_color: '#fbfaf7',
-    theme_color: '#1f5f5b',
+    background_color: '#14213d',
+    theme_color: '#14213d',
     icons: [
       { src: 'icons/icon-192.png', sizes: '192x192', type: 'image/png' },
       { src: 'icons/icon-512.png', sizes: '512x512', type: 'image/png' },
@@ -30,22 +30,6 @@ const pwa = VitePWA({
   workbox: {
     globPatterns: ['**/*.{js,css,html,svg,png,webp,woff2}'],
     maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
-    runtimeCaching: [
-      {
-        urlPattern: ({ url }) => url.origin === 'https://fonts.googleapis.com',
-        handler: 'StaleWhileRevalidate',
-        options: { cacheName: 'google-fonts-css' },
-      },
-      {
-        urlPattern: ({ url }) => url.origin === 'https://fonts.gstatic.com',
-        handler: 'CacheFirst',
-        options: {
-          cacheName: 'google-fonts-files',
-          expiration: { maxEntries: 30, maxAgeSeconds: 60 * 60 * 24 * 365 },
-          cacheableResponse: { statuses: [0, 200] },
-        },
-      },
-    ],
   },
 })
 

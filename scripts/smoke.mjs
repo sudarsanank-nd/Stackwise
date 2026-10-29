@@ -10,7 +10,8 @@ page.setDefaultTimeout(10000);
 await page.route(/fonts\.(googleapis|gstatic)\.com/, (r) => r.abort());
 page.on('pageerror', (e) => errors.push('pageerror: ' + e.message));
 page.on('console', (m) => m.type() === 'error' && !/ERR_FAILED|fonts/.test(m.text()) && errors.push('console: ' + m.text()));
-const shot = (n) => page.screenshot({ path: `${shots}/${n}.png` });
+// The load screen (#splash) stays up for ~1s after each full page load; wait it out before capturing.
+const shot = async (n) => { await page.waitForSelector('#splash', { state: 'detached' }); await page.screenshot({ path: `${shots}/${n}.png` }); };
 const step = async (name, fn) => { try { await fn(); console.log('✓', name); } catch (e) { console.log('✗', name, e.message.split('\n')[0]); errors.push(name); } };
 
 await page.goto(base);

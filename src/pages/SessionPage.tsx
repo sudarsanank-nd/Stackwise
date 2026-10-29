@@ -113,7 +113,7 @@ export default function SessionPage() {
     return (
       <div className="text-center" ref={topRef} tabIndex={-1}>
         <Icon name="check" size={40} className="mx-auto text-ok" />
-        <h1 className="mt-3 font-serif text-[30px] font-semibold">Session complete</h1>
+        <h1 className="mt-3 font-display text-[30px] font-extrabold tracking-[-0.02em]">Session complete</h1>
         <p className="mx-auto mt-2 max-w-md text-ink-2">That's a full loop: ideas, a decision, and a reflection. A good place to stop.</p>
         <ul className="mx-auto mt-6 max-w-md space-y-2 text-left">
           {session.cardIds.map((id) => {
@@ -209,7 +209,7 @@ export default function SessionPage() {
 
       {step.kind === 'reflection' && (
         <Panel>
-          <h1 className="font-serif text-[24px] font-semibold">Reflect</h1>
+          <h1 className="font-display text-[24px] font-extrabold tracking-[-0.02em]">Reflect</h1>
           <label htmlFor={reflectId} className="mt-2 block text-[17px]">
             {step.prompt}
           </label>

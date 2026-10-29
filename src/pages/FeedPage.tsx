@@ -11,6 +11,7 @@ import { useDwell } from '../hooks/useDwell';
 import { KnowledgeCardView } from '../components/cards/KnowledgeCard';
 import { IdeaCollisionView } from '../components/cards/IdeaCollisionView';
 import { FeedModeTabs, FilterPanel } from '../components/feed/FeedControls';
+import { TopicCircles } from '../components/feed/TopicCircles';
 import { GuardrailPanel, TargetMetBanner } from '../components/feed/GuardrailPanel';
 import { Button, EmptyState, LinkButton } from '../components/common/ui';
 import { Icon } from '../components/common/Icon';
@@ -129,6 +130,7 @@ export default function FeedPage() {
     <div>
       <h1 className="sr-only">Your feed</h1>
       {progress.met && progress.continued && <TargetMetBanner />}
+      <TopicCircles topics={filters.topics} onChange={(topics) => setFilters({ ...filters, topics })} />
       <FeedModeTabs mode={mode} onChange={setMode} />
       <div className="mt-4">
         <FilterPanel filters={filters} onChange={setFilters} />
@@ -159,7 +161,7 @@ export default function FeedPage() {
                 <p className="flex items-center gap-2 text-[13px] font-semibold tracking-wider text-ink-2 uppercase">
                   <Icon name="gym" size={16} /> Decision Gym
                 </p>
-                <h2 className="mt-2 font-serif text-[22px] font-semibold">{gymTeaser.title}</h2>
+                <h2 className="mt-2 font-display text-[22px] font-extrabold tracking-[-0.02em]">{gymTeaser.title}</h2>
                 <p className="mt-1 line-clamp-3 text-ink-2">{gymTeaser.scenario}</p>
                 <LinkButton to={`/gym/${gymTeaser.id}`} variant="primary" className="mt-4">
                   Make the call
@@ -185,7 +187,7 @@ export default function FeedPage() {
 function FeedCheckpoint({ count, onMore, batches }: { count: number; onMore: () => void; batches: number }) {
   return (
     <div className="rounded-3xl border border-dashed border-line px-6 py-8 text-center">
-      <p className="font-serif text-[20px] font-semibold">That's {count} ideas.</p>
+      <p className="font-display text-[20px] font-extrabold tracking-[-0.02em]">That's {count} ideas.</p>
       <p className="mx-auto mt-1 max-w-sm text-[15px] text-ink-2">
         {batches >= 3 ? 'You have been reading a while. Is another batch what you want right now?' : 'Pause here, or load the next batch if you want more.'}
       </p>

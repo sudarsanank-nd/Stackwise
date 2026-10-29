@@ -9,6 +9,7 @@ import { useToast } from '../../store/toast';
 import { shareCard } from '../../services/share';
 import { formatSeconds } from '../../utils/text';
 import { ContrarianView } from './ContrarianView';
+import { CoverArt } from './CoverArt';
 
 const INVESTING_TOPICS = ['investing', 'personal-finance', 'behavioral-finance'];
 
@@ -22,12 +23,12 @@ const BUCKET_LABEL: Partial<Record<FeedBucket, string>> = {
 function Block({ label, children, tone = 'plain' }: { label: string; children: ReactNode; tone?: 'plain' | 'question' | 'action' }) {
   const tones = {
     plain: '',
-    question: 'rounded-xl bg-surface-2 px-4 py-3',
-    action: 'rounded-xl border border-[color-mix(in_srgb,var(--accent)_45%,transparent)] px-4 py-3',
+    question: 'rounded-2xl bg-[color-mix(in_srgb,var(--accent)_9%,var(--surface))] px-4 py-3.5',
+    action: 'rounded-2xl bg-navy px-4 py-3.5 text-white dark:bg-surface-2 dark:text-ink',
   };
   return (
     <div className={`mt-4 ${tones[tone]}`}>
-      <h3 className="text-[12px] font-semibold tracking-wider text-ink-2 uppercase">{label}</h3>
+      <h3 className={`text-[12px] font-bold tracking-wider uppercase ${tone === 'action' ? 'text-marigold' : 'text-ink-2'}`}>{label}</h3>
       <div className="mt-1 text-[16px] leading-relaxed">{children}</div>
     </div>
   );
@@ -78,13 +79,17 @@ export function KnowledgeCardView({ card, reasons, bucket, variant = 'feed', onS
       data-accent=""
       aria-labelledby={`t-${card.id}`}
       style={{ '--accent-l': topic.accent, '--accent-d': topic.accentDark } as CSSProperties}
-      className="relative overflow-hidden rounded-3xl border border-line bg-surface px-5 pt-5 pb-3 shadow-[0_1px_0_rgba(0,0,0,0.03)] sm:px-7 sm:pt-7"
+      className="relative overflow-hidden rounded-[28px] border border-line bg-surface px-5 pt-5 pb-3 shadow-[var(--shadow)] sm:px-7 sm:pt-7"
     >
-      <div aria-hidden className="absolute inset-x-0 top-0 h-1 bg-[var(--accent)]" />
-      <div className="flex flex-wrap items-center gap-x-3 gap-y-1 text-[13px] text-ink-2">
+      <div className="relative -mx-5 -mt-5 mb-4 sm:-mx-7 sm:-mt-7">
+        <CoverArt card={card} height={variant === 'detail' ? 220 : 176} />
+        <div className="absolute inset-x-3 top-3 flex flex-wrap items-start gap-2 text-[12px] font-bold">
+          <span className="rounded-full bg-navy px-2.5 py-1 text-white">{FORMAT_LABELS[card.format]}</span>
+          {bucket && BUCKET_LABEL[bucket] && <span className="rounded-full bg-white/90 px-2.5 py-1 text-[#14213d]">{BUCKET_LABEL[bucket]}</span>}
+        </div>
+      </div>
+      <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[13px] text-ink-2">
         <TopicTag topic={card.primaryTopic} />
-        <span aria-hidden>·</span>
-        <span>{FORMAT_LABELS[card.format]}</span>
         <span aria-hidden>·</span>
         <span>{DIFFICULTY_LABELS[card.difficulty]}</span>
         <span aria-hidden>·</span>
@@ -92,9 +97,6 @@ export function KnowledgeCardView({ card, reasons, bucket, variant = 'feed', onS
           <span className="sr-only">Reading time </span>
           {formatSeconds(card.readingTimeSec ?? 45)}
         </span>
-        {bucket && BUCKET_LABEL[bucket] && (
-          <span className="ml-auto rounded-full bg-surface-2 px-2.5 py-0.5 text-[12px] font-medium text-ink">{BUCKET_LABEL[bucket]}</span>
-        )}
       </div>
 
       {card.bridge && (
@@ -104,14 +106,14 @@ export function KnowledgeCardView({ card, reasons, bucket, variant = 'feed', onS
         </p>
       )}
 
-      <H id={`t-${card.id}`} tabIndex={-1} className="mt-3 font-serif text-[26px] leading-[1.18] font-semibold tracking-tight sm:text-[30px]">
+      <H id={`t-${card.id}`} tabIndex={-1} className="mt-2 font-display text-[27px] leading-[1.1] font-extrabold tracking-[-0.025em] sm:text-[32px]">
         {card.title}
       </H>
-      <p className="mt-2 text-[16px] text-ink-2 italic">{card.hook}</p>
+      <p className="mt-2 font-serif text-[21px] leading-snug text-ink-2 italic">{card.hook}</p>
 
       {card.quote && (
         <figure className="mt-4 border-l-4 border-[var(--accent)] pl-4">
-          <blockquote className="font-serif text-[19px] leading-snug">“{card.quote.text}”</blockquote>
+          <blockquote className="font-serif italic text-[22px] leading-snug">“{card.quote.text}”</blockquote>
           <figcaption className="mt-1 text-[13px] text-ink-2">
             — {card.quote.by}
             {card.quote.note && <span className="block">{card.quote.note}</span>}
@@ -119,7 +121,7 @@ export function KnowledgeCardView({ card, reasons, bucket, variant = 'feed', onS
         </figure>
       )}
 
-      <p className="mt-4 font-serif text-[18px] leading-[1.6]">{card.coreIdea}</p>
+      <p className="mt-4 text-[17px] leading-[1.65]">{card.coreIdea}</p>
 
       {card.disputed && (
         <p className="mt-3 flex gap-2 rounded-lg bg-[color-mix(in_srgb,var(--warn)_12%,transparent)] px-3 py-2 text-[14px]">
@@ -166,7 +168,7 @@ export function KnowledgeCardView({ card, reasons, bucket, variant = 'feed', onS
       {card.bridge && <Block label="The connection">{card.bridge.insight}</Block>}
 
       <Block label="Think about it" tone="question">
-        <span className="font-serif text-[17px]">{card.reflectionQuestion}</span>
+        <span className="font-serif italic text-[20px]">{card.reflectionQuestion}</span>
       </Block>
       <Block label="Try this" tone="action">
         {card.suggestedAction}
@@ -275,7 +277,7 @@ function ActionButton({ icon, label, onClick, pressed }: { icon: 'heart' | 'book
       type="button"
       onClick={onClick}
       aria-pressed={pressed}
-      className={`flex min-h-11 min-w-11 flex-col items-center justify-center rounded-xl px-2 text-[12px] font-medium hover:bg-surface-2 ${pressed ? 'text-[var(--accent)]' : 'text-ink-2 hover:text-ink'}`}
+      className={`flex min-h-11 min-w-11 flex-col items-center justify-center rounded-2xl px-2 text-[12px] font-semibold hover:bg-surface-2 ${pressed ? (icon === 'bookmark' ? 'text-warn' : 'text-[var(--accent)]') : 'text-ink-2 hover:text-ink'}`}
     >
       <span className={pressed ? '[&_path]:fill-current' : ''}>
         <Icon name={icon} size={20} />

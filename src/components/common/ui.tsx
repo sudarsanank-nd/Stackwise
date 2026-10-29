@@ -24,7 +24,7 @@ export function Button({
   return (
     <button
       type="button"
-      className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-xl px-4 py-2 text-[15px] font-medium transition-colors disabled:cursor-not-allowed disabled:opacity-50 ${VARIANTS[variant]} ${className}`}
+      className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-2xl px-4 py-2 text-[15px] font-semibold transition-colors disabled:cursor-not-allowed disabled:opacity-50 ${VARIANTS[variant]} ${className}`}
       {...rest}
     >
       {icon && <Icon name={icon} size={18} />}
@@ -37,7 +37,7 @@ export function LinkButton({ to, variant = 'secondary', icon, children, classNam
   return (
     <Link
       to={to}
-      className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-xl px-4 py-2 text-[15px] font-medium transition-colors ${VARIANTS[variant]} ${className}`}
+      className={`inline-flex min-h-11 items-center justify-center gap-2 rounded-2xl px-4 py-2 text-[15px] font-semibold transition-colors ${VARIANTS[variant]} ${className}`}
     >
       {icon && <Icon name={icon} size={18} />}
       {children}
@@ -139,7 +139,7 @@ export function PageHeader({ title, subtitle, back, actions }: { title: string; 
             <Icon name="back" size={16} /> Back
           </Link>
         )}
-        <h1 className="font-serif text-[28px] leading-tight font-semibold tracking-tight">{title}</h1>
+        <h1 className="font-display text-[28px] leading-tight font-extrabold tracking-[-0.02em]">{title}</h1>
         {subtitle && <p className="mt-1 text-[15px] text-ink-2">{subtitle}</p>}
       </div>
       {actions}
@@ -149,7 +149,7 @@ export function PageHeader({ title, subtitle, back, actions }: { title: string; 
 
 export function EmptyState({ icon = 'info', title, children, action }: { icon?: IconName; title: string; children?: ReactNode; action?: ReactNode }) {
   return (
-    <div className="rounded-2xl border border-dashed border-line bg-surface px-6 py-10 text-center">
+    <div className="rounded-3xl border border-dashed border-line bg-surface px-6 py-10 text-center">
       <Icon name={icon} size={28} className="mx-auto text-ink-2" />
       <h2 className="mt-3 text-lg font-semibold">{title}</h2>
       {children && <div className="mx-auto mt-1 max-w-sm text-[15px] text-ink-2">{children}</div>}
@@ -171,7 +171,7 @@ export function Section({ title, children, aside }: { title: string; children: R
 }
 
 export function Panel({ children, className = '' }: { children: ReactNode; className?: string }) {
-  return <div className={`rounded-2xl border border-line bg-surface p-5 ${className}`}>{children}</div>;
+  return <div className={`rounded-3xl border border-line bg-surface p-5 shadow-[var(--shadow)] ${className}`}>{children}</div>;
 }
 
 interface EBState {
@@ -190,7 +190,7 @@ export class ErrorBoundary extends Component<{ children: ReactNode; onReset?: ()
     if (!this.state.error) return this.props.children;
     return (
       <div role="alert" className="mx-auto max-w-lg px-4 py-16 text-center">
-        <h1 className="font-serif text-2xl font-semibold">Something went wrong on this screen</h1>
+        <h1 className="font-display text-2xl font-extrabold tracking-[-0.02em]">Something went wrong on this screen</h1>
         <p className="mt-2 text-ink-2">Your saved ideas and settings are safe. You can try again, or go back to the feed.</p>
         <p className="mt-3 text-sm break-words text-ink-2">{this.state.error.message}</p>
         <div className="mt-6 flex justify-center gap-3">

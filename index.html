@@ -4,12 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="description" content="Stackwise — a calm, personalised micro-learning feed." />
-    <meta name="theme-color" content="#fbfaf7" media="(prefers-color-scheme: light)" />
-    <meta name="theme-color" content="#15171b" media="(prefers-color-scheme: dark)" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600;8..60,700&display=swap" rel="stylesheet" />
-    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%231f5f5b'/%3E%3Cpath d='M9 11h14M9 16h14M9 21h9' stroke='white' stroke-width='2.5' stroke-linecap='round'/%3E%3C/svg%3E" />
+    <meta name="theme-color" content="#faf7f0" media="(prefers-color-scheme: light)" />
+    <meta name="theme-color" content="#0a1226" media="(prefers-color-scheme: dark)" />
+    <link rel="icon" type="image/svg+xml" href="./icons/icon.svg" />
     <link rel="apple-touch-icon" href="./icons/apple-touch-icon.png" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
     <meta name="mobile-web-app-capable" content="yes" />
@@ -19,6 +16,31 @@
   </head>
   <body>
     <div id="root"></div>
+    <!-- Load screen: painted before the JS bundle runs; removed by src/splash.ts. -->
+    <div id="splash" role="status" aria-label="Loading Stackwise">
+      <style>
+        #splash{position:fixed;inset:0;z-index:100;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:18px;background:#14213d;color:#fff;font-family:"Bricolage Grotesque Variable","Figtree Variable",system-ui,sans-serif;overflow:hidden;transition:opacity .35s ease}
+        #splash.sw-hide{opacity:0;pointer-events:none}
+        #splash .sw-glow{position:absolute;width:520px;height:520px;border-radius:50%;background:#1e8a5b;opacity:.22;filter:blur(90px);top:12%;left:50%;transform:translateX(-50%)}
+        #splash .sw-word{font-weight:800;font-size:44px;letter-spacing:-.04em;line-height:1;position:relative}
+        #splash .sw-word span{color:#4fd08f}
+        #splash .sw-tag{font-family:"Figtree Variable",system-ui,sans-serif;font-size:12px;font-weight:600;letter-spacing:.32em;color:#c7ccda;position:relative}
+        #splash svg{position:relative}
+        #splash .sw-bar{position:absolute;bottom:72px;width:160px;height:4px;border-radius:4px;background:#24345a;overflow:hidden}
+        #splash .sw-bar i{display:block;height:100%;width:40%;border-radius:4px;background:#f2b33d;animation:sw-load 1.2s ease-in-out infinite alternate}
+        .sw-layer{animation:sw-drop .7s cubic-bezier(.2,.8,.2,1) both}
+        .sw-bookmark{transform-box:fill-box;transform-origin:top;animation:sw-bm .45s ease-out .55s both}
+        @keyframes sw-drop{from{transform:translateY(-24px);opacity:0}to{transform:none;opacity:1}}
+        @keyframes sw-bm{from{transform:scaleY(0)}to{transform:none}}
+        @keyframes sw-load{from{transform:translateX(-60%)}to{transform:translateX(210%)}}
+        @media (prefers-reduced-motion:reduce){.sw-layer,.sw-bookmark,#splash .sw-bar i{animation:none}}
+      </style>
+      <div class="sw-glow"></div>
+      <svg width="150" height="150" viewBox="0 0 120 120" aria-hidden="true"><g class="sw-layer"><rect x="-34" y="-34" width="68" height="68" rx="14" fill="#0B1530" transform="translate(60 88) scale(1 0.58) rotate(45)"/><rect x="-34" y="-34" width="68" height="68" rx="14" fill="#2C3D68" transform="translate(60 81) scale(1 0.58) rotate(45)"/></g><g class="sw-layer" style="animation-delay:150ms"><rect x="-34" y="-34" width="68" height="68" rx="14" fill="#16704A" transform="translate(60 70) scale(1 0.58) rotate(45)"/><rect x="-34" y="-34" width="68" height="68" rx="14" fill="#23A26B" transform="translate(60 63) scale(1 0.58) rotate(45)"/></g><g class="sw-layer" style="animation-delay:300ms"><rect x="-34" y="-34" width="68" height="68" rx="14" fill="#D8CCAE" transform="translate(60 52) scale(1 0.58) rotate(45)"/><rect x="-34" y="-34" width="68" height="68" rx="14" fill="#F7F0E0" transform="translate(60 45) scale(1 0.58) rotate(45)"/><rect x="47" y="44" width="6" height="7" rx="1.5" fill="#1E8A5B"/><rect x="56" y="39" width="6" height="12" rx="1.5" fill="#1E8A5B"/><rect x="65" y="33" width="6" height="18" rx="1.5" fill="#1E8A5B"/><path d="M42 41 Q58 38 70 26" fill="none" stroke="#1E8A5B" stroke-width="2.6" stroke-linecap="round"/><path d="M65 25 L72 24 L71 31" fill="none" stroke="#1E8A5B" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></g><path class="sw-bookmark" d="M86 50 h9 v22 l-4.5 -4 l-4.5 4 z" fill="#F2B33D"/></svg>
+      <div class="sw-word">Stack<span>wise</span></div>
+      <div class="sw-tag">LEARN · GROW · LEAD</div>
+      <div class="sw-bar"><i></i></div>
+    </div>
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

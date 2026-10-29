@@ -25,7 +25,7 @@ export function GymListPage() {
                   </span>
                 )}
               </div>
-              <p className="mt-1 font-serif text-[19px] font-semibold">{s.title}</p>
+              <p className="mt-1 font-display text-[19px] font-extrabold tracking-[-0.02em]">{s.title}</p>
               <p className="mt-1 line-clamp-2 text-[14px] text-ink-2">{s.scenario}</p>
             </Link>
           </li>

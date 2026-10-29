@@ -3,30 +3,40 @@
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --bg: #fbfaf7;
+  --bg: #faf7f0;
   --surface: #ffffff;
-  --surface-2: #f3f1ec;
-  --ink: #1b1a17;
-  --ink-2: #57534a;
-  --line: #e4e0d6;
-  --brand: #1f5f5b;
+  --surface-2: #f3eee2;
+  --ink: #14213d;
+  --ink-2: #4f5668;
+  --line: #e7e1d3;
+  --brand: #1a7a50;
   --brand-ink: #ffffff;
+  --brand-2: #1e8a5b;
+  --navy: #14213d;
+  --cream: #f7f0e0;
+  --marigold: #f2b33d;
   --focus: #1d4ed8;
   --ok: #1f6b3a;
   --warn: #8a5a00;
+  --shadow: 0 1px 0 var(--line), 0 14px 34px rgb(20 33 61 / 0.08);
 }
 .dark {
-  --bg: #15171b;
-  --surface: #1d2025;
-  --surface-2: #262a30;
-  --ink: #ecebe7;
-  --ink-2: #b4b0a6;
-  --line: #343841;
-  --brand: #7fd1c8;
-  --brand-ink: #10201f;
+  --bg: #0a1226;
+  --surface: #121d38;
+  --surface-2: #1b2848;
+  --ink: #f2efe6;
+  --ink-2: #b4bbcc;
+  --line: #24345a;
+  --brand: #4fd08f;
+  --brand-ink: #0a1226;
+  --brand-2: #4fd08f;
+  --navy: #060c1c;
+  --cream: #f7f0e0;
+  --marigold: #f2b33d;
   --focus: #93c5fd;
   --ok: #86d6a0;
   --warn: #f2c26b;
+  --shadow: 0 1px 0 var(--line);
 }
 
 @theme inline {
@@ -40,8 +50,13 @@
   --color-brand-ink: var(--brand-ink);
   --color-ok: var(--ok);
   --color-warn: var(--warn);
-  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-serif: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --color-brand-2: var(--brand-2);
+  --color-navy: var(--navy);
+  --color-cream: var(--cream);
+  --color-marigold: var(--marigold);
+  --font-sans: "Figtree Variable", "Figtree", ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-display: "Bricolage Grotesque Variable", "Bricolage Grotesque", "Figtree Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Instrument Serif", "Iowan Old Style", Georgia, serif;
 }
 
 html,

@@ -68,7 +68,7 @@ export default function CompletePage() {
 
       <Section title="One question to sit with">
         <Panel>
-          <label htmlFor={reflectId} className="font-serif text-[19px]" id="reflect">
+          <label htmlFor={reflectId} className="font-serif italic text-[22px]" id="reflect">
             {prompt}
           </label>
           {reflectionSaved ? (

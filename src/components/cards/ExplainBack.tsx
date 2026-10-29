@@ -77,7 +77,7 @@ export function ExplainBack({ card }: { card: KnowledgeCard }) {
           )}
           <div>
             <h3 className="text-[12px] font-semibold tracking-wider text-ink-2 uppercase">Simpler version</h3>
-            <p className="mt-1 font-serif">{result.simplerExplanation}</p>
+            <p className="mt-1">{result.simplerExplanation}</p>
           </div>
           <div>
             <h3 className="text-[12px] font-semibold tracking-wider text-ink-2 uppercase">Follow-up question</h3>
