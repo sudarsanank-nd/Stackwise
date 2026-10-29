@@ -119,7 +119,7 @@ export default function SessionPage() {
           {session.cardIds.map((id) => {
             const c = getCard(id);
             return c ? (
-              <li key={id} className="rounded-xl border border-line bg-surface p-3">
+              <li key={id} className="rounded-2xl border border-line bg-surface p-3">
                 <TopicTag topic={c.primaryTopic} small />
                 <p className="font-medium">{c.title}</p>
               </li>
@@ -127,7 +127,7 @@ export default function SessionPage() {
           })}
         </ul>
         {session.reflectionResponse && (
-          <p className="mx-auto mt-4 max-w-md rounded-xl bg-surface-2 p-3 text-left text-[15px]">
+          <p className="mx-auto mt-4 max-w-md rounded-2xl bg-surface-2 p-3 text-left text-[15px]">
             <span className="text-[12px] font-semibold text-ink-2 uppercase">Your reflection</span>
             <br />
             {session.reflectionResponse}
@@ -213,7 +213,7 @@ export default function SessionPage() {
           <label htmlFor={reflectId} className="mt-2 block text-[17px]">
             {step.prompt}
           </label>
-          <textarea id={reflectId} rows={5} value={reflection} onChange={(e) => setReflection(e.target.value)} className="mt-3 w-full rounded-xl border border-line bg-bg p-3 text-[16px]" />
+          <textarea id={reflectId} rows={5} value={reflection} onChange={(e) => setReflection(e.target.value)} className="mt-3 w-full rounded-2xl border border-line bg-bg p-3 text-[16px]" />
           <p className="mt-1 text-[13px] text-ink-2">Optional, private, and stored only on this device.</p>
           <Button
             variant="primary"

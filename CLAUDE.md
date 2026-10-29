@@ -4,7 +4,7 @@ Mobile-first micro-learning feed. React 19 + TypeScript 7 + Vite 8 + Tailwind CS
 
 ## Commands
 - `npm install` then `npm run dev` (http://localhost:5173)
-- `npm test` — Vitest (149 tests, includes content validation). Clears `node_modules/.vitest-cache` first because Vitest 5 caches `import.meta.glob` results.
+- `npm test` — Vitest (170 tests, includes content + explainer validation). Clears `node_modules/.vitest-cache` first because Vitest 5 caches `import.meta.glob` results.
 - `npm run validate:content` — content JSON only
 - `npm run typecheck`, `npm run lint` (oxlint), `npm run build`
 - `npm run build:artifact` — single-file HTML in `dist-artifact/`; `npm run build:page` also writes a body-only `dist-artifact/page.html` for hosted pages
@@ -14,17 +14,18 @@ Mobile-first micro-learning feed. React 19 + TypeScript 7 + Vite 8 + Tailwind CS
 - `src/services/` — pure logic (recommendation, signals, progress, search, session, knowledgeMap, explainBack, knowledgeCheck, onboarding, content). Keep business logic here, not in components.
 - `src/store/useAppStore.ts` — single zustand store, localStorage key `stackwise:v1`. Selectors must return stable values (no new arrays/Sets inside `useAppStore(...)`; derive with `useMemo`).
 - `src/data/cards/*.json` — knowledge cards; schema in `src/types/index.ts`; rules in `docs/content-guidelines.md`.
-- `src/pages/`, `src/components/` — UI. Router is HashRouter in dev/prod builds, MemoryRouter in the `artifact` build mode.
+- `src/pages/`, `src/components/` — UI. Brand marks in `components/brand/Logo.tsx`; card cover art in `components/cards/CoverArt.tsx` (topic families in `src/data/families.ts`); story view `pages/StoryPage.tsx`; motion explainers in `components/explainer/` with scripts in `src/data/explainers.json` (rules in `docs/content-guidelines.md`). Router is HashRouter in dev/prod builds, MemoryRouter in the `artifact` build mode.
 
 ## Conventions
 - Recommendation weights and feed mix live in `WEIGHTS` / `MIX` in `src/services/recommendation.ts`; document changes in `docs/personalization-logic.md`.
 - Investing content is educational only: no return promises, predictions, stock picks or invented statistics. Never fabricate sources; flag uncertain ones as `needs-source-check`.
-- Colours come from CSS tokens in `src/index.css` (light + `.dark`); topic accents use `--accent-l` / `--accent-d`.
+- Colours come from CSS tokens in `src/index.css` (light + `.dark`; brand navy/emerald/cream/marigold); topic accents use `--accent-l` / `--accent-d`. Fonts: `font-display` (Bricolage Grotesque) for headings, `font-sans` (Figtree) for body, `font-serif italic` (Instrument Serif) for hooks and questions.
+- The load screen lives in `index.html` (`#splash`) and is removed by `src/splash.ts`; browser scripts wait for `#splash` to detach.
 - Touch targets ≥ 44px (`min-h-11`), visible focus, labelled controls — `npm run a11y` should stay clean.
 - Record notable decisions in `docs/decision-log.md` and milestones in `docs/checkpoints.md`.
 
 ## Suggested next work
-See `docs/roadmap.md`: UI revamp (mocks pending sign-off); LLM-backed Explain It Back (implement `ExplainBackEvaluator`) is in the backlog.
+See `docs/roadmap.md`: LLM-backed Explain It Back (implement `ExplainBackEvaluator`) is in the backlog.
 
 ## PWA
 - `vite-plugin-pwa` runs for the hosted build only (not `--mode artifact`); icons live in `public/icons/`. Content changes are picked up on the next visit (`autoUpdate`).

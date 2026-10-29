@@ -1,6 +1,7 @@
-import { useEffect } from 'react';
-import { Link, useParams } from 'react-router-dom';
-import { contrastingCards, getCard, relatedCards } from '../services/content';
+import { useEffect, useRef } from 'react';
+import { Link, useLocation, useParams } from 'react-router-dom';
+import { contrastingCards, getCard, getExplainer, relatedCards } from '../services/content';
+import { ExplainerPlayer } from '../components/explainer/ExplainerPlayer';
 import { KnowledgeCardView } from '../components/cards/KnowledgeCard';
 import { ExplainBack } from '../components/cards/ExplainBack';
 import { CollectionPicker } from '../components/library/CollectionPicker';
@@ -9,22 +10,24 @@ import { MiniCard } from '../components/cards/MiniCard';
 import { useAppStore } from '../store/useAppStore';
 import { FORMAT_LABELS } from '../data/topics';
 
-
-
 export default function CardDetailPage() {
   const { id = '' } = useParams();
   const card = getCard(id);
   const markCompleted = useAppStore((s) => s.markCompleted);
   const record = useAppStore((s) => s.record);
   const understood = useAppStore((s) => s.interactions.some((i) => i.cardId === id && i.type === 'understood'));
+  const location = useLocation();
+  const explainRef = useRef<HTMLDivElement>(null);
+  const focusExplain = (location.state as { focus?: string } | null)?.focus === 'explain';
 
   useEffect(() => {
     if (card) {
-      window.scrollTo({ top: 0 });
+      if (focusExplain) explainRef.current?.scrollIntoView({ block: 'start' });
+      else window.scrollTo({ top: 0 });
       const t = setTimeout(() => markCompleted(card.id), ((card.readingTimeSec ?? 40) * 1000) / 2);
       return () => clearTimeout(t);
     }
-  }, [card, markCompleted]);
+  }, [card, markCompleted, focusExplain]);
 
   if (!card) {
     return (
@@ -35,6 +38,7 @@ export default function CardDetailPage() {
   }
 
   const related = relatedCards(card);
+  const explainer = getExplainer(card.id);
   const contrasting = contrastingCards(card);
 
   return (
@@ -43,6 +47,12 @@ export default function CardDetailPage() {
         ← Feed
       </Link>
       <KnowledgeCardView card={card} variant="detail" headingLevel="h1" />
+
+      {explainer && (
+        <Section title="Watch the explainer">
+          <ExplainerPlayer explainer={explainer} card={card} />
+        </Section>
+      )}
 
       {card.deeper && (
         <Section title="Explore deeper">
@@ -72,7 +82,9 @@ export default function CardDetailPage() {
         </Section>
       )}
 
-      <ExplainBack card={card} />
+      <div ref={explainRef} className="scroll-mt-20">
+        <ExplainBack card={card} />
+      </div>
 
       <Panel>
         <CollectionPicker cardId={card.id} />

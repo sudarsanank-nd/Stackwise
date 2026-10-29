@@ -53,3 +53,14 @@ Kebab-case with a domain prefix: `inv-`, `pf-`, `bf-`, `psy-`, `pm-`, `lead-`, `
 2. Write the new card in an existing or new JSON file under `src/data/cards/`.
 3. Run the validator; fix every failure for your ids.
 4. Set `reviewStatus` honestly; flag anything you could not verify as `needs-source-check`.
+
+## Motion explainers
+`src/data/explainers.json` holds short animated explainers (30–60 s) for about one card in five. They play only when the reader taps Play, muted, with captions always on. Validate with `npx vitest run src/tests/explainers.test.ts`.
+
+- One explainer per card; 3–6 scenes; total 25–60 s (`seconds` per scene, default 8).
+- Every scene needs `visual`, `caption` (≤ 140 characters) and `chapter` (≤ 32). Labels ≤ 18 characters.
+- **Captions only restate the card.** No new facts, numbers, quotes or claims that are not already on the card. If the card labels something illustrative, the explainer stays illustrative.
+- `values` are relative sizes 0–1 for drawing only. Use the card's own numbers where it has them (e.g. 0.95 → 0.60 on the compounding-errors card); otherwise keep them obviously schematic and never imply measured data.
+- Investing explainers follow the same rules as investing cards: no return promises, predictions or picks.
+- Visuals: `scale` (2 labels; the left side tips down), `curve` (≥ 2 values drawn as a line; labels = [axis note, end label]), `cycle` (3–5 labels around a loop), `bars` (labels + matching values), `stack` (2–5 labels appearing top-down in order), `versus` (2 labels), `chain` (labels + matching values, a weakening chain), `statement` (1 short label shown large).
+- Pick cards where motion genuinely helps: a trade-off, a process, a loop, a compounding effect, a before/after.

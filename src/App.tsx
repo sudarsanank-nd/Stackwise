@@ -7,6 +7,7 @@ import { ErrorBoundary } from './components/common/ui';
 import FeedPage from './pages/FeedPage';
 import SessionPage from './pages/SessionPage';
 import CardDetailPage from './pages/CardDetailPage';
+import StoryPage from './pages/StoryPage';
 import SearchPage from './pages/SearchPage';
 import MapPage from './pages/MapPage';
 import CompletePage from './pages/CompletePage';
@@ -67,6 +68,7 @@ export function AppRoutes() {
           )
         }
       />
+      <Route path="/story/:id" element={profile ? <ErrorBoundary><StoryPage /></ErrorBoundary> : <Navigate to="/welcome" replace />} />
       {guarded.map(([path, el]) => (
         <Route key={path} path={path} element={<RequireProfile>{el}</RequireProfile>} />
       ))}

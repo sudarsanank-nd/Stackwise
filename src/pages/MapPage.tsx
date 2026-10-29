@@ -32,12 +32,19 @@ export default function MapPage() {
           ['Time learning', fmtMin(map.totalSeconds)],
           ['Ideas read', String(map.cardsCompleted)],
           ['Saved', String(map.savedThisWeek.length)],
-        ].map(([k, v]) => (
-          <Panel key={k} className="p-4!">
-            <p className="text-[12px] text-ink-2">{k}</p>
-            <p className="mt-1 font-display text-[26px] font-extrabold tracking-[-0.02em] tabular-nums">{v}</p>
-          </Panel>
-        ))}
+        ].map(([k, v], i) =>
+          i === 0 ? (
+            <div key={k} className="rounded-3xl bg-navy p-4 text-white dark:bg-surface-2">
+              <p className="font-display text-[26px] leading-none font-extrabold tracking-[-0.02em] text-marigold tabular-nums">{v}</p>
+              <p className="mt-1.5 text-[12px] text-[#c7ccda]">{k}</p>
+            </div>
+          ) : (
+            <Panel key={k} className="p-4!">
+              <p className="font-display text-[26px] leading-none font-extrabold tracking-[-0.02em] tabular-nums">{v}</p>
+              <p className="mt-1.5 text-[12px] text-ink-2">{k}</p>
+            </Panel>
+          ),
+        )}
       </div>
 
       {map.cardsCompleted === 0 ? (
@@ -52,7 +59,7 @@ export default function MapPage() {
             <div className="flex h-28 items-end gap-2" role="img" aria-label={`Minutes per day: ${map.dailySeconds.map((d) => `${d.day} ${Math.round(d.seconds / 60)}`).join(', ')}`}>
               {map.dailySeconds.map((d) => (
                 <div key={d.day} className="flex flex-1 flex-col items-center gap-1">
-                  <div className="w-full rounded-t-md bg-brand" style={{ height: `${Math.max(2, (d.seconds / maxDay) * 88)}px`, opacity: d.seconds ? 1 : 0.25 }} />
+                  <div className="w-full rounded-2xl bg-brand" style={{ height: `${Math.max(6, (d.seconds / maxDay) * 88)}px`, opacity: d.seconds ? 1 : 0.2 }} />
                   <span className="text-[11px] text-ink-2">{new Date(`${d.day}T12:00:00`).toLocaleDateString(undefined, { weekday: 'narrow' })}</span>
                 </div>
               ))}
@@ -67,8 +74,8 @@ export default function MapPage() {
                     <Link to={`/topics/${t.topic}`} className="font-medium hover:underline">{topicLabel(t.topic)}</Link>
                     <span className="text-ink-2 tabular-nums">{fmtMin(t.seconds)}</span>
                   </div>
-                  <div className="mt-1 h-2 rounded-full bg-surface-2">
-                    <div className="h-2 rounded-full" style={{ width: `${(t.seconds / max) * 100}%`, background: TOPIC_MAP[t.topic].accent }} />
+                  <div className="mt-1.5 h-2.5 rounded-full bg-surface-2">
+                    <div className="h-2.5 rounded-full" style={{ width: `${(t.seconds / max) * 100}%`, background: TOPIC_MAP[t.topic].accent }} />
                   </div>
                 </li>
               ))}
@@ -132,7 +139,7 @@ export default function MapPage() {
       <Section title="Weekly reflection">
         <Panel>
           <label htmlFor={reflectId} className="font-serif italic text-[21px]">{map.reflectionQuestion}</label>
-          <textarea id={reflectId} rows={3} value={reflection} onChange={(e) => setReflection(e.target.value)} className="mt-3 w-full rounded-xl border border-line bg-bg p-3 text-[16px]" />
+          <textarea id={reflectId} rows={3} value={reflection} onChange={(e) => setReflection(e.target.value)} className="mt-3 w-full rounded-2xl border border-line bg-bg p-3 text-[16px]" />
           <Button
             className="mt-2"
             disabled={!reflection.trim()}

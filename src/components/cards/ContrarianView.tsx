@@ -22,7 +22,7 @@ export function ContrarianView({ block }: { block: ContrarianBlock }) {
 
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
         {block.positions.map((p, i) => (
-          <div key={p.label} className="rounded-xl border border-line bg-surface p-3">
+          <div key={p.label} className="rounded-2xl border border-line bg-surface p-3">
             <p className="text-[12px] font-semibold text-ink-2 uppercase">View {i + 1}</p>
             <h4 className="font-semibold">{p.label}</h4>
             <p className="mt-1 text-[15px]">{p.claim}</p>
@@ -38,7 +38,7 @@ export function ContrarianView({ block }: { block: ContrarianBlock }) {
         ))}
       </div>
 
-      <p className="mt-4 rounded-lg bg-surface-2 px-3 py-2 text-[14px]">
+      <p className="mt-4 rounded-xl bg-surface-2 px-3 py-2 text-[14px]">
         <strong className="font-semibold">{BALANCE[block.evidenceBalance]}.</strong> {block.balanceNote}
       </p>
 

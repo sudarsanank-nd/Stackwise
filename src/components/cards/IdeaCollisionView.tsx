@@ -27,7 +27,7 @@ export function IdeaCollisionView({ collision, compact }: { collision: IdeaColli
       <h2 className="mt-2 font-display text-[24px] leading-snug font-extrabold tracking-[-0.02em]">{collision.prompt}</h2>
       <div className="mt-4 grid gap-3 sm:grid-cols-2">
         {[a, b].map((c) => (
-          <Link key={c.id} to={`/card/${c.id}`} className="rounded-xl border border-line bg-bg p-3 hover:bg-surface-2">
+          <Link key={c.id} to={`/card/${c.id}`} className="rounded-2xl border border-line bg-bg p-3 hover:bg-surface-2">
             <TopicTag topic={c.primaryTopic} small />
             <p className="mt-1 font-semibold">{c.title}</p>
             {!compact && <p className="mt-1 text-[14px] text-ink-2">{c.hook}</p>}
@@ -44,7 +44,7 @@ export function IdeaCollisionView({ collision, compact }: { collision: IdeaColli
             value={text}
             onChange={(e) => setText(e.target.value)}
             rows={3}
-            className="mt-2 w-full rounded-xl border border-line bg-bg p-3 text-[16px]"
+            className="mt-2 w-full rounded-2xl border border-line bg-bg p-3 text-[16px]"
             placeholder="Both are about…"
           />
           <Button variant="primary" className="mt-2 w-full sm:w-auto" onClick={reveal}>
@@ -54,7 +54,7 @@ export function IdeaCollisionView({ collision, compact }: { collision: IdeaColli
       ) : (
         <div className="fade-in mt-4" aria-live="polite">
           {text.trim() && (
-            <p className="mb-3 rounded-xl bg-surface-2 p-3 text-[15px]">
+            <p className="mb-3 rounded-2xl bg-surface-2 p-3 text-[15px]">
               <span className="text-[12px] font-semibold text-ink-2 uppercase">Your take</span>
               <br />
               {text}

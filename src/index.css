@@ -100,3 +100,33 @@ body {
 }
 
 .sr-only-focusable:not(:focus) { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); }
+
+/* Motion explainers (src/components/explainer). Entry animations run once per scene;
+   `.sw-paused` freezes them. The reduced-motion rule above jumps straight to the end state. */
+.sw-fade { animation: sw-fade 0.5s ease-out both; }
+.sw-pop { animation: sw-pop 0.5s cubic-bezier(0.2, 0.8, 0.2, 1.2) both; }
+.sw-draw { stroke-dasharray: 1; animation: sw-draw 2s ease-in-out both; }
+.sw-tip-left { animation: sw-tip-left 1.4s cubic-bezier(0.5, 0, 0.3, 1) both; }
+.sw-tip-right { animation: sw-tip-right 1.4s cubic-bezier(0.5, 0, 0.3, 1) both; }
+.sw-spin { animation: sw-spin 4s linear infinite; }
+.sw-grow { animation: sw-grow 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.sw-grow-x { animation: sw-grow-x 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.sw-drop { animation: sw-drop 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.sw-slide-l { animation: sw-slide-l 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.sw-slide-r { animation: sw-slide-r 0.6s cubic-bezier(0.2, 0.8, 0.2, 1) both; }
+.sw-pop, .sw-grow, .sw-grow-x { transform-box: fill-box; transform-origin: center; }
+.sw-grow { transform-origin: bottom; }
+.sw-grow-x { transform-origin: left; }
+.sw-paused * { animation-play-state: paused !important; }
+.sw-static * { animation: none !important; }
+@keyframes sw-fade { from { opacity: 0; } }
+@keyframes sw-pop { from { opacity: 0; transform: scale(0.6); } }
+@keyframes sw-draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+@keyframes sw-tip-left { to { transform: rotate(-14deg); } }
+@keyframes sw-tip-right { to { transform: rotate(14deg); } }
+@keyframes sw-spin { to { transform: rotate(360deg); } }
+@keyframes sw-grow { from { transform: scaleY(0); } }
+@keyframes sw-grow-x { from { transform: scaleX(0); } }
+@keyframes sw-drop { from { opacity: 0; transform: translateY(-30px); } }
+@keyframes sw-slide-l { from { opacity: 0; transform: translateX(-40px); } }
+@keyframes sw-slide-r { from { opacity: 0; transform: translateX(40px); } }

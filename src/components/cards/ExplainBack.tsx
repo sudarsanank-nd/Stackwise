@@ -26,7 +26,7 @@ export function ExplainBack({ card }: { card: KnowledgeCard }) {
       <label htmlFor={id} className="sr-only">
         Your explanation
       </label>
-      <textarea id={id} rows={4} value={text} onChange={(e) => setText(e.target.value)} className="mt-3 w-full rounded-xl border border-line bg-bg p-3 text-[16px]" />
+      <textarea id={id} rows={4} value={text} onChange={(e) => setText(e.target.value)} className="mt-3 w-full rounded-2xl border border-line bg-bg p-3 text-[16px]" />
       <Button variant="primary" className="mt-2" onClick={check} disabled={text.trim().length === 0}>
         Check my explanation
       </Button>
@@ -35,7 +35,7 @@ export function ExplainBack({ card }: { card: KnowledgeCard }) {
       {result && (
         <div className="fade-in mt-4 space-y-3 text-[15px]" aria-live="polite">
           {result.tooShort ? (
-            <p className="rounded-xl bg-surface-2 p-3">Add a little more — at least a sentence or two — so there's something to compare.</p>
+            <p className="rounded-2xl bg-surface-2 p-3">Add a little more — at least a sentence or two — so there's something to compare.</p>
           ) : (
             <>
               <p className="font-medium">

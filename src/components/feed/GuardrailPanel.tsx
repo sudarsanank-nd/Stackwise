@@ -40,7 +40,7 @@ export function GuardrailPanel({ minutes, cards }: { minutes: number; cards: num
 
 export function TargetMetBanner() {
   return (
-    <p role="status" className="sticky top-[4.5rem] z-10 mb-4 rounded-xl border border-line bg-surface-2 px-4 py-2 text-center text-[14px]">
+    <p role="status" className="sticky top-[4.5rem] z-10 mb-4 rounded-2xl border border-line bg-surface-2 px-4 py-2 text-center text-[14px]">
       <strong className="font-semibold">Daily target complete.</strong> You're reading beyond today's goal.
     </p>
   );

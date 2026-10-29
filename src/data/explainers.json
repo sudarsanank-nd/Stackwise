@@ -1,0 +1,186 @@
+[
+  {
+    "cardId": "bf-loss-aversion-panic",
+    "scenes": [
+      { "visual": "scale", "chapter": "The lopsided scale", "caption": "Same amount of money on both sides. But losing ₹10,000 usually weighs more than gaining ₹10,000.", "labels": ["−₹10,000", "+₹10,000"], "seconds": 9 },
+      { "visual": "curve", "chapter": "When the market falls", "caption": "When prices drop, the paper loss starts to feel intolerable — even if your reason for investing hasn't changed.", "labels": ["Your plan", "A decline"], "values": [0.3, 0.5, 0.65, 0.45, 0.3], "seconds": 9 },
+      { "visual": "versus", "chapter": "Feeling vs evidence", "caption": "Selling then is driven by the discomfort of watching the number fall, not by new evidence.", "labels": ["Discomfort", "New evidence"], "seconds": 8 },
+      { "visual": "stack", "chapter": "Decide while calm", "caption": "Write down why you bought, your time horizon, and when you would sell — before the next fall.", "labels": ["Why I bought", "Time horizon", "When I'd sell"], "seconds": 9 }
+    ]
+  },
+  {
+    "cardId": "agent-compounding-errors",
+    "scenes": [
+      { "visual": "statement", "chapter": "95% sounds great", "caption": "A step that is right 95% of the time sounds excellent.", "labels": ["95% per step"], "seconds": 6 },
+      { "visual": "chain", "chapter": "Reliability multiplies", "caption": "Chain the steps and the odds multiply: ten 95% steps succeed end to end about 60% of the time.", "labels": ["1 step · 95%", "2 steps · 90%", "5 steps · 77%", "10 steps · 60%"], "values": [0.95, 0.9, 0.77, 0.6], "seconds": 11 },
+      { "visual": "bars", "chapter": "Per-step quality matters", "caption": "Over ten steps: 99% per step gives about 90%; 90% per step gives about 35%.", "labels": ["99% steps", "95% steps", "90% steps"], "values": [0.9, 0.6, 0.35], "seconds": 10 },
+      { "visual": "cycle", "chapter": "Fewer steps, more checks", "caption": "Long agent chains need fewer steps, checks between them, or both.", "labels": ["Act", "Check", "Fix", "Continue"], "seconds": 9 }
+    ]
+  },
+  {
+    "cardId": "pm-one-on-ones",
+    "scenes": [
+      { "visual": "versus", "chapter": "Whose meeting is it?", "caption": "A weekly one-on-one is the one slot that belongs to the report, not to the manager's agenda.", "labels": ["Their agenda", "Your agenda"], "seconds": 8 },
+      { "visual": "stack", "chapter": "What belongs here", "caption": "Status can live in tickets. Use the time for blockers, career direction, feedback both ways — and what's draining them.", "labels": ["Blockers", "Career direction", "Feedback both ways", "What drains them"], "seconds": 10 },
+      { "visual": "cycle", "chapter": "Keep the rhythm", "caption": "Keep it regular and rarely cancel it — each cancellation tells them where they rank.", "labels": ["Week 1", "Week 2", "Week 3", "Week 4"], "seconds": 8 },
+      { "visual": "bars", "chapter": "A simple quality test", "caption": "A simple test of quality: who spoke for most of the time?", "labels": ["Them", "You"], "values": [0.75, 0.3], "seconds": 7 }
+    ]
+  },
+  {
+    "cardId": "inv-compounding-patience",
+    "scenes": [
+      { "visual": "curve", "chapter": "Flat, then steep", "caption": "Returns start earning returns of their own. Growth builds on a growing base, so the curve looks flat for years and steep later.", "labels": ["Years →", "Steep later"], "values": [0.25, 0.35, 0.5, 0.71, 1], "seconds": 9 },
+      { "visual": "bars", "chapter": "Two doublings", "caption": "Illustration only, at a constant 8%: ₹1,00,000 becomes about ₹2,00,000 after nine years and about ₹4,00,000 after eighteen.", "labels": ["Start", "9 years", "18 years"], "values": [0.25, 0.5, 1], "seconds": 10 },
+      { "visual": "versus", "chapter": "Same wait, more money", "caption": "The second doubling adds twice as much money as the first, for the same nine years of waiting. Real returns are not constant.", "labels": ["+₹1,00,000", "+₹2,00,000"], "seconds": 9 },
+      { "visual": "statement", "chapter": "The Rule of 72", "caption": "A rough rule of thumb for doubling time: divide 72 by the annual rate. At 8% a year, that is roughly nine years.", "labels": ["72 ÷ rate"], "seconds": 8 },
+      { "visual": "stack", "chapter": "Quieter forces", "caption": "Costs and taxes compound too, and inflation shrinks what the final amount can buy. The power is in time, not one clever move.", "labels": ["Costs", "Taxes", "Inflation"], "seconds": 9 }
+    ]
+  },
+  {
+    "cardId": "inv-sequence-of-returns",
+    "scenes": [
+      { "visual": "statement", "chapter": "Same average", "caption": "Two portfolios can earn the same average annual return and still end in very different places if money is being taken out.", "labels": ["Same average"], "seconds": 8 },
+      { "visual": "curve", "chapter": "Weak years first", "caption": "Illustration only, not a forecast: ₹1 crore, ₹6 lakh withdrawn yearly. Weak years first mean selling more units at low prices.", "labels": ["Weak years first", "Less left"], "values": [0.8, 0.55, 0.45, 0.4, 0.33], "seconds": 10 },
+      { "visual": "curve", "chapter": "Weak years last", "caption": "The same returns in reverse order leave you better off, because more was left to recover before the losses arrived.", "labels": ["Weak years last", "More left"], "values": [0.8, 0.82, 0.8, 0.72, 0.62], "seconds": 9 },
+      { "visual": "versus", "chapter": "When order matters", "caption": "While you only contribute, order matters little. Once you withdraw, the timing of losses becomes a central risk.", "labels": ["Contributing", "Withdrawing"], "seconds": 9 }
+    ]
+  },
+  {
+    "cardId": "pf-inflation-real-returns",
+    "scenes": [
+      { "visual": "bars", "chapter": "Earned minus prices", "caption": "If your money earns 7% before tax but prices rise 5%, your real gain is closer to 2%.", "labels": ["Earns 7%", "Prices +5%", "Real ~2%"], "values": [0.7, 0.5, 0.2], "seconds": 9 },
+      { "visual": "versus", "chapter": "A bigger number", "caption": "Illustration only: ₹1,00,000 at 6% becomes ₹1,06,000. If prices also rose 6%, the same basket costs about ₹1,06,000 too.", "labels": ["₹1,06,000", "Same basket"], "seconds": 10 },
+      { "visual": "stack", "chapter": "What's really left", "caption": "Real return is roughly the rate you earn minus inflation, and less after tax. In some years it can be negative.", "labels": ["Rate earned", "− inflation", "− tax"], "seconds": 9 },
+      { "visual": "statement", "chapter": "Safety has a price", "caption": "Cash that feels safe can quietly lose purchasing power. Safe assets aren't bad — but you should be able to name the price.", "labels": ["Name the price"], "seconds": 8 }
+    ]
+  },
+  {
+    "cardId": "pf-rebalancing",
+    "scenes": [
+      { "visual": "bars", "chapter": "The quiet drift", "caption": "Illustration only: you start at 60% equity. After a strong year for equities you are at 70%, so a fall now hurts more.", "labels": ["Plan: 60%", "Now: 70%"], "values": [0.6, 0.7], "seconds": 9 },
+      { "visual": "scale", "chapter": "Who set your risk?", "caption": "Leaving winners alone feels pleasant. The result is a risk level set by the market, not by you.", "labels": ["Market", "You"], "seconds": 8 },
+      { "visual": "stack", "chapter": "Bringing it back", "caption": "Rebalancing brings the mix back to target: sell some of what grew, buy what lagged, or direct new money to the lagging part.", "labels": ["Sell what grew", "Buy what lagged", "Direct new money"], "seconds": 10 },
+      { "visual": "cycle", "chapter": "A rule, not a mood", "caption": "Pick a rule — say once a year, or when the split drifts by more than five points — and let the plan decide, not your mood.", "labels": ["Check", "Drift?", "Reset", "Wait"], "seconds": 9 }
+    ]
+  },
+  {
+    "cardId": "pm-delegation-levels",
+    "scenes": [
+      { "visual": "versus", "chapter": "Same words, two plans", "caption": "'Sort out the escalation backlog.' The lead wanted a triage proposal; the engineer closed twenty tickets.", "labels": ["Triage plan", "20 closed"], "seconds": 9 },
+      { "visual": "stack", "chapter": "Five levels", "caption": "Name the level: look into it, recommend, decide but tell me first, act then inform, or fully own it.", "labels": ["1 Look into it", "2 Recommend", "3 Decide, tell me", "4 Act, then inform", "5 Fully own it"], "seconds": 11 },
+      { "visual": "curve", "chapter": "Turn the dial", "caption": "The task can stay the same while the level moves up as trust and skill grow.", "labels": ["Trust and skill", "Level 5"], "values": [0.2, 0.4, 0.6, 0.8, 1], "seconds": 8 },
+      { "visual": "statement", "chapter": "Say it out loud", "caption": "When you hand something off, finish with: 'For this one, you're at level __.'", "labels": ["Name the level"], "seconds": 7 }
+    ]
+  },
+  {
+    "cardId": "neg-batna",
+    "scenes": [
+      { "visual": "versus", "chapter": "Compare with what?", "caption": "Your BATNA is what you will do if this negotiation fails. Compare every offer with it, not with your hopes.", "labels": ["Your hopes", "Your BATNA"], "seconds": 9 },
+      { "visual": "stack", "chapter": "Build your BATNA", "caption": "Illustrative: another vendor quotes ₹16 lakh, plus ₹1.5 lakh in switching costs. Your BATNA is ₹17.5 lakh all-in.", "labels": ["₹16 lakh quote", "+ ₹1.5 lakh switch", "= ₹17.5 lakh"], "seconds": 10 },
+      { "visual": "bars", "chapter": "Judge the offer", "caption": "The current vendor wants ₹18 lakh to renew. Any renewal offer below ₹17.5 lakh is better than walking away.", "labels": ["₹18 lakh ask", "₹17.5 lakh BATNA"], "values": [1, 0.97], "seconds": 9 },
+      { "visual": "stack", "chapter": "Before you sit down", "caption": "Write your BATNA in one line, work on improving it, and estimate theirs. Don't bluff about it.", "labels": ["Write it down", "Improve it", "Estimate theirs"], "seconds": 9 }
+    ]
+  },
+  {
+    "cardId": "comm-bluf-pyramid",
+    "scenes": [
+      { "visual": "versus", "chapter": "Where's the ask?", "caption": "Busy readers decide in the first two lines whether to keep reading. Most messages bury the ask in the last paragraph.", "labels": ["Ask buried", "Ask first"], "seconds": 9 },
+      { "visual": "stack", "chapter": "Build the pyramid", "caption": "Lead with the answer, support it with a few grouped reasons, and put the detail beneath.", "labels": ["Detail", "Grouped reasons", "The answer"], "seconds": 9 },
+      { "visual": "stack", "chapter": "An email, top down", "caption": "Illustrative: approval needed by Thursday for two temporary agents. Then the reasons. Then 'detail below'.", "labels": ["Detail below", "Three reasons", "Approval by Thu"], "seconds": 9 },
+      { "visual": "statement", "chapter": "Not always first", "caption": "For hard news, a short lead-in may land better. And if you can't state the answer in a sentence, the thinking is unfinished.", "labels": ["One sentence"], "seconds": 8 }
+    ]
+  },
+  {
+    "cardId": "ai-llm-next-token",
+    "scenes": [
+      { "visual": "stack", "chapter": "Text into tokens", "caption": "A language model splits your text into small pieces called tokens — whole words or word fragments.", "labels": ["The router's", "power light", "is …"], "seconds": 8 },
+      { "visual": "bars", "chapter": "Rank what comes next", "caption": "It ranks possible next tokens by how plausible they are in context — like 'off', 'blinking' or 'green'. Sizes here are schematic.", "labels": ["off", "blinking", "green"], "values": [0.6, 0.45, 0.3], "seconds": 10 },
+      { "visual": "cycle", "chapter": "The simple loop", "caption": "It picks one, adds it to the text, and repeats — one small piece at a time.", "labels": ["Read", "Rank", "Pick", "Append"], "seconds": 8 },
+      { "visual": "versus", "chapter": "Patterns, not a lookup", "caption": "There is no fact table lookup at that moment. Answers come from learned patterns, shaped by the words you supply.", "labels": ["Patterns", "Fact lookup"], "seconds": 9 },
+      { "visual": "statement", "chapter": "Context shifts it", "caption": "Add 'The customer says' or paste the device manual, and the ranking shifts. That's why supplied documents matter so much.", "labels": ["Add context"], "seconds": 8 }
+    ]
+  },
+  {
+    "cardId": "ai-context-window-lost-middle",
+    "scenes": [
+      { "visual": "stack", "chapter": "What the model sees", "caption": "A model can only consider what's inside its context window: your instructions, pasted documents and the conversation so far.", "labels": ["Instructions", "Documents", "Conversation"], "seconds": 9 },
+      { "visual": "curve", "chapter": "Lost in the middle", "caption": "In studies of long inputs, models often used information near the start or end better than information buried in the middle.", "labels": ["Start · mid · end", "End"], "values": [0.85, 0.55, 0.4, 0.55, 0.85], "seconds": 10 },
+      { "visual": "statement", "chapter": "Not settled for every model", "caption": "Position effects vary by model and task, and newer models may show them less. Test on your own data.", "labels": ["Test it"], "seconds": 7 },
+      { "visual": "versus", "chapter": "Bigger isn't better-read", "caption": "Illustrative: a 60-page guide hides the key caveat on page 31 and the answer misses it. Only the relevant section gets it right.", "labels": ["Whole guide", "Right section"], "seconds": 10 },
+      { "visual": "stack", "chapter": "Place it deliberately", "caption": "Move the key instruction and key evidence to the start or end, and trim the rest.", "labels": ["Trim the rest", "Key evidence", "Key instruction"], "seconds": 8 }
+    ]
+  },
+  {
+    "cardId": "agent-model-routing",
+    "scenes": [
+      { "visual": "versus", "chapter": "Two kinds of model", "caption": "Larger models tend to be slower and costlier per request. Smaller ones are quicker and cheaper but may struggle with hard reasoning.", "labels": ["Small model", "Large model"], "seconds": 9 },
+      { "visual": "stack", "chapter": "Sort the work", "caption": "Illustrative: tagging goes to a small model, tricky multi-device faults to a larger one, refund decisions to a person.", "labels": ["Tagging: small", "Hard faults: large", "Refunds: person"], "seconds": 10 },
+      { "visual": "cycle", "chapter": "Test the split", "caption": "Test the split instead of assuming it: let the small model say 'escalate', sample its outputs, and re-check when things change.", "labels": ["Route", "Sample", "Measure", "Adjust"], "seconds": 10 },
+      { "visual": "statement", "chapter": "A design choice", "caption": "A cheaper model for easy work is a design choice, not a compromise.", "labels": ["Right-size it"], "seconds": 6 }
+    ]
+  },
+  {
+    "cardId": "ops-swiss-cheese-model",
+    "scenes": [
+      { "visual": "statement", "chapter": "Rarely one mistake", "caption": "Serious incidents rarely come from one big mistake.", "labels": ["No single cause"], "seconds": 6 },
+      { "visual": "stack", "chapter": "Slices with holes", "caption": "Each defence is a slice with holes. Illustrative: testing, release checklist, monitoring and runbook all had a gap.", "labels": ["Testing", "Release checklist", "Monitoring alerts", "Support runbook"], "seconds": 11 },
+      { "visual": "chain", "chapter": "When the holes line up", "caption": "Any one slice usually stops the problem. An incident happens when the holes in several layers line up. Bar sizes are schematic.", "labels": ["Testing", "Checklist", "Monitoring", "Runbook"], "values": [0.75, 0.6, 0.45, 0.3], "seconds": 10 },
+      { "visual": "versus", "chapter": "Fix more than the last hole", "caption": "Stop treating the last person to touch it as the cause. Strengthen many layers a little — it's a metaphor, not a measurement.", "labels": ["Last person", "Every layer"], "seconds": 9 }
+    ]
+  },
+  {
+    "cardId": "ops-littles-law",
+    "scenes": [
+      { "visual": "statement", "chapter": "One short formula", "caption": "In a stable system, the average number of items inside equals arrival rate times the average time each stays.", "labels": ["L = λW"], "seconds": 8 },
+      { "visual": "stack", "chapter": "A support queue", "caption": "Illustrative: 40 new escalations a day, each open for 3 days on average, means about 120 open at any time.", "labels": ["40 arrive a day", "× 3 days open", "≈ 120 open"], "seconds": 10 },
+      { "visual": "bars", "chapter": "Shorten the stay", "caption": "Cut the average stay to 2 days, for instance by removing a hand-off wait, and about 80 are open — with nobody working faster.", "labels": ["3 days: ~120", "2 days: ~80"], "values": [1, 0.67], "seconds": 10 },
+      { "visual": "versus", "chapter": "Where is it waiting?", "caption": "The question shifts from 'we need more people closing cases' to 'where are cases waiting?'", "labels": ["Work faster", "Wait less"], "seconds": 8 }
+    ]
+  },
+  {
+    "cardId": "prod-maker-manager-schedule",
+    "scenes": [
+      { "visual": "versus", "chapter": "Two schedules", "caption": "A manager's day is chopped into one-hour slots. A maker's day runs in half-day units, because deep work needs unbroken blocks.", "labels": ["Hour slots", "Half-days"], "seconds": 9 },
+      { "visual": "bars", "chapter": "One call, two halves", "caption": "Illustrative: a 4 pm call. Engineers wind down at 3:30 — neither half is big enough to start anything hard. Sizes are schematic.", "labels": ["Open afternoon", "With 4 pm call"], "values": [0.9, 0.2], "seconds": 10 },
+      { "visual": "statement", "chapter": "Two views of one call", "caption": "A manager sees a thirty-minute call. The engineer loses the afternoon.", "labels": ["Lost afternoon"], "seconds": 7 },
+      { "visual": "stack", "chapter": "Protect the blocks", "caption": "Cluster meetings, move them to the start or end of the day, or swap one for a written update. Real urgency still wins.", "labels": ["Cluster meetings", "Day's start or end", "Written update"], "seconds": 9 }
+    ]
+  },
+  {
+    "cardId": "sup-case-prioritization",
+    "scenes": [
+      { "visual": "stack", "chapter": "Three ways to order", "caption": "A queue can be ordered by arrival time, by customer importance, or by impact and urgency. Each gives a very different Monday.", "labels": ["Arrival order", "Account size", "Impact × urgency"], "seconds": 10 },
+      { "visual": "scale", "chapter": "Which goes first?", "caption": "Illustrative: a 40-vehicle fleet has cameras offline; a large account asks about billing. Impact and urgency put the fleet first.", "labels": ["Offline", "Billing"], "seconds": 10 },
+      { "visual": "versus", "chapter": "Loudest isn't worst", "caption": "Without an explicit rule, priority drifts to whoever escalates loudest, and real emergencies wait behind them.", "labels": ["Loudest", "Most harm"], "seconds": 9 },
+      { "visual": "statement", "chapter": "The question that matters", "caption": "The matrix is harder to run but forces the real question: how bad, and how soon?", "labels": ["How bad? Soon?"], "seconds": 7 }
+    ]
+  },
+  {
+    "cardId": "psy-peak-end-rule",
+    "scenes": [
+      { "visual": "bars", "chapter": "Two cold-water trials", "caption": "In the 1993 study, one trial was 60 seconds in cold water; the other added 30 seconds in slightly warmer water.", "labels": ["60 s", "60 s + 30 s"], "values": [0.67, 1], "seconds": 9 },
+      { "visual": "statement", "chapter": "The surprising choice", "caption": "Most chose to repeat the longer trial, despite more total discomfort.", "labels": ["The longer one"], "seconds": 7 },
+      { "visual": "curve", "chapter": "Peak and end", "caption": "We tend to remember an experience by its most intense moment and how it ended, not its total length. Shape is schematic.", "labels": ["Discomfort", "Gentler end"], "values": [0.3, 0.6, 0.9, 0.55, 0.35], "seconds": 9 },
+      { "visual": "versus", "chapter": "A tendency, not a law", "caption": "It's a tendency, not a universal rule: effects vary across situations and studies, and duration can still matter.", "labels": ["Peak + end", "Total length"], "seconds": 9 },
+      { "visual": "stack", "chapter": "Finish well", "caption": "Avoid a bad peak and end well: recap, thank them, and confirm what happens next.", "labels": ["Recap", "Thank them", "Next steps"], "seconds": 8 }
+    ]
+  },
+  {
+    "cardId": "dm-one-way-two-way-doors",
+    "scenes": [
+      { "visual": "versus", "chapter": "Two kinds of door", "caption": "Bezos called nearly irreversible decisions one-way doors, and changeable, reversible ones two-way doors.", "labels": ["One-way door", "Two-way door"], "seconds": 9 },
+      { "visual": "bars", "chapter": "Match the process", "caption": "One-way doors deserve slow, careful deliberation. Two-way doors can be decided quickly by a person or small group.", "labels": ["One-way", "Two-way"], "values": [0.9, 0.25], "seconds": 9 },
+      { "visual": "scale", "chapter": "The real failure", "caption": "The failure he warned about: treating reversible decisions with the heaviness meant for irreversible ones.", "labels": ["Heavy", "Reversible"], "seconds": 8 },
+      { "visual": "stack", "chapter": "Ask the door question", "caption": "Illustrative: rewording a macro reply is two-way. Switching ticketing platforms is one-way. Ask the door question first.", "labels": ["Macro wording", "New platform", "Which door?"], "seconds": 9 }
+    ]
+  },
+  {
+    "cardId": "dm-second-order-thinking",
+    "scenes": [
+      { "visual": "statement", "chapter": "And then what?", "caption": "First-order thinking asks what happens next. Second-order thinking asks: and then what, and who reacts?", "labels": ["And then what?"], "seconds": 8 },
+      { "visual": "stack", "chapter": "A chain of reactions", "caption": "Illustrative: a lead tightens handle-time targets. Cases close faster. Agents close cases early. Customers reopen them.", "labels": ["Tighter targets", "Faster closes", "Early closes", "Reopened cases"], "seconds": 10 },
+      { "visual": "curve", "chapter": "The backlog returns", "caption": "The backlog dips, then returns — with a worse reputation. Shape is schematic.", "labels": ["Backlog", "Back again"], "values": [0.7, 0.4, 0.35, 0.6, 0.8], "seconds": 8 },
+      { "visual": "cycle", "chapter": "Stop at two or three", "caption": "You can't predict every ripple. Trace two or three steps, prefer small reversible trials, and watch for the reaction you fear.", "labels": ["Decide", "Then?", "Then?", "Watch"], "seconds": 9 }
+    ]
+  }
+]

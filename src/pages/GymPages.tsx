@@ -15,7 +15,7 @@ export function GymListPage() {
       <ul className="grid gap-3">
         {SCENARIOS.map((s) => (
           <li key={s.id}>
-            <Link to={`/gym/${s.id}`} className="block rounded-2xl border border-line bg-surface p-4 hover:bg-surface-2">
+            <Link to={`/gym/${s.id}`} className="block rounded-3xl border border-line bg-surface p-4 hover:bg-surface-2">
               <div className="flex items-center gap-3 text-[13px] text-ink-2">
                 <TopicTag topic={s.topic} small />
                 <span>{DIFFICULTY_LABELS[s.difficulty]}</span>

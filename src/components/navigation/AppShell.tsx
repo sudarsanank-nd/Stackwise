@@ -24,7 +24,7 @@ function ThemeToggle() {
     <button
       type="button"
       onClick={() => setTheme(next)}
-      className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-line bg-surface text-ink hover:bg-surface-2"
+      className="inline-flex h-11 w-11 items-center justify-center rounded-3xl border border-line bg-surface text-ink hover:bg-surface-2"
       aria-label={`Switch to ${next} mode`}
       title={`Theme: ${theme}`}
     >
@@ -69,7 +69,7 @@ export function AppShell({ children }: { children: ReactNode }) {
   const toast = useToast((s) => s.message);
   return (
     <div className="min-h-dvh bg-bg">
-      <a href="#main" className="sr-only-focusable fixed top-2 left-2 z-50 rounded-lg bg-surface px-3 py-2">
+      <a href="#main" className="sr-only-focusable fixed top-2 left-2 z-50 rounded-xl bg-surface px-3 py-2">
         Skip to content
       </a>
       {/* Desktop rail */}
@@ -83,7 +83,7 @@ export function AppShell({ children }: { children: ReactNode }) {
               <NavLink
                 to={n.to}
                 className={({ isActive }) =>
-                  `flex min-h-11 items-center gap-3 rounded-xl px-3 text-[15px] font-medium ${isActive ? 'bg-navy text-white dark:bg-surface-2' : 'text-ink-2 hover:bg-surface-2 hover:text-ink'}`
+                  `flex min-h-11 items-center gap-3 rounded-2xl px-3 text-[15px] font-medium ${isActive ? 'bg-navy text-white dark:bg-surface-2' : 'text-ink-2 hover:bg-surface-2 hover:text-ink'}`
                 }
               >
                 <Icon name={n.icon} /> {n.label}
@@ -91,12 +91,12 @@ export function AppShell({ children }: { children: ReactNode }) {
             </li>
           ))}
           <li>
-            <NavLink to="/search" className={({ isActive }) => `flex min-h-11 items-center gap-3 rounded-xl px-3 text-[15px] font-medium ${isActive ? 'bg-navy text-white dark:bg-surface-2' : 'text-ink-2 hover:bg-surface-2 hover:text-ink'}`}>
+            <NavLink to="/search" className={({ isActive }) => `flex min-h-11 items-center gap-3 rounded-2xl px-3 text-[15px] font-medium ${isActive ? 'bg-navy text-white dark:bg-surface-2' : 'text-ink-2 hover:bg-surface-2 hover:text-ink'}`}>
               <Icon name="search" /> Search
             </NavLink>
           </li>
           <li>
-            <NavLink to="/map" className={({ isActive }) => `flex min-h-11 items-center gap-3 rounded-xl px-3 text-[15px] font-medium ${isActive ? 'bg-navy text-white dark:bg-surface-2' : 'text-ink-2 hover:bg-surface-2 hover:text-ink'}`}>
+            <NavLink to="/map" className={({ isActive }) => `flex min-h-11 items-center gap-3 rounded-2xl px-3 text-[15px] font-medium ${isActive ? 'bg-navy text-white dark:bg-surface-2' : 'text-ink-2 hover:bg-surface-2 hover:text-ink'}`}>
               <Icon name="map" /> Knowledge map
             </NavLink>
           </li>
@@ -112,7 +112,7 @@ export function AppShell({ children }: { children: ReactNode }) {
             </Link>
             <div className="flex items-center gap-1">
               <DailyMeter />
-              <Link to="/search" className="inline-flex h-11 w-11 items-center justify-center rounded-2xl border border-line bg-surface text-ink hover:bg-surface-2 md:hidden" aria-label="Search">
+              <Link to="/search" className="inline-flex h-11 w-11 items-center justify-center rounded-3xl border border-line bg-surface text-ink hover:bg-surface-2 md:hidden" aria-label="Search">
                 <Icon name="search" />
               </Link>
               <ThemeToggle />

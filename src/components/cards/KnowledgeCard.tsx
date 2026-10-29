@@ -10,6 +10,7 @@ import { shareCard } from '../../services/share';
 import { formatSeconds } from '../../utils/text';
 import { ContrarianView } from './ContrarianView';
 import { CoverArt } from './CoverArt';
+import { getExplainer, explainerSeconds } from '../../services/content';
 
 const INVESTING_TOPICS = ['investing', 'personal-finance', 'behavioral-finance'];
 
@@ -56,6 +57,7 @@ export function KnowledgeCardView({ card, reasons, bucket, variant = 'feed', onS
   const [showWhy, setShowWhy] = useState(false);
   const [showViews, setShowViews] = useState(variant === 'detail');
   const H = headingLevel;
+  const explainer = getExplainer(card.id);
 
   const onSave = () => {
     if (saved) {
@@ -85,8 +87,25 @@ export function KnowledgeCardView({ card, reasons, bucket, variant = 'feed', onS
         <CoverArt card={card} height={variant === 'detail' ? 220 : 176} />
         <div className="absolute inset-x-3 top-3 flex flex-wrap items-start gap-2 text-[12px] font-bold">
           <span className="rounded-full bg-navy px-2.5 py-1 text-white">{FORMAT_LABELS[card.format]}</span>
+          {explainer && (
+            <span className="inline-flex items-center gap-1 rounded-full bg-navy px-2.5 py-1 text-white">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="#f2b33d" aria-hidden>
+                <path d="M8 5v14l11-7z" />
+              </svg>
+              {Math.round(explainerSeconds(explainer))} s explainer
+            </span>
+          )}
           {bucket && BUCKET_LABEL[bucket] && <span className="rounded-full bg-white/90 px-2.5 py-1 text-[#14213d]">{BUCKET_LABEL[bucket]}</span>}
         </div>
+        <Link
+          to={`/story/${card.id}`}
+          className="absolute right-3 bottom-3 inline-flex min-h-11 items-center gap-1.5 rounded-full bg-white px-4 text-[14px] font-bold text-[#14213d] shadow-md hover:bg-[#f7f0e0]"
+        >
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="#14213d" aria-hidden>
+            <path d="M8 5v14l11-7z" />
+          </svg>
+          Play story<span className="sr-only">: {card.title}</span>
+        </Link>
       </div>
       <div className="flex flex-wrap items-center gap-x-2 gap-y-1 text-[13px] text-ink-2">
         <TopicTag topic={card.primaryTopic} />
@@ -100,7 +119,7 @@ export function KnowledgeCardView({ card, reasons, bucket, variant = 'feed', onS
       </div>
 
       {card.bridge && (
-        <p className="mt-3 inline-flex items-center gap-2 rounded-lg bg-surface-2 px-3 py-1.5 text-[13px] font-medium">
+        <p className="mt-3 inline-flex items-center gap-2 rounded-xl bg-surface-2 px-3 py-1.5 text-[13px] font-medium">
           <Icon name="link" size={15} /> {topicLabel(card.bridge.from)} <span aria-hidden>→</span>
           <span className="sr-only">connects to</span> {topicLabel(card.bridge.to)}
         </p>
@@ -124,7 +143,7 @@ export function KnowledgeCardView({ card, reasons, bucket, variant = 'feed', onS
       <p className="mt-4 text-[17px] leading-[1.65]">{card.coreIdea}</p>
 
       {card.disputed && (
-        <p className="mt-3 flex gap-2 rounded-lg bg-[color-mix(in_srgb,var(--warn)_12%,transparent)] px-3 py-2 text-[14px]">
+        <p className="mt-3 flex gap-2 rounded-xl bg-[color-mix(in_srgb,var(--warn)_12%,transparent)] px-3 py-2 text-[14px]">
           <Icon name="info" size={18} className="mt-0.5 shrink-0 text-warn" />
           <span>
             <strong className="font-semibold">Contested evidence: </strong>
@@ -157,7 +176,7 @@ export function KnowledgeCardView({ card, reasons, bucket, variant = 'feed', onS
             <button
               type="button"
               onClick={() => setShowViews(true)}
-              className="flex min-h-11 w-full items-center justify-center gap-2 rounded-xl border border-line text-[15px] font-medium hover:bg-surface-2"
+              className="flex min-h-11 w-full items-center justify-center gap-2 rounded-2xl border border-line text-[15px] font-medium hover:bg-surface-2"
             >
               <Icon name="scale" size={18} /> See both viewpoints and the evidence
             </button>
@@ -213,7 +232,7 @@ export function KnowledgeCardView({ card, reasons, bucket, variant = 'feed', onS
           <Link
             to={`/card/${card.id}`}
             onClick={() => record(card.id, 'explore')}
-            className="flex min-h-11 min-w-11 flex-col items-center justify-center rounded-xl px-2 text-[12px] font-medium text-ink-2 hover:bg-surface-2 hover:text-ink"
+            className="flex min-h-11 min-w-11 flex-col items-center justify-center rounded-2xl px-2 text-[12px] font-medium text-ink-2 hover:bg-surface-2 hover:text-ink"
           >
             <Icon name="deeper" size={20} />
             Deeper
@@ -245,7 +264,7 @@ export function KnowledgeCardView({ card, reasons, bucket, variant = 'feed', onS
                     record(card.id, 'more-like-this');
                     toast(`You'll see more ${topic.short} ideas`);
                   }}
-                  className="inline-flex min-h-10 items-center gap-1.5 rounded-lg border border-line px-3 text-[13px] hover:bg-surface-2"
+                  className="inline-flex min-h-10 items-center gap-1.5 rounded-xl border border-line px-3 text-[13px] hover:bg-surface-2"
                 >
                   <Icon name="thumbUp" size={15} /> More like this
                 </button>
@@ -255,7 +274,7 @@ export function KnowledgeCardView({ card, reasons, bucket, variant = 'feed', onS
                     record(card.id, 'less-like-this');
                     toast(`You'll see fewer ${topic.short} ideas`);
                   }}
-                  className="inline-flex min-h-10 items-center gap-1.5 rounded-lg border border-line px-3 text-[13px] hover:bg-surface-2"
+                  className="inline-flex min-h-10 items-center gap-1.5 rounded-xl border border-line px-3 text-[13px] hover:bg-surface-2"
                 >
                   <Icon name="thumbDown" size={15} /> Less like this
                 </button>

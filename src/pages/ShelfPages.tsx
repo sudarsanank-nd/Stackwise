@@ -2,9 +2,27 @@ import { useId, useMemo, useState } from 'react';
 import { Link, useNavigate, useParams } from 'react-router-dom';
 import { useAppStore } from '../store/useAppStore';
 import { getCard } from '../services/content';
+import { familyOf } from '../data/families';
 import { Button, EmptyState, LinkButton, PageHeader, TopicTag } from '../components/common/ui';
 import { Icon } from '../components/common/Icon';
 import { useToast } from '../store/toast';
+
+/** Mini "stack" thumbnail in the logo's style: one layer per recent saved card, coloured by topic family. */
+function StackThumb({ cardIds }: { cardIds: string[] }) {
+  const colours = cardIds
+    .slice(-3)
+    .map((id) => getCard(id))
+    .filter((c) => !!c)
+    .map((c) => familyOf(c.primaryTopic).bg);
+  const layers = [...Array(3 - colours.length).fill('var(--surface-2)'), ...colours];
+  return (
+    <svg width="52" height="52" viewBox="0 0 120 120" aria-hidden className="shrink-0">
+      {layers.map((fill, i) => (
+        <rect key={i} x="-34" y="-34" width="68" height="68" rx="14" fill={fill} stroke="var(--line)" strokeWidth="2" transform={`translate(60 ${88 - i * 21}) scale(1 0.58) rotate(45)`} />
+      ))}
+    </svg>
+  );
+}
 
 export function ShelfPage() {
   const collections = useAppStore((s) => s.collections);
@@ -25,12 +43,15 @@ export function ShelfPage() {
       <ul className="grid gap-3 sm:grid-cols-2">
         {collections.map((c) => (
           <li key={c.id}>
-            <Link to={`/shelf/${c.id}`} className="flex h-full flex-col rounded-2xl border border-line bg-surface p-4 hover:bg-surface-2">
-              <span className="flex items-center justify-between">
-                <span className="font-semibold">{c.name}</span>
-                <span className="rounded-full bg-surface-2 px-2.5 text-[13px] tabular-nums">{c.cardIds.length}</span>
+            <Link to={`/shelf/${c.id}`} className="flex h-full items-center gap-3 rounded-3xl border border-line bg-surface p-4 shadow-[var(--shadow)] hover:bg-surface-2">
+              <StackThumb cardIds={c.cardIds} />
+              <span className="flex min-w-0 flex-1 flex-col">
+                <span className="flex items-center justify-between gap-2">
+                  <span className="font-display text-[17px] font-extrabold tracking-[-0.01em]">{c.name}</span>
+                  <span className="rounded-full bg-surface-2 px-2.5 text-[13px] font-semibold tabular-nums">{c.cardIds.length}</span>
+                </span>
+                {c.description && <span className="mt-0.5 text-[14px] text-ink-2">{c.description}</span>}
               </span>
-              {c.description && <span className="mt-1 text-[14px] text-ink-2">{c.description}</span>}
             </Link>
           </li>
         ))}
@@ -48,7 +69,7 @@ export function ShelfPage() {
         <label htmlFor={inputId} className="sr-only">
           New collection name
         </label>
-        <input id={inputId} value={name} onChange={(e) => setName(e.target.value)} placeholder="New collection name" className="min-h-11 flex-1 rounded-xl border border-line bg-surface px-3 text-[16px]" />
+        <input id={inputId} value={name} onChange={(e) => setName(e.target.value)} placeholder="New collection name" className="min-h-11 flex-1 rounded-3xl border border-line bg-surface px-3 text-[16px]" />
         <Button type="submit" icon="plus" disabled={!name.trim()}>
           Create
         </Button>
@@ -89,9 +110,9 @@ export function CollectionPage() {
           }}
         >
           <label className="block text-[14px] font-medium" htmlFor="col-name">Name</label>
-          <input id="col-name" value={name} onChange={(e) => setName(e.target.value)} className="min-h-11 w-full rounded-xl border border-line bg-surface px-3 text-[16px]" />
+          <input id="col-name" value={name} onChange={(e) => setName(e.target.value)} className="min-h-11 w-full rounded-2xl border border-line bg-surface px-3 text-[16px]" />
           <label className="block text-[14px] font-medium" htmlFor="col-desc">Description</label>
-          <input id="col-desc" value={desc} onChange={(e) => setDesc(e.target.value)} className="min-h-11 w-full rounded-xl border border-line bg-surface px-3 text-[16px]" />
+          <input id="col-desc" value={desc} onChange={(e) => setDesc(e.target.value)} className="min-h-11 w-full rounded-2xl border border-line bg-surface px-3 text-[16px]" />
           <div className="flex gap-2 pt-1">
             <Button type="submit" variant="primary">Save</Button>
             <Button variant="ghost" onClick={() => setEditing(false)}>Cancel</Button>
@@ -140,7 +161,7 @@ export function CollectionPage() {
             if (!card) return null;
             const understood = understoodIds.has(cid);
             return (
-              <li key={cid} className="rounded-2xl border border-line bg-surface p-4">
+              <li key={cid} className="rounded-3xl border border-line bg-surface p-4">
                 <TopicTag topic={card.primaryTopic} small />
                 <Link to={`/card/${cid}`} className="mt-1 block font-semibold hover:underline">
                   {card.title}
@@ -157,7 +178,7 @@ export function CollectionPage() {
                         toast(`Moved to ${collections.find((c) => c.id === e.target.value)?.name}`);
                       }
                     }}
-                    className="min-h-10 rounded-lg border border-line bg-bg px-2 text-[14px]"
+                    className="min-h-10 rounded-xl border border-line bg-bg px-2 text-[14px]"
                   >
                     <option value="">Move to…</option>
                     {collections.filter((c) => c.id !== collection.id).map((c) => (

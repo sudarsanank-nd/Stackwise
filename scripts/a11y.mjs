@@ -6,7 +6,7 @@ const { chromium } = require('playwright');
 const axeSrc = readFileSync(require.resolve('axe-core/axe.min.js'), 'utf8');
 const base = process.argv[2] ?? 'http://localhost:5173/';
 const profile = { state: { profile: { id: 'u1', displayName: 'A11y', interests: ['investing', 'leadership', 'ai'], rankedInterests: ['investing', 'leadership', 'ai'], topicDifficulty: {}, learningGoals: ['manager'], dailyTargetMinutes: 15, preferredStyles: ['mixed'], serendipityFrequency: 'sometimes', personalizationEnabled: true, theme: 'light', createdAt: 'x', updatedAt: 'x' }, theme: 'light', interactions: [], likedIds: [], collections: [{ id: 'col-default-0', name: 'Investing Playbook', description: '', cardIds: ['bf-loss-aversion-panic'], isDefault: true, createdAt: 'x', updatedAt: 'x' }], sessions: [], searchHistory: [], gymResults: [], reflections: [], continuedDays: [], finishedDays: [] }, version: 1 };
-const pages = ['#/welcome', '#/feed', '#/card/inv-active-vs-passive', '#/search?q=risk', '#/gym/gym-market-drop', '#/shelf', '#/shelf/col-default-0', '#/map', '#/complete', '#/settings', '#/history', '#/session', '#/collide', '#/topics', '#/about', '#/onboarding'];
+const pages = ['#/welcome', '#/feed', '#/card/inv-active-vs-passive', '#/card/agent-compounding-errors', '#/story/bf-loss-aversion-panic', '#/search?q=risk', '#/gym/gym-market-drop', '#/shelf', '#/shelf/col-default-0', '#/map', '#/complete', '#/settings', '#/history', '#/session', '#/collide', '#/topics', '#/about', '#/onboarding'];
 const browser = await chromium.launch();
 let total = 0;
 for (const theme of ['light', 'dark']) {

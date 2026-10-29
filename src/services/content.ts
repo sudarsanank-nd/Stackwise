@@ -1,7 +1,8 @@
-import type { DecisionScenario, IdeaCollision, KnowledgeCard, TopicId } from '../types';
+import type { DecisionScenario, Explainer, IdeaCollision, KnowledgeCard, TopicId } from '../types';
 import { wordCount } from '../utils/text';
 import scenariosJson from '../data/scenarios.json';
 import collisionsJson from '../data/collisions.json';
+import explainersJson from '../data/explainers.json';
 
 const WORDS_PER_MINUTE = 230;
 
@@ -35,6 +36,12 @@ export const SCENARIO_INDEX = new Map(SCENARIOS.map((s) => [s.id, s]));
 export const COLLISIONS = (collisionsJson as IdeaCollision[]).filter((c) => CARD_INDEX.has(c.cardA) && CARD_INDEX.has(c.cardB));
 
 export const getCard = (id: string) => CARD_INDEX.get(id);
+
+export const EXPLAINERS = (explainersJson as Explainer[]).filter((e) => CARD_INDEX.has(e.cardId));
+const EXPLAINER_INDEX = new Map(EXPLAINERS.map((e) => [e.cardId, e]));
+export const getExplainer = (cardId: string) => EXPLAINER_INDEX.get(cardId);
+export const sceneSeconds = (s: { seconds?: number }) => s.seconds ?? 8;
+export const explainerSeconds = (e: Explainer) => e.scenes.reduce((n, s) => n + sceneSeconds(s), 0);
 
 export const cardTopics = (c: KnowledgeCard): TopicId[] => [c.primaryTopic, ...c.secondaryTopics];
 

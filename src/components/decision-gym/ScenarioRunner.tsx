@@ -54,7 +54,7 @@ export function ScenarioRunner({ scenario, onComplete }: { scenario: DecisionSce
             {scenario.choices.map((c) => (
               <label
                 key={c.id}
-                className={`flex min-h-12 cursor-pointer items-start gap-3 rounded-xl border p-3 text-[15px] ${choiceId === c.id ? 'border-brand bg-surface-2' : 'border-line hover:bg-surface-2'}`}
+                className={`flex min-h-12 cursor-pointer items-start gap-3 rounded-2xl border p-3 text-[15px] ${choiceId === c.id ? 'border-brand bg-surface-2' : 'border-line hover:bg-surface-2'}`}
               >
                 <input type="radio" name={`choice-${scenario.id}`} value={c.id} checked={choiceId === c.id} onChange={() => setChoiceId(c.id)} className="mt-1 h-4 w-4 accent-[var(--brand)]" />
                 <span>{c.label}</span>
@@ -69,13 +69,13 @@ export function ScenarioRunner({ scenario, onComplete }: { scenario: DecisionSce
 
       {stage === 'reason' && (
         <div className="fade-in mt-5">
-          <p className="rounded-xl bg-surface-2 p-3 text-[15px]">
+          <p className="rounded-2xl bg-surface-2 p-3 text-[15px]">
             <span className="font-semibold">Your choice:</span> {chosen?.label}
           </p>
           <label htmlFor={reasonId} className="mt-4 block text-[15px] font-semibold">
             Why? <span className="font-normal text-ink-2">(optional)</span>
           </label>
-          <textarea id={reasonId} rows={3} value={reasoning} onChange={(e) => setReasoning(e.target.value)} className="mt-2 w-full rounded-xl border border-line bg-bg p-3 text-[16px]" />
+          <textarea id={reasonId} rows={3} value={reasoning} onChange={(e) => setReasoning(e.target.value)} className="mt-2 w-full rounded-2xl border border-line bg-bg p-3 text-[16px]" />
           <Button variant="primary" className="mt-3" onClick={() => setStage('tradeoffs')}>
             Show the trade-offs
           </Button>
@@ -86,7 +86,7 @@ export function ScenarioRunner({ scenario, onComplete }: { scenario: DecisionSce
         <div className="fade-in mt-5 space-y-3">
           <h3 className="text-[15px] font-semibold">Likely trade-offs of each option</h3>
           {scenario.choices.map((c) => (
-            <div key={c.id} className={`rounded-xl border p-3 ${c.id === choiceId ? 'border-brand' : 'border-line'}`}>
+            <div key={c.id} className={`rounded-2xl border p-3 ${c.id === choiceId ? 'border-brand' : 'border-line'}`}>
               <p className="font-semibold">
                 {c.label} {c.id === choiceId && <span className="ml-1 rounded bg-brand px-1.5 py-0.5 text-[11px] font-semibold text-brand-ink uppercase">Your pick</span>}
               </p>
@@ -116,7 +116,7 @@ export function ScenarioRunner({ scenario, onComplete }: { scenario: DecisionSce
           <h3 className="text-[15px] font-semibold">Relevant ideas</h3>
           <ul className="mt-2 space-y-2">
             {scenario.relevantConcepts.map((rc) => (
-              <li key={rc.name} className="rounded-xl bg-surface-2 p-3 text-[15px]">
+              <li key={rc.name} className="rounded-2xl bg-surface-2 p-3 text-[15px]">
                 <p className="font-semibold">{rc.name}</p>
                 <p className="text-ink-2">{rc.explanation}</p>
                 {rc.cardId && (
@@ -142,7 +142,7 @@ export function ScenarioRunner({ scenario, onComplete }: { scenario: DecisionSce
             <legend className="text-[15px] font-semibold">Knowing the trade-offs, would you change your decision?</legend>
             <div className="mt-2 flex flex-wrap gap-2">
               {(['yes', 'no', 'unsure'] as const).map((v) => (
-                <label key={v} className={`flex min-h-11 cursor-pointer items-center gap-2 rounded-xl border px-4 ${wouldChange === v ? 'border-brand bg-surface-2' : 'border-line'}`}>
+                <label key={v} className={`flex min-h-11 cursor-pointer items-center gap-2 rounded-2xl border px-4 ${wouldChange === v ? 'border-brand bg-surface-2' : 'border-line'}`}>
                   <input type="radio" name={`change-${scenario.id}`} checked={wouldChange === v} onChange={() => setWouldChange(v)} className="accent-[var(--brand)]" />
                   {v === 'yes' ? 'Yes' : v === 'no' ? 'No' : 'Not sure'}
                 </label>
@@ -152,7 +152,7 @@ export function ScenarioRunner({ scenario, onComplete }: { scenario: DecisionSce
           <label htmlFor={reflectId} className="mt-4 block text-[15px] font-semibold">
             {scenario.reflectionQuestion}
           </label>
-          <textarea id={reflectId} rows={3} value={reflection} onChange={(e) => setReflection(e.target.value)} className="mt-2 w-full rounded-xl border border-line bg-bg p-3 text-[16px]" />
+          <textarea id={reflectId} rows={3} value={reflection} onChange={(e) => setReflection(e.target.value)} className="mt-2 w-full rounded-2xl border border-line bg-bg p-3 text-[16px]" />
           <Button variant="primary" className="mt-3" onClick={finish}>
             Complete scenario
           </Button>
@@ -160,7 +160,7 @@ export function ScenarioRunner({ scenario, onComplete }: { scenario: DecisionSce
       )}
 
       {stage === 'done' && (
-        <p role="status" className="fade-in mt-5 flex items-center gap-2 rounded-xl bg-surface-2 p-3 text-[15px] font-medium">
+        <p role="status" className="fade-in mt-5 flex items-center gap-2 rounded-2xl bg-surface-2 p-3 text-[15px] font-medium">
           <Icon name="check" className="text-ok" /> Scenario complete. Your choice and reflection are saved in your history.
         </p>
       )}

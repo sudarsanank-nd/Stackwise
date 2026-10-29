@@ -41,17 +41,24 @@ export function ProfilePage() {
           ['Streak', `${streak.current} day${streak.current === 1 ? '' : 's'}`],
           ['Saved', String(saved.size)],
           ['Sessions', String(sessions)],
-        ].map(([k, v]) => (
-          <Panel key={k} className="p-4!">
-            <p className="text-[12px] text-ink-2">{k}</p>
-            <p className="mt-1 font-display text-[22px] font-extrabold tracking-[-0.02em] tabular-nums">{v}</p>
-          </Panel>
-        ))}
+        ].map(([k, v]) =>
+          k === 'Streak' ? (
+            <div key={k} className="rounded-3xl bg-navy p-4 text-white dark:bg-surface-2">
+              <p className="font-display text-[22px] leading-none font-extrabold tracking-[-0.02em] text-marigold tabular-nums">{v}</p>
+              <p className="mt-1.5 text-[12px] text-[#c7ccda]">{k}</p>
+            </div>
+          ) : (
+            <Panel key={k} className="p-4!">
+              <p className="font-display text-[22px] leading-none font-extrabold tracking-[-0.02em] tabular-nums">{v}</p>
+              <p className="mt-1.5 text-[12px] text-ink-2">{k}</p>
+            </Panel>
+          ),
+        )}
       </div>
       <p className="mt-2 text-[13px] text-ink-2">
         Longest streak: {streak.longest} days. A streak day = 3 ideas read or one session completed. Missing a day is fine.
       </p>
-      <ul className="mt-6 divide-y divide-line rounded-2xl border border-line bg-surface">
+      <ul className="mt-6 divide-y divide-line overflow-hidden rounded-3xl border border-line bg-surface shadow-[var(--shadow)]">
         {links.map((l) => (
           <li key={l.to}>
             <Link to={l.to} className="flex min-h-16 items-center gap-4 px-4 hover:bg-surface-2">
@@ -266,7 +273,7 @@ export function SettingsPage() {
               ['Repeatedly skipped', WEIGHTS.repeatedlySkipped],
               ['Already read', WEIGHTS.completed],
             ].map(([k, v]) => (
-              <li key={k as string} className="flex justify-between gap-2 rounded-lg bg-surface-2 px-3 py-1.5">
+              <li key={k as string} className="flex justify-between gap-2 rounded-xl bg-surface-2 px-3 py-1.5">
                 <span>{k}</span>
                 <span className="font-semibold tabular-nums">{(v as number) > 0 ? `+${v}` : v}</span>
               </li>
@@ -286,7 +293,7 @@ export function SettingsPage() {
         </div>
         <p className="mt-2 text-[13px] text-ink-2">Remove individual items from <Link to="/history" className="underline">Learning history</Link>.</p>
         {confirm && (
-          <div role="alertdialog" aria-labelledby="confirm-title" className="mt-4 rounded-2xl border border-line bg-surface p-4">
+          <div role="alertdialog" aria-labelledby="confirm-title" className="mt-4 rounded-3xl border border-line bg-surface p-4">
             <p id="confirm-title" className="font-semibold">
               {confirm === 'recs' && 'Reset recommendations?'}
               {confirm === 'history' && 'Remove all activity history?'}
@@ -357,7 +364,7 @@ export function HistoryPage() {
           (byCard.length === 0 ? (
             <EmptyState title="No reading history yet" action={<LinkButton to="/feed">Open the feed</LinkButton>} />
           ) : (
-            <ul className="divide-y divide-line rounded-2xl border border-line bg-surface">
+            <ul className="divide-y divide-line rounded-3xl border border-line bg-surface">
               {byCard.map(([id, e]) => {
                 const c = getCard(id);
                 if (!c) return null;
@@ -381,7 +388,7 @@ export function HistoryPage() {
           ) : (
             <ul className="space-y-3">
               {[...reflections].reverse().map((r) => (
-                <li key={r.id} className="rounded-2xl border border-line bg-surface p-4">
+                <li key={r.id} className="rounded-3xl border border-line bg-surface p-4">
                   <p className="text-[13px] text-ink-2">{new Date(r.date).toLocaleDateString()} · {r.context}</p>
                   <p className="mt-1 font-medium">{r.prompt}</p>
                   <p className="mt-1">{r.text}</p>
@@ -397,7 +404,7 @@ export function HistoryPage() {
               {[...gym].reverse().map((g, i) => {
                 const s = SCENARIO_INDEX.get(g.scenarioId);
                 return (
-                  <li key={`${g.scenarioId}-${i}`} className="rounded-2xl border border-line bg-surface p-4">
+                  <li key={`${g.scenarioId}-${i}`} className="rounded-3xl border border-line bg-surface p-4">
                     <p className="font-medium">{s?.title}</p>
                     <p className="text-[14px]">You chose: {s?.choices.find((c) => c.id === g.choiceId)?.label}</p>
                     {g.reasoning && <p className="text-[14px] text-ink-2">Reasoning: {g.reasoning}</p>}

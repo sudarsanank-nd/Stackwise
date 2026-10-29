@@ -55,7 +55,7 @@ export default function CompletePage() {
               const c = getCard(id);
               return c ? (
                 <li key={id}>
-                  <Link to={`/card/${id}`} className="block rounded-xl border border-line bg-surface p-3 hover:bg-surface-2">
+                  <Link to={`/card/${id}`} className="block rounded-2xl border border-line bg-surface p-3 hover:bg-surface-2">
                     <TopicTag topic={c.primaryTopic} small />
                     <span className="block font-medium">{c.title}</span>
                   </Link>
@@ -77,7 +77,7 @@ export default function CompletePage() {
             </p>
           ) : (
             <>
-              <textarea id={reflectId} autoFocus={params.get('reflect') === '1'} rows={3} value={reflection} onChange={(e) => setReflection(e.target.value)} className="mt-3 w-full rounded-xl border border-line bg-bg p-3 text-[16px]" />
+              <textarea id={reflectId} autoFocus={params.get('reflect') === '1'} rows={3} value={reflection} onChange={(e) => setReflection(e.target.value)} className="mt-3 w-full rounded-2xl border border-line bg-bg p-3 text-[16px]" />
               <Button
                 className="mt-2"
                 disabled={!reflection.trim()}
@@ -100,7 +100,7 @@ export default function CompletePage() {
           ) : (
             <div className="space-y-4">
               {check.map((q, qi) => (
-                <fieldset key={q.card.id} className="rounded-2xl border border-line bg-surface p-4">
+                <fieldset key={q.card.id} className="rounded-3xl border border-line bg-surface p-4">
                   <legend className="sr-only">Question {qi + 1}</legend>
                   <p className="font-medium">
                     {qi + 1}. Which sentence best captures “{q.card.title}”?
@@ -111,7 +111,7 @@ export default function CompletePage() {
                       const isRight = o.id === q.card.id;
                       const state = chosen ? (isRight ? 'border-ok' : chosen === o.id ? 'border-warn' : 'border-line') : 'border-line';
                       return (
-                        <label key={o.id} className={`flex min-h-11 cursor-pointer items-start gap-3 rounded-xl border p-3 text-[15px] ${state}`}>
+                        <label key={o.id} className={`flex min-h-11 cursor-pointer items-start gap-3 rounded-2xl border p-3 text-[15px] ${state}`}>
                           <input
                             type="radio"
                             name={`q-${q.card.id}`}

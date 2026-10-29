@@ -275,3 +275,29 @@ export interface ScoredCard {
   reasons: string[];
   bucket: FeedBucket;
 }
+
+// ---- Motion explainers -------------------------------------------------------
+// Short animated explainers (30–60 s) for selected cards, played only when the reader taps Play.
+// Scenes reuse a small library of animated visuals; captions carry the meaning, so values
+// are relative illustration only (0–1), never data. Rules: docs/content-guidelines.md.
+
+export type ExplainerVisual = 'scale' | 'curve' | 'cycle' | 'bars' | 'stack' | 'versus' | 'chain' | 'statement';
+
+export interface ExplainerScene {
+  visual: ExplainerVisual;
+  /** On-screen caption (always shown — explainers play muted). ≤ 140 characters. */
+  caption: string;
+  /** Short chapter name for the chapter list. */
+  chapter: string;
+  /** Short labels drawn in the visual (≤ 18 characters each). */
+  labels?: string[];
+  /** Relative sizes 0–1 for bars / curve points / chain strength. Illustrative only. */
+  values?: number[];
+  /** Scene length in seconds at 1× (default 8). */
+  seconds?: number;
+}
+
+export interface Explainer {
+  cardId: string;
+  scenes: ExplainerScene[];
+}

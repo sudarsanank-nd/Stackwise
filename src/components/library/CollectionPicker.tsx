@@ -22,7 +22,7 @@ export function CollectionPicker({ cardId }: { cardId: string }) {
             const checked = c.cardIds.includes(cardId);
             return (
               <li key={c.id}>
-                <label className="flex min-h-11 cursor-pointer items-center gap-3 rounded-lg px-2 hover:bg-surface-2">
+                <label className="flex min-h-11 cursor-pointer items-center gap-3 rounded-xl px-2 hover:bg-surface-2">
                   <input
                     type="checkbox"
                     checked={checked}
@@ -53,7 +53,7 @@ export function CollectionPicker({ cardId }: { cardId: string }) {
         <label htmlFor={inputId} className="sr-only">
           New collection name
         </label>
-        <input id={inputId} value={name} onChange={(e) => setName(e.target.value)} placeholder="New collection…" className="min-h-11 flex-1 rounded-xl border border-line bg-bg px-3 text-[16px]" />
+        <input id={inputId} value={name} onChange={(e) => setName(e.target.value)} placeholder="New collection…" className="min-h-11 flex-1 rounded-2xl border border-line bg-bg px-3 text-[16px]" />
         <Button type="submit" icon="plus">
           Create
         </Button>

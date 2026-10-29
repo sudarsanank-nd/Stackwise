@@ -42,7 +42,7 @@ export default function SearchPage() {
         <label htmlFor="search-input" className="sr-only">
           Search ideas
         </label>
-        <div className="flex items-center gap-2 rounded-2xl border border-line bg-surface px-4 focus-within:outline focus-within:outline-2 focus-within:outline-[var(--focus)]">
+        <div className="flex items-center gap-2 rounded-3xl border border-line bg-surface px-4 focus-within:outline focus-within:outline-2 focus-within:outline-[var(--focus)]">
           <Icon name="search" className="text-ink-2" />
           <input
             id="search-input"

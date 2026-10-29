@@ -98,7 +98,7 @@ export function OnboardingWizard({ initial, editMode = false }: { initial?: Part
               id="ob-name"
               value={d.displayName}
               onChange={(e) => set({ displayName: e.target.value })}
-              className="mt-2 min-h-11 w-full rounded-xl border border-line bg-surface px-3 text-[16px]"
+              className="mt-2 min-h-11 w-full rounded-2xl border border-line bg-surface px-3 text-[16px]"
               autoComplete="given-name"
             />
             <p className="mt-5 text-[15px] text-ink-2">Pick at least three. You can change these any time.</p>
@@ -128,13 +128,13 @@ export function OnboardingWizard({ initial, editMode = false }: { initial?: Part
             <p className="text-[15px] text-ink-2">These get the biggest boost in your feed. Use the arrows to reorder.</p>
             <ol className="mt-4 space-y-2">
               {ranked.map((t, i) => (
-                <li key={t} className="flex items-center gap-3 rounded-xl border border-line bg-surface px-3 py-2">
+                <li key={t} className="flex items-center gap-3 rounded-2xl border border-line bg-surface px-3 py-2">
                   <span className="w-6 text-center font-semibold tabular-nums">{i + 1}</span>
                   <span className="flex-1 font-medium">{TOPIC_MAP[t].label}</span>
-                  <button type="button" onClick={() => move(i, -1)} disabled={i === 0} aria-label={`Move ${TOPIC_MAP[t].label} up`} className="inline-flex h-11 w-11 items-center justify-center rounded-lg hover:bg-surface-2 disabled:opacity-30">
+                  <button type="button" onClick={() => move(i, -1)} disabled={i === 0} aria-label={`Move ${TOPIC_MAP[t].label} up`} className="inline-flex h-11 w-11 items-center justify-center rounded-xl hover:bg-surface-2 disabled:opacity-30">
                     <Icon name="up" size={18} />
                   </button>
-                  <button type="button" onClick={() => move(i, 1)} disabled={i === ranked.length - 1} aria-label={`Move ${TOPIC_MAP[t].label} down`} className="inline-flex h-11 w-11 items-center justify-center rounded-lg hover:bg-surface-2 disabled:opacity-30">
+                  <button type="button" onClick={() => move(i, 1)} disabled={i === ranked.length - 1} aria-label={`Move ${TOPIC_MAP[t].label} down`} className="inline-flex h-11 w-11 items-center justify-center rounded-xl hover:bg-surface-2 disabled:opacity-30">
                     <Icon name="down" size={18} />
                   </button>
                 </li>
@@ -160,7 +160,7 @@ export function OnboardingWizard({ initial, editMode = false }: { initial?: Part
         {step === 2 && (
           <ul className="space-y-3">
             {d.interests.map((t) => (
-              <li key={t} className="flex flex-wrap items-center justify-between gap-2 rounded-xl border border-line bg-surface px-4 py-3">
+              <li key={t} className="flex flex-wrap items-center justify-between gap-2 rounded-2xl border border-line bg-surface px-4 py-3">
                 <span className="font-medium">{TOPIC_MAP[t].label}</span>
                 <Segmented
                   label={`Depth for ${TOPIC_MAP[t].label}`}
@@ -204,7 +204,7 @@ export function OnboardingWizard({ initial, editMode = false }: { initial?: Part
                     if (s === 'mixed') set({ preferredStyles: ['mixed'] });
                     else set({ preferredStyles: toggle(d.preferredStyles.filter((x) => x !== 'mixed'), s) });
                   }}
-                  className={`flex min-h-14 items-center justify-between rounded-xl border px-4 text-left ${selected ? 'border-brand bg-surface-2' : 'border-line bg-surface'}`}
+                  className={`flex min-h-14 items-center justify-between rounded-2xl border px-4 text-left ${selected ? 'border-brand bg-surface-2' : 'border-line bg-surface'}`}
                 >
                   <span>
                     <span className="block font-medium">{STYLE_LABELS[s].label}</span>
@@ -242,7 +242,7 @@ export function OnboardingWizard({ initial, editMode = false }: { initial?: Part
                 role="radio"
                 aria-checked={d.serendipityFrequency === v}
                 onClick={() => set({ serendipityFrequency: v })}
-                className={`flex min-h-14 flex-col items-start justify-center rounded-xl border px-4 text-left ${d.serendipityFrequency === v ? 'border-brand bg-surface-2' : 'border-line bg-surface'}`}
+                className={`flex min-h-14 flex-col items-start justify-center rounded-2xl border px-4 text-left ${d.serendipityFrequency === v ? 'border-brand bg-surface-2' : 'border-line bg-surface'}`}
               >
                 <span className="font-medium">{label}</span>
                 <span className="text-[14px] text-ink-2">{hint}</span>
@@ -253,7 +253,7 @@ export function OnboardingWizard({ initial, editMode = false }: { initial?: Part
 
         {step === 7 && (
           <div className="space-y-4">
-            <label className="flex cursor-pointer items-start gap-3 rounded-xl border border-line bg-surface p-4">
+            <label className="flex cursor-pointer items-start gap-3 rounded-2xl border border-line bg-surface p-4">
               <input
                 type="checkbox"
                 checked={d.personalizationEnabled}

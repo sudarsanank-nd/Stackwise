@@ -81,7 +81,7 @@ export function Segmented<T extends string | number>({
   onChange: (v: T) => void;
 }) {
   return (
-    <div role="radiogroup" aria-label={label} className="inline-flex rounded-xl border border-line bg-surface-2 p-1">
+    <div role="radiogroup" aria-label={label} className="inline-flex rounded-2xl border border-line bg-surface-2 p-1">
       {options.map((o) => (
         <button
           key={String(o.value)}
@@ -89,7 +89,7 @@ export function Segmented<T extends string | number>({
           role="radio"
           aria-checked={value === o.value}
           onClick={() => onChange(o.value)}
-          className={`min-h-9 rounded-lg px-3 text-sm font-medium transition-colors ${
+          className={`min-h-9 rounded-xl px-3 text-sm font-medium transition-colors ${
             value === o.value ? 'bg-surface text-ink shadow-sm' : 'text-ink-2 hover:text-ink'
           }`}
         >
@@ -214,7 +214,7 @@ export class ErrorBoundary extends Component<{ children: ReactNode; onReset?: ()
 export function Toast({ message }: { message: string | null }) {
   return (
     <div aria-live="polite" className="pointer-events-none fixed inset-x-0 bottom-24 z-50 flex justify-center px-4 md:bottom-8">
-      {message && <div className="fade-in rounded-xl bg-ink px-4 py-2.5 text-sm font-medium text-bg shadow-lg">{message}</div>}
+      {message && <div className="fade-in rounded-2xl bg-ink px-4 py-2.5 text-sm font-medium text-bg shadow-lg">{message}</div>}
     </div>
   );
 }
