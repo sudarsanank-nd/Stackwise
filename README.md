@@ -18,7 +18,7 @@ npm run dev          # http://localhost:5173
 | Command | What it does |
 |---|---|
 | `npm run dev` | Dev server |
-| `npm test` | All unit/component tests (Vitest, 148 tests incl. content validation) |
+| `npm test` | All unit/component tests (Vitest, 149 tests incl. content validation) |
 | `npm run validate:content` | Validate card / scenario / collision JSON only |
 | `npm run typecheck` | TypeScript project check |
 | `npm run lint` | oxlint |
