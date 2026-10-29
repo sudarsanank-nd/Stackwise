@@ -4,7 +4,7 @@ Mobile-first micro-learning feed. React 19 + TypeScript 7 + Vite 8 + Tailwind CS
 
 ## Commands
 - `npm install` then `npm run dev` (http://localhost:5173)
-- `npm test` — Vitest (148 tests, includes content validation). Clears `node_modules/.vitest-cache` first because Vitest 5 caches `import.meta.glob` results.
+- `npm test` — Vitest (149 tests, includes content validation). Clears `node_modules/.vitest-cache` first because Vitest 5 caches `import.meta.glob` results.
 - `npm run validate:content` — content JSON only
 - `npm run typecheck`, `npm run lint` (oxlint), `npm run build`
 - `npm run build:artifact` — single-file HTML in `dist-artifact/`; `npm run build:page` also writes a body-only `dist-artifact/page.html` for hosted pages
