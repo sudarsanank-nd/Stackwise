@@ -1,0 +1,878 @@
+[
+  {
+    "cardId": "inv-diversification-markowitz",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "Before 1952",
+        "caption": "Before 1952, investors mostly asked whether each stock was good.",
+        "labels": [
+          "Each stock alone?"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "versus",
+        "chapter": "Behaving together",
+        "caption": "In Portfolio Selection, Harry Markowitz argued that what matters is how holdings behave together.",
+        "labels": [
+          "Each stock",
+          "Holdings together"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "bars",
+        "chapter": "Steadier than either",
+        "caption": "Schematic: two risky assets that do not move in lockstep can combine into a portfolio less volatile than either alone.",
+        "labels": [
+          "Asset A",
+          "Asset B",
+          "A + B mix"
+        ],
+        "values": [
+          0.8,
+          0.75,
+          0.45
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "scale",
+        "chapter": "Two things to trade off",
+        "caption": "His framing treated expected return and variance as the two things to trade off.",
+        "labels": [
+          "Return",
+          "Variance"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "statement",
+        "chapter": "Weaker in a crisis",
+        "caption": "Diversification only helps when assets are not perfectly correlated, and correlations can rise exactly when markets are stressed.",
+        "labels": [
+          "Not in lockstep"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "inv-asset-allocation",
+    "scenes": [
+      {
+        "visual": "stack",
+        "chapter": "The split",
+        "caption": "Asset allocation is the split of your money between broad categories such as equity, debt, gold and cash.",
+        "labels": [
+          "Equity",
+          "Debt",
+          "Gold",
+          "Cash"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "bars",
+        "chapter": "Different behaviour",
+        "caption": "Schematic: equity tends to swing more, debt tends to be steadier, and cash is stable but loses ground to inflation.",
+        "labels": [
+          "Equity",
+          "Debt",
+          "Cash"
+        ],
+        "values": [
+          0.9,
+          0.45,
+          0.15
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "versus",
+        "chapter": "Same money, two mixes",
+        "caption": "Illustration only: with ₹10 lakh, 70% equity and 30% debt moves far more in a bad year than 30% equity and 70% debt.",
+        "labels": [
+          "70% equity",
+          "30% equity"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "Mix before pick",
+        "caption": "Choosing funds or stocks happens inside that split, so it usually has a smaller effect on your experience.",
+        "labels": [
+          "Mix before pick"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "inv-margin-of-safety",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Worth vs price",
+        "caption": "Illustration only: you estimate a business is worth ₹100 a share and insist on paying no more than ₹70.",
+        "labels": [
+          "Worth ₹100",
+          "Pay ≤ ₹70"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "bars",
+        "chapter": "Room for error",
+        "caption": "A 20% error in your estimate still leaves you ahead of what you paid.",
+        "labels": [
+          "Estimate ₹100",
+          "20% wrong ₹80",
+          "Paid ₹70"
+        ],
+        "values": [
+          1.0,
+          0.8,
+          0.7
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "stack",
+        "chapter": "What the gap absorbs",
+        "caption": "The gap is a buffer: your estimate may be wrong, the future may disappoint, or luck may turn.",
+        "labels": [
+          "Wrong estimate",
+          "Future disappoints",
+          "Luck turns"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "A humility rule",
+        "caption": "It does not say the cheap thing is good. It says to price in your own fallibility before you commit money.",
+        "labels": [
+          "Room to be wrong"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "inv-opportunity-cost",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "The invisible price",
+        "caption": "Opportunity cost is the value of the best alternative you gave up. It never appears on a bank statement.",
+        "labels": [
+          "Invisible cost"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "bars",
+        "chapter": "Forgone interest",
+        "caption": "Illustration only: ₹5 lakh earning 3% instead of a similar-risk 6% option forgoes about ₹15,000 a year.",
+        "labels": [
+          "At 3%",
+          "At 6%"
+        ],
+        "values": [
+          0.5,
+          1.0
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "versus",
+        "chapter": "A better question",
+        "caption": "The useful question is not 'is this good?' but 'is this better than what else I could do with the same money?'",
+        "labels": [
+          "Is this good?",
+          "Better than what?"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Compare like with like",
+        "caption": "It cuts both ways: compare alternatives net of trading costs, taxes and risk before concluding you are losing out.",
+        "labels": [
+          "Trading costs",
+          "Taxes",
+          "Risk"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "inv-mr-market-cycles",
+    "scenes": [
+      {
+        "visual": "cycle",
+        "chapter": "A moody partner",
+        "caption": "Mr. Market names a price every day. His mood swings between euphoria and gloom, and his prices follow his mood.",
+        "labels": [
+          "Euphoria",
+          "High bid",
+          "Gloom",
+          "Low bid"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "curve",
+        "chapter": "Only the mood changed",
+        "caption": "Illustration only: steady profits, yet the price falls 25% in a month in a general sell-off. Only his mood changed.",
+        "labels": [
+          "Illustrative",
+          "−25% in a month"
+        ],
+        "values": [
+          0.8,
+          0.78,
+          0.7,
+          0.6
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "versus",
+        "chapter": "Facts or mood?",
+        "caption": "Before trading, ask whether the price moved because of new facts about the asset or only because sentiment moved.",
+        "labels": [
+          "New facts",
+          "Only mood"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "You may decline",
+        "caption": "You are never obliged to trade. A quote is information about his mood, not a verdict on what your holding is worth.",
+        "labels": [
+          "You may decline"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "inv-position-sizing",
+    "scenes": [
+      {
+        "visual": "stack",
+        "chapter": "Limit the blast radius",
+        "caption": "On-call engineers limit how much any single failure can break: staged rollouts, canary releases, isolated services.",
+        "labels": [
+          "Staged rollouts",
+          "Canary releases",
+          "Isolated services"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "scale",
+        "chapter": "Same outcome, two sizes",
+        "caption": "Illustration only: if a high-conviction idea goes to zero, Ravi loses 5% of his portfolio and Meera loses 40%.",
+        "labels": [
+          "Meera 40%",
+          "Ravi 5%"
+        ],
+        "values": [
+          1.0,
+          0.125
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "bars",
+        "chapter": "Losses are asymmetric",
+        "caption": "A 50% fall needs a 100% gain to recover, so large losses are disproportionately costly.",
+        "labels": [
+          "Fall 50%",
+          "Gain needed 100%"
+        ],
+        "values": [
+          0.5,
+          1.0
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "Cap each bet",
+        "caption": "Ask less 'how likely am I to be right?' and more 'if I am wrong, can I live with this loss?' Set a cap while calm.",
+        "labels": [
+          "Cap each bet"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "inv-circle-of-competence",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Inside and outside",
+        "caption": "Inside your circle of competence you can judge what something is worth. Outside it, you are guessing but may feel confident.",
+        "labels": [
+          "Inside: judge",
+          "Outside: guess"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "Know the edge",
+        "caption": "Buffett stressed that the circle's size matters less than knowing where its boundary lies.",
+        "labels": [
+          "Know the edge"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "Quick self-check",
+        "caption": "A quick self-check: how it makes money, how it could lose, when you'd sell, its costs, and your real reason.",
+        "labels": [
+          "How it makes money",
+          "How it could lose",
+          "When I'd sell",
+          "Costs and taxes",
+          "Not just a tip"
+        ],
+        "seconds": 11
+      },
+      {
+        "visual": "bars",
+        "chapter": "Smaller near the edge",
+        "caption": "Schematic: one reasonable use of the idea is to size positions smaller the closer you are to the edge, and pass outside it.",
+        "labels": [
+          "Core",
+          "Near edge",
+          "Outside"
+        ],
+        "values": [
+          0.8,
+          0.4,
+          0.05
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "inv-expected-value",
+    "scenes": [
+      {
+        "visual": "stack",
+        "chapter": "Four steps",
+        "caption": "Expected value: list the realistic outcomes, estimate how likely each is, multiply, and add.",
+        "labels": [
+          "List outcomes",
+          "Estimate odds",
+          "Multiply",
+          "Add up"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "bars",
+        "chapter": "Two outcomes",
+        "caption": "Illustration only: a 60% chance of gaining ₹20,000 and a 40% chance of losing ₹25,000.",
+        "labels": [
+          "60% · +₹20,000",
+          "40% · −₹25,000"
+        ],
+        "values": [
+          0.8,
+          1.0
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "The arithmetic",
+        "caption": "0.6 × 20,000 minus 0.4 × 25,000 is ₹2,000. A loss here would not prove the bet was bad.",
+        "labels": [
+          "EV = +₹2,000"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "versus",
+        "chapter": "Reasoning, not result",
+        "caption": "A good decision can lose and a bad one can win. Judge the reasoning, not just the result; the odds are rough estimates.",
+        "labels": [
+          "Reasoning",
+          "Result"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "inv-risk-adjusted-returns",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "Return per risk",
+        "caption": "Risk-adjusted return asks how much return you earned for each unit of risk you took.",
+        "labels": [
+          "Return per risk"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "The Sharpe ratio",
+        "caption": "William Sharpe's ratio divides return above a risk-free rate by the volatility of returns.",
+        "labels": [
+          "Return",
+          "minus risk-free",
+          "÷ volatility"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "versus",
+        "chapter": "Two funds",
+        "caption": "Illustration only: Fund A returns 12% with big swings; Fund B returns 10% with much smaller swings.",
+        "labels": [
+          "Fund A 12%",
+          "Fund B 10%"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "bars",
+        "chapter": "Per unit of volatility",
+        "caption": "Schematic: per unit of volatility, B may rank higher, and B may also be easier to hold through a bad year.",
+        "labels": [
+          "Fund A",
+          "Fund B"
+        ],
+        "values": [
+          0.5,
+          0.8
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "Ask, don't rank",
+        "caption": "Limits: volatility is only one definition of risk, and past ratios say little about the future. Ask better questions.",
+        "labels": [
+          "Ask, don't rank"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "pf-liquidity-emergency-fund",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Find it vs get it",
+        "caption": "Being able to find the money is not the same as being able to get it fast.",
+        "labels": [
+          "Find it",
+          "Get it fast"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "bars",
+        "chapter": "How liquid?",
+        "caption": "Schematic: liquidity is how quickly and cheaply an asset becomes cash. Equity may be down 20% when needed; property takes months.",
+        "labels": [
+          "Savings",
+          "Equity fund",
+          "Property"
+        ],
+        "values": [
+          0.95,
+          0.5,
+          0.1
+        ],
+        "seconds": 11
+      },
+      {
+        "visual": "chain",
+        "chapter": "The forced sale",
+        "caption": "Without liquid reserves, a normal emergency becomes a forced sale of something you wanted to keep.",
+        "labels": [
+          "Surprise bill",
+          "No reserve",
+          "Forced sale"
+        ],
+        "values": [
+          0.95,
+          0.75,
+          0.4
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Check your fund",
+        "caption": "Check it: reachable within a day or two, stable in value, kept separate, months covered known, and 'emergency' defined.",
+        "labels": [
+          "Reach in a day",
+          "Stable value",
+          "Kept separate",
+          "Months covered",
+          "What counts"
+        ],
+        "seconds": 11
+      }
+    ]
+  },
+  {
+    "cardId": "pf-time-horizon-buckets",
+    "scenes": [
+      {
+        "visual": "stack",
+        "chapter": "Sorted by need date",
+        "caption": "The bucket approach sorts money by when you need it: near-term in safe assets, mid-term balanced, long-term in growth.",
+        "labels": [
+          "Near: safe",
+          "Mid: balanced",
+          "Long: growth"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "versus",
+        "chapter": "Two views",
+        "caption": "Supporters say buckets keep you calm in a crash. Critics say they are mental labels; one well-chosen mix does the same.",
+        "labels": [
+          "Buckets help",
+          "One portfolio"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "Common ground",
+        "caption": "Both sides agree: money needed soon should not sit in volatile assets.",
+        "labels": [
+          "Both agree"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "statement",
+        "chapter": "An open question",
+        "caption": "Evidence is balanced and thin either way. Editorial view: choose the structure you will actually follow. Education, not advice.",
+        "labels": [
+          "Pick one you keep"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "pf-risk-tolerance-vs-capacity",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Feeling vs arithmetic",
+        "caption": "Risk tolerance is how much volatility you can stomach emotionally. Capacity is how much loss your finances can absorb.",
+        "labels": [
+          "Tolerance",
+          "Capacity"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "What capacity rests on",
+        "caption": "Capacity depends on income stability, dependants, savings and time horizon.",
+        "labels": [
+          "Income stability",
+          "Dependants",
+          "Savings",
+          "Time horizon"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "bars",
+        "chapter": "When they disagree",
+        "caption": "Illustration only: Arjun is comfortable with big swings, but his family relies on his single salary and he has no reserve.",
+        "labels": [
+          "Tolerance",
+          "Capacity"
+        ],
+        "values": [
+          0.9,
+          0.3
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "Use the lower",
+        "caption": "A sound plan respects the lower of the two. Boldness in a bull market is a poor guide to what you can afford to lose.",
+        "labels": [
+          "Use the lower"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "bf-confirmation-bias-thesis",
+    "scenes": [
+      {
+        "visual": "cycle",
+        "chapter": "The reassurance loop",
+        "caption": "Once you own something, you seek, notice and remember what agrees with you, and the conviction feels stronger.",
+        "labels": [
+          "Own it",
+          "Seek",
+          "Agree",
+          "Stronger"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "scale",
+        "chapter": "Lopsided reading",
+        "caption": "It feels like research but is mostly reassurance: agreeing posts get read, warnings get dismissed as noise.",
+        "labels": [
+          "Agreeing",
+          "Warnings"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "A one-sided file",
+        "caption": "Illustration only: a stock is down 30%. She reads posts calling the dip temporary and skips the report showing falling margins.",
+        "labels": [
+          "Stock down 30%",
+          "Reads 'temporary'",
+          "Skips the report"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "A different question",
+        "caption": "The fix is a different question: what evidence would change my mind, and have I looked for it?",
+        "labels": [
+          "Change my mind?"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "bf-survivorship-bias-wald",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "Where to add armour?",
+        "caption": "In World War II, Wald's group was asked where to add armour to bombers, using bullet damage on returning planes.",
+        "labels": [
+          "Where to armour?"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "versus",
+        "chapter": "The missing planes",
+        "caption": "Those were the survivors. Damage in other areas was probably fatal and was missing from the data.",
+        "labels": [
+          "Returned",
+          "Never returned"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Wald's insight",
+        "caption": "Wald's insight: armour belonged where returning planes showed little damage.",
+        "labels": [
+          "Returning planes",
+          "Little damage here",
+          "Armour goes here"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "bars",
+        "chapter": "Fund lists too",
+        "caption": "Schematic: a fund list that omits closed or merged funds makes the average look better than what investors experienced.",
+        "labels": [
+          "All funds",
+          "Survivors only"
+        ],
+        "values": [
+          0.5,
+          0.75
+        ],
+        "seconds": 10
+      }
+    ]
+  },
+  {
+    "cardId": "bf-anchoring-purchase-price",
+    "scenes": [
+      {
+        "visual": "curve",
+        "chapter": "Bought at ₹500",
+        "caption": "Illustration only: you bought at ₹500 and it now trades at ₹350.",
+        "labels": [
+          "Illustrative",
+          "₹350 now"
+        ],
+        "values": [
+          0.85,
+          0.75,
+          0.65,
+          0.6
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "statement",
+        "chapter": "The anchor",
+        "caption": "Anchoring: relying too heavily on an initial number. Waiting to break even ties your money to an old decision.",
+        "labels": [
+          "Back to ₹500?"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "versus",
+        "chapter": "Past vs future",
+        "caption": "Whether to hold depends on future prospects and today's alternatives. Your entry price has no effect on those.",
+        "labels": [
+          "What I paid",
+          "Prospects now"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "The right question",
+        "caption": "The right question: if you did not own it, would you buy it at ₹350 today?",
+        "labels": [
+          "Buy at ₹350?"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "bf-mental-accounting",
+    "scenes": [
+      {
+        "visual": "stack",
+        "chapter": "Separate accounts",
+        "caption": "Thaler called it mental accounting: sorting money into separate accounts, like salary, bonus and savings, each with its own rules.",
+        "labels": [
+          "Salary",
+          "Bonus",
+          "Savings",
+          "Household"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "A rupee is a rupee",
+        "caption": "Money is fungible: a rupee is a rupee. Yet a bonus or tax refund often gets spent more freely than the same salary.",
+        "labels": [
+          "₹1 = ₹1"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "versus",
+        "chapter": "Labels with a cost",
+        "caption": "Illustration only: Neha keeps ₹1 lakh in a deposit 'for emergencies' while paying a much higher rate on a credit card.",
+        "labels": [
+          "FD ₹1 lakh",
+          "Card debt"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "scale",
+        "chapter": "Label vs arithmetic",
+        "caption": "Labels can help, as with earmarked savings. The mistake is letting them override the arithmetic when the cost is large.",
+        "labels": [
+          "Label",
+          "Arithmetic"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "bf-herding-fomo",
+    "scenes": [
+      {
+        "visual": "cycle",
+        "chapter": "How a crowd forms",
+        "caption": "Others act, you copy, prices rise, and fear of missing out pushes the next person to act now.",
+        "labels": [
+          "Others",
+          "Copy",
+          "Price up",
+          "FOMO"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "chain",
+        "chapter": "Thin consensus",
+        "caption": "Herding models show people can rationally follow earlier actors, so a crowd may rest on little independent judgement.",
+        "labels": [
+          "Early mover",
+          "Follower",
+          "Follower",
+          "Follower"
+        ],
+        "values": [
+          1.0,
+          0.8,
+          0.6,
+          0.45
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "versus",
+        "chapter": "Whose reason?",
+        "caption": "What independent reason, apart from other people buying, would you give for this purchase?",
+        "labels": [
+          "Others buying",
+          "My own reason"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "Slow down",
+        "caption": "Before acting on a tip or trend, wait 48 hours and write down your own reason in one sentence.",
+        "labels": [
+          "Wait 48 hours"
+        ],
+        "seconds": 8
+      }
+    ]
+  }
+]

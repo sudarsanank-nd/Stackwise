@@ -17,6 +17,7 @@
     "primaryTopic": "investing",
     "difficulty": "intermediate",
     "format": "historical-lesson",
+    "coverSymbol": "puzzle",
     "source": {
       "type": "paper",
       "title": "Portfolio Selection",
@@ -86,6 +87,7 @@
     "primaryTopic": "investing",
     "difficulty": "beginner",
     "format": "big-idea",
+    "coverSymbol": "layers",
     "source": {
       "type": "original",
       "title": "Original synthesis"
@@ -157,6 +159,7 @@
     "primaryTopic": "investing",
     "difficulty": "intermediate",
     "format": "quote-interpretation",
+    "coverSymbol": "shield",
     "quote": {
       "text": "Margin of Safety as the Central Concept of Investment",
       "by": "Benjamin Graham, The Intelligent Investor (chapter title in later editions)",
@@ -233,6 +236,7 @@
     "primaryTopic": "investing",
     "difficulty": "beginner",
     "format": "what-would-you-do",
+    "coverSymbol": "fork",
     "source": {
       "type": "original",
       "title": "Original synthesis"
@@ -302,6 +306,7 @@
     "primaryTopic": "investing",
     "difficulty": "beginner",
     "format": "mental-model",
+    "coverSymbol": "loop",
     "source": {
       "type": "book",
       "title": "The Intelligent Investor (Mr. Market allegory, paraphrased)",
@@ -374,6 +379,7 @@
     "primaryTopic": "investing",
     "difficulty": "advanced",
     "format": "connect-domains",
+    "coverSymbol": "bridge",
     "bridge": {
       "from": "operational-excellence",
       "to": "investing",
@@ -447,6 +453,7 @@
     "primaryTopic": "investing",
     "difficulty": "advanced",
     "format": "counterintuitive",
+    "coverSymbol": "hourglass",
     "source": {
       "type": "original",
       "title": "Original synthesis"
@@ -515,6 +522,7 @@
     "primaryTopic": "investing",
     "difficulty": "beginner",
     "format": "self-assessment",
+    "coverSymbol": "compass",
     "checklist": [
       "Can I explain how this investment makes money in two sentences?",
       "Do I know the main ways it could lose money?",
@@ -592,6 +600,7 @@
     "primaryTopic": "investing",
     "difficulty": "intermediate",
     "format": "framework",
+    "coverSymbol": "dice",
     "source": {
       "type": "original",
       "title": "Original synthesis"
@@ -659,6 +668,7 @@
     "primaryTopic": "investing",
     "difficulty": "advanced",
     "format": "big-idea",
+    "coverSymbol": "scale",
     "source": {
       "type": "paper",
       "title": "Mutual Fund Performance",
@@ -728,6 +738,7 @@
     "primaryTopic": "personal-finance",
     "difficulty": "beginner",
     "format": "myth-vs-reality",
+    "coverSymbol": "coins",
     "source": {
       "type": "institution",
       "title": "Flexible Inflation Targeting Framework (4% CPI target, 2-6% band)",
@@ -797,6 +808,7 @@
     "primaryTopic": "personal-finance",
     "difficulty": "beginner",
     "format": "checklist",
+    "coverSymbol": "lifebuoy",
     "checklist": [
       "Can I access it within a day or two without penalty?",
       "Is its value stable, not dependent on markets?",
@@ -872,6 +884,7 @@
     "primaryTopic": "personal-finance",
     "difficulty": "intermediate",
     "format": "common-mistake",
+    "coverSymbol": "scale",
     "source": {
       "type": "original",
       "title": "Original synthesis"
@@ -941,6 +954,7 @@
     "primaryTopic": "personal-finance",
     "difficulty": "advanced",
     "format": "two-viewpoints",
+    "coverSymbol": "calendar",
     "source": {
       "type": "original",
       "title": "Original synthesis"
@@ -1045,6 +1059,7 @@
     "primaryTopic": "personal-finance",
     "difficulty": "intermediate",
     "format": "comparison",
+    "coverSymbol": "battery",
     "source": {
       "type": "original",
       "title": "Original synthesis"
@@ -1115,6 +1130,7 @@
     "primaryTopic": "behavioral-finance",
     "difficulty": "intermediate",
     "format": "investment-mistake",
+    "coverSymbol": "magnifier",
     "source": {
       "type": "paper",
       "title": "Confirmation Bias: A Ubiquitous Phenomenon in Many Guises",
@@ -1188,6 +1204,7 @@
     "primaryTopic": "behavioral-finance",
     "difficulty": "intermediate",
     "format": "historical-lesson",
+    "coverSymbol": "eye",
     "source": {
       "type": "paper",
       "title": "Abraham Wald's Work on Aircraft Survivability",
@@ -1260,6 +1277,7 @@
     "primaryTopic": "behavioral-finance",
     "difficulty": "beginner",
     "format": "common-mistake",
+    "coverSymbol": "anchor",
     "source": {
       "type": "paper",
       "title": "Judgment under Uncertainty: Heuristics and Biases",
@@ -1332,6 +1350,7 @@
     "primaryTopic": "behavioral-finance",
     "difficulty": "beginner",
     "format": "explain-beginner",
+    "coverSymbol": "wallet",
     "source": {
       "type": "paper",
       "title": "Mental Accounting and Consumer Choice",
@@ -1404,6 +1423,7 @@
     "primaryTopic": "behavioral-finance",
     "difficulty": "intermediate",
     "format": "what-would-you-do",
+    "coverSymbol": "people",
     "source": {
       "type": "paper",
       "title": "A Simple Model of Herd Behavior",
