@@ -1,0 +1,943 @@
+[
+  {
+    "cardId": "pm-sbi-feedback",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Opinion or fact?",
+        "caption": "\"You were unprofessional\" is an opinion. \"You interrupted twice\" is something a person can fix.",
+        "labels": [
+          "Opinion",
+          "Fixable"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Three parts",
+        "caption": "Name the Situation (when and where), the Behavior (what anyone could see or hear) and the Impact (what it did).",
+        "labels": [
+          "Situation",
+          "Behavior",
+          "Impact"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "scale",
+        "chapter": "Describe, don't label",
+        "caption": "Because you describe rather than label, the other person has less to defend and more to work with.",
+        "labels": [
+          "Describe",
+          "Label"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "statement",
+        "chapter": "Then listen",
+        "caption": "Then stop talking and listen to their side.",
+        "labels": [
+          "Then listen"
+        ],
+        "seconds": 6
+      }
+    ]
+  },
+  {
+    "cardId": "pm-high-performer-stretch",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "The usual reward",
+        "caption": "The default rewards for great work are praise and extra volume. Neither helps high performers grow.",
+        "labels": [
+          "More volume",
+          "Real stretch"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "What a stretch is",
+        "caption": "A stretch: a harder problem with real ownership, slightly beyond what they have done, with you available but not hovering.",
+        "labels": [
+          "Harder problem",
+          "Real ownership",
+          "Slightly beyond",
+          "You nearby"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "versus",
+        "chapter": "Load or stretch?",
+        "caption": "Illustrative: thirty more tickets is only load. Owning the new-joiner escalation guide, reviewed in six weeks, is a stretch.",
+        "labels": [
+          "30 more tickets",
+          "Own the guide"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "Ask about next year",
+        "caption": "Ask where they want to be in a year, then find work that gets them closer.",
+        "labels": [
+          "One year from now"
+        ],
+        "seconds": 7
+      }
+    ]
+  },
+  {
+    "cardId": "pm-repeated-mistakes",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Will or system?",
+        "caption": "Same mistake, third time. Before you call it a performance problem, check what the system is rewarding.",
+        "labels": [
+          "Will",
+          "System"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "Three questions, in order",
+        "caption": "Ask in order: Do they know the standard? Can they do it, given skill, tools and time? Does anything reward the mistake?",
+        "labels": [
+          "1 Know it?",
+          "2 Able to do it?",
+          "3 What's rewarded?"
+        ],
+        "seconds": 11
+      },
+      {
+        "visual": "scale",
+        "chapter": "Check the incentives",
+        "caption": "Illustrative: the queue is heavy and closures count towards the daily target. Check what that is rewarding first.",
+        "labels": [
+          "Daily target",
+          "Confirmation"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "Only then: will",
+        "caption": "Only if all three are fine is it a willingness problem, and that needs a direct, documented conversation.",
+        "labels": [
+          "Then: will"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "pm-workload-visibility",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "What you see",
+        "caption": "Managers usually see closed tickets, not the mentoring, ad-hoc questions, rework and meetings that eat capacity.",
+        "labels": [
+          "Tickets closed",
+          "Hidden work"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "bars",
+        "chapter": "One-week log",
+        "caption": "For one week, each person jots down how half-days split between these four. Bars are illustrative, not data.",
+        "labels": [
+          "Planned work",
+          "Interruptions",
+          "Helping others",
+          "Admin"
+        ],
+        "values": [
+          0.5,
+          0.3,
+          0.35,
+          0.2
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "scale",
+        "chapter": "Find the gap",
+        "caption": "Compare it to what you assumed. The gap shows where load is real and who may be overcommitted.",
+        "labels": [
+          "What the log says",
+          "What you assumed"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "Not for policing",
+        "caption": "Do not use it to police anyone. Tell people how you will use it before they begin.",
+        "labels": [
+          "Not for policing"
+        ],
+        "seconds": 7
+      }
+    ]
+  },
+  {
+    "cardId": "pm-burnout-signals",
+    "scenes": [
+      {
+        "visual": "stack",
+        "chapter": "Three dimensions",
+        "caption": "The WHO's ICD-11 names three dimensions of burn-out: exhaustion, growing mental distance or cynicism, and reduced effectiveness.",
+        "labels": [
+          "Exhaustion",
+          "Mental distance",
+          "Less effective"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "Not a diagnosis",
+        "caption": "It is not a medical diagnosis, and managers are not clinicians.",
+        "labels": [
+          "Not a diagnosis"
+        ],
+        "seconds": 6
+      },
+      {
+        "visual": "cycle",
+        "chapter": "Your role",
+        "caption": "Your role: notice changes against a person's own baseline, ask openly, and adjust the work.",
+        "labels": [
+          "Notice",
+          "Ask",
+          "Adjust"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "versus",
+        "chapter": "Two or more yeses",
+        "caption": "On the self-check, two or more yeses is a reason for a kind, private conversation, not a conclusion.",
+        "labels": [
+          "A conversation",
+          "A conclusion"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "pm-conflict-task-vs-relationship",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Two kinds of conflict",
+        "caption": "Researchers separate task conflict (ideas, methods, priorities) from relationship conflict (friction between people).",
+        "labels": [
+          "Task conflict",
+          "Relationship"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "scale",
+        "chapter": "What the evidence says",
+        "caption": "Early work suggested task conflict could help. A later meta-analysis found both types linked to worse performance.",
+        "labels": [
+          "Later evidence",
+          "Early view"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "It gets personal",
+        "caption": "The two were strongly linked: arguments about work easily turn personal. Effects appear to depend on context.",
+        "labels": [
+          "It gets personal"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "Criteria first",
+        "caption": "Before a contested decision, agree the criteria first, then argue about options against them.",
+        "labels": [
+          "Agree criteria",
+          "Then argue options"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "pm-coaching-questions",
+    "scenes": [
+      {
+        "visual": "cycle",
+        "chapter": "The answer habit",
+        "caption": "Every time you answer a question instantly, you teach them to keep asking.",
+        "labels": [
+          "Question",
+          "Answer",
+          "Repeat"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "versus",
+        "chapter": "Swap the answer",
+        "caption": "Coaching swaps the answer for a question: What have you tried? What are your options? What would you do if I were away?",
+        "labels": [
+          "Give the answer",
+          "Ask a question"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "GROW",
+        "caption": "GROW is a common structure for coaching conversations: Goal, Reality, Options, Will.",
+        "labels": [
+          "Goal",
+          "Reality",
+          "Options",
+          "Will"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "Not interrogation",
+        "caption": "Coaching is not interrogation: if they lack knowledge or it is urgent, just tell them.",
+        "labels": [
+          "Urgent? Just tell"
+        ],
+        "seconds": 7
+      }
+    ]
+  },
+  {
+    "cardId": "lead-loss-aversion-change",
+    "scenes": [
+      {
+        "visual": "scale",
+        "chapter": "Losses weigh more",
+        "caption": "In investing, loss aversion means a loss weighs more than an equal gain. How large the effect is remains debated.",
+        "labels": [
+          "Loss",
+          "Equal gain"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "What change takes",
+        "caption": "Change triggers the same asymmetry: people weigh what they stand to lose, such as expert status, routines and certainty.",
+        "labels": [
+          "Expert status",
+          "Familiar routines",
+          "Certainty"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "versus",
+        "chapter": "Stubborn or rational?",
+        "caption": "Resistance may be rational accounting, not stubbornness. Applying this to change is an interpretation, not a tested result.",
+        "labels": [
+          "Stubbornness",
+          "Loss accounting"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "Address the loss",
+        "caption": "A good adviser names the losses, shrinks them and makes the gains concrete and near-term.",
+        "labels": [
+          "Name the losses",
+          "Shrink them",
+          "Gains near-term"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "lead-disagree-and-commit",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "A two-part promise",
+        "caption": "\"Disagree and commit\" is not permission to stop arguing; it is an obligation to argue first.",
+        "labels": [
+          "Two-part promise"
+        ],
+        "seconds": 7
+      },
+      {
+        "visual": "stack",
+        "chapter": "Backbone, then commit",
+        "caption": "Amazon's principle: challenge a decision you disagree with, even when uncomfortable, then fully commit once it is made.",
+        "labels": [
+          "1 Disagree",
+          "2 Commit"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "versus",
+        "chapter": "Used well or badly",
+        "caption": "Used well, it prevents endless consensus-seeking. Used badly, it ends debate before it has started.",
+        "labels": [
+          "Used well",
+          "Used badly"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "In practice",
+        "caption": "Illustrative: argue your case with data. If the decision stands, present it as your own and track the problems you predicted.",
+        "labels": [
+          "Argue with data",
+          "Own the decision",
+          "Track the risks"
+        ],
+        "seconds": 10
+      }
+    ]
+  },
+  {
+    "cardId": "lead-commanders-intent-ambiguity",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "What and why",
+        "caption": "Orders say what to do; commander's intent says why: the purpose of the operation and the end state wanted.",
+        "labels": [
+          "Orders: what",
+          "Intent: why"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "chain",
+        "chapter": "When the plan fails",
+        "caption": "When circumstances change and the plan stops making sense, people who know the intent can adapt without new instructions.",
+        "labels": [
+          "Original plan",
+          "Things change",
+          "Plan breaks"
+        ],
+        "values": [
+          0.9,
+          0.5,
+          0.15
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Give three things",
+        "caption": "Facing ambiguity, give purpose, desired end state and constraints, and leave the method open.",
+        "labels": [
+          "Purpose",
+          "End state",
+          "Constraints"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "Say it out loud",
+        "caption": "Add \"The intent is...\" to your next briefing, then ask someone to repeat it back in their own words.",
+        "labels": [
+          "The intent is..."
+        ],
+        "seconds": 7
+      }
+    ]
+  },
+  {
+    "cardId": "lead-communicating-difficult-decisions",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Own the message",
+        "caption": "\"Management decided\" is the sentence that costs a leader the most trust. Say it as your own, not as a message from above.",
+        "labels": [
+          "Management decided",
+          "Our decision"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Five jobs",
+        "caption": "State the decision, explain the reasons, say what was rejected, separate fixed from open, and describe what happens next.",
+        "labels": [
+          "The decision",
+          "The reasons",
+          "What was rejected",
+          "Fixed vs open",
+          "What happens next"
+        ],
+        "seconds": 13
+      },
+      {
+        "visual": "statement",
+        "chapter": "Make room",
+        "caption": "Then allow time for reaction before moving to the plan.",
+        "labels": [
+          "Allow reaction"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "lead-setting-boundaries",
+    "scenes": [
+      {
+        "visual": "curve",
+        "chapter": "Every yes adds up",
+        "caption": "Saying yes to every request feels helpful until the commitments start to collide. (Schematic.)",
+        "labels": [
+          "Every yes",
+          "Collision"
+        ],
+        "values": [
+          0.1,
+          0.3,
+          0.55,
+          0.9
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "statement",
+        "chapter": "Not a refusal",
+        "caption": "A boundary is not a refusal of the person; it is a clear statement of what you can do and when.",
+        "labels": [
+          "Not a refusal"
+        ],
+        "seconds": 7
+      },
+      {
+        "visual": "versus",
+        "chapter": "Offer two options",
+        "caption": "A useful shape: \"I can do X by Friday, or Y next week, but not both. Which matters more?\"",
+        "labels": [
+          "X by Friday",
+          "Y next week"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "In practice",
+        "caption": "Illustrative: offer a basic report tomorrow or a complete one on Monday, and say month-end work would slip. They choose Monday.",
+        "labels": [
+          "Basic: tomorrow",
+          "Full: Monday"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "lead-fix-process-not-person",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "Test the process",
+        "caption": "The fastest explanation is a person. Deming argued that most failures come from the system managers control.",
+        "labels": [
+          "Test the process"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "cycle",
+        "chapter": "Blame repeats",
+        "caption": "If a competent, well-meaning person could make the same error, blaming one person fixes nothing; the next one repeats it.",
+        "labels": [
+          "Error",
+          "Blame",
+          "New hire",
+          "Repeat"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "stack",
+        "chapter": "Change the process",
+        "caption": "Instead, remove the trap, add a check, or make the right action easier.",
+        "labels": [
+          "Remove the trap",
+          "Add a check",
+          "Ease right action"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "versus",
+        "chapter": "Where accountability stays",
+        "caption": "Personal accountability remains for deliberate or repeated disregard.",
+        "labels": [
+          "System trap",
+          "Deliberate"
+        ],
+        "seconds": 7
+      }
+    ]
+  },
+  {
+    "cardId": "psy-anchoring-wheel",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "A rigged wheel",
+        "caption": "In a 1974 paper, Tversky and Kahneman spun a wheel of fortune rigged to stop at 10 or 65.",
+        "labels": [
+          "10 or 65"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "versus",
+        "chapter": "Higher or lower?",
+        "caption": "Participants said whether the share of African countries in the UN was higher or lower than that number, then estimated it.",
+        "labels": [
+          "Higher?",
+          "Lower?"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "bars",
+        "chapter": "The pull of the anchor",
+        "caption": "Median estimates: about 25% for the group that saw 10, and about 45% for the group that saw 65.",
+        "labels": [
+          "Saw 10",
+          "Saw 65"
+        ],
+        "values": [
+          0.25,
+          0.45
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Your own number first",
+        "caption": "The first number shapes the answers that follow. Write your own estimate privately before hearing anyone else's.",
+        "labels": [
+          "Write yours first",
+          "Then hear others"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "psy-asch-conformity",
+    "scenes": [
+      {
+        "visual": "bars",
+        "chapter": "An easy task",
+        "caption": "People judged which of three lines matched a standard line, an easy task. Lines here are schematic.",
+        "labels": [
+          "Standard",
+          "A",
+          "B",
+          "C"
+        ],
+        "values": [
+          0.7,
+          0.45,
+          0.7,
+          0.95
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "versus",
+        "chapter": "A unanimous majority",
+        "caption": "But the rest of the group, actually confederates, unanimously gave a wrong answer on certain trials.",
+        "labels": [
+          "The group",
+          "Your own eyes"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "scale",
+        "chapter": "Most stayed right",
+        "caption": "A substantial share went along at least once, though most answers were still correct. Later rates vary by culture and era.",
+        "labels": [
+          "Most answers right",
+          "Went along"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "One ally",
+        "caption": "When even one other person disagreed with the majority, conformity dropped sharply.",
+        "labels": [
+          "One ally"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "psy-ikea-effect",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Mine versus theirs",
+        "caption": "Norton, Mochon and Ariely (2012): people valued things they assembled themselves more than identical ones built by others.",
+        "labels": [
+          "Built by me",
+          "Built by others"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Why it happens",
+        "caption": "Effort and a sense of ownership raise the value we assign, and the effect weakens if the project is not completed.",
+        "labels": [
+          "Effort",
+          "Ownership",
+          "Higher value"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "scale",
+        "chapter": "At work",
+        "caption": "Illustrative: a team rates its in-house tracker above a cheaper off-the-shelf tool that does the same job.",
+        "labels": [
+          "Our own tool",
+          "Off-the-shelf"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "Same criteria",
+        "caption": "Scoring both against the same criteria, written down in advance, gives a fairer comparison.",
+        "labels": [
+          "Same criteria"
+        ],
+        "seconds": 7
+      }
+    ]
+  },
+  {
+    "cardId": "psy-ego-depletion-debate",
+    "scenes": [
+      {
+        "visual": "curve",
+        "chapter": "The battery idea",
+        "caption": "The idea: self-control draws on a limited resource, so using it once leaves less for the next task. (Schematic.)",
+        "labels": [
+          "Self-control used",
+          "Depleted?"
+        ],
+        "values": [
+          0.9,
+          0.65,
+          0.4,
+          0.2
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "A famous result",
+        "caption": "Baumeister and colleagues (1998) reported that people who resisted chocolate gave up sooner on a later puzzle. It was widely taught.",
+        "labels": [
+          "1998 study",
+          "Widely taught",
+          "2016: 23 labs"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "bars",
+        "chapter": "The replication",
+        "caption": "A 2016 multi-lab replication by Hagger and colleagues, across 23 labs, found an effect close to zero. Bars are schematic.",
+        "labels": [
+          "Original claim",
+          "23-lab result"
+        ],
+        "values": [
+          0.7,
+          0.03
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "Now contested",
+        "caption": "The idea is now contested; some researchers defend modified versions. Ask whether a large replication confirmed it.",
+        "labels": [
+          "Contested"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "psy-fundamental-attribution-error",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Mine and theirs",
+        "caption": "We explain our own mistakes by the situation and other people's by their character.",
+        "labels": [
+          "My mistake",
+          "Their mistake"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "scale",
+        "chapter": "What observers weigh",
+        "caption": "Observers tend to overweight personality and underweight the situation, which Lee Ross named the fundamental attribution error.",
+        "labels": [
+          "Personality",
+          "Situation"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Look again",
+        "caption": "Illustrative: an agent with low CSAT is called uncaring. Review shows he was given the escalated cases others avoided.",
+        "labels": [
+          "Low CSAT",
+          "Called uncaring",
+          "Hardest queue"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "Check the situation",
+        "caption": "The bias varies across cultures and contexts. Before judging, name two situational explanations and check one.",
+        "labels": [
+          "Check situation"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "comm-curse-of-knowledge",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Tappers and listeners",
+        "caption": "Elizabeth Newton (1990) asked people to tap out well-known songs for listeners to guess, as reported in Made to Stick.",
+        "labels": [
+          "Tapper",
+          "Listener"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "bars",
+        "chapter": "The gap",
+        "caption": "Tappers predicted listeners would guess about half the songs; listeners guessed very few. Check the original before quoting.",
+        "labels": [
+          "Predicted",
+          "Guessed"
+        ],
+        "values": [
+          0.5,
+          0.05
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "Can't un-hear it",
+        "caption": "The tapper hears the melody and cannot un-hear it. Camerer, Loewenstein and Weber named this the curse of knowledge in 1989.",
+        "labels": [
+          "Can't un-hear it"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "At work",
+        "caption": "Illustrative: \"Just check the VDR logs for the usual pattern.\" The new agent nods, then guesses.",
+        "labels": [
+          "\"Usual pattern\"",
+          "Agent nods",
+          "Then guesses"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "neg-interests-vs-positions",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "What and why",
+        "caption": "Fisher and Ury separate positions, what people say they want, from interests, why they want it.",
+        "labels": [
+          "Position",
+          "Interest"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "statement",
+        "chapter": "Bargaining on positions",
+        "caption": "Bargaining over positions tends to produce deadlock or a split down the middle.",
+        "labels": [
+          "Deadlock or split"
+        ],
+        "seconds": 7
+      },
+      {
+        "visual": "stack",
+        "chapter": "Ask why",
+        "caption": "Illustrative: she insists on the day shift. Asking why reveals 4 pm school pickups. A shift starting at 7 am solves it.",
+        "labels": [
+          "Day shift only",
+          "4 pm school pickup",
+          "7 am start works"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "scale",
+        "chapter": "Compatible underneath",
+        "caption": "Many conflicts are incompatible positions on top of compatible interests. Ask: \"What would that give you?\"",
+        "labels": [
+          "Interests",
+          "Positions"
+        ],
+        "seconds": 9
+      }
+    ]
+  }
+]

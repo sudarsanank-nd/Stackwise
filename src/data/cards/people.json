@@ -18,6 +18,7 @@
     "primaryTopic": "people-management",
     "difficulty": "beginner",
     "format": "framework",
+    "coverSymbol": "chat",
     "source": {
       "type": "institution",
       "title": "Situation-Behavior-Impact (SBI) feedback model",
@@ -96,6 +97,7 @@
     "primaryTopic": "people-management",
     "difficulty": "beginner",
     "format": "checklist",
+    "coverSymbol": "chat",
     "checklist": [
       "They set at least half the agenda.",
       "Status updates are handled elsewhere (tickets, stand-up).",
@@ -170,6 +172,7 @@
     "primaryTopic": "people-management",
     "difficulty": "intermediate",
     "format": "counterintuitive",
+    "coverSymbol": "mountain",
     "source": {
       "type": "original",
       "title": "Original synthesis"
@@ -237,6 +240,7 @@
     "primaryTopic": "people-management",
     "difficulty": "intermediate",
     "format": "what-would-you-do",
+    "coverSymbol": "magnifier",
     "source": {
       "type": "original",
       "title": "Synthesis of common performance-analysis questions"
@@ -306,6 +310,7 @@
     "primaryTopic": "people-management",
     "difficulty": "intermediate",
     "format": "experiment",
+    "coverSymbol": "eye",
     "source": {
       "type": "original",
       "title": "Original synthesis"
@@ -375,6 +380,7 @@
     "primaryTopic": "people-management",
     "difficulty": "intermediate",
     "format": "self-assessment",
+    "coverSymbol": "battery",
     "checklist": [
       "Has their energy or patience visibly dropped over the last month?",
       "Are they more cynical or detached about customers or the team than before?",
@@ -464,6 +470,7 @@
     "primaryTopic": "people-management",
     "difficulty": "advanced",
     "format": "comparison",
+    "coverSymbol": "scale",
     "source": {
       "type": "paper",
       "title": "Task versus relationship conflict, team performance, and team member satisfaction: a meta-analysis",
@@ -536,6 +543,7 @@
     "primaryTopic": "people-management",
     "difficulty": "beginner",
     "format": "explain-beginner",
+    "coverSymbol": "bulb",
     "source": {
       "type": "original",
       "title": "Synthesis of common coaching practice (including the GROW structure)"
@@ -604,6 +612,7 @@
     "primaryTopic": "leadership",
     "difficulty": "intermediate",
     "format": "connect-domains",
+    "coverSymbol": "bridge",
     "bridge": {
       "from": "behavioral-finance",
       "to": "leadership",
@@ -684,6 +693,7 @@
     "primaryTopic": "leadership",
     "difficulty": "intermediate",
     "format": "quote-interpretation",
+    "coverSymbol": "handshake",
     "quote": {
       "text": "Have Backbone; Disagree and Commit",
       "by": "Amazon leadership principle",
@@ -758,6 +768,7 @@
     "primaryTopic": "leadership",
     "difficulty": "advanced",
     "format": "mental-model",
+    "coverSymbol": "compass",
     "source": {
       "type": "institution",
       "title": "Commander's intent in military command doctrine"
@@ -829,6 +840,7 @@
     "primaryTopic": "leadership",
     "difficulty": "advanced",
     "format": "leadership-situation",
+    "coverSymbol": "megaphone",
     "source": {
       "type": "original",
       "title": "Original synthesis"
@@ -899,6 +911,7 @@
     "primaryTopic": "leadership",
     "difficulty": "beginner",
     "format": "common-mistake",
+    "coverSymbol": "shield",
     "source": {
       "type": "original",
       "title": "Original synthesis"
@@ -969,6 +982,7 @@
     "primaryTopic": "leadership",
     "difficulty": "intermediate",
     "format": "big-idea",
+    "coverSymbol": "gear",
     "source": {
       "type": "book",
       "title": "Out of the Crisis",
@@ -1039,6 +1053,7 @@
     "primaryTopic": "psychology",
     "difficulty": "intermediate",
     "format": "case-study",
+    "coverSymbol": "anchor",
     "source": {
       "type": "paper",
       "title": "Judgment under Uncertainty: Heuristics and Biases",
@@ -1109,6 +1124,7 @@
     "primaryTopic": "psychology",
     "difficulty": "intermediate",
     "format": "historical-lesson",
+    "coverSymbol": "people",
     "source": {
       "type": "paper",
       "title": "Studies of independence and conformity: I. A minority of one against a unanimous majority",
@@ -1180,6 +1196,7 @@
     "primaryTopic": "psychology",
     "difficulty": "intermediate",
     "format": "mental-model",
+    "coverSymbol": "brain",
     "source": {
       "type": "paper",
       "title": "The \"IKEA effect\": When labor leads to love",
@@ -1252,6 +1269,7 @@
     "primaryTopic": "psychology",
     "difficulty": "intermediate",
     "format": "case-study",
+    "coverSymbol": "flag",
     "source": {
       "type": "paper",
       "title": "When More Pain Is Preferred to Less: Adding a Better End",
@@ -1324,6 +1342,7 @@
     "primaryTopic": "psychology",
     "difficulty": "advanced",
     "format": "two-viewpoints",
+    "coverSymbol": "battery",
     "source": {
       "type": "paper",
       "title": "A Multilab Preregistered Replication of the Ego-Depletion Effect",
@@ -1432,6 +1451,7 @@
     "primaryTopic": "psychology",
     "difficulty": "intermediate",
     "format": "myth-vs-reality",
+    "coverSymbol": "eye",
     "source": {
       "type": "book",
       "title": "The intuitive psychologist and his shortcomings: Distortions in the attribution process (in Advances in Experimental Social Psychology, vol. 10)",
@@ -1514,6 +1534,7 @@
     "primaryTopic": "communication",
     "difficulty": "beginner",
     "format": "case-study",
+    "coverSymbol": "book",
     "source": {
       "type": "book",
       "title": "Made to Stick",
@@ -1587,6 +1608,7 @@
     "primaryTopic": "communication",
     "difficulty": "beginner",
     "format": "framework",
+    "coverSymbol": "layers",
     "source": {
       "type": "book",
       "title": "The Pyramid Principle",
@@ -1658,6 +1680,7 @@
     "primaryTopic": "negotiation",
     "difficulty": "intermediate",
     "format": "framework",
+    "coverSymbol": "door",
     "source": {
       "type": "book",
       "title": "Getting to Yes: Negotiating Agreement Without Giving In",
@@ -1728,6 +1751,7 @@
     "primaryTopic": "negotiation",
     "difficulty": "intermediate",
     "format": "counterintuitive",
+    "coverSymbol": "key",
     "source": {
       "type": "book",
       "title": "Getting to Yes: Negotiating Agreement Without Giving In",
