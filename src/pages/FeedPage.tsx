@@ -12,6 +12,7 @@ import { KnowledgeCardView } from '../components/cards/KnowledgeCard';
 import { IdeaCollisionView } from '../components/cards/IdeaCollisionView';
 import { FeedModeTabs, FilterPanel } from '../components/feed/FeedControls';
 import { TopicCircles } from '../components/feed/TopicCircles';
+import { InstallBanner } from '../components/install/Install';
 import { GuardrailPanel, TargetMetBanner } from '../components/feed/GuardrailPanel';
 import { Button, EmptyState, LinkButton } from '../components/common/ui';
 import { Icon } from '../components/common/Icon';
@@ -130,6 +131,7 @@ export default function FeedPage() {
     <div>
       <h1 className="sr-only">Your feed</h1>
       {progress.met && progress.continued && <TargetMetBanner />}
+      <InstallBanner />
       <TopicCircles topics={filters.topics} onChange={(topics) => setFilters({ ...filters, topics })} />
       <FeedModeTabs mode={mode} onChange={setMode} />
       <div className="mt-4">

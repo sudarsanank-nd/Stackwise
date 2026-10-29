@@ -8,6 +8,8 @@ import FeedPage from './pages/FeedPage';
 import SessionPage from './pages/SessionPage';
 import CardDetailPage from './pages/CardDetailPage';
 import StoryPage from './pages/StoryPage';
+import { PrivacyPage } from './pages/PrivacyPage';
+import { InstallPage } from './components/install/Install';
 import SearchPage from './pages/SearchPage';
 import MapPage from './pages/MapPage';
 import CompletePage from './pages/CompletePage';
@@ -54,20 +56,19 @@ export function AppRoutes() {
       <Route path="/" element={<Navigate to={profile ? '/feed' : '/welcome'} replace />} />
       <Route path="/welcome" element={profile ? <Navigate to="/feed" replace /> : <WelcomePage />} />
       <Route path="/onboarding" element={<OnboardingPage />} />
-      <Route
-        path="/about"
-        element={
-          profile ? (
-            <AppShell>
-              <AboutPage />
-            </AppShell>
-          ) : (
-            <div className="mx-auto max-w-2xl px-4 py-8">
-              <AboutPage />
-            </div>
-          )
-        }
-      />
+      {(
+        [
+          ['/about', <AboutPage key="about" />],
+          ['/privacy', <PrivacyPage key="privacy" />],
+          ['/install', <InstallPage key="install" />],
+        ] as const
+      ).map(([path, page]) => (
+        <Route
+          key={path}
+          path={path}
+          element={profile ? <AppShell>{page}</AppShell> : <div className="mx-auto max-w-2xl px-4 py-8">{page}</div>}
+        />
+      ))}
       <Route path="/story/:id" element={profile ? <ErrorBoundary><StoryPage /></ErrorBoundary> : <Navigate to="/welcome" replace />} />
       {guarded.map(([path, el]) => (
         <Route key={path} path={path} element={<RequireProfile>{el}</RequireProfile>} />

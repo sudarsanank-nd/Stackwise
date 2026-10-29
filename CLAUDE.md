@@ -4,7 +4,7 @@ Mobile-first micro-learning feed. React 19 + TypeScript 7 + Vite 8 + Tailwind CS
 
 ## Commands
 - `npm install` then `npm run dev` (http://localhost:5173)
-- `npm test` — Vitest (247 tests, includes content + explainer validation). Clears `node_modules/.vitest-cache` first because Vitest 5 caches `import.meta.glob` results.
+- `npm test` — Vitest (251 tests, includes content + explainer validation). Clears `node_modules/.vitest-cache` first because Vitest 5 caches `import.meta.glob` results.
 - `npm run validate:content` — content JSON only
 - `npm run typecheck`, `npm run lint` (oxlint), `npm run build`
 - `npm run build:artifact` — single-file HTML in `dist-artifact/`; `npm run build:page` also writes a body-only `dist-artifact/page.html` for hosted pages
@@ -22,6 +22,7 @@ Mobile-first micro-learning feed. React 19 + TypeScript 7 + Vite 8 + Tailwind CS
 - Colours come from CSS tokens in `src/index.css` (light + `.dark`; brand navy/emerald/cream/marigold); topic accents use `--accent-l` / `--accent-d`. Fonts: `font-display` (Bricolage Grotesque) for headings, `font-sans` (Figtree) for body, `font-serif italic` (Instrument Serif) for hooks and questions.
 - The load screen lives in `index.html` (`#splash`) and is removed by `src/splash.ts`; browser scripts wait for `#splash` to detach.
 - Touch targets ≥ 44px (`min-h-11`), visible focus, labelled controls — `npm run a11y` should stay clean.
+- `src/pages/PrivacyPage.tsx` must match what the app stores and sends: if a change adds storage, network calls or third-party content, update the policy (and `PRIVACY_UPDATED`) in the same change.
 - Record notable decisions in `docs/decision-log.md` and milestones in `docs/checkpoints.md`.
 
 ## Suggested next work

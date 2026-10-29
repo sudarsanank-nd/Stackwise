@@ -25,7 +25,9 @@ export function ProfilePage() {
     { to: '/settings', label: 'Personalisation settings', icon: 'settings', hint: 'Interests, signals, resets' },
     { to: '/topics', label: 'Topic explorer', icon: 'compass', hint: 'Browse every area' },
     { to: '/collide', label: 'Idea collisions', icon: 'spark', hint: 'Find links between unrelated ideas' },
+    { to: '/install', label: 'Install on this device', icon: 'down', hint: 'Home screen, full-screen, offline' },
     { to: '/about', label: 'About & disclaimer', icon: 'info', hint: 'How Stackwise works' },
+    { to: '/privacy', label: 'Privacy policy', icon: 'lock', hint: 'What is stored, and where' },
   ];
   return (
     <div>

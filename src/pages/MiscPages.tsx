@@ -44,7 +44,7 @@ export function WelcomePage() {
           Set up my feed — about 2 minutes
         </LinkButton>
         <p className="mt-4 text-center text-[13px] text-ink-2">
-          Educational content only. <Link to="/about" className="underline">About & disclaimer</Link>
+          Educational content only. <Link to="/about" className="underline">About & disclaimer</Link> · <Link to="/privacy" className="underline">Privacy</Link>
         </p>
       </div>
     </div>
@@ -100,7 +100,7 @@ export function AboutPage() {
           </p>
         </Panel>
       </Section>
-      <Section title="Privacy">
+      <Section title="Privacy" aside={<Link to="/privacy" className="text-[13px] underline">Full privacy policy</Link>}>
         <Panel>
           <p className="text-[16px] leading-relaxed">
             Everything — your profile, saved cards, reading history and reflections — is stored in this browser only. Nothing is sent to a server. Stackwise never infers sensitive personal information; personalisation uses only the topics you choose and how you interact with cards. You can review, reset or delete it from Personalisation settings.
