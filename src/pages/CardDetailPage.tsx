@@ -2,6 +2,7 @@ import { useEffect, useRef } from 'react';
 import { Link, useLocation, useParams } from 'react-router-dom';
 import { contrastingCards, getCard, getExplainer, relatedCards } from '../services/content';
 import { ExplainerPlayer } from '../components/explainer/ExplainerPlayer';
+import { GoDeeper } from '../components/cards/GoDeeper';
 import { KnowledgeCardView } from '../components/cards/KnowledgeCard';
 import { ExplainBack } from '../components/cards/ExplainBack';
 import { CollectionPicker } from '../components/library/CollectionPicker';
@@ -61,6 +62,8 @@ export default function CardDetailPage() {
           </Panel>
         </Section>
       )}
+
+      <GoDeeper card={card} />
 
       {related.length > 0 && (
         <Section title="Connected ideas">

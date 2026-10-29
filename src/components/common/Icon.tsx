@@ -11,6 +11,7 @@ const PATHS: Record<string, string> = {
   bookmark: 'M6 3h12v18l-6-4-6 4z',
   skip: 'M6 5l8 7-8 7zM18 5v14',
   share: 'M12 3v13M7 8l5-5 5 5M5 14v6h14v-6',
+  external: 'M14 4h6v6M20 4l-9 9M18 14v6H4V6h6',
   deeper: 'M12 5v14M5 12l7 7 7-7',
   info: 'M12 22a10 10 0 1 0 0-20 10 10 0 0 0 0 20zM12 16v-5M12 8h.01',
   check: 'M5 12l5 5 9-11',

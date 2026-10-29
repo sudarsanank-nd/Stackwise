@@ -1,13 +1,14 @@
 # Roadmap
 
 ## Next (recommended order)
-1. More motion explainers (currently 20) and per-card art variety beyond three motifs per family.
-2. Swipe gestures in the story view.
+1. Swipe gestures in the story view.
+2. In-app research results (serverless function + Claude API with web search) instead of the hand-off to claude.ai — shares the backend with LLM Explain It Back.
 
 ## Backlog (revisit later)
 - **LLM-backed Explain It Back** — implement `ExplainBackEvaluator` with a model call behind a small API route (key in env vars); keep keyword matcher as offline fallback. Needs a serverless function, since GitHub Pages is static.
 
 ## Done
+- **Explainers for every card, idea symbols on cover art, research on demand** (2026-10-29).
 - **UI revamp** (2026-10-29) — new logo, palette and fonts, load screen, cover art for every card, story view, 20 motion explainers.
 - **Source verification pass** (2026-10-29) — all 8 flagged cards reviewed, 52 verified cards spot-checked, 23 DOIs/URLs added. Report and human follow-ups: `docs/source-verification.md`.
 - **Installable PWA** (2026-10-29) — manifest, icons, service worker; works offline and installs to the home screen.

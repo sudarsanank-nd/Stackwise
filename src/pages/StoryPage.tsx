@@ -9,6 +9,7 @@ import { ExplainerPlayer } from '../components/explainer/ExplainerPlayer';
 import { useAppStore, defaultCollectionIdFor } from '../store/useAppStore';
 import { useToast } from '../store/toast';
 import { LinkButton } from '../components/common/ui';
+import { ResearchButton } from '../components/cards/GoDeeper';
 
 // A card told as tap-through slides: cover → idea → example → question → try this.
 // Tap the right side (or →) for next, left side (or ←) for back. Nothing advances on its own.
@@ -229,6 +230,7 @@ export default function StoryPage() {
                 <Link to={`/card/${card.id}`} state={{ focus: 'explain' }} className="flex min-h-14 items-center justify-center rounded-[18px] bg-marigold text-[16px] font-extrabold text-[#14213d]">
                   Explain it back in two lines
                 </Link>
+                <ResearchButton card={card} className="w-full !bg-[#1e2d52] !text-white" />
                 <div className="grid grid-cols-2 gap-2.5">
                   <button type="button" onClick={onSave} className="min-h-12 rounded-2xl border border-[#34466f] text-[15px] font-bold">
                     {saved ? 'Saved' : 'Save'}
