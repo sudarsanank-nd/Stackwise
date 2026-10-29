@@ -1,7 +1,7 @@
 import type { KnowledgeCard } from '../types';
 
 export function shareText(card: KnowledgeCard) {
-  return `${card.title}\n\n${card.coreIdea}\n\nTry this: ${card.suggestedAction}\n\n— via ScrollWise`;
+  return `${card.title}\n\n${card.coreIdea}\n\nTry this: ${card.suggestedAction}\n\n— via Stackwise`;
 }
 
 export async function shareCard(card: KnowledgeCard): Promise<'shared' | 'copied' | 'failed'> {

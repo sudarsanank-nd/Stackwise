@@ -1,4 +1,4 @@
-// Domain types for ScrollWise. Content files (src/data/*.json) must match these shapes;
+// Domain types for Stackwise. Content files (src/data/*.json) must match these shapes;
 // src/tests/content.test.ts enforces it.
 
 export type TopicId =

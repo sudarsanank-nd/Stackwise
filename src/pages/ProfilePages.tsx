@@ -25,7 +25,7 @@ export function ProfilePage() {
     { to: '/settings', label: 'Personalisation settings', icon: 'settings', hint: 'Interests, signals, resets' },
     { to: '/topics', label: 'Topic explorer', icon: 'compass', hint: 'Browse every area' },
     { to: '/collide', label: 'Idea collisions', icon: 'spark', hint: 'Find links between unrelated ideas' },
-    { to: '/about', label: 'About & disclaimer', icon: 'info', hint: 'How ScrollWise works' },
+    { to: '/about', label: 'About & disclaimer', icon: 'info', hint: 'How Stackwise works' },
   ];
   return (
     <div>

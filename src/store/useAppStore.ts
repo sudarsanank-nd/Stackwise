@@ -15,7 +15,9 @@ import { CARD_INDEX } from '../services/content';
 import { uid } from '../utils/text';
 import { dayKey } from '../utils/date';
 
-export const STORAGE_KEY = 'scrollwise:v1';
+export const STORAGE_KEY = 'stackwise:v1';
+/** Key used before the app was renamed from ScrollWise; read once so existing progress carries over. */
+export const LEGACY_STORAGE_KEY = 'scrollwise:v1';
 const MAX_INTERACTIONS = 3000;
 
 export const DEFAULT_COLLECTIONS: { name: string; description: string; topics: TopicId[] }[] = [
@@ -52,7 +54,7 @@ const memory = new Map<string, string>();
 export const safeStorage: StateStorage = {
   getItem: (k) => {
     try {
-      return localStorage.getItem(k);
+      return localStorage.getItem(k) ?? (k === STORAGE_KEY ? localStorage.getItem(LEGACY_STORAGE_KEY) : null);
     } catch {
       return memory.get(k) ?? null;
     }

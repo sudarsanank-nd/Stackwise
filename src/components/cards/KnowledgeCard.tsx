@@ -193,7 +193,7 @@ export function KnowledgeCardView({ card, reasons, bucket, variant = 'feed', onS
             {card.source.year && ` (${card.source.year})`}
           </>
         ) : (
-          'Original ScrollWise explanation'
+          'Original Stackwise explanation'
         )}
         {card.attribution && <span className="block">{card.attribution}</span>}
         {card.reviewStatus === 'needs-source-check' && (

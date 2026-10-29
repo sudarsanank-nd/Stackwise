@@ -12,7 +12,7 @@ export function WelcomePage() {
     <div className="mx-auto flex min-h-dvh max-w-xl flex-col justify-center px-6 py-12">
       <div className="flex items-center gap-3">
         <Logo />
-        <span className="font-serif text-xl font-semibold">ScrollWise</span>
+        <span className="font-serif text-xl font-semibold">Stackwise</span>
       </div>
       <h1 className="mt-10 font-serif text-[40px] leading-[1.08] font-semibold tracking-tight sm:text-[48px]">
         Scroll like social media.
@@ -76,11 +76,11 @@ export function CollidePage() {
 export function AboutPage() {
   return (
     <div>
-      <PageHeader title="About ScrollWise" back="/profile" />
+      <PageHeader title="About Stackwise" back="/profile" />
       <Section title="What this is">
         <Panel>
           <p className="text-[16px] leading-relaxed">
-            ScrollWise is a prototype micro-learning feed. Cards are original summaries written to teach one idea each. Where a card relies on outside research, the source is listed; cards still awaiting source verification are labelled. Illustrative examples are marked as such, and contested findings carry a note.
+            Stackwise is a prototype micro-learning feed. Cards are original summaries written to teach one idea each. Where a card relies on outside research, the source is listed; cards still awaiting source verification are labelled. Illustrative examples are marked as such, and contested findings carry a note.
           </p>
         </Panel>
       </Section>
@@ -97,7 +97,7 @@ export function AboutPage() {
       <Section title="Privacy">
         <Panel>
           <p className="text-[16px] leading-relaxed">
-            Everything — your profile, saved cards, reading history and reflections — is stored in this browser only. Nothing is sent to a server. ScrollWise never infers sensitive personal information; personalisation uses only the topics you choose and how you interact with cards. You can review, reset or delete it from Personalisation settings.
+            Everything — your profile, saved cards, reading history and reflections — is stored in this browser only. Nothing is sent to a server. Stackwise never infers sensitive personal information; personalisation uses only the topics you choose and how you interact with cards. You can review, reset or delete it from Personalisation settings.
           </p>
         </Panel>
       </Section>
@@ -115,7 +115,7 @@ export function AboutPage() {
 export function NotFoundPage() {
   return (
     <EmptyState title="Page not found" action={<LinkButton to="/feed" variant="primary">Go to feed</LinkButton>}>
-      That link doesn't lead anywhere in ScrollWise.
+      That link doesn't lead anywhere in Stackwise.
     </EmptyState>
   );
 }

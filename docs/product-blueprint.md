@@ -1,18 +1,18 @@
-# ScrollWise — Product Blueprint
+# Stackwise — Product Blueprint
 
 ## 1. Product summary
-ScrollWise is a mobile-first, vertical feed of 20–60 second knowledge cards for a busy technical-support leader and people manager. Each card teaches **one** idea and always ends in something usable: an example, a question, a small action, and a link to a related idea. The feed is personalised by a transparent, editable scoring model and has a built-in stopping point once the daily target is met.
+Stackwise is a mobile-first, vertical feed of 20–60 second knowledge cards for a busy technical-support leader and people manager. Each card teaches **one** idea and always ends in something usable: an example, a question, a small action, and a link to a related idea. The feed is personalised by a transparent, editable scoring model and has a built-in stopping point once the daily target is met.
 
 **Positioning line:** *Scroll like social media, finish like a good book chapter.*
 
-### Name options (kept ScrollWise)
-| Name | Why it might be stronger |
+### Name
+Renamed from the working name ScrollWise to **Stackwise** on 2026-10-29 (owner's choice): ideas you stack up over time, rather than scrolling.
+
+| Alternative considered | Why it might be stronger |
 |---|---|
-| **ScrollWise** (current) | Clear, says the behaviour and the outcome. Kept. |
 | Margin | Reading-journal feel; "learning in the margins of your day". Hard to search. |
 | Daily Dose of Ideas / Kindling | Warmer, but less distinctive. |
 
-Recommendation: keep **ScrollWise** — no clear advantage from renaming at prototype stage.
 
 ## 2. Key differentiation
 1. **Intentional stopping point** — the feed pauses at the daily target and offers *finish / review / check / reflect / continue knowingly*.

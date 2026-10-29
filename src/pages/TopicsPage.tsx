@@ -13,7 +13,7 @@ export function TopicsPage() {
   const interests = useAppStore((s) => s.profile?.interests) ?? NO_TOPICS;
   return (
     <div>
-      <PageHeader title="Topic explorer" subtitle="Every area ScrollWise covers. Yours are marked." back="/profile" />
+      <PageHeader title="Topic explorer" subtitle="Every area Stackwise covers. Yours are marked." back="/profile" />
       <ul className="grid gap-3 sm:grid-cols-2">
         {TOPICS.map((t) => {
           const n = ALL_CARDS.filter((c) => c.primaryTopic === t.id).length;

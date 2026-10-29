@@ -74,7 +74,7 @@ export function AppShell({ children }: { children: ReactNode }) {
       {/* Desktop rail */}
       <nav aria-label="Primary" className="fixed inset-y-0 left-0 z-30 hidden w-56 flex-col border-r border-line bg-surface px-3 py-5 md:flex">
         <Link to="/feed" className="mb-6 flex items-center gap-2 px-3 font-serif text-xl font-semibold">
-          <Logo /> ScrollWise
+          <Logo /> Stackwise
         </Link>
         <ul className="space-y-1">
           {NAV.map((n) => (
@@ -107,7 +107,7 @@ export function AppShell({ children }: { children: ReactNode }) {
         <header className="sticky top-[env(safe-area-inset-top,0px)] z-20 border-b border-line bg-[color-mix(in_srgb,var(--bg)_88%,transparent)] backdrop-blur">
           <div className="mx-auto flex h-16 max-w-2xl items-center justify-between gap-2 px-4">
             <Link to="/feed" className="flex items-center gap-2 font-serif text-lg font-semibold md:invisible">
-              <Logo /> ScrollWise
+              <Logo /> Stackwise
             </Link>
             <div className="flex items-center gap-1">
               <DailyMeter />

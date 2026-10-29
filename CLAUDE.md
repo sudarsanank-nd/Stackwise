@@ -1,4 +1,4 @@
-# ScrollWise — notes for Claude Code
+# Stackwise — notes for Claude Code
 
 Mobile-first micro-learning feed. React 19 + TypeScript 7 + Vite 8 + Tailwind CSS 4 + zustand (persisted to localStorage). No backend.
 
@@ -12,7 +12,7 @@ Mobile-first micro-learning feed. React 19 + TypeScript 7 + Vite 8 + Tailwind CS
 
 ## Layout
 - `src/services/` — pure logic (recommendation, signals, progress, search, session, knowledgeMap, explainBack, knowledgeCheck, onboarding, content). Keep business logic here, not in components.
-- `src/store/useAppStore.ts` — single zustand store, localStorage key `scrollwise:v1`. Selectors must return stable values (no new arrays/Sets inside `useAppStore(...)`; derive with `useMemo`).
+- `src/store/useAppStore.ts` — single zustand store, localStorage key `stackwise:v1`. Selectors must return stable values (no new arrays/Sets inside `useAppStore(...)`; derive with `useMemo`).
 - `src/data/cards/*.json` — knowledge cards; schema in `src/types/index.ts`; rules in `docs/content-guidelines.md`.
 - `src/pages/`, `src/components/` — UI. Router is HashRouter in dev/prod builds, MemoryRouter in the `artifact` build mode.
 

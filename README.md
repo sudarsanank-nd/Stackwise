@@ -1,4 +1,4 @@
-# ScrollWise
+# Stackwise
 
 A calm, mobile-first micro-learning feed: 20–60 second knowledge cards, personalised by a transparent scoring model, with a built-in stopping point.
 
@@ -38,7 +38,7 @@ src/
   components/  cards · feed · onboarding · navigation · library · decision-gym · common
   pages/       one module per route group
   services/    pure logic: recommendation, signals, progress, search, session, knowledgeMap, explainBack, knowledgeCheck, onboarding, share, content
-  store/       zustand store persisted to localStorage (key scrollwise:v1)
+  store/       zustand store persisted to localStorage (key stackwise:v1)
   data/        topics.ts, feedModes.ts, cards/*.json, scenarios.json, collisions.json
   types/       domain types
   utils/ hooks/ tests/

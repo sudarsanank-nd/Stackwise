@@ -15,7 +15,7 @@ for (const theme of ['light', 'dark']) {
   await page.goto(base);
   for (const p of pages) {
     const state = p === '#/welcome' || p === '#/onboarding' ? { ...profile, state: { ...profile.state, profile: null, theme } } : { ...profile, state: { ...profile.state, theme } };
-    await page.evaluate((s) => localStorage.setItem('scrollwise:v1', JSON.stringify(s)), state);
+    await page.evaluate((s) => localStorage.setItem('stackwise:v1', JSON.stringify(s)), state);
     await page.goto(base + p);
     await page.reload();
     await page.waitForTimeout(400);

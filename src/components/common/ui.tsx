@@ -184,7 +184,7 @@ export class ErrorBoundary extends Component<{ children: ReactNode; onReset?: ()
     return { error };
   }
   componentDidCatch(error: Error, info: ErrorInfo) {
-    console.error('ScrollWise error:', error, info.componentStack);
+    console.error('Stackwise error:', error, info.componentStack);
   }
   render() {
     if (!this.state.error) return this.props.children;

@@ -138,3 +138,12 @@ describe('toast', () => {
     vi.useRealTimers();
   });
 });
+
+describe('rename migration', () => {
+  it('reads data saved under the old ScrollWise key', async () => {
+    const { safeStorage, LEGACY_STORAGE_KEY } = await import('../store/useAppStore');
+    localStorage.clear();
+    localStorage.setItem(LEGACY_STORAGE_KEY, '{"state":{"theme":"dark"},"version":1}');
+    expect(safeStorage.getItem(STORAGE_KEY)).toContain('"dark"');
+  });
+});
