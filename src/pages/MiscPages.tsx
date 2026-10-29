@@ -7,10 +7,13 @@ import { LogoMark, Wordmark } from '../components/brand/Logo';
 import { CoverArt } from '../components/cards/CoverArt';
 import { OnboardingWizard } from '../components/onboarding/OnboardingWizard';
 import { TOPICS } from '../data/topics';
+import { useInstallPlatform } from '../hooks/useInstall';
 
 const WELCOME_CARDS = ['pm-one-on-ones', 'agent-compounding-errors', 'bf-loss-aversion-panic'];
 
 export function WelcomePage() {
+  const installPlatform = useInstallPlatform();
+  const showInstall = installPlatform !== 'installed' && installPlatform !== 'unsupported';
   const cards = WELCOME_CARDS.map((id) => ALL_CARDS.find((c) => c.id === id)).filter((c) => !!c);
   const fan = ['left-0 top-8 -rotate-[8deg]', 'right-0 top-6 rotate-[7deg]', 'left-1/2 top-12 -translate-x-1/2'];
   return (
@@ -43,6 +46,16 @@ export function WelcomePage() {
         <LinkButton to="/onboarding" variant="primary" className="min-h-14 w-full !rounded-[18px] !bg-navy text-[17px] !text-white dark:!bg-brand dark:!text-brand-ink">
           Set up my feed — about 2 minutes
         </LinkButton>
+        {showInstall && (
+          <>
+            <LinkButton to="/install" variant="secondary" className="mt-3 min-h-13 w-full !rounded-[18px] text-[16px]">
+              Install the app first
+            </LinkButton>
+            {installPlatform === 'ios' && (
+              <p className="mt-2 text-center text-[13px] text-ink-2">Recommended on iPhone — your setup stays with the installed app.</p>
+            )}
+          </>
+        )}
         <p className="mt-4 text-center text-[13px] text-ink-2">
           Educational content only. <Link to="/about" className="underline">About & disclaimer</Link> · <Link to="/privacy" className="underline">Privacy</Link>
         </p>
