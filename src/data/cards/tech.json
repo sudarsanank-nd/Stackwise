@@ -381,9 +381,10 @@
     "format": "myth-vs-reality",
     "source": {
       "type": "primary",
-      "title": "The Digital Personal Data Protection Act, 2023",
+      "title": "The Digital Personal Data Protection Act, 2023 (No. 22 of 2023)",
       "author": "Government of India",
-      "year": 2023
+      "year": 2023,
+      "url": "https://www.meity.gov.in/static/uploads/2024/06/2bf1f0e9f04e6fb4f8fef35e82c42aa5.pdf"
     },
     "relatedCardIds": [
       "tech-build-vs-buy",
@@ -392,7 +393,7 @@
     ],
     "contrastingCardIds": [],
     "createdAt": "2026-10-28",
-    "reviewStatus": "needs-source-check",
+    "reviewStatus": "verified",
     "deeper": "This card is education, not legal advice. Which obligations apply depends on your role, your data and customer contracts, so involve your legal or security team for policy. Technically, the strongest controls are the boring ones: enterprise agreements that state data handling, redacting identifiers before text reaches a model, and access rules on what an AI can retrieve. Privacy is easier to design in than to retrofit.",
     "simpleExplanation": "Don't paste private customer details into AI tools unless you know where that data goes.",
     "keyConcepts": [
@@ -613,7 +614,8 @@
       "type": "article",
       "title": "Building effective agents",
       "author": "Anthropic",
-      "year": 2024
+      "year": 2024,
+      "url": "https://www.anthropic.com/research/building-effective-agents"
     },
     "relatedCardIds": [
       "agent-hitl-checkpoints",
@@ -1076,9 +1078,10 @@
     "format": "big-idea",
     "source": {
       "type": "book",
-      "title": "Site Reliability Engineering: How Google Runs Production Systems",
+      "title": "Site Reliability Engineering: How Google Runs Production Systems (ch. 6, Monitoring Distributed Systems)",
       "author": "Betsy Beyer et al. (eds.)",
-      "year": 2016
+      "year": 2016,
+      "url": "https://sre.google/sre-book/monitoring-distributed-systems/"
     },
     "relatedCardIds": [
       "sup-goodhart-sla",

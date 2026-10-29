@@ -21,7 +21,8 @@
       "type": "paper",
       "title": "Portfolio Selection",
       "author": "Harry Markowitz",
-      "year": 1952
+      "year": 1952,
+      "url": "https://doi.org/10.1111/j.1540-6261.1952.tb01525.x"
     },
     "relatedCardIds": [
       "inv-asset-allocation",
@@ -172,7 +173,7 @@
       "dm-premortem",
       "inv-mr-market-cycles"
     ],
-    "reviewStatus": "needs-source-check",
+    "reviewStatus": "verified",
     "deeper": "The hard part is that your estimate of value carries the same bias as your enthusiasm. A wide margin on a poor estimate is still a poor bet. Margin of safety also has a cost: demanding a big discount means you will often miss things that did well. It works best combined with honest limits on what you can value at all.",
     "simpleExplanation": "Leave yourself a cushion in case your guess about the value turns out wrong.",
     "keyConcepts": [
@@ -525,7 +526,8 @@
       "type": "primary",
       "title": "Berkshire Hathaway shareholder letter (circle of competence discussed)",
       "author": "Warren Buffett",
-      "year": 1996
+      "year": 1996,
+      "url": "https://www.berkshirehathaway.com/letters/1996.html"
     },
     "relatedCardIds": [
       "inv-margin-of-safety",
@@ -1117,7 +1119,8 @@
       "type": "paper",
       "title": "Confirmation Bias: A Ubiquitous Phenomenon in Many Guises",
       "author": "Raymond S. Nickerson",
-      "year": 1998
+      "year": 1998,
+      "url": "https://doi.org/10.1037/1089-2680.2.2.175"
     },
     "relatedCardIds": [
       "dm-premortem",
@@ -1189,7 +1192,8 @@
       "type": "paper",
       "title": "Abraham Wald's Work on Aircraft Survivability",
       "author": "Marc Mangel & Francisco J. Samaniego",
-      "year": 1984
+      "year": 1984,
+      "url": "https://doi.org/10.2307/2288257"
     },
     "relatedCardIds": [
       "inv-active-vs-passive",
@@ -1260,7 +1264,8 @@
       "type": "paper",
       "title": "Judgment under Uncertainty: Heuristics and Biases",
       "author": "Amos Tversky & Daniel Kahneman",
-      "year": 1974
+      "year": 1974,
+      "url": "https://doi.org/10.1126/science.185.4157.1124"
     },
     "relatedCardIds": [
       "bf-loss-aversion-panic",
@@ -1331,7 +1336,8 @@
       "type": "paper",
       "title": "Mental Accounting and Consumer Choice",
       "author": "Richard H. Thaler",
-      "year": 1985
+      "year": 1985,
+      "url": "https://doi.org/10.1287/mksc.4.3.199"
     },
     "relatedCardIds": [
       "pf-time-horizon-buckets",
@@ -1402,7 +1408,8 @@
       "type": "paper",
       "title": "A Simple Model of Herd Behavior",
       "author": "Abhijit V. Banerjee",
-      "year": 1992
+      "year": 1992,
+      "url": "https://doi.org/10.2307/2118364"
     },
     "relatedCardIds": [
       "inv-mr-market-cycles",

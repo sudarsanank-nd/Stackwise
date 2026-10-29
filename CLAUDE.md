@@ -24,4 +24,7 @@ Mobile-first micro-learning feed. React 19 + TypeScript 7 + Vite 8 + Tailwind CS
 - Record notable decisions in `docs/decision-log.md` and milestones in `docs/checkpoints.md`.
 
 ## Suggested next work
-See `docs/roadmap.md`: source verification of flagged cards, LLM-backed Explain It Back (implement `ExplainBackEvaluator`), PWA/offline.
+See `docs/roadmap.md`: UI revamp (mocks pending sign-off); LLM-backed Explain It Back (implement `ExplainBackEvaluator`) is in the backlog.
+
+## PWA
+- `vite-plugin-pwa` runs for the hosted build only (not `--mode artifact`); icons live in `public/icons/`. Content changes are picked up on the next visit (`autoUpdate`).
