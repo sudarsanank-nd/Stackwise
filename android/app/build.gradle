@@ -1,0 +1,62 @@
+plugins {
+    id 'com.android.application'
+}
+
+// Stackwise for Android: a Trusted Web Activity that opens the hosted PWA full-screen.
+// The web app is the product; this shell only adds the launcher icon, splash and Play packaging.
+
+def hostName = 'sudarsanank-nd.github.io'
+def startPath = '/Stackwise/'
+
+android {
+    namespace 'io.github.sudarsanank_nd.stackwise'
+    compileSdk 36
+
+    defaultConfig {
+        applicationId 'io.github.sudarsanank_nd.stackwise'
+        minSdk 21
+        targetSdk 36
+        // CI passes a build number so every upload to Play is a higher versionCode.
+        versionCode (System.getenv('VERSION_CODE') ?: '1') as int
+        versionName '1.0.0'
+
+        manifestPlaceholders = [
+            hostName       : hostName,
+            defaultUrl     : "https://${hostName}${startPath}",
+            launcherName   : 'Stackwise',
+            themeColor     : '#14213D',
+            navigationColor: '#14213D',
+            backgroundColor: '#14213D',
+        ]
+        resValue 'string', 'asset_statements', """[{ \\"relation\\": [\\"delegate_permission/common.handle_all_urls\\"], \\"target\\": { \\"namespace\\": \\"web\\", \\"site\\": \\"https://${hostName}\\" } }]"""
+    }
+
+    // Release signing comes from CI secrets; without them only the debug build is produced.
+    signingConfigs {
+        release {
+            def ks = System.getenv('STACKWISE_KEYSTORE_PATH')
+            if (ks) {
+                storeFile file(ks)
+                storePassword System.getenv('STACKWISE_KEYSTORE_PASSWORD')
+                keyAlias System.getenv('STACKWISE_KEY_ALIAS')
+                keyPassword System.getenv('STACKWISE_KEY_PASSWORD')
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            if (System.getenv('STACKWISE_KEYSTORE_PATH')) signingConfig signingConfigs.release
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_17
+        targetCompatibility JavaVersion.VERSION_17
+    }
+}
+
+dependencies {
+    implementation 'com.google.androidbrowserhelper:androidbrowserhelper:2.5.0'
+}
