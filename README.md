@@ -6,6 +6,8 @@ A calm, mobile-first micro-learning feed: 20–60 second knowledge cards, person
 - Onboarding, personalised feed (4 modes), search, filters, Knowledge Shelf, 5-minute sessions, Decision Gym, Explain It Back, Weekly Knowledge Map, daily guardrail, light/dark mode
 - Everything is stored locally in the browser (no backend)
 
+**Live:** https://sudarsanank-nd.github.io/Stackwise/ — redeployed by GitHub Actions on every push to `main` (`.github/workflows/deploy-pages.yml`).
+
 ## Run it
 
 Requires Node 20+ (built with Node 22).

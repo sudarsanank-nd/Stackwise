@@ -15,3 +15,4 @@
 | 11 | Explain It Back uses keyword/concept matching behind an `Evaluator` interface | Spec asks for local matching now, LLM-ready later. |
 | 12 | Extra `artifact` build mode (single-file HTML) | Lets the prototype be opened on a phone without running a dev server. |
 | 13 | Renamed app ScrollWise → **Stackwise**; storage key `stackwise:v1` with a one-time fallback read of `scrollwise:v1` | Owner's naming choice; keeps existing progress. |
+| 14 | Hosted on **GitHub Pages** via Actions (`.github/workflows/deploy-pages.yml`), redeploying on every push to `main` | Free static hosting; the existing `base: './'` + HashRouter build works under the `/Stackwise/` subpath unchanged. Tests gate the deploy. |
