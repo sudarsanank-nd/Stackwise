@@ -1,0 +1,688 @@
+[
+  {
+    "cardId": "dm-base-rates",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "The vivid case",
+        "caption": "A specific story about this customer can make you ignore what usually happens.",
+        "labels": [
+          "Vivid story"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "versus",
+        "chapter": "Story vs base rate",
+        "caption": "Base-rate neglect: focusing on one case's details and underweighting how common that outcome is overall.",
+        "labels": [
+          "The story",
+          "The base rate"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "bars",
+        "chapter": "Check the common cause",
+        "caption": "Illustrative, schematic bars: if most offline cases in your history are power or SIM issues, check those first.",
+        "labels": [
+          "Power or SIM",
+          "Firmware bug"
+        ],
+        "values": [
+          0.8,
+          0.2
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "stack",
+        "chapter": "Start, then adjust",
+        "caption": "Start with the base rate, then adjust for case-specific evidence, such as a firmware signature in the logs.",
+        "labels": [
+          "Start: base rate",
+          "Add the evidence",
+          "Adjust the guess"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "mm-chestertons-fence",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "A fence on the road",
+        "caption": "Chesterton's reformer finds a fence across a road and wants it cleared because he sees no use for it.",
+        "labels": [
+          "Why is it here?"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "versus",
+        "chapter": "The wiser reply",
+        "caption": "The wiser reply: go and find out why it was put up, and then you may remove it.",
+        "labels": [
+          "Tear it down",
+          "Find out why"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "A short investigation",
+        "caption": "Treat it as a short investigation, not a veto: who added the rule, what incident prompted it, does the cause still exist?",
+        "labels": [
+          "Who added it?",
+          "What prompted it?",
+          "Cause still there?"
+        ],
+        "seconds": 11
+      },
+      {
+        "visual": "statement",
+        "chapter": "Then decide",
+        "caption": "If the reason is gone, remove the rule, ideally as a reversible trial. If nobody knows why, time-box an experiment.",
+        "labels": [
+          "Try, reversibly"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "mm-map-territory",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "A drawing of reality",
+        "caption": "The map is not the territory: any model, report or metric is a simplified picture of the thing itself.",
+        "labels": [
+          "Map ≠ territory"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Support's maps",
+        "caption": "The CSAT score, the SLA report and the ticket status are maps. The customer's actual experience is the territory.",
+        "labels": [
+          "CSAT score",
+          "SLA report",
+          "Ticket status"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "versus",
+        "chapter": "Nine quiet days",
+        "caption": "Illustrative: an escalation shows 'In progress with engineering' for nine days. The status was set on day one; nobody touched it since.",
+        "labels": [
+          "Map: active",
+          "Real: stalled"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "cycle",
+        "chapter": "Walk the territory",
+        "caption": "Pick one dashboard number and trace three underlying cases by hand to see what the number hides.",
+        "labels": [
+          "Pick",
+          "Trace",
+          "Compare"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "mm-inversion",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Flip the question",
+        "caption": "Inversion solves problems backwards: instead of asking how to achieve a goal, ask what would guarantee failure.",
+        "labels": [
+          "How to succeed?",
+          "How to fail?"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Guaranteed failures",
+        "caption": "To ruin escalations: send them without logs, let cases sit unwatched, change priority silently, close before the fix is confirmed.",
+        "labels": [
+          "No logs or IDs",
+          "Unwatched queue",
+          "Silent priority",
+          "Close too early"
+        ],
+        "seconds": 11
+      },
+      {
+        "visual": "statement",
+        "chapter": "Failures become rules",
+        "caption": "The list of failures becomes a checklist of things to prevent.",
+        "labels": [
+          "Each → a rule"
+        ],
+        "seconds": 7
+      },
+      {
+        "visual": "statement",
+        "chapter": "The limit",
+        "caption": "Avoiding every failure does not by itself create success, so pair inversion with a picture of what good looks like.",
+        "labels": [
+          "Pair with a goal"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "prod-parkinsons-law",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "Parkinson, 1955",
+        "caption": "Parkinson's 1955 line: work expands so as to fill the time available for its completion.",
+        "labels": [
+          "Work expands"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "bars",
+        "chapter": "Same report, earlier",
+        "caption": "Illustrative: a report 'due Friday' gets done Friday afternoon. Asked for by Wednesday noon, it takes the same two hours and is no worse.",
+        "labels": [
+          "Due Friday: 2 h",
+          "Due Wed: 2 h"
+        ],
+        "values": [
+          0.4,
+          0.4
+        ],
+        "seconds": 11
+      },
+      {
+        "visual": "versus",
+        "chapter": "Where it backfires",
+        "caption": "Tighter deadlines suit tasks with slack. For complex or creative work, rushing creates rework.",
+        "labels": [
+          "Tasks with slack",
+          "Complex work"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "A hypothesis to test",
+        "caption": "It began as satire about bureaucracy, not a study. Treat it as a hypothesis and set deadlines from a realistic estimate.",
+        "labels": [
+          "Estimate effort",
+          "Set the deadline",
+          "Test the result"
+        ],
+        "seconds": 10
+      }
+    ]
+  },
+  {
+    "cardId": "prod-eisenhower-matrix",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Who made the grid?",
+        "caption": "Myth: Eisenhower designed the four-box grid. Reality: it was popularised later, notably by Stephen Covey in 1989.",
+        "labels": [
+          "Myth: Eisenhower",
+          "Reality: later"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Four boxes",
+        "caption": "The tool is still useful: sort work into urgent and important, important only, urgent only, and neither.",
+        "labels": [
+          "Urgent + important",
+          "Important only",
+          "Urgent only",
+          "Neither"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "bars",
+        "chapter": "A week on the grid",
+        "caption": "Illustrative, schematic bars: urgent pings filled the week; coaching and root-cause work got no time at all.",
+        "labels": [
+          "Urgent pings",
+          "Coaching",
+          "Root cause"
+        ],
+        "values": [
+          0.9,
+          0,
+          0
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "Before it's a fire",
+        "caption": "Give most attention to important work before it becomes urgent. A famous name on a tool is not evidence that it works.",
+        "labels": [
+          "Important first"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "sup-escalation-quality",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "Why escalations stall",
+        "caption": "Most escalation delays are caused by what is missing, not by what is wrong.",
+        "labels": [
+          "Missing, not wrong"
+        ],
+        "seconds": 7
+      },
+      {
+        "visual": "cycle",
+        "chapter": "The round trip",
+        "caption": "Every clarifying question bounces the case back through the queue and can add a day to resolution.",
+        "labels": [
+          "Send",
+          "Question",
+          "Reply",
+          "Wait"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Answer it up front",
+        "caption": "A good escalation answers up front: what the customer sees, identifiers, what was tried, scope and impact, the ask and deadline.",
+        "labels": [
+          "What they see",
+          "IDs + timestamps",
+          "What was tried",
+          "Scope + impact",
+          "Ask + deadline"
+        ],
+        "seconds": 12
+      },
+      {
+        "visual": "versus",
+        "chapter": "Round trips vs none",
+        "caption": "Illustrative: 'device offline, please check' takes three round trips; a complete escalation can be picked up immediately.",
+        "labels": [
+          "'Please check'",
+          "Ready to act"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "sup-incident-handoffs",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Status is not state",
+        "caption": "A common mistake at shift change: passing on a status, 'waiting on engineering', instead of the state of the situation.",
+        "labels": [
+          "Status",
+          "State"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "What state includes",
+        "caption": "State means what was tried, what is suspected, what the customer was told, what is due next and who is committed to it.",
+        "labels": [
+          "Tried",
+          "Suspected",
+          "Customer was told",
+          "Due next",
+          "Who committed"
+        ],
+        "seconds": 11
+      },
+      {
+        "visual": "chain",
+        "chapter": "A promise dropped",
+        "caption": "Illustrative: the note said only 'engineering looking'. Night shift never knew about the 9 pm update promise, so the customer escalated.",
+        "labels": [
+          "Promise: 9 pm",
+          "Note: 'eng looking'",
+          "Night shift",
+          "No update sent"
+        ],
+        "values": [
+          1,
+          0.6,
+          0.3,
+          0.1
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "Explicit hand-over",
+        "caption": "Hand over explicitly: the incoming person is told, and acknowledges, that they now own it.",
+        "labels": [
+          "Owner now: name"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "sup-support-vs-engineering-ownership",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "The hand-off",
+        "caption": "Once a customer problem is traced to a product defect, a hand-off happens. Who owns the customer now?",
+        "labels": [
+          "Who owns it?"
+        ],
+        "seconds": 7
+      },
+      {
+        "visual": "versus",
+        "chapter": "Two views",
+        "caption": "One view: support owns the customer until they confirm resolution. The other: once engineering accepts the case, they own it.",
+        "labels": [
+          "Support keeps it",
+          "Engineering owns"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "stack",
+        "chapter": "What both agree on",
+        "caption": "Agreed: the customer needs one clear voice, engineers need uninterrupted time, and unclear ownership creates gaps.",
+        "labels": [
+          "One clear voice",
+          "Time to fix",
+          "Clear boundary"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "An editorial view",
+        "caption": "Evidence is balanced. Editorial view: engineering owns the fix; support owns customer updates on a fixed schedule.",
+        "labels": [
+          "Split by role"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "sup-signal-vs-noise",
+    "scenes": [
+      {
+        "visual": "curve",
+        "chapter": "Natural variation",
+        "caption": "Any process wobbles: some weeks have more tickets, some fewer, with no real cause. Schematic line, not data.",
+        "labels": [
+          "Weekly tickets",
+          "Routine wobble"
+        ],
+        "values": [
+          0.45,
+          0.6,
+          0.4,
+          0.7,
+          0.5,
+          0.55
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Shewhart's limits",
+        "caption": "Shewhart's 1931 control charts draw limits around the process average to separate routine variation from genuine signals.",
+        "labels": [
+          "Process average",
+          "Limits around it",
+          "Inside: noise",
+          "Outside: signal"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "bars",
+        "chapter": "Blip vs drift",
+        "caption": "Illustrative: weeks run 18 to 30. A week of 31 prompts a review that finds nothing; a steady rise to 40 is spotted late.",
+        "labels": [
+          "Normal: up to 30",
+          "Blip: 31",
+          "Drift: 40"
+        ],
+        "values": [
+          0.75,
+          0.78,
+          1
+        ],
+        "seconds": 11
+      },
+      {
+        "visual": "statement",
+        "chapter": "Decide beforehand",
+        "caption": "Know your normal range and write signal rules in advance. Look for runs and trends, not just single outliers.",
+        "labels": [
+          "Rules in advance"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "sup-coaching-with-case-evidence",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Opinion vs evidence",
+        "caption": "Feedback without a case in hand is an opinion the agent can argue with.",
+        "labels": [
+          "Impression",
+          "Case evidence"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "From vague to specific",
+        "caption": "It moves from 'you are slow on escalations' to 'on this case the log request came on day three; what made that hard?'",
+        "labels": [
+          "Vague: 'slow'",
+          "Log asked day 3",
+          "What made it hard?"
+        ],
+        "seconds": 11
+      },
+      {
+        "visual": "cycle",
+        "chapter": "A coaching loop",
+        "caption": "Read cases in full, ask what they were thinking before offering your view, and agree one behaviour to try on the next case.",
+        "labels": [
+          "Read",
+          "Ask",
+          "Agree",
+          "Try"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "Sample fairly",
+        "caption": "Sampling only struggling agents feels like surveillance. Sample everyone, include strong work, keep reviews apart from scoring.",
+        "labels": [
+          "Sample everyone"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "sup-ai-in-support-workflows",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "The real question",
+        "caption": "The question is not 'can AI do it' but 'what happens when it is wrong, and who will notice?'",
+        "labels": [
+          "What if wrong?"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "versus",
+        "chapter": "Two scores",
+        "caption": "Score each task on two things: the cost of an error, and checkability, whether a person can verify it quickly against a source.",
+        "labels": [
+          "Cost of error",
+          "Checkability"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Four quadrants",
+        "caption": "Cheap and checkable: automate. Cheap, hard to check: spot audits. Costly, checkable: AI drafts, human approves. Costly, hidden: human-led.",
+        "labels": [
+          "Cheap + checkable",
+          "Cheap + hidden",
+          "Costly + checkable",
+          "Costly + hidden"
+        ],
+        "seconds": 13
+      },
+      {
+        "visual": "cycle",
+        "chapter": "Revisit the scores",
+        "caption": "Pilot only on low-cost, easy-to-check tasks, then revisit the scoring as data comes in: measured error rates beat gut feel.",
+        "labels": [
+          "Score",
+          "Pilot",
+          "Measure",
+          "Rescore"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "sup-psych-safety-escalations",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "Safe to ask",
+        "caption": "Psychological safety: the shared belief it is safe to ask and admit uncertainty. Applying it to escalations is an interpretation.",
+        "labels": [
+          "Safe to ask?"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "versus",
+        "chapter": "Where it shows up",
+        "caption": "Low safety: agents hold cases too long, or escalate in a panic. High safety: they escalate early, with clear context.",
+        "labels": [
+          "Low safety",
+          "High safety"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "chain",
+        "chapter": "Four days of silence",
+        "caption": "Illustrative: an agent sits on a case for four days after a colleague was criticised for escalating. The customer complains twice.",
+        "labels": [
+          "Case arrives",
+          "Held 4 days",
+          "Reaches eng",
+          "Two complaints"
+        ],
+        "values": [
+          1,
+          0.6,
+          0.35,
+          0.15
+        ],
+        "seconds": 11
+      },
+      {
+        "visual": "statement",
+        "chapter": "The leader's reaction",
+        "caption": "Your reaction shapes it: thank someone publicly for an early escalation, even one that turned out to be unnecessary.",
+        "labels": [
+          "Thank early asks"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "ops-five-whys-limits",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "Ask why, repeatedly",
+        "caption": "The five whys: when a problem occurs, ask why repeatedly until you reach a cause you can act on.",
+        "labels": [
+          "Why? × 5"
+        ],
+        "seconds": 7
+      },
+      {
+        "visual": "stack",
+        "chapter": "Ohno's machine",
+        "caption": "Ohno's own example traces a stopped machine back through several causes to a missing strainer, not simply a blown fuse.",
+        "labels": [
+          "Machine stopped",
+          "Fuse blew",
+          "…several whys…",
+          "Missing strainer"
+        ],
+        "seconds": 11
+      },
+      {
+        "visual": "versus",
+        "chapter": "Where it runs out",
+        "caption": "It follows one chain, so different people reach different roots, and it can stop at a convenient answer like 'human error'.",
+        "labels": [
+          "One chain",
+          "Several causes"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "cycle",
+        "chapter": "Widen the lens",
+        "caption": "Branch the chain: at each why, write every plausible cause, then test each causal link with evidence, not agreement.",
+        "labels": [
+          "Branch",
+          "Test",
+          "Fix"
+        ],
+        "seconds": 9
+      }
+    ]
+  }
+]
