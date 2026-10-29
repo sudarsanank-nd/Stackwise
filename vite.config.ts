@@ -30,6 +30,9 @@ const pwa = VitePWA({
   workbox: {
     globPatterns: ['**/*.{js,css,html,svg,png,webp,woff2}'],
     maximumFileSizeToCacheInBytes: 3 * 1024 * 1024,
+    // A new version takes over open pages straight away; registerServiceWorker reloads onto it.
+    clientsClaim: true,
+    skipWaiting: true,
   },
 })
 
@@ -38,7 +41,11 @@ const pwa = VitePWA({
 export default defineConfig(({ mode }) => ({
   base: './',
   plugins: [react(), tailwindcss(), ...(mode === 'artifact' ? [viteSingleFile()] : [pwa])],
-  define: { __PWA__: JSON.stringify(mode !== 'artifact') },
+  define: {
+    __PWA__: JSON.stringify(mode !== 'artifact'),
+    // Short commit id in CI builds (GitHub Actions sets GITHUB_SHA), shown on the About page.
+    __APP_VERSION__: JSON.stringify(process.env.GITHUB_SHA?.slice(0, 7) ?? 'dev'),
+  },
   // Content JSON is bundled, so the main chunk is ~650 kB (≈200 kB gzipped).
   build: mode === 'artifact' ? { outDir: 'dist-artifact', chunkSizeWarningLimit: 900 } : { chunkSizeWarningLimit: 900 },
   test: {

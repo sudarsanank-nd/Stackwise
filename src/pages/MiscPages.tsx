@@ -92,6 +92,8 @@ export function CollidePage() {
   );
 }
 
+declare const __APP_VERSION__: string;
+
 export function AboutPage() {
   return (
     <div>
@@ -127,6 +129,7 @@ export function AboutPage() {
           </p>
         </Panel>
       </Section>
+      <p className="mt-2 text-center text-[13px] text-ink-2">Version {typeof __APP_VERSION__ === 'string' ? __APP_VERSION__ : 'dev'}</p>
     </div>
   );
 }
