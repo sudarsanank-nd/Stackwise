@@ -153,6 +153,8 @@ export interface KnowledgeCard {
   keyConcepts: KeyConcept[];
   misconceptions?: Misconception[];
   simpleExplanation?: string;
+  /** Idea symbol drawn on the cover art; one of SYMBOL_IDS in src/data/symbols.ts. */
+  coverSymbol?: string;
   checklist?: string[];
   quote?: { text: string; by: string; note?: string };
   contrarian?: ContrarianBlock;

@@ -2,7 +2,6 @@ import type { DecisionScenario, Explainer, IdeaCollision, KnowledgeCard, TopicId
 import { wordCount } from '../utils/text';
 import scenariosJson from '../data/scenarios.json';
 import collisionsJson from '../data/collisions.json';
-import explainersJson from '../data/explainers.json';
 
 const WORDS_PER_MINUTE = 230;
 
@@ -37,7 +36,10 @@ export const COLLISIONS = (collisionsJson as IdeaCollision[]).filter((c) => CARD
 
 export const getCard = (id: string) => CARD_INDEX.get(id);
 
-export const EXPLAINERS = (explainersJson as Explainer[]).filter((e) => CARD_INDEX.has(e.cardId));
+// Explainer scripts live in one JSON file per batch so batches can be written in parallel.
+const explainerModules = import.meta.glob<{ default: Explainer[] }>('../data/explainers/*.json', { eager: true });
+export const RAW_EXPLAINERS: Explainer[] = Object.values(explainerModules).flatMap((m) => m.default);
+export const EXPLAINERS = RAW_EXPLAINERS.filter((e) => CARD_INDEX.has(e.cardId));
 const EXPLAINER_INDEX = new Map(EXPLAINERS.map((e) => [e.cardId, e]));
 export const getExplainer = (cardId: string) => EXPLAINER_INDEX.get(cardId);
 export const sceneSeconds = (s: { seconds?: number }) => s.seconds ?? 8;

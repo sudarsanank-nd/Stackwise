@@ -1,0 +1,58 @@
+import type { ReactNode } from 'react';
+import type { SymbolId } from '../../data/symbols';
+
+// Line-art idea symbols on a 48×48 grid. Drawn with `currentColor` strokes; the cover art
+// sets the colour and scale. Keep shapes bold and simple so they read at thumbnail size.
+
+const line = (d: string) => <path d={d} />;
+
+export const SYMBOLS: Record<SymbolId, ReactNode> = {
+  door: <>{line('M12 42V8h20v34')}{line('M32 10l8 4v28l-8-0')}{line('M6 42h36')}<circle cx="27" cy="26" r="1.6" fill="currentColor" /></>,
+  funnel: <>{line('M6 8h36L28 26v12l-8 4V26z')}</>,
+  scale: <>{line('M24 6v34M14 42h20M8 14h32')}{line('M8 14l-5 12h10zM40 14l-5 12h10z')}</>,
+  brain: <>{line('M24 10c-3-4-11-3-11 3-5 1-6 8-2 10-3 4 0 10 5 9 1 5 8 5 8 0V10z')}{line('M24 10c3-4 11-3 11 3 5 1 6 8 2 10 3 4 0 10-5 9-1 5-8 5-8 0')}{line('M18 20h4M26 26h4')}</>,
+  bulb: <>{line('M24 6a12 12 0 0 0-7 21.7V32h14v-4.3A12 12 0 0 0 24 6z')}{line('M19 37h10M21 42h6')}</>,
+  target: <><circle cx="24" cy="24" r="17" /><circle cx="24" cy="24" r="10" /><circle cx="24" cy="24" r="3" fill="currentColor" />{line('M24 24L40 8M34 8h6v6')}</>,
+  shield: <>{line('M24 5l15 6v11c0 10-7 17-15 20C16 39 9 32 9 22V11z')}{line('M17 24l5 5 9-10')}</>,
+  clock: <><circle cx="24" cy="25" r="16" />{line('M24 16v10l6 4M20 5h8')}</>,
+  hourglass: <>{line('M12 5h24M12 43h24M14 5c0 10 10 12 10 19S14 33 14 43M34 5c0 10-10 12-10 19s10 9 10 19')}{line('M18 39h12')}</>,
+  'chart-up': <>{line('M6 42h36M8 34l10-10 7 6 15-16')}{line('M32 14h8v8')}</>,
+  'chart-down': <>{line('M6 42h36M8 12l10 10 7-6 15 16')}{line('M32 32h8v-8')}</>,
+  coins: <><ellipse cx="18" cy="14" rx="11" ry="5" />{line('M7 14v8c0 3 5 5 11 5s11-2 11-5v-8')}<ellipse cx="30" cy="30" rx="11" ry="5" />{line('M19 30v8c0 3 5 5 11 5s11-2 11-5v-8')}</>,
+  wallet: <>{line('M6 14h32a4 4 0 0 1 4 4v20a4 4 0 0 1-4 4H10a4 4 0 0 1-4-4z')}{line('M6 14l26-8 2 8')}{line('M42 24h-9a4 4 0 0 0 0 8h9')}</>,
+  chat: <>{line('M6 8h26a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H16l-8 7v-7H6a3 3 0 0 1-3-3V11a3 3 0 0 1 3-3z')}{line('M38 18h4a3 3 0 0 1 3 3v12a3 3 0 0 1-3 3h-2v6l-7-6H24')}</>,
+  handshake: <>{line('M4 18l8-6 8 3 6-3 10 2 8 6')}{line('M4 18l12 14 4 3 4-1 4 3 4-2 10-11')}{line('M20 15l-6 7 3 3 7-6')}</>,
+  megaphone: <>{line('M8 18h8l18-10v32L16 30H8z')}{line('M12 30l3 11h6l-3-11')}{line('M40 18c3 2 3 10 0 12')}</>,
+  people: <><circle cx="17" cy="15" r="6" /><circle cx="33" cy="17" r="5" />{line('M5 40c0-7 5-12 12-12s12 5 12 12M30 28c7 0 12 4 12 11')}</>,
+  crown: <>{line('M6 36L4 12l11 9 9-13 9 13 11-9-2 24z')}{line('M7 42h34')}</>,
+  compass: <><circle cx="24" cy="24" r="18" />{line('M31 17l-4 10-10 4 4-10z')}</>,
+  mountain: <>{line('M3 42L18 14l8 13 5-7 14 22z')}{line('M18 14l-3 8 4-2 3 4')}</>,
+  ladder: <>{line('M14 4v40M34 4v40M14 12h20M14 22h20M14 32h20M14 42h20')}</>,
+  puzzle: <>{line('M8 18h8a4 4 0 1 1 8 0h8v8a4 4 0 1 0 0 8v8H8v-8a4 4 0 1 0 0-8z')}{line('M32 18V8h-8')}</>,
+  key: <><circle cx="15" cy="24" r="9" />{line('M24 24h20M36 24v7M42 24v5')}</>,
+  lock: <>{line('M10 22h28v20H10z')}{line('M16 22v-7a8 8 0 0 1 16 0v7')}{line('M24 30v5')}</>,
+  magnifier: <><circle cx="20" cy="20" r="13" />{line('M30 30l13 13')}</>,
+  gear: <><circle cx="24" cy="24" r="7" />{line('M24 4v7M24 37v7M4 24h7M37 24h7M10 10l5 5M33 33l5 5M38 10l-5 5M15 33l-5 5')}<circle cx="24" cy="24" r="14" /></>,
+  checklist: <>{line('M6 10l3 3 6-6M6 24l3 3 6-6M6 38l3 3 6-6')}{line('M22 10h20M22 24h20M22 38h14')}</>,
+  flag: <>{line('M10 44V5')}{line('M10 7h26l-5 8 5 8H10')}</>,
+  layers: <>{line('M24 6l19 9-19 9-19-9z')}{line('M5 24l19 9 19-9')}{line('M5 33l19 9 19-9')}</>,
+  loop: <>{line('M38 18A15 15 0 0 0 10 16')}{line('M10 30a15 15 0 0 0 28 2')}{line('M38 8v10H28M10 40V30h10')}</>,
+  link: <>{line('M20 28l8-8')}{line('M22 14l4-4a8 8 0 0 1 12 12l-4 4M26 34l-4 4a8 8 0 0 1-12-12l4-4')}</>,
+  cheese: <>{line('M4 36V20L40 8l4 12v16z')}{line('M4 20h40')}<circle cx="14" cy="28" r="3" /><circle cx="28" cy="31" r="2.5" /><circle cx="36" cy="25" r="2" /></>,
+  bug: <><ellipse cx="24" cy="27" rx="10" ry="13" />{line('M24 14v26M14 22H6M14 32H6M34 22h8M34 32h8M18 10l-4-5M30 10l4-5')}</>,
+  server: <>{line('M8 6h32v14H8zM8 28h32v14H8z')}<circle cx="15" cy="13" r="1.8" fill="currentColor" /><circle cx="15" cy="35" r="1.8" fill="currentColor" />{line('M24 13h10M24 35h10')}</>,
+  chip: <>{line('M13 13h22v22H13z')}{line('M19 19h10v10H19z')}{line('M19 5v8M29 5v8M19 35v8M29 35v8M5 19h8M5 29h8M35 19h8M35 29h8')}</>,
+  robot: <>{line('M10 16h28v22H10z')}<circle cx="18" cy="26" r="3" /><circle cx="30" cy="26" r="3" />{line('M24 16V8M20 33h8M4 24v8M44 24v8')}<circle cx="24" cy="6" r="2" /></>,
+  book: <>{line('M24 12c-5-4-12-5-19-4v30c7-1 14 0 19 4 5-4 12-5 19-4V8c-7-1-14 0-19 4z')}{line('M24 12v30')}</>,
+  quote: <>{line('M8 24c0-8 4-13 11-15M8 24h9v13H8zM27 24c0-8 4-13 11-15M27 24h9v13h-9z')}</>,
+  eye: <>{line('M3 24s8-14 21-14 21 14 21 14-8 14-21 14S3 24 3 24z')}<circle cx="24" cy="24" r="6" /></>,
+  anchor: <><circle cx="24" cy="9" r="4" />{line('M24 13v30M14 20h20M8 30c0 8 7 13 16 13s16-5 16-13')}{line('M4 32l4-3 4 3M36 32l4-3 4 3')}</>,
+  dice: <>{line('M8 8h32v32H8z')}<circle cx="16" cy="16" r="2.5" fill="currentColor" /><circle cx="32" cy="16" r="2.5" fill="currentColor" /><circle cx="24" cy="24" r="2.5" fill="currentColor" /><circle cx="16" cy="32" r="2.5" fill="currentColor" /><circle cx="32" cy="32" r="2.5" fill="currentColor" /></>,
+  fork: <>{line('M24 44V26M24 26L10 10M24 26l14-16')}{line('M10 18V10h8M38 18v-8h-8')}</>,
+  battery: <>{line('M6 14h32v20H6zM38 20h4v8h-4')}{line('M11 19h8v10h-8z')}</>,
+  calendar: <>{line('M6 10h36v32H6zM6 18h36M15 5v9M33 5v9')}{line('M14 26h4M22 26h4M30 26h4M14 34h4M22 34h4')}</>,
+  inbox: <>{line('M4 26l7-18h26l7 18v14H4z')}{line('M4 26h12l3 6h10l3-6h12')}</>,
+  bell: <>{line('M12 34V22a12 12 0 0 1 24 0v12l4 4H8z')}{line('M20 42a4 4 0 0 0 8 0M24 6v4')}</>,
+  lifebuoy: <><circle cx="24" cy="24" r="18" /><circle cx="24" cy="24" r="8" />{line('M11 11l7 7M37 11l-7 7M11 37l7-7M37 37l-7-7')}</>,
+  bridge: <>{line('M2 34h44M6 34V22M42 34V22M2 22c8 0 14-8 22-8s14 8 22 8')}{line('M14 34v-8M24 34V16M34 34v-8')}</>,
+};

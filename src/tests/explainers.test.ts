@@ -1,10 +1,8 @@
 import { describe, expect, it } from 'vitest';
-import explainersJson from '../data/explainers.json';
-import { CARD_INDEX, EXPLAINERS, explainerSeconds } from '../services/content';
-import type { Explainer } from '../types';
+import { CARD_INDEX, EXPLAINERS, RAW_EXPLAINERS, explainerSeconds } from '../services/content';
 
 const VISUALS = ['scale', 'curve', 'cycle', 'bars', 'stack', 'versus', 'chain', 'statement'];
-const RAW = explainersJson as Explainer[];
+const RAW = RAW_EXPLAINERS;
 
 describe('motion explainers', () => {
   it('every explainer points at a real card, once', () => {

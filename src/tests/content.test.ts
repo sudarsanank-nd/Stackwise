@@ -2,6 +2,7 @@ import { describe, expect, it } from 'vitest';
 import { ALL_CARDS, CARD_INDEX, COLLISIONS, SCENARIOS } from '../services/content';
 import { FORMATS, TOPIC_IDS } from '../data/topics';
 import { wordCount } from '../utils/text';
+import { SYMBOL_IDS } from '../data/symbols';
 import type { KnowledgeCard } from '../types';
 
 const REQUIRED_STRINGS: (keyof KnowledgeCard)[] = [
@@ -23,6 +24,7 @@ describe('content schema', () => {
     expect(FORMATS, `${c.id} format`).toContain(c.format);
     expect(['illustrative', 'historical', 'documented']).toContain(c.exampleType);
     expect(['verified', 'needs-source-check', 'original-synthesis']).toContain(c.reviewStatus);
+    if (c.coverSymbol !== undefined) expect(SYMBOL_IDS as string[], `${c.id} coverSymbol`).toContain(c.coverSymbol);
     const words = wordCount(c.coreIdea);
     expect(words, `${c.id} coreIdea words=${words}`).toBeGreaterThanOrEqual(40);
     expect(words, `${c.id} coreIdea words=${words}`).toBeLessThanOrEqual(125);

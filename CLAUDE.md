@@ -14,7 +14,7 @@ Mobile-first micro-learning feed. React 19 + TypeScript 7 + Vite 8 + Tailwind CS
 - `src/services/` — pure logic (recommendation, signals, progress, search, session, knowledgeMap, explainBack, knowledgeCheck, onboarding, content). Keep business logic here, not in components.
 - `src/store/useAppStore.ts` — single zustand store, localStorage key `stackwise:v1`. Selectors must return stable values (no new arrays/Sets inside `useAppStore(...)`; derive with `useMemo`).
 - `src/data/cards/*.json` — knowledge cards; schema in `src/types/index.ts`; rules in `docs/content-guidelines.md`.
-- `src/pages/`, `src/components/` — UI. Brand marks in `components/brand/Logo.tsx`; card cover art in `components/cards/CoverArt.tsx` (topic families in `src/data/families.ts`); story view `pages/StoryPage.tsx`; motion explainers in `components/explainer/` with scripts in `src/data/explainers.json` (rules in `docs/content-guidelines.md`). Router is HashRouter in dev/prod builds, MemoryRouter in the `artifact` build mode.
+- `src/pages/`, `src/components/` — UI. Brand marks in `components/brand/Logo.tsx`; card cover art in `components/cards/CoverArt.tsx` (topic families in `src/data/families.ts`); story view `pages/StoryPage.tsx`; motion explainers in `components/explainer/` with scripts in `src/data/explainers/*.json` (rules in `docs/content-guidelines.md`). Router is HashRouter in dev/prod builds, MemoryRouter in the `artifact` build mode.
 
 ## Conventions
 - Recommendation weights and feed mix live in `WEIGHTS` / `MIX` in `src/services/recommendation.ts`; document changes in `docs/personalization-logic.md`.

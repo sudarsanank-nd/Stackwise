@@ -1,6 +1,8 @@
 import type { ReactNode } from 'react';
 import type { KnowledgeCard } from '../../types';
 import { familyOf, type FamilyMeta } from '../../data/families';
+import { SYMBOLS } from './symbols';
+import type { SymbolId } from '../../data/symbols';
 
 // Procedural cover art: every card gets a flat illustration drawn from its topic family,
 // varied by a seed from the card id. Pure SVG, so it costs nothing to ship and works offline.
@@ -240,17 +242,33 @@ function mind(v: number, f: FamilyMeta, r: Rand): ReactNode {
 
 const MOTIFS = { money, people, ai, ops, mind };
 
-export function CoverArt({ card, className = '', height = 200 }: { card: Pick<KnowledgeCard, 'id' | 'primaryTopic'>; className?: string; height?: number }) {
+export function CoverArt({ card, className = '', height = 200 }: { card: Pick<KnowledgeCard, 'id' | 'primaryTopic' | 'coverSymbol'>; className?: string; height?: number }) {
   const f = familyOf(card.primaryTopic);
   const seed = hash(card.id);
   const r = rng(seed);
   const variant = seed % 3;
   const cx = r() > 0.5 ? 330 : 30;
+  const cy = r() > 0.5 ? 10 : 190;
+  const big = between(r, 80, 120);
+  const symbol = card.coverSymbol && card.coverSymbol in SYMBOLS ? SYMBOLS[card.coverSymbol as SymbolId] : null;
+  // With an idea symbol, the family motif becomes a faint texture and the symbol takes centre stage.
+  const sx = 180 + (cx > 180 ? -1 : 1) * between(r, 20, 70);
   return (
     <svg viewBox="0 0 360 200" preserveAspectRatio="xMidYMid slice" width="100%" height={height} className={className} aria-hidden>
       <rect width="360" height="200" fill={f.bg} />
-      <circle cx={cx} cy={r() > 0.5 ? 10 : 190} r={between(r, 80, 120)} fill={f.mid} />
-      {MOTIFS[f.id](variant, f, r)}
+      <circle cx={cx} cy={cy} r={big} fill={f.mid} />
+      {symbol ? (
+        <>
+          <g opacity={0.22}>{MOTIFS[f.id](variant, f, r)}</g>
+          <circle cx={sx} cy={100} r={66} fill={f.light} />
+          <circle cx={sx + 52} cy={52} r={9} fill="#F2B33D" />
+          <g transform={`translate(${sx - 45.6} 54.4) scale(1.9)`} fill="none" stroke={NAVY} strokeWidth={2.8} strokeLinecap="round" strokeLinejoin="round">
+            {symbol}
+          </g>
+        </>
+      ) : (
+        MOTIFS[f.id](variant, f, r)
+      )}
     </svg>
   );
 }
