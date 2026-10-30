@@ -1,0 +1,896 @@
+[
+  {
+    "id": "poly-range-vs-deliberate-practice",
+    "title": "Generalist or specialist? It depends on the game",
+    "hook": "Both camps have real evidence. They mostly studied different kinds of skills.",
+    "coreIdea": "One view says expertise comes from years of focused, deliberate practice in one field, ideally started early. Another, argued by David Epstein in Range (2019), says many top performers sampled widely before specialising, and that breadth helps where problems are messy and feedback is slow. The two clash less than they seem. The case for focused practice is strongest in 'kind' domains like chess, music and sport, with stable rules and fast feedback. Breadth looks more useful in 'wicked' domains, where rules shift and yesterday's pattern can mislead.",
+    "whyItMatters": "Choosing depth or breadth without asking what kind of field you are in is choosing blind.",
+    "example": "A 2014 meta-analysis by Macnamara, Hambrick and Oswald found that deliberate practice explained a larger share of performance differences in games, music and sport than in education, and very little in professions.",
+    "exampleType": "documented",
+    "reflectionQuestion": "Is your main field closer to chess, with stable rules and fast feedback, or to strategy, where the rules keep moving?",
+    "suggestedAction": "Write down how quickly and clearly your work gives you feedback, and use that to decide whether your next learning hour goes deeper or wider.",
+    "primaryTopic": "polymathy",
+    "secondaryTopics": ["psychology", "decision-making"],
+    "difficulty": "advanced",
+    "format": "two-viewpoints",
+    "coverSymbol": "scale",
+    "source": {
+      "type": "book",
+      "title": "Range: Why Generalists Triumph in a Specialized World",
+      "author": "David Epstein",
+      "year": 2019
+    },
+    "attribution": "Deliberate practice: Ericsson, Krampe & Tesch-Römer (1993). 'Kind' and 'wicked' learning environments: Robin Hogarth, Educating Intuition (2001), as used by Epstein.",
+    "relatedCardIds": ["poly-t-and-comb-shaped", "poly-steep-early-curve", "poly-specialization-insects"],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-30",
+    "reviewStatus": "verified",
+    "contrarian": {
+      "question": "Should you specialise early and go deep, or sample widely first?",
+      "established": [
+        "Practice matters for skill in every domain studied, but how much of the difference between people it explains varies widely by domain.",
+        "Kind domains have stable rules and fast, accurate feedback; wicked domains do not."
+      ],
+      "positions": [
+        {
+          "label": "Go deep early",
+          "claim": "Sustained, structured practice in one field is the main route to expert performance.",
+          "evidence": [
+            "Ericsson and colleagues (1993) found that the best violin students had accumulated more solitary deliberate practice than less accomplished peers.",
+            "In the 2014 meta-analysis, practice explained more of the performance differences in games, music and sport than in other domains."
+          ],
+          "interpretation": "Where rules are stable and feedback is fast, focused depth pays off."
+        },
+        {
+          "label": "Sample, then specialise",
+          "claim": "Breadth and later specialisation help people find a field that fits and solve unfamiliar problems.",
+          "evidence": [
+            "Epstein (2019) collects cases and studies of top performers who sampled several activities before specialising.",
+            "Tetlock's forecasting research (Expert Political Judgment, 2005) found that experts who drew on many ideas forecast better than those committed to one big idea."
+          ],
+          "interpretation": "In wicked domains, range helps you notice when the usual playbook does not fit."
+        }
+      ],
+      "opinion": "Editorial view: treat it as a matching problem. Go deep where feedback is fast and rules are stable; keep range where they are not.",
+      "unresolved": [
+        "How much of the generalist advantage is causal, rather than talented people choosing to sample widely.",
+        "How to classify fields that are kind in some parts and wicked in others."
+      ],
+      "evidenceBalance": "balanced",
+      "balanceNote": "Each side is well supported in its own kind of domain. Neither has decisive evidence that applies everywhere, and much of the generalist case rests on examples and correlations."
+    },
+    "disputed": "How much deliberate practice explains is contested: Ericsson argued the 2014 meta-analysis used too loose a definition of deliberate practice.",
+    "deeper": "Epstein's examples are vivid but selected, so they illustrate rather than prove. Equally, the '10,000 hours rule' is a popular simplification that Ericsson himself disputed; there is no fixed number. A practical reading: early sampling helps you choose a field that fits, deliberate practice builds skill once you have chosen, and breadth keeps paying off in roles where problems arrive unlabelled. The trap is copying a chess prodigy's path into a career that behaves nothing like chess.",
+    "simpleExplanation": "Practising one thing a lot works best when the rules never change; knowing many things helps more when they do.",
+    "keyConcepts": [
+      {
+        "label": "Depth versus breadth",
+        "terms": ["deep", "depth", "specialis", "specializ", "breadth", "broad", "generalist", "range", "sample"],
+        "minMatches": 1
+      },
+      {
+        "label": "Kind versus wicked domains",
+        "terms": ["kind", "wicked", "feedback", "stable", "rules", "messy"],
+        "minMatches": 1
+      },
+      {
+        "label": "The domain decides",
+        "terms": ["depends", "domain", "field", "match", "context", "type of"],
+        "minMatches": 1
+      }
+    ],
+    "misconceptions": [
+      {
+        "triggers": ["10,000 hours", "10000 hours", "ten thousand hours"],
+        "note": "There is no magic number of hours. Ericsson's research found practice amounts varied widely, and he disputed the popular '10,000-hour rule'."
+      }
+    ]
+  },
+  {
+    "id": "poly-t-and-comb-shaped",
+    "title": "Shaped like a T, or like a comb?",
+    "hook": "The letter that describes your skills says a lot about the problems you can take on alone.",
+    "coreIdea": "Picture your skills as a letter. An I is one deep specialism. A dash is broad but shallow knowledge of many things. A T combines both: deep in one area, with enough working knowledge of neighbouring fields to talk to the people in them. A comb has several deep teeth, usually grown one at a time over years. The shape is not a ranking. It describes which problems you can solve on your own and which ones you need partners for.",
+    "whyItMatters": "Knowing your shape tells you whether your next learning hour should deepen a tooth or widen the bar.",
+    "example": "Illustrative: a support engineer who knows networking deeply (the stem) and can read a sales contract and a basic SQL query (the bar) resolves escalations that would otherwise bounce between three teams.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Which neighbouring field do you depend on every week but could not hold a basic conversation in?",
+    "suggestedAction": "Draw your own letter: list the one or two areas where you are deep and five where you are conversational, then circle the gap that costs you most.",
+    "primaryTopic": "polymathy",
+    "secondaryTopics": ["productivity", "people-management"],
+    "difficulty": "beginner",
+    "format": "explain-beginner",
+    "coverSymbol": "layers",
+    "source": {
+      "type": "original",
+      "title": "Original synthesis of the common T-shaped skills metaphor"
+    },
+    "attribution": "The T-shaped metaphor is widely used in design and hiring; its exact origin is unclear.",
+    "relatedCardIds": ["poly-range-vs-deliberate-practice", "inv-circle-of-competence", "connect-portfolio-team"],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-30",
+    "reviewStatus": "original-synthesis",
+    "deeper": "The bar of the T is not trivia. It is enough vocabulary and enough mental models to ask good questions, spot when a neighbour's problem is really yours, and judge an expert's answer. A comb takes time: most people grow a second tooth by following a real problem from their first field into another, not by starting from zero. The opposite risk is a long bar with no stem: broad familiarity that never becomes anything people can trust you with.",
+    "simpleExplanation": "Be really good at one thing and know a little about the things around it.",
+    "keyConcepts": [
+      {
+        "label": "Deep in one area",
+        "terms": ["deep", "depth", "stem", "special", "expert"],
+        "minMatches": 1
+      },
+      {
+        "label": "Working knowledge of neighbours",
+        "terms": ["broad", "bar", "neighbour", "neighbor", "adjacent", "talk to", "a bit", "little"],
+        "minMatches": 1
+      },
+      {
+        "label": "Comb: several deep areas",
+        "terms": ["comb", "several", "multiple", "teeth", "more than one"],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "poly-latticework-of-models",
+    "title": "Munger's latticework: facts need a frame",
+    "hook": "Isolated facts fall out of your head. Facts hung on a frame stay usable.",
+    "coreIdea": "In a 1994 talk at USC's business school, investor Charlie Munger argued that you can't really know anything if you just remember isolated facts. You need a 'latticework' of models drawn from many disciplines, such as psychology, maths, physics, biology and economics, and you hang your experience on it. His point was practical. A person with only one model will twist every problem to fit it. Several models from different fields let you check one against another and notice what a single lens misses.",
+    "whyItMatters": "A single favourite framework quietly turns every problem into the one problem it knows how to solve.",
+    "example": "In the same talk, Munger warned about the 'man with a hammer', to whom every problem looks pretty much like a nail, as the cost of knowing only one discipline's models.",
+    "exampleType": "historical",
+    "reflectionQuestion": "Which model do you reach for first, and when did it last mislead you?",
+    "suggestedAction": "Pick a current decision and write how it looks through two models from different fields, for example incentives (economics) and feedback loops (systems).",
+    "primaryTopic": "polymathy",
+    "secondaryTopics": ["mental-models", "decision-making"],
+    "difficulty": "intermediate",
+    "format": "mental-model",
+    "coverSymbol": "puzzle",
+    "source": {
+      "type": "primary",
+      "title": "A Lesson on Elementary, Worldly Wisdom As It Relates To Investment Management & Business (talk at USC Business School)",
+      "author": "Charlie Munger",
+      "year": 1994
+    },
+    "relatedCardIds": ["mm-inversion", "mm-map-territory", "dm-second-order-thinking"],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-30",
+    "reviewStatus": "verified",
+    "deeper": "A latticework is not a collection of slogans. Each model needs to be understood well enough to know when it applies and when it doesn't: compounding, for example, assumes growth continues, which is rarely true forever. Munger suggested that a limited set of big ideas from the main disciplines carries most of the weight, so knowing a handful well beats a long list. Watch for collecting models as a hobby; the test is whether one ever changes a decision you make.",
+    "simpleExplanation": "Learn the big ideas from many subjects so you can look at a problem in more than one way.",
+    "keyConcepts": [
+      {
+        "label": "Models from many disciplines",
+        "terms": ["model", "discipline", "many fields", "different fields", "subjects", "lattice"],
+        "minMatches": 1
+      },
+      {
+        "label": "Isolated facts are not usable knowledge",
+        "terms": ["isolated", "facts", "frame", "hang", "connect", "structure"],
+        "minMatches": 1
+      },
+      {
+        "label": "One model distorts",
+        "terms": ["hammer", "nail", "one model", "single", "lens", "twist"],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "poly-far-transfer-myth",
+    "title": "Chess won't make you better at everything",
+    "hook": "Getting good at one thing rarely makes you better at unrelated things on its own.",
+    "coreIdea": "A popular belief says training one demanding skill, such as chess, music or brain-training games, sharpens your mind in general. Psychologists call that far transfer, and the evidence for it is weak. Learning usually transfers to tasks that look and work like the one you practised, which is near transfer, and fades as tasks get more different. Chess players do get better at chess. Whether that makes them better at maths or business is a separate question that well-controlled studies have mostly answered with no effect or a very small one.",
+    "whyItMatters": "If transfer doesn't happen by itself, someone learning across fields has to build the bridges on purpose.",
+    "example": "Sala and Gobet (2017) reviewed meta-analyses of chess, music and working-memory training. The better the study design, especially with active control groups, the smaller the far-transfer effect, often close to zero.",
+    "exampleType": "documented",
+    "reflectionQuestion": "Which skill do you assume 'carries over' to your work, and have you ever checked that it does?",
+    "suggestedAction": "After learning something in another field this week, write one explicit sentence on how it could apply to your job instead of waiting for it to transfer by itself.",
+    "primaryTopic": "polymathy",
+    "secondaryTopics": ["psychology"],
+    "difficulty": "advanced",
+    "format": "myth-vs-reality",
+    "coverSymbol": "link",
+    "source": {
+      "type": "paper",
+      "title": "Does Far Transfer Exist? Negative Evidence From Chess, Music, and Working Memory Training",
+      "author": "Giovanni Sala & Fernand Gobet",
+      "year": 2017,
+      "url": "https://doi.org/10.1177/0963721417712760"
+    },
+    "attribution": "Taxonomy of transfer: Susan Barnett & Stephen Ceci, 'When and where do we apply what we learn?' (2002).",
+    "relatedCardIds": ["poly-analogy-structure", "poly-range-vs-deliberate-practice"],
+    "contrastingCardIds": ["poly-nobel-avocations"],
+    "createdAt": "2026-10-30",
+    "reviewStatus": "verified",
+    "disputed": "Some researchers argue for small far-transfer effects under specific conditions. The debate is about how small the effect is, not about large general gains.",
+    "deeper": "This is not a case against breadth. Transfer happens more when people notice that two situations share an underlying structure, which is why explicit comparison and analogy help. Barnett and Ceci (2002) described transfer as depending on how far apart the content, context, time and setting are. The practical takeaway: learning widely gives you raw material, but connecting it is a separate skill you have to practise. The bridge rarely builds itself.",
+    "simpleExplanation": "Getting good at chess mostly makes you good at chess, not smarter at everything.",
+    "keyConcepts": [
+      {
+        "label": "Far transfer is weak",
+        "terms": ["far transfer", "transfer", "weak", "rarely", "doesn't carry", "small effect"],
+        "minMatches": 1
+      },
+      {
+        "label": "Near transfer works",
+        "terms": ["near", "similar", "same task", "related", "look alike"],
+        "minMatches": 1
+      },
+      {
+        "label": "Build the bridge deliberately",
+        "terms": ["deliberate", "on purpose", "explicit", "connect", "bridge", "apply"],
+        "minMatches": 1
+      }
+    ],
+    "misconceptions": [
+      {
+        "triggers": ["brain training", "makes you smarter", "smarter overall", "general intelligence"],
+        "note": "Well-controlled studies find little evidence that brain-training games or chess raise general intelligence; you mostly get better at the trained task."
+      }
+    ]
+  },
+  {
+    "id": "poly-analogy-structure",
+    "title": "Good analogies copy structure, not surface",
+    "hook": "A story about attacking a fortress helped people solve a tumour problem, but only once someone pointed it out.",
+    "coreIdea": "Dedre Gentner's structure-mapping theory (1983) describes a good analogy as one that carries over relationships rather than surface features. An atom was once compared to a solar system not because both are round, but because small things circle a heavier centre. That is how ideas cross fields: you recognise the same causal shape in a new setting. The catch is that people match on surface features by default. Spotting a deep match usually takes deliberately asking where you have seen this pattern of cause and effect before.",
+    "whyItMatters": "Most borrowing between fields fails because people copy what something looks like instead of why it works.",
+    "example": "In Gick and Holyoak's 1980 experiments, people read a story about troops converging on a fortress from many roads, then tried to destroy a tumour with radiation without harming healthy tissue. Many missed the parallel until told to use the story; with that hint, most solved it.",
+    "exampleType": "documented",
+    "reflectionQuestion": "What problem at work shares a cause-and-effect shape with something from a completely different field you know?",
+    "suggestedAction": "Describe one current problem in abstract, jargon-free terms, then list two other fields where that abstract problem shows up.",
+    "primaryTopic": "polymathy",
+    "secondaryTopics": ["psychology", "mental-models"],
+    "difficulty": "advanced",
+    "format": "big-idea",
+    "coverSymbol": "key",
+    "source": {
+      "type": "paper",
+      "title": "Structure-mapping: A theoretical framework for analogy",
+      "author": "Dedre Gentner",
+      "year": 1983
+    },
+    "attribution": "Fortress and tumour study: Mary Gick & Keith Holyoak, 'Analogical problem solving' (1980). The radiation problem was originally posed by Karl Duncker.",
+    "relatedCardIds": ["poly-far-transfer-myth", "poly-medici-intersections", "poly-checklists-aviation-surgery"],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-30",
+    "reviewStatus": "verified",
+    "deeper": "Analogies can also mislead: the solar-system picture of the atom was replaced because electrons don't follow orbits like planets. Use an analogy to generate a hypothesis, then check which relationships actually hold in the new setting. Research on analogical learning suggests that comparing two examples side by side helps people extract the shared structure better than studying one example alone, which is a good reason to learn a principle from cases in two different fields.",
+    "simpleExplanation": "A good comparison is about how things work, not how they look.",
+    "keyConcepts": [
+      {
+        "label": "Map relationships, not features",
+        "terms": ["structure", "relationship", "relation", "how it works", "cause", "not surface", "deep"],
+        "minMatches": 1
+      },
+      {
+        "label": "People default to surface matches",
+        "terms": ["surface", "looks like", "appearance", "miss", "hint", "notice"],
+        "minMatches": 1
+      },
+      {
+        "label": "Ask where you've seen the pattern",
+        "terms": ["pattern", "seen before", "other field", "analogy", "parallel", "compare"],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "poly-interleaving",
+    "title": "Mixing topics feels worse and works better",
+    "hook": "Learners in one study preferred the method that helped them less.",
+    "coreIdea": "Blocked practice means doing all of one type before moving to the next: AAA, BBB, CCC. Interleaving mixes them: ABC, BCA, CAB. Blocking feels smoother, so people believe it works better. But for learning to tell similar things apart, like which formula fits this problem or which painter made this picture, interleaving often wins on later tests. Mixing forces you to choose the approach each time, which is what real problems demand. How fluent practice feels is a poor guide to what you will remember.",
+    "whyItMatters": "If you judge study methods by how easy they feel, you will pick the ones that teach you less.",
+    "example": "Kornell and Bjork (2008) showed people paintings by twelve artists, either grouped by artist or mixed together. The mixed group was better at identifying the artists of new paintings, yet most participants believed grouping had helped them more.",
+    "exampleType": "documented",
+    "reflectionQuestion": "Where do you practise one thing in a long block that you'll later need to tell apart from something similar?",
+    "suggestedAction": "In your next practice session, shuffle two or three related topics or problem types instead of finishing one before starting the next.",
+    "primaryTopic": "polymathy",
+    "secondaryTopics": ["psychology", "productivity"],
+    "difficulty": "intermediate",
+    "format": "counterintuitive",
+    "coverSymbol": "dice",
+    "source": {
+      "type": "paper",
+      "title": "Learning Concepts and Categories: Is Spacing the \"Enemy of Induction\"?",
+      "author": "Nate Kornell & Robert A. Bjork",
+      "year": 2008
+    },
+    "relatedCardIds": ["poly-ebbinghaus-spacing", "poly-retrieval-practice"],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-30",
+    "reviewStatus": "verified",
+    "deeper": "Interleaving helps most when categories are easy to confuse; mixing completely unrelated subjects gains less. It also works partly because it spaces out practice of each type. Robert Bjork calls methods like this 'desirable difficulties': harder in the moment, better for retention. But difficulty is not automatically good. If you are brand new to a topic, a short block to grasp the basics can make sense before you start mixing.",
+    "simpleExplanation": "Practising different kinds of problems mixed together feels harder but helps you learn which is which.",
+    "keyConcepts": [
+      {
+        "label": "Interleaving mixes problem types",
+        "terms": ["mix", "interleav", "shuffle", "alternate", "abc"],
+        "minMatches": 1
+      },
+      {
+        "label": "Blocking feels better but teaches less",
+        "terms": ["block", "feels", "easy", "smooth", "fluent", "believe"],
+        "minMatches": 1
+      },
+      {
+        "label": "Helps tell similar things apart",
+        "terms": ["tell apart", "discriminat", "choose", "which", "similar", "distinguish"],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "poly-ebbinghaus-spacing",
+    "title": "The man who memorised nonsense to time forgetting",
+    "hook": "In the 1880s, one psychologist used himself as the test subject for how fast memories fade.",
+    "coreIdea": "Hermann Ebbinghaus memorised lists of nonsense syllables and measured how much he had to relearn after different delays. He found that forgetting is fast at first and then slows down, a pattern now called the forgetting curve. He also found that spreading repetitions over time made learning stick better than cramming the same repetitions together. Over a century of later research has confirmed this spacing effect many times. It is one of the most reliable findings in learning science, and one of the least used.",
+    "whyItMatters": "Cramming feels productive, but spaced review gets more lasting memory out of the same study time.",
+    "example": "Ebbinghaus published Über das Gedächtnis (Memory) in 1885. A 2015 replication by Murre and Dros, again with one person relearning syllable lists, produced a forgetting curve similar to his.",
+    "exampleType": "historical",
+    "reflectionQuestion": "What did you learn in the last month that you haven't looked at since?",
+    "suggestedAction": "Pick one thing you learned this week and schedule three short reviews: tomorrow, in a few days, and next week.",
+    "primaryTopic": "polymathy",
+    "secondaryTopics": ["psychology", "productivity"],
+    "difficulty": "beginner",
+    "format": "historical-lesson",
+    "coverSymbol": "hourglass",
+    "source": {
+      "type": "book",
+      "title": "Über das Gedächtnis (Memory: A Contribution to Experimental Psychology)",
+      "author": "Hermann Ebbinghaus",
+      "year": 1885
+    },
+    "attribution": "Replication: Jaap Murre & Joeri Dros, 'Replication and Analysis of Ebbinghaus' Forgetting Curve', PLOS ONE (2015).",
+    "relatedCardIds": ["poly-retrieval-practice", "poly-interleaving", "poly-weekly-routine"],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-30",
+    "reviewStatus": "verified",
+    "deeper": "Ebbinghaus studied one person, himself, learning meaningless material, so his exact curve doesn't describe every kind of memory; meaningful material is usually forgotten more slowly. But the spacing effect has been found across many materials and ages, and Cepeda and colleagues' 2006 meta-analysis of distributed-practice studies is a common reference. Spaced repetition apps automate the schedule, lengthening the gap each time you remember. The best gap depends on how long you need to remember something.",
+    "simpleExplanation": "You remember things longer if you review them a few times spread out, instead of all at once.",
+    "keyConcepts": [
+      {
+        "label": "Forgetting is fast, then slows",
+        "terms": ["forget", "curve", "fast at first", "fade", "decay"],
+        "minMatches": 1
+      },
+      {
+        "label": "Spacing beats cramming",
+        "terms": ["spac", "spread", "cram", "over time", "distributed", "intervals"],
+        "minMatches": 1
+      },
+      {
+        "label": "Schedule reviews",
+        "terms": ["review", "schedule", "repeat", "repetition", "revisit"],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "poly-retrieval-practice",
+    "title": "Testing yourself beats rereading",
+    "hook": "Rereading feels like learning. Trying to recall is what makes it stick.",
+    "coreIdea": "The testing effect is the finding that pulling information out of memory strengthens it more than putting it in again. Rereading notes makes material feel familiar, and familiarity is easy to mistake for knowing. Closing the book and trying to recall, with a blank-page summary, flashcards or practice questions, takes effort and exposes gaps, which is the point. Each successful retrieval makes the next one easier. A test is not only a measurement of learning; it is a way of learning.",
+    "whyItMatters": "Swapping some rereading for self-testing is one of the cheapest upgrades to how you learn anything.",
+    "example": "In Roediger and Karpicke's 2006 study, students who read a passage and then practised recalling it remembered more a week later than students who spent that time rereading, even though the rereaders did slightly better on a test five minutes later.",
+    "exampleType": "documented",
+    "reflectionQuestion": "When you last felt you 'knew' something, had you checked by recalling it without looking?",
+    "suggestedAction": "Try this experiment this week: after reading something, close it, write everything you remember on a blank page, then check what you missed.",
+    "primaryTopic": "polymathy",
+    "secondaryTopics": ["psychology", "productivity"],
+    "difficulty": "beginner",
+    "format": "experiment",
+    "coverSymbol": "brain",
+    "source": {
+      "type": "paper",
+      "title": "Test-Enhanced Learning: Taking Memory Tests Improves Long-Term Retention",
+      "author": "Henry L. Roediger III & Jeffrey D. Karpicke",
+      "year": 2006,
+      "url": "https://doi.org/10.1111/j.1467-9280.2006.01693.x"
+    },
+    "relatedCardIds": ["poly-ebbinghaus-spacing", "poly-feynman-explain", "poly-interleaving"],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-30",
+    "reviewStatus": "verified",
+    "deeper": "Retrieval works best when it is effortful but mostly successful, and when you check your answers so mistakes don't stick. It combines well with spacing: recall something after a delay, not straight after reading it. Low-stakes quizzes count; the benefit doesn't need grades or pressure. A common misuse is flashcards that only test recognition of a term. Try to produce the idea in your own words rather than picking it out from options.",
+    "simpleExplanation": "Trying to remember something without looking helps you remember it better than reading it again.",
+    "keyConcepts": [
+      {
+        "label": "Recall strengthens memory",
+        "terms": ["recall", "retriev", "test", "quiz", "remember", "pull out"],
+        "minMatches": 1
+      },
+      {
+        "label": "Rereading creates false familiarity",
+        "terms": ["reread", "re-read", "familiar", "feels", "illusion"],
+        "minMatches": 1
+      },
+      {
+        "label": "Effort exposes gaps",
+        "terms": ["effort", "gap", "hard", "blank page", "flashcard", "check"],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "poly-feynman-explain",
+    "title": "Explain it simply to find what you don't know",
+    "hook": "The 'Feynman technique' is useful, but Feynman never wrote it down under that name.",
+    "coreIdea": "The popular four-step method goes like this: pick a concept, explain it in plain words as if to a beginner, notice where your explanation stalls or leans on jargon, then go back to the source and simplify again. It works because explaining exposes gaps that reading hides; you can't fudge a step you have to say out loud. The name honours physicist Richard Feynman's reputation for clear explanation, but the step-by-step recipe appears to have been packaged by later writers, not by Feynman.",
+    "whyItMatters": "Explaining an idea to a newcomer is a fast, honest test of whether you actually understand it.",
+    "example": "Illustrative: someone explains inflation to a teenager and gets stuck at 'why does printing money raise prices?' That stall marks exactly what to look up next.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Which idea you use at work could you not explain to a newcomer without jargon?",
+    "suggestedAction": "Pick one concept from your field and write a five-sentence explanation for a 12-year-old, then underline every place you had to hand-wave.",
+    "primaryTopic": "polymathy",
+    "secondaryTopics": ["communication", "productivity"],
+    "difficulty": "beginner",
+    "format": "framework",
+    "coverSymbol": "bulb",
+    "source": {
+      "type": "original",
+      "title": "Popular study method named after Richard Feynman"
+    },
+    "attribution": "The four-step 'Feynman technique' label appears to come from study-skills writers in the 2010s rather than from Feynman. Related research: Chi et al., 'Eliciting self-explanations improves understanding' (1994).",
+    "relatedCardIds": ["comm-curse-of-knowledge", "poly-retrieval-practice"],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-30",
+    "reviewStatus": "needs-source-check",
+    "deeper": "There is research behind the core move: Michelene Chi and colleagues found in 1994 that students prompted to explain a text to themselves understood it better. Simplifying has limits, though. Some ideas lose something real when you strip away the technical terms, and a smooth explanation can still be wrong. Use plain words to find gaps, then check your version against a reliable source rather than trusting that 'simple' means 'correct'.",
+    "simpleExplanation": "If you can't explain something in easy words, you've found the part you don't understand yet.",
+    "keyConcepts": [
+      {
+        "label": "Explain in plain words",
+        "terms": ["explain", "plain", "simple", "beginner", "child", "teach"],
+        "minMatches": 1
+      },
+      {
+        "label": "Stalls reveal gaps",
+        "terms": ["gap", "stuck", "stall", "jargon", "don't understand", "hand-wave"],
+        "minMatches": 1
+      },
+      {
+        "label": "Go back and refine",
+        "terms": ["go back", "source", "refine", "again", "simplify", "check"],
+        "minMatches": 1
+      }
+    ],
+    "misconceptions": [
+      {
+        "triggers": ["feynman invented", "feynman's method", "feynman created", "feynman wrote"],
+        "note": "Feynman was famous for clear explanation, but the named four-step technique appears to have been assembled by later writers."
+      }
+    ]
+  },
+  {
+    "id": "poly-commonplace-book",
+    "title": "Collecting notes is not the same as connecting them",
+    "hook": "Readers have kept commonplace books for centuries. The useful ones got reread.",
+    "coreIdea": "A commonplace book is a personal notebook of quotes, observations and ideas, often from many subjects. The common mistake today is treating notes as a storage problem: hundreds of highlights saved to an app and never seen again. Commonplace books earned their reputation because their keepers organised, revisited and recombined entries, adding headings, cross-references and their own reactions. The value arrives on the second visit, when a note from one field sits next to a note from another and suggests something new.",
+    "whyItMatters": "A note you never revisit is a receipt for reading, not a tool for thinking.",
+    "example": "Leonardo da Vinci's surviving notebooks mix anatomy, engineering, optics, painting advice and to-do lists on the same pages. John Locke went further and published a method for indexing a commonplace book so entries could be found again by subject.",
+    "exampleType": "historical",
+    "reflectionQuestion": "When did you last reread your own notes without needing something specific from them?",
+    "suggestedAction": "Spend 15 minutes this week rereading old notes; for any two from different topics that connect, write one line about how.",
+    "primaryTopic": "polymathy",
+    "secondaryTopics": ["productivity"],
+    "difficulty": "beginner",
+    "format": "common-mistake",
+    "coverSymbol": "book",
+    "source": {
+      "type": "book",
+      "title": "Leonardo da Vinci",
+      "author": "Walter Isaacson",
+      "year": 2017
+    },
+    "attribution": "Locke's indexing method: John Locke, 'A New Method of Making Common-Place-Books' (English edition 1706).",
+    "relatedCardIds": ["poly-medici-intersections", "poly-weekly-routine"],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-30",
+    "reviewStatus": "verified",
+    "deeper": "You don't need a special system. A paper notebook with a simple index works, and so do digital notes, as long as there is a regular habit of review. Two practices help: write a line in your own words with each saved quote, so you remember why it mattered, and tag notes by the underlying idea rather than by the source. The trap is spending more time building the note system than using it.",
+    "simpleExplanation": "Saving notes only helps if you go back, read them again and link them together.",
+    "keyConcepts": [
+      {
+        "label": "Collecting is not connecting",
+        "terms": ["collect", "hoard", "save", "highlight", "storage", "never read"],
+        "minMatches": 1
+      },
+      {
+        "label": "Revisit and recombine",
+        "terms": ["revisit", "reread", "re-read", "review", "recombin", "go back"],
+        "minMatches": 1
+      },
+      {
+        "label": "Cross-field links",
+        "terms": ["connect", "link", "cross", "different topic", "next to", "index"],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "poly-medici-intersections",
+    "title": "New ideas often live where fields meet",
+    "hook": "The most-cited science tends to mix the familiar with a small dose of the unusual.",
+    "coreIdea": "In The Medici Effect (2004), Frans Johansson argued that breakthrough ideas often come from intersections, where concepts from different fields, cultures or industries collide. He named it after the Medici family, whose patronage in Renaissance Florence brought artists, scientists, poets and architects together. The underlying idea is combinatorial: most new ideas are new combinations of existing ones, so the more varied the ingredients you carry, the more unusual combinations become possible. Johansson's evidence is largely stories, so treat it as a useful lens rather than a law.",
+    "whyItMatters": "If all your inputs come from one field, your ideas will tend to look like everyone else's in that field.",
+    "example": "Uzzi and colleagues (2013) analysed millions of scientific papers and found that the highest-impact work typically combined mostly conventional pairings of prior research with a small share of unusual ones.",
+    "exampleType": "documented",
+    "reflectionQuestion": "Which field outside your own regularly feeds your work, and which one never has?",
+    "suggestedAction": "Read one article from a field unrelated to your work this week and write down one idea from it you could test in your job.",
+    "primaryTopic": "polymathy",
+    "secondaryTopics": ["mental-models", "technology"],
+    "difficulty": "intermediate",
+    "format": "big-idea",
+    "coverSymbol": "people",
+    "source": {
+      "type": "book",
+      "title": "The Medici Effect",
+      "author": "Frans Johansson",
+      "year": 2004
+    },
+    "attribution": "Brian Uzzi, Satyam Mukherjee, Michael Stringer & Benjamin Jones, 'Atypical Combinations and Scientific Impact', Science (2013), https://doi.org/10.1126/science.1240474",
+    "relatedCardIds": ["poly-analogy-structure", "poly-commonplace-book", "poly-nobel-avocations"],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-30",
+    "reviewStatus": "verified",
+    "deeper": "The Uzzi finding is a useful corrective to the romance of wild mash-ups: novelty helped most when it sat on a base of familiar work. With too many unfamiliar pieces, an idea is hard for others to understand or build on. Intersections also need someone who knows both sides well enough to judge which combinations make sense. Breadth gives you the ingredients; depth in at least one area tells you which recipes are worth trying.",
+    "simpleExplanation": "Mixing ideas from different subjects can create new ideas nobody in one subject would think of.",
+    "keyConcepts": [
+      {
+        "label": "Ideas from intersections",
+        "terms": ["intersection", "where fields meet", "collide", "different fields", "cross"],
+        "minMatches": 1
+      },
+      {
+        "label": "New ideas are combinations",
+        "terms": ["combin", "mix", "recombin", "ingredients"],
+        "minMatches": 1
+      },
+      {
+        "label": "Mostly familiar plus a little unusual",
+        "terms": ["familiar", "conventional", "unusual", "novel", "small dose", "atypical"],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "poly-map-before-territory",
+    "title": "New field? Get the map before the details",
+    "hook": "Your first week in a new subject decides whether later details have anywhere to land.",
+    "coreIdea": "When you enter a new field, spend the first hours on its map rather than its hardest material: the core vocabulary, the main questions the field asks, its big debates, and how experts divide it into parts. A good introductory textbook's table of contents, a glossary and a survey article do this cheaply. With a map, each new detail has a place to go and you can tell a central idea from a niche one. Without it, details pile up unconnected and are quickly forgotten.",
+    "whyItMatters": "Learning without a map is slow and forgettable; the map makes every later hour count for more.",
+    "example": "Illustrative: a support manager wants to learn statistics to read A/B test reports. Option one: open a dense textbook at chapter one. Option two: first spend two evenings on the twenty key terms, the main questions (estimate, compare, predict) and what 'significant' does and doesn't mean. Which would you choose, and why?",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "In the last subject you tried to learn, could you have named its main branches after the first week?",
+    "suggestedAction": "For one field you're curious about, write a one-page map: key terms, main questions, major debates, and the two or three books experts recommend to beginners.",
+    "primaryTopic": "polymathy",
+    "secondaryTopics": ["mental-models", "productivity"],
+    "difficulty": "beginner",
+    "format": "what-would-you-do",
+    "coverSymbol": "compass",
+    "source": {
+      "type": "paper",
+      "title": "Categorization and Representation of Physics Problems by Experts and Novices",
+      "author": "Michelene Chi, Paul Feltovich & Robert Glaser",
+      "year": 1981
+    },
+    "relatedCardIds": ["mm-map-territory", "poly-steep-early-curve", "poly-analogy-structure"],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-30",
+    "reviewStatus": "verified",
+    "deeper": "Expert-novice research supports the value of structure: Chi, Feltovich and Glaser (1981) found that physics experts sorted problems by the underlying principle, such as conservation of energy, while novices sorted them by surface features like inclined planes. A map won't make you an expert, but it points you at the principles experts organise around. Don't stay at the map stage forever; the map is a start, and it gets corrected once you work real problems.",
+    "simpleExplanation": "Before learning lots of details, first learn the main words and big questions of a subject.",
+    "keyConcepts": [
+      {
+        "label": "Learn the map first",
+        "terms": ["map", "overview", "big picture", "structure", "outline", "first"],
+        "minMatches": 1
+      },
+      {
+        "label": "Vocabulary, questions, debates",
+        "terms": ["vocabulary", "terms", "glossary", "questions", "debates", "branches"],
+        "minMatches": 1
+      },
+      {
+        "label": "Details need somewhere to land",
+        "terms": ["place", "land", "hook", "connect", "forget", "pile up"],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "poly-steep-early-curve",
+    "title": "The first hours in a new skill pay the most",
+    "hook": "Improvement is fastest at the start; after that, each extra gain costs more time.",
+    "coreIdea": "Across many skills, practice follows a curve of diminishing returns: early practice brings big, visible improvement, and later improvement keeps coming but in smaller steps for the same effort. That shape has two lessons for anyone learning across fields. Reaching useful competence in a new field is often cheaper than it looks from outside, because you are on the steep part. And going from very good to elite in any one field is expensive. Neither fact tells you which to choose; they help you price the choice.",
+    "whyItMatters": "Knowing where you are on the curve tells you whether one more hour buys a big gain or a small one.",
+    "example": "Illustrative: in her first month of learning to cook, someone goes from burnt rice to a dependable weekly menu. In her fifth year, a month of effort might refine one technique. Both months took the same time.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "In which of your skills are you on the flat part of the curve, and is the remaining gain worth the hours?",
+    "suggestedAction": "List three skills, mark each as steep (fast gains still available) or flat (slow gains), and put one learning hour into a steep one this week.",
+    "primaryTopic": "polymathy",
+    "secondaryTopics": ["productivity", "mental-models"],
+    "difficulty": "intermediate",
+    "format": "mental-model",
+    "coverSymbol": "chart-up",
+    "source": {
+      "type": "paper",
+      "title": "Mechanisms of Skill Acquisition and the Law of Practice",
+      "author": "Allen Newell & Paul Rosenbloom",
+      "year": 1981
+    },
+    "relatedCardIds": ["poly-range-vs-deliberate-practice", "poly-t-and-comb-shaped", "poly-map-before-territory"],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-30",
+    "reviewStatus": "verified",
+    "disputed": "Whether the practice curve is best described as a power law or an exponential is debated (Heathcote, Brown & Mewhort, 2000); both shapes show steep early gains that flatten.",
+    "deeper": "Learning curves describe averages; individual curves are bumpier, with plateaus and sudden jumps. The flattening isn't a reason to stop: in some fields small gains at the top matter enormously, and specialists exist for good reason. Be wary of popular claims that any skill can be learned in a fixed number of hours. The shape of the curve is real, but the numbers depend on the skill, the person and what 'learned' means.",
+    "simpleExplanation": "When you start something new you improve fast, and later you improve more slowly.",
+    "keyConcepts": [
+      {
+        "label": "Diminishing returns",
+        "terms": ["diminishing", "slower", "flatten", "smaller gains", "less per hour", "flat"],
+        "minMatches": 1
+      },
+      {
+        "label": "Early gains are steep",
+        "terms": ["early", "start", "beginning", "steep", "fast", "first hours"],
+        "minMatches": 1
+      },
+      {
+        "label": "Price the choice",
+        "terms": ["cost", "price", "worth", "trade", "expensive", "cheap"],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "poly-nobel-avocations",
+    "title": "Do Nobel scientists have more artistic hobbies?",
+    "hook": "Top scientists are more likely than their peers to paint, play or craft. That's a correlation, not a recipe.",
+    "coreIdea": "Robert Root-Bernstein and colleagues combed biographies, autobiographies and obituaries of eminent scientists and tallied their arts and crafts hobbies. Nobel laureates were more likely to have such hobbies than members of national scientific academies, who in turn were more likely than typical scientists and the general public. Many of the scientists said their hobbies fed their science, through skills like visual thinking or pattern recognition. The study can't show causation: curious, energetic people might simply do more of everything.",
+    "whyItMatters": "Hobbies outside your field may be part of a creative working life rather than a distraction from it, though nothing guarantees it.",
+    "example": "Root-Bernstein and colleagues (2008), 'Arts Foster Scientific Success: Avocations of Nobel, National Academy, Royal Society, and Sigma Xi Members', compared these groups using biographical sources and earlier surveys.",
+    "exampleType": "documented",
+    "reflectionQuestion": "Which of your hobbies uses a way of thinking, such as spatial, musical or hands-on, that your work never asks for?",
+    "suggestedAction": "Spend one hour this week on a hands-on or artistic activity, and afterwards note whether it gave you any idea or angle for your work.",
+    "primaryTopic": "polymathy",
+    "secondaryTopics": ["psychology"],
+    "difficulty": "intermediate",
+    "format": "case-study",
+    "coverSymbol": "crown",
+    "source": {
+      "type": "paper",
+      "title": "Arts Foster Scientific Success: Avocations of Nobel, National Academy, Royal Society, and Sigma Xi Members",
+      "author": "Robert Root-Bernstein and colleagues",
+      "year": 2008
+    },
+    "relatedCardIds": ["poly-medici-intersections", "poly-far-transfer-myth"],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-30",
+    "reviewStatus": "verified",
+    "disputed": "This is correlational evidence from biographies; it does not show that arts hobbies cause scientific success. Popular retellings often repeat specific multipliers, so check them against the original before quoting.",
+    "deeper": "Biographical data has known biases: famous people's hobbies are better documented, and biographers like a well-rounded story. The defensible lesson is modest. Activities like sketching, modelling or music can give you different ways to represent a problem, and some scientists credit them for specific insights. If a hobby interests you, that is reason enough; if you take it up only to win a prize, this study doesn't promise that.",
+    "simpleExplanation": "Many top scientists also have artistic hobbies, but that doesn't prove the hobbies made them great.",
+    "keyConcepts": [
+      {
+        "label": "Eminent scientists have more arts hobbies",
+        "terms": ["hobby", "hobbies", "art", "craft", "music", "paint", "nobel"],
+        "minMatches": 1
+      },
+      {
+        "label": "Correlation, not causation",
+        "terms": ["correlation", "causation", "cause", "doesn't prove", "not prove", "third factor"],
+        "minMatches": 1
+      },
+      {
+        "label": "Different ways of thinking",
+        "terms": ["visual", "pattern", "spatial", "different way", "represent"],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "poly-weekly-routine",
+    "title": "A weekly routine for learning across fields",
+    "hook": "Learning widely is less a talent than a schedule you keep.",
+    "coreIdea": "Learning across fields mostly fails from drift, not lack of ability: curiosity gets crowded out by the urgent. A light weekly routine keeps it going. Keep one main field and one side field in progress at a time rather than ten. Use the methods with the best evidence, spaced review and self-testing, and reserve a little time to connect ideas, not just consume them. The routine below takes roughly two to three hours a week and is a starting template to adapt, not a rule.",
+    "whyItMatters": "Without a cadence, cross-field learning happens in bursts and fades between them.",
+    "example": "Illustrative: an operations lead learning behavioural economics reads on her Tuesday and Thursday commutes, quizzes herself on Saturday, and on Sunday writes one note on how loss aversion shows up in her team's change requests.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Which slot in your week could hold a learning session that wouldn't get cancelled?",
+    "suggestedAction": "Put next week's two side-field sessions in your calendar now, as if they were meetings.",
+    "primaryTopic": "polymathy",
+    "secondaryTopics": ["productivity"],
+    "difficulty": "beginner",
+    "format": "checklist",
+    "coverSymbol": "calendar",
+    "checklist": [
+      "Two sessions in your side field, 30–45 minutes each",
+      "One self-test: recall last week's ideas without looking",
+      "One review of older notes, spaced from when you wrote them",
+      "One written connection between your side field and your main work",
+      "One conversation with someone from a different field"
+    ],
+    "source": {
+      "type": "original",
+      "title": "Original synthesis"
+    },
+    "relatedCardIds": ["poly-ebbinghaus-spacing", "poly-retrieval-practice", "prod-maker-manager-schedule"],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-30",
+    "reviewStatus": "original-synthesis",
+    "deeper": "The routine borrows from the evidence on spacing and retrieval, but its particular shape is a suggestion. Adjust the volume to your life: a tight month might keep only the self-test and the written connection. Rotate the side field only once you can explain its main ideas without notes; switching every fortnight gives novelty without depth. Track sessions done rather than hours, because a missed week is easier to restart from a simple count.",
+    "simpleExplanation": "Set aside a little time each week to learn something new, test yourself, and link it to what you already do.",
+    "keyConcepts": [
+      {
+        "label": "Routine beats bursts",
+        "terms": ["routine", "weekly", "schedule", "cadence", "habit", "calendar"],
+        "minMatches": 1
+      },
+      {
+        "label": "One main field, one side field",
+        "terms": ["side field", "one at a time", "main field", "focus", "two fields"],
+        "minMatches": 1
+      },
+      {
+        "label": "Review, test and connect",
+        "terms": ["review", "test", "recall", "connect", "link", "spaced"],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "poly-self-assessment",
+    "title": "Are you learning across fields or just browsing?",
+    "hook": "Reading widely and thinking across fields can look identical from the outside.",
+    "coreIdea": "Consuming lots of varied content can feel like broad learning while leaving little behind. The difference shows up in what you can do afterwards: explain an idea from another field without notes, use it on a real problem, or notice where it doesn't apply. These five questions check for that. Answer honestly for the last month. Mostly 'no' isn't a failing; it usually means your input is wide but your processing, such as review, recall and connection, needs a slot of its own.",
+    "whyItMatters": "Breadth that never gets processed feels like learning but doesn't change what you can do.",
+    "example": "Illustrative: someone listens to five podcasts a week on science, history and economics, but when asked what she learned last month, can clearly recall only one idea.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Which of the five questions did you answer 'no' to fastest?",
+    "suggestedAction": "Pick a question you answered 'no' to and do the smallest possible version of it before the week ends.",
+    "primaryTopic": "polymathy",
+    "secondaryTopics": ["productivity", "psychology"],
+    "difficulty": "beginner",
+    "format": "self-assessment",
+    "coverSymbol": "magnifier",
+    "checklist": [
+      "Could you explain, without notes, one idea you learned outside your field last month?",
+      "Have you used an idea from another field on a real problem at work?",
+      "Do you revisit your notes on a schedule, not only when searching?",
+      "Can you name a limit or failure case of your favourite borrowed idea?",
+      "Have you discussed your side field with someone who works in it?"
+    ],
+    "source": {
+      "type": "original",
+      "title": "Original synthesis"
+    },
+    "relatedCardIds": ["poly-weekly-routine", "poly-retrieval-practice", "inv-circle-of-competence"],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-30",
+    "reviewStatus": "original-synthesis",
+    "deeper": "Self-assessments are blunt, and people tend to rate themselves generously, so look for evidence such as a note, a decision or a conversation rather than a feeling. The questions deliberately weigh processing over volume, because research on retrieval and transfer suggests that is where learning tends to stall. If you answer 'yes' to all five, the next step is depth: take one side field far enough that someone who works in it would find your questions interesting.",
+    "simpleExplanation": "Reading lots of different things only counts if you can explain and use what you read.",
+    "keyConcepts": [
+      {
+        "label": "Consuming is not learning",
+        "terms": ["consum", "browsing", "reading widely", "input", "podcast", "volume"],
+        "minMatches": 1
+      },
+      {
+        "label": "Check what you can do afterwards",
+        "terms": ["explain", "use", "apply", "without notes", "real problem"],
+        "minMatches": 1
+      },
+      {
+        "label": "Processing needs time",
+        "terms": ["review", "recall", "connect", "process", "slot", "time"],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "poly-specialization-insects",
+    "title": "\"Specialization is for insects\": read it carefully",
+    "hook": "A science-fiction one-liner gets quoted as a case for generalists. It says less than people think.",
+    "coreIdea": "The line comes from a passage in which Heinlein's character Lazarus Long lists things a human being should be able to do, from cooking a meal to solving equations, before declaring that specialisation is for insects. Read in context, it is a claim about personal competence and self-reliance across life, not an argument that experts are a mistake. Modern work needs deep specialists. The defensible reading is narrower: don't let your specialism become your whole capability, and keep enough range to cope with what life throws at you.",
+    "whyItMatters": "Slogans about generalists get used to dismiss depth; reading them carefully keeps both in view.",
+    "example": "Illustrative: a senior engineer who can also run a meeting, read a budget and handle basic first aid is no less of an engineer for it, and copes better when her role changes.",
+    "exampleType": "illustrative",
+    "reflectionQuestion": "Outside your profession, which basic competence would you most like to have that you don't yet?",
+    "suggestedAction": "Pick one everyday skill outside your job, such as cooking, a household repair or first aid, and learn one concrete piece of it this week.",
+    "primaryTopic": "polymathy",
+    "secondaryTopics": ["mental-models"],
+    "difficulty": "intermediate",
+    "format": "quote-interpretation",
+    "coverSymbol": "quote",
+    "quote": {
+      "text": "Specialization is for insects.",
+      "by": "Robert A. Heinlein, Time Enough for Love (1973)",
+      "note": "Spoken by Heinlein's fictional character Lazarus Long, at the end of a passage listing skills a capable person should have. It is a character's view in a novel, not a research finding."
+    },
+    "source": {
+      "type": "book",
+      "title": "Time Enough for Love",
+      "author": "Robert A. Heinlein",
+      "year": 1973
+    },
+    "relatedCardIds": ["poly-range-vs-deliberate-practice", "poly-t-and-comb-shaped"],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-30",
+    "reviewStatus": "verified",
+    "deeper": "A line in a novel carries the author's craft, not evidence, and a character's opinion isn't necessarily the writer's own. The image works because social insects such as ants and bees live in colonies divided into specialised roles, which is also a reminder that specialisation is how complex groups get things done. A balanced version for a person: specialise in your role, and stay general enough as a human being to cope when that role changes.",
+    "simpleExplanation": "Be good at your job, but also learn the everyday skills that help you handle life.",
+    "keyConcepts": [
+      {
+        "label": "It's about personal competence",
+        "terms": ["competence", "self-reliance", "capable", "life", "everyday", "person"],
+        "minMatches": 1
+      },
+      {
+        "label": "Not an argument against experts",
+        "terms": ["experts", "specialists", "depth", "not against", "still need"],
+        "minMatches": 1
+      },
+      {
+        "label": "Context: a fictional character",
+        "terms": ["fiction", "character", "novel", "lazarus", "heinlein", "context"],
+        "minMatches": 1
+      }
+    ]
+  },
+  {
+    "id": "poly-checklists-aviation-surgery",
+    "title": "What surgeons borrowed from pilots",
+    "hook": "One of the best-known safety tools in hospitals came from the cockpit.",
+    "coreIdea": "Aviation adopted checklists once it became clear that some aircraft were too complex for even expert pilots to fly from memory alone. Decades later, surgeon Atul Gawande and colleagues worked with the World Health Organization on a short surgical safety checklist: confirm the patient and procedure, check allergies and expected blood loss, and have the team introduce itself. The transfer worked because the underlying problem matched: skilled people in complex, high-stakes work forgetting simple, critical steps. The borrowing copied that structure, not the cockpit's details.",
+    "whyItMatters": "The most useful ideas from another field are the ones that solve the same underlying problem you have.",
+    "example": "Haynes and colleagues (2009) reported in the New England Journal of Medicine that after the WHO checklist was introduced in eight hospitals in different countries, rates of major complications and deaths after surgery fell.",
+    "exampleType": "documented",
+    "reflectionQuestion": "Which problem in your work might another industry already have solved under a different name?",
+    "suggestedAction": "Describe one recurring failure in your team in plain words, then look up how another industry, such as aviation, medicine or manufacturing, handles that same problem.",
+    "primaryTopic": "polymathy",
+    "secondaryTopics": ["operational-excellence", "leadership"],
+    "difficulty": "intermediate",
+    "format": "connect-domains",
+    "coverSymbol": "bridge",
+    "bridge": {
+      "from": "polymathy",
+      "to": "operational-excellence",
+      "insight": "Ideas cross fields when the underlying problem matches, here experts in complex work skipping critical steps, not when the surface looks alike."
+    },
+    "source": {
+      "type": "paper",
+      "title": "A Surgical Safety Checklist to Reduce Morbidity and Mortality in a Global Population",
+      "author": "Alex B. Haynes et al.",
+      "year": 2009,
+      "url": "https://doi.org/10.1056/NEJMsa0810119"
+    },
+    "attribution": "Background: Atul Gawande, The Checklist Manifesto (2009).",
+    "relatedCardIds": ["poly-analogy-structure", "agent-hitl-checkpoints", "sup-escalation-quality"],
+    "contrastingCardIds": [],
+    "createdAt": "2026-10-30",
+    "reviewStatus": "verified",
+    "deeper": "The borrowed checklist worked where teams adapted it and actually used it; later evaluations in some settings found smaller or no effects when it was rolled out as a box-ticking exercise. That is the second lesson of cross-domain borrowing: the idea transfers, but the conditions around it, such as training, culture and people's willingness to speak up, have to be rebuilt in the new field. Copy the principle, then test it locally.",
+    "simpleExplanation": "Doctors copied pilots' checklists because both have the same problem: forgetting small but vital steps.",
+    "keyConcepts": [
+      {
+        "label": "Same underlying problem",
+        "terms": ["same problem", "underlying", "structure", "forget", "steps", "complex"],
+        "minMatches": 1
+      },
+      {
+        "label": "Borrowed from aviation to surgery",
+        "terms": ["aviation", "pilot", "cockpit", "surgery", "surgeon", "hospital", "checklist"],
+        "minMatches": 1
+      },
+      {
+        "label": "Conditions must be rebuilt",
+        "terms": ["adapt", "culture", "local", "test", "box-ticking", "conditions"],
+        "minMatches": 1
+      }
+    ]
+  }
+]

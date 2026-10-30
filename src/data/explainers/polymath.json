@@ -1,0 +1,888 @@
+[
+  {
+    "cardId": "poly-range-vs-deliberate-practice",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Two camps",
+        "caption": "One camp says go deep early with deliberate practice. Another says sample widely, then specialise.",
+        "labels": [
+          "Go deep early",
+          "Sample first"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Kind domains",
+        "caption": "Focused practice has its strongest case in kind domains like chess, music and sport: stable rules, fast feedback.",
+        "labels": [
+          "Stable rules",
+          "Fast feedback",
+          "Focused practice"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "stack",
+        "chapter": "Wicked domains",
+        "caption": "Breadth looks more useful in wicked domains, where rules shift and yesterday's pattern can mislead.",
+        "labels": [
+          "Shifting rules",
+          "Slow feedback",
+          "Range helps"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "Match the field",
+        "caption": "Each side is well supported in its own kind of domain. Ask what kind of field you are in before choosing.",
+        "labels": [
+          "Match the field"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "poly-t-and-comb-shaped",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "I or dash",
+        "caption": "An I is one deep specialism. A dash is broad but shallow knowledge of many things.",
+        "labels": [
+          "I: one deep",
+          "Dash: broad"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "The T",
+        "caption": "A T is deep in one area, with enough working knowledge of neighbouring fields to talk to the people in them.",
+        "labels": [
+          "Neighbour fields",
+          "One deep area"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "bars",
+        "chapter": "The comb",
+        "caption": "A comb has several deep teeth, usually grown one at a time over years.",
+        "labels": [
+          "Tooth 1",
+          "Tooth 2",
+          "Tooth 3"
+        ],
+        "values": [
+          0.85,
+          0.65,
+          0.45
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "statement",
+        "chapter": "Not a ranking",
+        "caption": "The shape isn't a ranking. It shows which problems you can solve alone and which need partners.",
+        "labels": [
+          "Not a ranking"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "poly-latticework-of-models",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "Isolated facts",
+        "caption": "Munger argued you can't really know anything if you just remember isolated facts.",
+        "labels": [
+          "Facts need a frame"
+        ],
+        "seconds": 7
+      },
+      {
+        "visual": "cycle",
+        "chapter": "Many disciplines",
+        "caption": "Build a latticework of models from many disciplines and hang your experience on it.",
+        "labels": [
+          "Psych",
+          "Maths",
+          "Physics",
+          "Biology",
+          "Econ"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "versus",
+        "chapter": "The man with a hammer",
+        "caption": "With only one model, every problem looks pretty much like a nail.",
+        "labels": [
+          "One model",
+          "Many models"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "Check one lens",
+        "caption": "Several models let you check one against another and notice what a single lens misses.",
+        "labels": [
+          "Incentives",
+          "Feedback loops",
+          "What's missed?"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "poly-far-transfer-myth",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "The popular belief",
+        "caption": "A popular belief: train chess, music or brain games and your whole mind gets sharper.",
+        "labels": [
+          "Smarter at all?"
+        ],
+        "seconds": 7
+      },
+      {
+        "visual": "chain",
+        "chapter": "Transfer fades",
+        "caption": "Learning transfers to tasks that look and work like the one you practised, and fades as tasks get more different.",
+        "labels": [
+          "Same task",
+          "Near task",
+          "Far task"
+        ],
+        "values": [
+          0.9,
+          0.55,
+          0.15
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "curve",
+        "chapter": "Better studies, smaller effects",
+        "caption": "In Sala and Gobet's review, the better the study design, the smaller the far-transfer effect, often close to zero.",
+        "labels": [
+          "Study quality",
+          "Near zero"
+        ],
+        "values": [
+          0.6,
+          0.4,
+          0.2,
+          0.08
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "stack",
+        "chapter": "Build the bridge",
+        "caption": "Transfer rarely happens by itself. Write the connection explicitly.",
+        "labels": [
+          "Learn it",
+          "Name the link",
+          "Apply at work"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "poly-analogy-structure",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Structure vs surface",
+        "caption": "A good analogy carries over relationships, not surface features.",
+        "labels": [
+          "Relationships",
+          "Looks alike"
+        ],
+        "seconds": 7
+      },
+      {
+        "visual": "stack",
+        "chapter": "Fortress to tumour",
+        "caption": "Troops converging from many roads; radiation converging on a tumour. Same causal shape, different field.",
+        "labels": [
+          "Fortress story",
+          "Tumour problem",
+          "Same structure"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "versus",
+        "chapter": "A hint helps",
+        "caption": "Many people missed the parallel until told to use the story. With that hint, most solved it.",
+        "labels": [
+          "No hint",
+          "With hint"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "Ask the question",
+        "caption": "Ask on purpose: where have I seen this pattern of cause and effect before?",
+        "labels": [
+          "Seen this before?"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "poly-interleaving",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Blocked or mixed",
+        "caption": "Blocked practice does all of one type first: AAA, BBB, CCC. Interleaving mixes them: ABC, BCA, CAB.",
+        "labels": [
+          "AAA BBB CCC",
+          "ABC BCA CAB"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "scale",
+        "chapter": "Feels vs works",
+        "caption": "Blocking feels smoother. For telling similar things apart, mixing often wins on later tests.",
+        "labels": [
+          "Feels easy",
+          "Learns more"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "cycle",
+        "chapter": "Choose each time",
+        "caption": "Mixing forces you to choose the approach each time, which is what real problems demand.",
+        "labels": [
+          "See it",
+          "Choose",
+          "Solve"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "statement",
+        "chapter": "Fluency misleads",
+        "caption": "In the paintings study, the mixed group did better, yet most people believed grouping helped more.",
+        "labels": [
+          "Fluency misleads"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "poly-ebbinghaus-spacing",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "Nonsense syllables",
+        "caption": "In the 1880s Ebbinghaus memorised nonsense syllables and timed how fast he forgot them.",
+        "labels": [
+          "Self-experiment"
+        ],
+        "seconds": 7
+      },
+      {
+        "visual": "curve",
+        "chapter": "The forgetting curve",
+        "caption": "Forgetting is fast at first, then slows down: the forgetting curve.",
+        "labels": [
+          "Time since study",
+          "Forgotten fast"
+        ],
+        "values": [
+          0.95,
+          0.55,
+          0.4,
+          0.33,
+          0.3
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "versus",
+        "chapter": "Spacing beats cramming",
+        "caption": "Spreading repetitions over time made learning stick better than cramming the same repetitions together.",
+        "labels": [
+          "Spaced",
+          "Crammed"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "Three reviews",
+        "caption": "Pick one thing you learned this week. Review it tomorrow, in a few days, and next week.",
+        "labels": [
+          "Tomorrow",
+          "In a few days",
+          "Next week"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "poly-retrieval-practice",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Reread or recall",
+        "caption": "Rereading feels like learning. Trying to recall is what makes it stick.",
+        "labels": [
+          "Recall",
+          "Reread"
+        ],
+        "seconds": 7
+      },
+      {
+        "visual": "bars",
+        "chapter": "Five minutes later",
+        "caption": "In Roediger and Karpicke's study, rereaders did slightly better on a test five minutes later.",
+        "labels": [
+          "Reread",
+          "Recall"
+        ],
+        "values": [
+          0.7,
+          0.62
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "bars",
+        "chapter": "A week later",
+        "caption": "A week later, the students who had practised recalling remembered more.",
+        "labels": [
+          "Reread",
+          "Recall"
+        ],
+        "values": [
+          0.4,
+          0.6
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "cycle",
+        "chapter": "Try it this week",
+        "caption": "Read, close it, write everything you remember on a blank page, then check what you missed.",
+        "labels": [
+          "Read",
+          "Close",
+          "Recall",
+          "Check"
+        ],
+        "seconds": 9
+      }
+    ]
+  },
+  {
+    "cardId": "poly-feynman-explain",
+    "scenes": [
+      {
+        "visual": "cycle",
+        "chapter": "Four steps",
+        "caption": "Pick a concept, explain it plainly, notice where you stall, then go back to the source and simplify again.",
+        "labels": [
+          "Pick",
+          "Explain",
+          "Spot gap",
+          "Refine"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "Stalls are signals",
+        "caption": "Explaining exposes gaps that reading hides. You can't fudge a step you have to say out loud.",
+        "labels": [
+          "Find the stall"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "versus",
+        "chapter": "Whose technique?",
+        "caption": "The name honours Feynman's clear explaining, but the step-by-step recipe was packaged by later writers.",
+        "labels": [
+          "Feynman's style",
+          "Later recipe"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Simple isn't correct",
+        "caption": "Use plain words to find gaps, then check against a reliable source. Simple doesn't mean correct.",
+        "labels": [
+          "Plain words",
+          "Find gaps",
+          "Check source"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "poly-commonplace-book",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "The common mistake",
+        "caption": "The common mistake: hundreds of highlights saved to an app and never seen again.",
+        "labels": [
+          "Saved, not seen"
+        ],
+        "seconds": 7
+      },
+      {
+        "visual": "cycle",
+        "chapter": "What keepers did",
+        "caption": "Commonplace books earned their reputation because keepers organised, revisited and recombined entries.",
+        "labels": [
+          "Note",
+          "Index",
+          "Revisit",
+          "Combine"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "stack",
+        "chapter": "Leonardo's pages",
+        "caption": "Leonardo's notebooks mix anatomy, engineering, optics, painting advice and to-do lists on the same pages.",
+        "labels": [
+          "Anatomy",
+          "Engineering",
+          "Painting",
+          "To-do lists"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "versus",
+        "chapter": "The second visit",
+        "caption": "Value arrives on the second visit, when notes from two fields sit side by side and suggest something new.",
+        "labels": [
+          "Collect",
+          "Connect"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "poly-medici-intersections",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Where fields meet",
+        "caption": "Johansson argued breakthrough ideas often come from intersections, where different fields collide.",
+        "labels": [
+          "Field A",
+          "Field B"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "Combinations",
+        "caption": "Most new ideas are new combinations of old ones. Varied ingredients make unusual combinations possible.",
+        "labels": [
+          "Ingredient",
+          "Ingredient",
+          "New combination"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "bars",
+        "chapter": "Mostly familiar",
+        "caption": "Uzzi's team found high-impact papers mostly combined conventional work, with a small share of unusual pairings.",
+        "labels": [
+          "Conventional",
+          "Unusual"
+        ],
+        "values": [
+          0.85,
+          0.2
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "A lens, not a law",
+        "caption": "Johansson's evidence is largely stories, so treat the Medici effect as a useful lens, not a law.",
+        "labels": [
+          "A lens, not a law"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "poly-map-before-territory",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Two ways in",
+        "caption": "Option one: open a dense textbook at chapter one. Option two: map the field first.",
+        "labels": [
+          "Chapter one",
+          "Map first"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "What goes on the map",
+        "caption": "Core vocabulary, the main questions, the big debates, and how experts divide the field into parts.",
+        "labels": [
+          "Vocabulary",
+          "Main questions",
+          "Big debates",
+          "How it divides"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "versus",
+        "chapter": "Experts vs novices",
+        "caption": "Physics experts sorted problems by underlying principle; novices sorted them by surface features.",
+        "labels": [
+          "Principle",
+          "Surface"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "Details need a place",
+        "caption": "With a map, every new detail has a place to land. Without it, details pile up and are forgotten.",
+        "labels": [
+          "Map, then detail"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "poly-steep-early-curve",
+    "scenes": [
+      {
+        "visual": "curve",
+        "chapter": "Diminishing returns",
+        "caption": "Early practice brings big, visible gains; later gains keep coming, but in smaller steps for the same effort.",
+        "labels": [
+          "Hours of practice",
+          "Flattening"
+        ],
+        "values": [
+          0.1,
+          0.5,
+          0.7,
+          0.8,
+          0.86,
+          0.9
+        ],
+        "seconds": 11
+      },
+      {
+        "visual": "bars",
+        "chapter": "Same month, different gain",
+        "caption": "Illustrative: a first month of cooking changes a lot; a month in year five might refine one technique.",
+        "labels": [
+          "Month 1",
+          "Year 5"
+        ],
+        "values": [
+          0.8,
+          0.2
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "versus",
+        "chapter": "Two lessons",
+        "caption": "Useful competence in a new field is often cheap. Going from very good to elite is expensive.",
+        "labels": [
+          "New field: steep",
+          "Elite: costly"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "statement",
+        "chapter": "Price the choice",
+        "caption": "Neither fact tells you which to choose. They help you price the choice.",
+        "labels": [
+          "Price the choice"
+        ],
+        "seconds": 7
+      }
+    ]
+  },
+  {
+    "cardId": "poly-nobel-avocations",
+    "scenes": [
+      {
+        "visual": "stack",
+        "chapter": "What was counted",
+        "caption": "Researchers combed biographies and obituaries of eminent scientists and tallied their arts and crafts hobbies.",
+        "labels": [
+          "Biographies",
+          "Obituaries",
+          "Hobbies tallied"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "chain",
+        "chapter": "More eminent, more hobbies",
+        "caption": "Nobel laureates were more likely to have them than academy members, who were more likely than typical scientists.",
+        "labels": [
+          "Nobel laureates",
+          "Academy members",
+          "Typical scientists"
+        ],
+        "values": [
+          0.85,
+          0.6,
+          0.4
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "statement",
+        "chapter": "Correlation only",
+        "caption": "The study can't show causation: curious, energetic people might simply do more of everything.",
+        "labels": [
+          "Not causation"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "Try it this week",
+        "caption": "Spend an hour on a hands-on or artistic activity, then note whether it gave you an angle for your work.",
+        "labels": [
+          "One hour of craft",
+          "Note any idea"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "poly-weekly-routine",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "Drift, not ability",
+        "caption": "Learning across fields mostly fails from drift: curiosity gets crowded out by the urgent.",
+        "labels": [
+          "Drift wins"
+        ],
+        "seconds": 7
+      },
+      {
+        "visual": "versus",
+        "chapter": "Keep it to two",
+        "caption": "Keep one main field and one side field in progress at a time, not ten.",
+        "labels": [
+          "Main field",
+          "Side field"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "The weekly template",
+        "caption": "Two side-field sessions, one self-test, one spaced note review, one written connection, one conversation.",
+        "labels": [
+          "2 sessions",
+          "1 self-test",
+          "1 note review",
+          "1 connection",
+          "1 conversation"
+        ],
+        "seconds": 12
+      },
+      {
+        "visual": "cycle",
+        "chapter": "A starting template",
+        "caption": "A template to adapt, not a rule. Repeat it week after week.",
+        "labels": [
+          "Learn",
+          "Test",
+          "Review",
+          "Connect"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "poly-self-assessment",
+    "scenes": [
+      {
+        "visual": "versus",
+        "chapter": "Browsing or learning",
+        "caption": "Reading widely and thinking across fields can look identical from the outside.",
+        "labels": [
+          "Browsing",
+          "Learning"
+        ],
+        "seconds": 7
+      },
+      {
+        "visual": "stack",
+        "chapter": "Five checks",
+        "caption": "Explain it without notes? Used it at work? Revisit notes? Know its limits? Talked to someone in the field?",
+        "labels": [
+          "Explain it",
+          "Use it",
+          "Revisit it",
+          "Know its limits",
+          "Discuss it"
+        ],
+        "seconds": 12
+      },
+      {
+        "visual": "scale",
+        "chapter": "Wide in, little out",
+        "caption": "Mostly 'no' usually means your input is wide but your processing needs a slot of its own.",
+        "labels": [
+          "Input",
+          "Processing"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "statement",
+        "chapter": "Smallest step",
+        "caption": "Pick a question you answered 'no' to and do the smallest version of it this week.",
+        "labels": [
+          "One small yes"
+        ],
+        "seconds": 7
+      }
+    ]
+  },
+  {
+    "cardId": "poly-specialization-insects",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "The line",
+        "caption": "\"Specialization is for insects.\" Spoken by Heinlein's character Lazarus Long in a 1973 novel.",
+        "labels": [
+          "For insects?"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "stack",
+        "chapter": "The list before it",
+        "caption": "It closes a list of things a person should be able to do, from cooking a meal to solving equations.",
+        "labels": [
+          "Cook a meal",
+          "Solve equations",
+          "Specialise?"
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "versus",
+        "chapter": "What it is not",
+        "caption": "Read in context, it's about personal competence, not an argument that experts are a mistake.",
+        "labels": [
+          "Personal range",
+          "Anti-expert"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "statement",
+        "chapter": "Both, not either",
+        "caption": "Specialise in your role; stay general enough as a person to cope when that role changes.",
+        "labels": [
+          "Role and range"
+        ],
+        "seconds": 8
+      }
+    ]
+  },
+  {
+    "cardId": "poly-checklists-aviation-surgery",
+    "scenes": [
+      {
+        "visual": "statement",
+        "chapter": "From the cockpit",
+        "caption": "Aviation adopted checklists when some aircraft became too complex to fly from memory alone.",
+        "labels": [
+          "Too complex"
+        ],
+        "seconds": 8
+      },
+      {
+        "visual": "chain",
+        "chapter": "Cockpit to operating room",
+        "caption": "Decades later, a short WHO surgical safety checklist borrowed the idea for hospitals.",
+        "labels": [
+          "Aviation",
+          "Checklist idea",
+          "Surgery"
+        ],
+        "values": [
+          0.9,
+          0.8,
+          0.7
+        ],
+        "seconds": 9
+      },
+      {
+        "visual": "stack",
+        "chapter": "Same underlying problem",
+        "caption": "It transferred because the problem matched: skilled people in complex work forgetting simple, critical steps.",
+        "labels": [
+          "Complex work",
+          "Skilled people",
+          "Missed steps"
+        ],
+        "seconds": 10
+      },
+      {
+        "visual": "versus",
+        "chapter": "Copy the principle",
+        "caption": "Copy the structure, not the surface details, then test it locally.",
+        "labels": [
+          "Principle",
+          "Surface details"
+        ],
+        "seconds": 8
+      }
+    ]
+  }
+]
