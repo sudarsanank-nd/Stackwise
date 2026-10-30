@@ -41,6 +41,7 @@ export const TOPIC_FAMILY: Record<TopicId, FamilyId> = {
   psychology: 'mind',
   'decision-making': 'mind',
   'mental-models': 'mind',
+  polymathy: 'mind',
 };
 
 export const familyOf = (topic: TopicId): FamilyMeta => FAMILIES[TOPIC_FAMILY[topic]];

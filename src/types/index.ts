@@ -17,7 +17,8 @@ export type TopicId =
   | 'operational-excellence'
   | 'support-leadership'
   | 'communication'
-  | 'negotiation';
+  | 'negotiation'
+  | 'polymathy';
 
 export type Difficulty = 'beginner' | 'intermediate' | 'advanced';
 
@@ -55,7 +56,8 @@ export type LearningGoal =
   | 'communication'
   | 'technical'
   | 'productivity'
-  | 'support-ops';
+  | 'support-ops'
+  | 'polymath';
 
 export type SerendipityFrequency = 'rarely' | 'sometimes' | 'often';
 export type ThemePreference = 'light' | 'dark' | 'system';

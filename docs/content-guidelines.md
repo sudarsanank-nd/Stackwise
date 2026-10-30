@@ -46,7 +46,7 @@ For `self-assessment`, put 5 short yes/no questions in `checklist`. For `what-wo
 - Only link to ids that exist (the validator fails otherwise).
 
 ## IDs
-Kebab-case with a domain prefix: `inv-`, `pf-`, `bf-`, `psy-`, `pm-`, `lead-`, `comm-`, `neg-`, `ai-`, `agent-`, `tech-`, `dm-`, `mm-`, `prod-`, `sup-`, `ops-`, `connect-`.
+Kebab-case with a domain prefix: `inv-`, `pf-`, `bf-`, `psy-`, `pm-`, `lead-`, `comm-`, `neg-`, `ai-`, `agent-`, `tech-`, `dm-`, `mm-`, `prod-`, `sup-`, `ops-`, `poly-` (polymathic thinking), `connect-`.
 
 ## Adding content later (cheaper model workflow)
 1. Copy a card from `seed.json` as a template.

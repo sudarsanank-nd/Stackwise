@@ -16,19 +16,20 @@ export const TOPICS: TopicMeta[] = [
   { id: 'investing', label: 'Investing', short: 'Investing', accent: '#0F6B4F', accentDark: '#5FD3A6', adjacent: ['personal-finance', 'behavioral-finance', 'decision-making'] },
   { id: 'personal-finance', label: 'Personal finance', short: 'Money', accent: '#1F6B2E', accentDark: '#8BD99A', adjacent: ['investing', 'behavioral-finance', 'productivity'] },
   { id: 'behavioral-finance', label: 'Behavioral finance', short: 'Behav. finance', accent: '#7A4B00', accentDark: '#F2B35E', adjacent: ['investing', 'psychology', 'decision-making'] },
-  { id: 'psychology', label: 'Psychology & behavior', short: 'Psychology', accent: '#8A2F5C', accentDark: '#F29AC4', adjacent: ['behavioral-finance', 'people-management', 'decision-making', 'communication'] },
+  { id: 'psychology', label: 'Psychology & behavior', short: 'Psychology', accent: '#8A2F5C', accentDark: '#F29AC4', adjacent: ['behavioral-finance', 'people-management', 'decision-making', 'communication', 'polymathy'] },
   { id: 'people-management', label: 'People management', short: 'Management', accent: '#1E4FA3', accentDark: '#8FB4F5', adjacent: ['leadership', 'psychology', 'communication', 'support-leadership'] },
   { id: 'leadership', label: 'Leadership', short: 'Leadership', accent: '#3A3FA8', accentDark: '#A7ABF7', adjacent: ['people-management', 'decision-making', 'communication', 'negotiation'] },
   { id: 'ai', label: 'Artificial intelligence', short: 'AI', accent: '#5B3BA8', accentDark: '#C1A8F5', adjacent: ['agentic-ai', 'technology', 'decision-making'] },
   { id: 'agentic-ai', label: 'Agentic AI', short: 'Agentic AI', accent: '#6E2FA0', accentDark: '#D3A2F2', adjacent: ['ai', 'technology', 'operational-excellence'] },
   { id: 'technology', label: 'Technology', short: 'Tech', accent: '#0E5E80', accentDark: '#7CCBEB', adjacent: ['ai', 'operational-excellence', 'agentic-ai'] },
   { id: 'decision-making', label: 'Decision-making', short: 'Decisions', accent: '#8C3B12', accentDark: '#F5A877', adjacent: ['mental-models', 'behavioral-finance', 'leadership', 'psychology'] },
-  { id: 'mental-models', label: 'Mental models', short: 'Models', accent: '#7A2E2E', accentDark: '#F09B9B', adjacent: ['decision-making', 'investing', 'technology'] },
+  { id: 'mental-models', label: 'Mental models', short: 'Models', accent: '#7A2E2E', accentDark: '#F09B9B', adjacent: ['decision-making', 'investing', 'technology', 'polymathy'] },
   { id: 'productivity', label: 'Productivity', short: 'Productivity', accent: '#4A5A12', accentDark: '#C3D67A', adjacent: ['operational-excellence', 'psychology', 'people-management'] },
   { id: 'operational-excellence', label: 'Operational excellence', short: 'Ops excellence', accent: '#225E63', accentDark: '#7FD0D6', adjacent: ['support-leadership', 'technology', 'productivity'] },
   { id: 'support-leadership', label: 'Customer-support leadership', short: 'Support', accent: '#0B5D73', accentDark: '#6FD0EA', adjacent: ['operational-excellence', 'people-management', 'communication'] },
   { id: 'communication', label: 'Communication', short: 'Communication', accent: '#8A3A00', accentDark: '#FFB27A', adjacent: ['negotiation', 'leadership', 'psychology'] },
   { id: 'negotiation', label: 'Negotiation & influence', short: 'Negotiation', accent: '#6B3E1E', accentDark: '#E8B48C', adjacent: ['communication', 'psychology', 'decision-making'] },
+  { id: 'polymathy', label: 'Polymathic thinking', short: 'Polymath', accent: '#2F5D8A', accentDark: '#9CC8F2', adjacent: ['mental-models', 'psychology', 'decision-making', 'communication'] },
 ];
 
 export const TOPIC_MAP: Record<TopicId, TopicMeta> = Object.fromEntries(TOPICS.map((t) => [t.id, t])) as Record<TopicId, TopicMeta>;
@@ -88,6 +89,7 @@ export const GOALS: { id: LearningGoal; label: string; topics: TopicId[] }[] = [
   { id: 'technical', label: 'Build technical awareness', topics: ['technology', 'ai', 'agentic-ai'] },
   { id: 'productivity', label: 'Become more productive', topics: ['productivity'] },
   { id: 'support-ops', label: 'Lead support operations more effectively', topics: ['support-leadership', 'operational-excellence'] },
+  { id: 'polymath', label: 'Think like a polymath', topics: ['polymathy', 'mental-models'] },
 ];
 
 export const DIFFICULTY_LABELS = { beginner: 'Beginner', intermediate: 'Intermediate', advanced: 'Advanced' } as const;
