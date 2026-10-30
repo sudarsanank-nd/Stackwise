@@ -1,0 +1,167 @@
+[
+  {
+    "cardId": "comm-illusion-of-transparency",
+    "scenes": [
+      { "visual": "versus", "chapter": "Inside vs outside", "caption": "We feel our own nerves, confusion or irritation vividly, so we assume they show.", "labels": ["What you feel", "What they see"], "seconds": 8 },
+      { "visual": "bars", "chapter": "The 1998 studies", "caption": "In Gilovich's studies, liars expected to be caught more often than observers actually caught them. Sizes are schematic.", "labels": ["Expected", "Actual"], "values": [0.8, 0.4], "seconds": 10 },
+      { "visual": "stack", "chapter": "A concern nobody heard", "caption": "Illustrative: a lead's hesitant tone felt obvious to her. Nobody noticed, and later the team said she never raised a concern.", "labels": ["Hesitant tone", "Nobody noticed", "'Never raised it'"], "seconds": 10 },
+      { "visual": "statement", "chapter": "Say it plainly", "caption": "Usually far less leaks than we fear. State the concern in one explicit sentence instead of relying on tone.", "labels": ["Say it"], "seconds": 8 }
+    ]
+  },
+  {
+    "cardId": "comm-ladder-of-inference",
+    "scenes": [
+      { "visual": "stack", "chapter": "Climbing the ladder", "caption": "We select a few details, add meaning, make assumptions, draw a conclusion, adopt a belief and act — often in seconds.", "labels": ["Act", "Belief", "Conclusion", "Assumption", "Observed data"], "seconds": 11 },
+      { "visual": "chain", "chapter": "Late twice", "caption": "Illustrative: late to two stand-ups becomes 'doesn't care', then 'disengaged', then smaller tasks. Each rung adds a guess.", "labels": ["Late twice", "Doesn't care", "Disengaged", "Smaller tasks"], "values": [0.95, 0.7, 0.55, 0.4], "seconds": 11 },
+      { "visual": "cycle", "chapter": "The reflexive loop", "caption": "Beliefs then shape which details we notice next, so the ladder feeds itself.", "labels": ["Belief", "Notice", "Confirm"], "seconds": 8 },
+      { "visual": "versus", "chapter": "Climb back down", "caption": "In a disagreement, stop arguing from the top rungs. Compare what each of you actually saw and heard.", "labels": ["Conclusions", "Observed data"], "seconds": 9 }
+    ]
+  },
+  {
+    "cardId": "comm-reflect-before-reply",
+    "scenes": [
+      { "visual": "versus", "chapter": "Right or understood?", "caption": "An upset person rarely calms down because you were right. They calm down because you understood.", "labels": ["Being right", "Understood"], "seconds": 8 },
+      { "visual": "stack", "chapter": "Before you answer", "caption": "Before you correct or defend: restate what you heard, include the feeling behind it, and check you got it right.", "labels": ["Restate it", "Name the feeling", "'Did I get it?'"], "seconds": 10 },
+      { "visual": "curve", "chapter": "The temperature drops", "caption": "Illustrative: the account manager hears his point said back, nods, sits down, and they look at the case together. Shape is schematic.", "labels": ["Tension", "Calmer"], "values": [0.85, 0.9, 0.6, 0.35, 0.25], "seconds": 10 },
+      { "visual": "statement", "chapter": "Not agreement", "caption": "Reflecting back is not agreeing. It proves you understood — then you can still share facts or disagree.", "labels": ["Understand first"], "seconds": 8 }
+    ]
+  },
+  {
+    "cardId": "neg-zopa",
+    "scenes": [
+      { "visual": "versus", "chapter": "Two walk-away limits", "caption": "Each side has a reservation price: the worst terms they'd accept before walking away.", "labels": ["Buyer's most", "Seller's least"], "seconds": 8 },
+      { "visual": "bars", "chapter": "Where they overlap", "caption": "Illustrative: the company pays at most ₹9 lakh; the vendor won't go below ₹7 lakh. The zone is ₹7–9 lakh.", "labels": ["Floor ₹7L", "Ceiling ₹9L"], "values": [0.7, 0.9], "seconds": 10 },
+      { "visual": "statement", "chapter": "Inside the zone", "caption": "Any deal inside the zone beats walking away for both. The bargaining is about where in it you land.", "labels": ["₹7–9 lakh"], "seconds": 8 },
+      { "visual": "bars", "chapter": "No overlap, no deal", "caption": "If the vendor's floor were ₹10 lakh, no charm closes the gap on price alone. Then no deal is the right outcome.", "labels": ["Ceiling ₹9L", "Floor ₹10L"], "values": [0.9, 1], "seconds": 10 }
+    ]
+  },
+  {
+    "cardId": "neg-fixed-pie",
+    "scenes": [
+      { "visual": "versus", "chapter": "The opening assumption", "caption": "Most negotiators in Thompson and Hastie's studies began by assuming the other side wanted exactly the opposite.", "labels": ["My gain", "Their loss"], "seconds": 9 },
+      { "visual": "bars", "chapter": "Different priorities", "caption": "Illustrative: the client cares most about the date, the vendor most about a longer contract. Sizes are schematic.", "labels": ["Client: date", "Vendor: term"], "values": [0.9, 0.85], "seconds": 9 },
+      { "visual": "versus", "chapter": "Split or trade?", "caption": "Splitting every issue down the middle leaves value on the table. Trading the issues each side values most leaves both better off.", "labels": ["Split each", "Trade across"], "seconds": 10 },
+      { "visual": "stack", "chapter": "Before you start", "caption": "List every issue, rank them by importance to you, then guess the other side's ranking.", "labels": ["List issues", "Rank yours", "Guess theirs"], "seconds": 8 }
+    ]
+  },
+  {
+    "cardId": "neg-first-offer",
+    "scenes": [
+      { "visual": "statement", "chapter": "Folk wisdom", "caption": "Old advice says never name a number first. Galinsky and Mussweiler's experiments challenge that.", "labels": ["Go first?"], "seconds": 7 },
+      { "visual": "curve", "chapter": "Offers as anchors", "caption": "First offers worked as anchors: the more ambitious the opening, the better the final price tended to be for its maker. Shape is schematic.", "labels": ["Opening offer", "Better outcome"], "values": [0.2, 0.4, 0.55, 0.7], "seconds": 10 },
+      { "visual": "scale", "chapter": "The catch", "caption": "Going first needs a good sense of the realistic range. Without it, you may anchor yourself badly or reveal too much.", "labels": ["No info", "Know range"], "seconds": 9 },
+      { "visual": "versus", "chapter": "The two positions", "caption": "The evidence leans toward going first, but only when you know the territory. Otherwise, hearing their number is cheap research.", "labels": ["Go first", "Let them"], "seconds": 10 },
+      { "visual": "statement", "chapter": "Decide in advance", "caption": "Write the realistic range and your evidence, then decide before the meeting whether you'll open.", "labels": ["Know the range"], "seconds": 7 }
+    ]
+  },
+  {
+    "cardId": "prod-attention-residue",
+    "scenes": [
+      { "visual": "versus", "chapter": "A split mind", "caption": "When you switch from task A to task B, some of your attention stays on A.", "labels": ["Task A", "Task B"], "seconds": 8 },
+      { "visual": "bars", "chapter": "Leroy's experiments", "caption": "In Leroy's 2009 experiments, people who switched away from an unfinished task did worse on the next one. Sizes are schematic.", "labels": ["Clean start", "After switch"], "values": [0.8, 0.5], "seconds": 10 },
+      { "visual": "stack", "chapter": "The quick check", "caption": "Illustrative: an analyst checks the escalation channel between paragraphs, and reads the same paragraph three times.", "labels": ["Write report", "Check channel", "Re-read paragraph"], "seconds": 9 },
+      { "visual": "stack", "chapter": "Park it properly", "caption": "Before switching, write one line on where you stopped and what's next, then close that window completely.", "labels": ["Where I stopped", "What's next", "Close window"], "seconds": 9 }
+    ]
+  },
+  {
+    "cardId": "prod-if-then-plans",
+    "scenes": [
+      { "visual": "versus", "chapter": "Goal vs plan", "caption": "A goal says what you want. An implementation intention says: when situation X arises, I will do Y.", "labels": ["'Exercise more'", "When X, I'll Y"], "seconds": 9 },
+      { "visual": "chain", "chapter": "Cue to action", "caption": "Illustrative: Friday 4 pm, laptop closes, three bullets go out. The cue is fixed and the action is small.", "labels": ["Fri 4 pm", "Laptop closes", "Send 3 bullets"], "values": [1, 1, 1], "seconds": 9 },
+      { "visual": "bars", "chapter": "Follow-through", "caption": "Gollwitzer's review summarised studies where people with if-then plans followed through more than those with only a goal. Schematic.", "labels": ["Goal only", "If-then plan"], "values": [0.4, 0.7], "seconds": 10 },
+      { "visual": "statement", "chapter": "Rewrite one goal", "caption": "Rewrite one stalled goal as a single 'When ___, I will ___' sentence and put the cue in your calendar.", "labels": ["When ___, I'll ___"], "seconds": 8 }
+    ]
+  },
+  {
+    "cardId": "prod-planning-fallacy",
+    "scenes": [
+      { "visual": "statement", "chapter": "Hofstadter's law", "caption": "It always takes longer than you expect, even when you take into account Hofstadter's Law.", "labels": ["Longer"], "seconds": 7 },
+      { "visual": "bars", "chapter": "The thesis study", "caption": "In Buehler's 1994 study, students on average took longer than even their own worst-case guesses. Sizes are schematic.", "labels": ["Best guess", "Worst case", "Actual"], "values": [0.5, 0.75, 0.9], "seconds": 10 },
+      { "visual": "versus", "chapter": "Two ways to estimate", "caption": "We plan by imagining this task going well, rather than recalling how past tasks actually went.", "labels": ["Imagine it", "Recall it"], "seconds": 9 },
+      { "visual": "bars", "chapter": "Two weeks, again", "caption": "Illustrative: the team plans two weeks for a migration. Their last three each took about five.", "labels": ["Plan: 2 wks", "Past: ~5 wks"], "values": [0.4, 1], "seconds": 9 },
+      { "visual": "statement", "chapter": "Start from history", "caption": "Look up how long the last three similar tasks really took, and start from that number.", "labels": ["Check the past"], "seconds": 7 }
+    ]
+  },
+  {
+    "cardId": "mm-feedback-loops",
+    "scenes": [
+      { "visual": "cycle", "chapter": "A reinforcing loop", "caption": "Illustrative: the team falls behind, agents rush, more cases reopen, they fall further behind. More produces more.", "labels": ["Behind", "Rush", "Reopens"], "seconds": 10 },
+      { "visual": "curve", "chapter": "It runs away", "caption": "A reinforcing loop amplifies change, for better or worse. Shape is schematic.", "labels": ["Time", "Runaway"], "values": [0.15, 0.2, 0.3, 0.5, 0.85], "seconds": 8 },
+      { "visual": "curve", "chapter": "A balancing loop", "caption": "A balancing loop pushes toward a goal or limit, like a thermostat. Shape is schematic.", "labels": ["Time", "Steady"], "values": [0.2, 0.7, 0.45, 0.58, 0.52], "seconds": 8 },
+      { "visual": "versus", "chapter": "A better question", "caption": "Seeing the loop changes the question from 'who caused this?' to 'what keeps this going?'", "labels": ["Who caused it?", "What sustains it?"], "seconds": 9 },
+      { "visual": "statement", "chapter": "Draw it", "caption": "Draw one persistent problem as a loop of three or four arrows.", "labels": ["Draw the loop"], "seconds": 6 }
+    ]
+  },
+  {
+    "cardId": "mm-regression-to-mean",
+    "scenes": [
+      { "visual": "versus", "chapter": "The instructor's claim", "caption": "A flight instructor told Kahneman that praise made the next landing worse and shouting made it better.", "labels": ["Praise", "Shouting"], "seconds": 9 },
+      { "visual": "curve", "chapter": "Back toward average", "caption": "When a result is partly luck, an extreme one tends to be followed by a less extreme one. Shape is schematic.", "labels": ["Landings", "Near average"], "values": [0.5, 0.95, 0.55, 0.1, 0.5], "seconds": 10 },
+      { "visual": "statement", "chapter": "Whatever you say", "caption": "Exceptional performances are usually followed by more ordinary ones, whatever feedback you give.", "labels": ["Regression"], "seconds": 8 },
+      { "visual": "versus", "chapter": "Judge it fairly", "caption": "To judge an intervention, compare with similar bad weeks where you did nothing.", "labels": ["Intervened", "Did nothing"], "seconds": 8 }
+    ]
+  },
+  {
+    "cardId": "ops-theory-of-constraints",
+    "scenes": [
+      { "visual": "chain", "chapter": "The tightest step", "caption": "A system's output is limited by its tightest bottleneck. Bar sizes are schematic.", "labels": ["Tagging", "Triage", "Engineer review", "Resolution"], "values": [0.95, 0.9, 0.3, 0.8], "seconds": 10 },
+      { "visual": "bars", "chapter": "Faster in, same out", "caption": "Illustrative: automated triage gets tickets to the engineer's queue faster. They sit there longer; customers see no change.", "labels": ["Triage time", "Queue wait"], "values": [0.2, 0.9], "seconds": 10 },
+      { "visual": "cycle", "chapter": "Goldratt's sequence", "caption": "Identify the constraint, get the most from it, make everything else serve its pace, add capacity, repeat.", "labels": ["Find", "Exploit", "Serve it", "Elevate", "Repeat"], "seconds": 11 },
+      { "visual": "statement", "chapter": "Find where work waits", "caption": "Map your process in four or five steps and mark where items wait longest.", "labels": ["Where it waits"], "seconds": 7 }
+    ]
+  },
+  {
+    "cardId": "ops-checklist-design",
+    "scenes": [
+      { "visual": "versus", "chapter": "Ticked or used?", "caption": "Checklists catch simple steps skipped under pressure. A badly designed one trains people to tick without looking.", "labels": ["Ticked", "Used"], "seconds": 9 },
+      { "visual": "bars", "chapter": "Forty items to seven", "caption": "Illustrative: a forty-item release checklist gets ticked in one go. Cut to seven killer items, it actually gets used.", "labels": ["40 items", "7 items"], "values": [1, 0.18], "seconds": 10 },
+      { "visual": "stack", "chapter": "What good design looks like", "caption": "A clear pause point, a short list, the steps people actually skip, and testing in real use.", "labels": ["Pause point", "Short list", "Skipped steps", "Tested in use"], "seconds": 10 },
+      { "visual": "statement", "chapter": "Design decides", "caption": "Design — and whether teams believe in it — decides whether a checklist gets used.", "labels": ["Design decides"], "seconds": 7 }
+    ]
+  },
+  {
+    "cardId": "dm-sunk-cost",
+    "scenes": [
+      { "visual": "statement", "chapter": "Already spent", "caption": "A sunk cost is money, time or effort already spent that you cannot recover.", "labels": ["It's gone"], "seconds": 7 },
+      { "visual": "bars", "chapter": "Full price, more visits", "caption": "Arkes and Blumer found full-price season-ticket holders attended more plays early on than discounted ones. Sizes are schematic.", "labels": ["Full price", "Discount"], "values": [0.8, 0.55], "seconds": 10 },
+      { "visual": "scale", "chapter": "The ₹25 lakh tool", "caption": "Illustrative: four months and ₹25 lakh on an internal tool, while a vendor product now does it better for less.", "labels": ["Past spend", "Better option"], "seconds": 10 },
+      { "visual": "versus", "chapter": "Look forward only", "caption": "Compare only future costs and benefits from here. Leave past spending off the page.", "labels": ["What I put in", "What I'll get"], "seconds": 8 }
+    ]
+  },
+  {
+    "cardId": "dm-satisficing",
+    "scenes": [
+      { "visual": "versus", "chapter": "Two ways to choose", "caption": "Satisficing, Simon's word, means taking the first option that meets your criteria. Maximising means searching for the best.", "labels": ["Good enough", "The best"], "seconds": 9 },
+      { "visual": "bars", "chapter": "Eleven tools, three weeks", "caption": "Illustrative: a manager compares eleven video-call tools. A satisficer sets three must-haves and stops at the first match.", "labels": ["Maximiser", "Satisficer"], "values": [1, 0.25], "seconds": 10 },
+      { "visual": "scale", "chapter": "Better result, worse feeling", "caption": "In Schwartz's surveys, maximisers reported more regret and less satisfaction with their choices.", "labels": ["Regret", "Satisfaction"], "seconds": 9 },
+      { "visual": "versus", "chapter": "Match the stakes", "caption": "Maximising pays when stakes are high. Satisficing wins for most everyday choices.", "labels": ["High stakes", "Everyday"], "seconds": 8 }
+    ]
+  },
+  {
+    "cardId": "pf-save-more-tomorrow",
+    "scenes": [
+      { "visual": "statement", "chapter": "Commit now, save later", "caption": "In Save More Tomorrow, employees commit now to save more when future pay rises arrive.", "labels": ["Future raises"], "seconds": 8 },
+      { "visual": "stack", "chapter": "Why it works", "caption": "Committing for later feels easier, take-home pay never falls so it doesn't feel like a loss, and inertia keeps people saving.", "labels": ["Commit for later", "No felt loss", "Inertia"], "seconds": 10 },
+      { "visual": "curve", "chapter": "Rates rose", "caption": "Where it was tried, savings rates among participants rose substantially over the following years. Shape is schematic.", "labels": ["Pay rises", "Higher saving"], "values": [0.15, 0.3, 0.45, 0.6, 0.75], "seconds": 9 },
+      { "visual": "statement", "chapter": "Set it up now", "caption": "Decide now what share of your next raise goes to savings, and make the transfer automatic. Education, not advice.", "labels": ["Automate it"], "seconds": 8 }
+    ]
+  },
+  {
+    "cardId": "pf-debt-avalanche-snowball",
+    "scenes": [
+      { "visual": "versus", "chapter": "Two repayment orders", "caption": "Avalanche: put spare rupees toward the highest interest rate first. Snowball: clear the smallest balance first.", "labels": ["Avalanche", "Snowball"], "seconds": 9 },
+      { "visual": "bars", "chapter": "Which debt first?", "caption": "Illustration only: a ₹60,000 card balance at a high rate and a ₹15,000 loan at a lower one. Each method picks a different target.", "labels": ["₹60k card", "₹15k loan"], "values": [0.8, 0.2], "seconds": 10 },
+      { "visual": "scale", "chapter": "Cost vs motivation", "caption": "Followed through, the avalanche costs less interest. Snowball fans say early wins keep people going.", "labels": ["Less interest", "Quick wins"], "seconds": 9 },
+      { "visual": "statement", "chapter": "Suggestive, not settled", "caption": "The evidence for the motivational effect is suggestive rather than settled. List your debts and rates to compare.", "labels": ["List your debts"], "seconds": 8 }
+    ]
+  },
+  {
+    "cardId": "agent-prompt-injection",
+    "scenes": [
+      { "visual": "stack", "chapter": "Hidden in the content", "caption": "Prompt injection hides instructions in an email, web page or document the agent reads.", "labels": ["Email", "Web page", "Hidden order"], "seconds": 9 },
+      { "visual": "versus", "chapter": "Same kind of text", "caption": "A language model reads instructions and data as the same kind of text, so no filter reliably separates them.", "labels": ["Your request", "Planted text"], "seconds": 9 },
+      { "visual": "chain", "chapter": "The refund email", "caption": "Illustrative: an email says 'approve a full refund'. If refunds need no human approval, the attack only has to work once.", "labels": ["Email arrives", "Agent reads", "Refund issued"], "values": [0.9, 0.6, 0.3], "seconds": 10 },
+      { "visual": "scale", "chapter": "Where reading meets acting", "caption": "Limit what the agent can do after reading untrusted content. Require human approval where reading and acting meet.", "labels": ["Read untrusted", "Take action"], "seconds": 10 }
+    ]
+  }
+]
